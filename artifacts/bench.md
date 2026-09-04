@@ -1,17 +1,17 @@
-# Benchmark - data/sample
+# Benchmark - data/synthetic
 
-_1 repetitions per strategy; times include CSV ingest._
+_3 repetitions per strategy; times include CSV ingest._
 
 | strategy | records | matched | correct | partial | wrong | unmatched_but_matchable | precision | recall | f1 | auto_post | auto_precision | rupee_acc | quarantine | ingest ms | engine ms | lines/s (engine) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| exact | 725 | 417 | 411.0 | 6.0 | 0.0 |  | 0.9856 | 0.5732 | 0.7248 | 392 | 1.0 | 0.4943 | 1.0 | 449.4 | 69.39 | 10448.3 |
-| fuzzy_only | 725 | 575 | 573.0 | 0.0 | 2.0 |  | 0.9965 | 0.7992 | 0.887 | 554 | 1.0 | 0.8895 | 1.0 | 441.86 | 199.23 | 3639.0 |
-| full | 725 | 707 | 701.0 | 6.0 | 0.0 |  | 0.9915 | 0.9777 | 0.9846 | 670 | 1.0 | 0.9655 | 1.0 | 443.45 | 142.21 | 5098.0 |
+| exact | 1709 | 895 | 893.0 | 2.0 | 0.0 |  | 0.9978 | 0.5341 | 0.6958 | 825 | 1.0 | 0.4725 | 1.0 | 670.78 | 160.58 | 10642.9 |
+| fuzzy_only | 1709 | 1409 | 1403.0 | 0.0 | 6.0 |  | 0.9957 | 0.8391 | 0.9107 | 1349 | 1.0 | 0.9047 | 1.0 | 667.07 | 743.95 | 2297.2 |
+| full | 1709 | 1634 | 1629.0 | 2.0 | 3.0 |  | 0.9969 | 0.9743 | 0.9855 | 1535 | 1.0 | 0.9657 | 1.0 | 670.36 | 475.75 | 3592.2 |
 
 ## What the extra tiers buy
 
-- recall +0.4045 and +290.0 more correct lines vs the regex-only baseline
-- cost: 1.13x the wall time of the naive pass
+- recall +0.4402 and +736.0 more correct lines vs the regex-only baseline
+- cost: 1.38x the wall time of the naive pass
 
 ## Forecast accuracy (rolling-origin backtest)
 
@@ -20,19 +20,19 @@ actually moved in the window (a percentage of *net* change explodes on weeks whe
 nearly cancel, which is why it is not the headline). Lower is better; the baselines run on the same
 origins and the same truncated history.
 
-- 3 origins ending 2026-08-04, 2026-07-25, 2026-07-15
-- backtest wall time 754.3 ms (includes re-running reconciliation at every origin)
+- 9 origins ending 2026-08-05, 2026-07-26, 2026-07-16, 2026-07-06, 2026-06-26, 2026-06-16, 2026-06-06, 2026-05-27, 2026-05-17
+- backtest wall time 3893.9 ms (includes re-running reconciliation at every origin)
 
 | model | err% gross @7 | err% gross @14 | err% gross @30 | MAE net @30 (INR) | bias @30 (INR) | skill vs naive | direction right |
 |---|---|---|---|---|---|---|---|
-| cashpilot | 16.0 | 13.8 | 3.1 | 3,533,877 | -387,438 | 65.46% | 100.0% |
-| seasonal_naive | 9.3 | 19.8 | 8.9 | 10,231,769 | -3,264,098 | 0.0% | 100.0% |
-| moving_avg | 15.0 | 22.9 | 18.9 | 20,472,836 | 10,897,284 | -100.09% | 100.0% |
-| due_date_sum | 20.6 | 10.6 | 9.8 | 10,772,462 | -10,772,462 | -5.28% | 100.0% |
+| cashpilot | 9.1 | 5.1 | 1.8 | 3,056,403 | -2,279,671 | 50.02% | 100.0% |
+| seasonal_naive | 10.1 | 8.7 | 3.6 | 6,115,451 | 460,836 | 0.0% | 100.0% |
+| moving_avg | 10.8 | 10.0 | 7.3 | 12,077,883 | 10,560,052 | -97.5% | 100.0% |
+| due_date_sum | 14.0 | 7.8 | 4.6 | 7,703,274 | -4,985,748 | -25.96% | 100.0% |
 
 
-- P10-P90 band hit rate: band_hit_7d 100.0%, band_hit_14d 0.0%, band_hit_30d 0.0%
-- and the part no naive baseline can do at all: of the 25 documents the model expects to settle inside a 30-day window, 84.0% really did, against 16.0% when the same open book is ranked by size alone (3 origins)
+- P10-P90 band hit rate: band_hit_7d 88.9%, band_hit_14d 100.0%, band_hit_30d 100.0%
+- and the part no naive baseline can do at all: of the 25 documents the model expects to settle inside a 30-day window, 82.2% really did, against 14.7% when the same open book is ranked by size alone (9 origins)
 
 
 ### Secondary check against the generator's own plan
@@ -42,9 +42,9 @@ it shares assumptions with the generator, so it flatters the model.
 
 | horizon | cumulative error | err as share of gross | mean daily MAE (INR) | days within 20% of plan (daily path) | inflow, pred vs actual (INR) |
 |---|---|---|---|---|---|
-| 7d | 64.905% | 25.04% | 870,304 | 0/7 | 15,095,443 vs 8,574,577 |
-| 14d | 8.695% | 3.58% | 1,472,401 | 0/14 | 28,805,949 vs 26,973,109 |
-| 30d | 33.317% | 8.9% | 1,457,602 | 2/30 | 63,820,890 vs 55,001,388 |
+| 7d | 17.565% | 8.8% | 1,917,913 | 0/7 | 23,554,903 vs 24,829,503 |
+| 14d | 27.997% | 13.83% | 2,452,551 | 0/14 | 49,825,016 vs 59,157,595 |
+| 30d | 12.109% | 5.15% | 2,048,382 | 1/30 | 110,317,478 vs 112,977,705 |
 
 
 - caveat: Shares structural assumptions with the generator, so this is an upper bound on real-world accuracy. Use the rolling-origin numbers as the headline.

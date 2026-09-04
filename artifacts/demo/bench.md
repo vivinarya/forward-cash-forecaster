@@ -4,14 +4,14 @@ _1 repetitions per strategy; times include CSV ingest._
 
 | strategy | records | matched | correct | partial | wrong | unmatched_but_matchable | precision | recall | f1 | auto_post | auto_precision | rupee_acc | quarantine | ingest ms | engine ms | lines/s (engine) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| exact | 725 | 417 | 411.0 | 6.0 | 0.0 |  | 0.9856 | 0.5732 | 0.7248 | 392 | 1.0 | 0.4943 | 1.0 | 437.59 | 66.87 | 10842.7 |
-| fuzzy_only | 725 | 575 | 573.0 | 0.0 | 2.0 |  | 0.9965 | 0.7992 | 0.887 | 554 | 1.0 | 0.8895 | 1.0 | 429.5 | 193.41 | 3748.5 |
-| full | 725 | 707 | 701.0 | 6.0 | 0.0 |  | 0.9915 | 0.9777 | 0.9846 | 670 | 1.0 | 0.9655 | 1.0 | 432.08 | 141.86 | 5110.7 |
+| exact | 725 | 417 | 411.0 | 6.0 | 0.0 |  | 0.9856 | 0.5732 | 0.7248 | 392 | 1.0 | 0.4943 | 1.0 | 433.81 | 68.31 | 10613.0 |
+| fuzzy_only | 725 | 575 | 573.0 | 0.0 | 2.0 |  | 0.9965 | 0.7992 | 0.887 | 554 | 1.0 | 0.8895 | 1.0 | 426.36 | 190.23 | 3811.3 |
+| full | 725 | 707 | 701.0 | 6.0 | 0.0 |  | 0.9915 | 0.9777 | 0.9846 | 670 | 1.0 | 0.9655 | 1.0 | 427.7 | 136.65 | 5305.7 |
 
 ## What the extra tiers buy
 
 - recall +0.4045 and +290.0 more correct lines vs the regex-only baseline
-- cost: 1.14x the wall time of the naive pass
+- cost: 1.12x the wall time of the naive pass
 
 ## Forecast accuracy (rolling-origin backtest)
 
@@ -21,7 +21,7 @@ nearly cancel, which is why it is not the headline). Lower is better; the baseli
 origins and the same truncated history.
 
 - 3 origins ending 2026-08-04, 2026-07-25, 2026-07-15
-- backtest wall time 609.5 ms (includes re-running reconciliation at every origin)
+- backtest wall time 591.4 ms (includes re-running reconciliation at every origin)
 
 | model | err% gross @7 | err% gross @14 | err% gross @30 | MAE net @30 (INR) | bias @30 (INR) | skill vs naive | direction right |
 |---|---|---|---|---|---|---|---|
@@ -52,6 +52,7 @@ it shares assumptions with the generator, so it flatters the model.
 
 ## Caveats, before anyone asks
 
-- accuracy is measured on synthetic data whose messiness (truncated narrations, missing refs, short deductions, duplicates, lumpsums) was planted deliberately by tools/generate_synthetic.py
-- the forecaster's delay distributions are learned from the same world it is scored on, so absolute MAPE is optimistic; the skill-vs-naive number is the honest one
+- accuracy is measured on synthetic data whose messiness (truncated narrations, missing refs, short deductions, duplicates, lumpsums) was planted deliberately by src/cashpilot/synth/world.py; tools/generate_synthetic.py is a thin wrapper around it
+- the forecaster is scored on rolling origins of the same synthetic world it was tuned on, so treat absolute errors as optimistic: skill vs the seasonal naive baseline, the top-25 settlement ranking and the band hit rate are the numbers that should survive contact with a real ledger
+- daily MAPE on net movement is not a headline metric here - net change is a small difference of two large numbers and is zero on many days, which once made it read 3.3e9%
 - timings are one core of a shared CI box; treat them as ratios, not as SLAs

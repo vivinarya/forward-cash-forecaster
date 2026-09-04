@@ -55,18 +55,18 @@
     }
   },
   "timing_ms": {
-    "prepare_ms": 12.09,
-    "t0_duplicates_ms": 29.11,
-    "t1_settlement_ms": 3.92,
-    "t2_advice_utr_ms": 2.85,
-    "t3_doc_number_ms": 16.88,
-    "t4_amount_exact_ms": 11.11,
+    "prepare_ms": 14.59,
+    "t0_duplicates_ms": 29.14,
+    "t1_settlement_ms": 3.94,
+    "t2_advice_utr_ms": 2.8,
+    "t3_doc_number_ms": 15.38,
+    "t4_amount_exact_ms": 10.92,
     "t5_amount_name_ms": 0.27,
-    "t6_lumpsum_ms": 78.41,
-    "t7_fuzzy_ms": 1.21,
-    "classify_unresolved_ms": 0.54
+    "t6_lumpsum_ms": 59.36,
+    "t7_fuzzy_ms": 0.87,
+    "classify_unresolved_ms": 0.39
   },
-  "throughput_lines_per_s": 4635.8,
+  "throughput_lines_per_s": 5266.6,
   "unresolved_count": 16,
   "notes": [
     "strategy=full tiers={'t1_settlement': 113, 't2_advice_utr': 89, 't3_doc_number': 215, 't4_amount_exact': 282, 't6_lumpsum': 2, 't7_fuzzy': 6}"

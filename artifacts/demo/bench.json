@@ -7,13 +7,13 @@
       "matches": 417,
       "exceptions": 500,
       "auto_posted": 392,
-      "ms_median": 518.79,
-      "ms_min": 518.79,
-      "ms_max": 518.79,
-      "ingest_ms_median": 449.4,
-      "engine_ms_median": 69.39,
-      "lines_per_s_median": 1397.5,
-      "lines_per_s_engine": 10448.3,
+      "ms_median": 502.12,
+      "ms_min": 502.12,
+      "ms_max": 502.12,
+      "ingest_ms_median": 433.81,
+      "engine_ms_median": 68.31,
+      "lines_per_s_median": 1443.9,
+      "lines_per_s_engine": 10613.0,
       "lines": 725,
       "matchable": 717,
       "correct": 411.0,
@@ -50,13 +50,13 @@
       "matches": 575,
       "exceptions": 222,
       "auto_posted": 554,
-      "ms_median": 641.09,
-      "ms_min": 641.09,
-      "ms_max": 641.09,
-      "ingest_ms_median": 441.86,
-      "engine_ms_median": 199.23,
-      "lines_per_s_median": 1130.9,
-      "lines_per_s_engine": 3639.0,
+      "ms_median": 616.59,
+      "ms_min": 616.59,
+      "ms_max": 616.59,
+      "ingest_ms_median": 426.36,
+      "engine_ms_median": 190.23,
+      "lines_per_s_median": 1175.8,
+      "lines_per_s_engine": 3811.3,
       "lines": 725,
       "matchable": 717,
       "correct": 573.0,
@@ -98,13 +98,13 @@
       "matches": 707,
       "exceptions": 91,
       "auto_posted": 670,
-      "ms_median": 585.67,
-      "ms_min": 585.67,
-      "ms_max": 585.67,
-      "ingest_ms_median": 443.45,
-      "engine_ms_median": 142.21,
-      "lines_per_s_median": 1237.9,
-      "lines_per_s_engine": 5098.0,
+      "ms_median": 564.35,
+      "ms_min": 564.35,
+      "ms_max": 564.35,
+      "ingest_ms_median": 427.7,
+      "engine_ms_median": 136.65,
+      "lines_per_s_median": 1284.7,
+      "lines_per_s_engine": 5305.7,
       "lines": 725,
       "matchable": 717,
       "correct": 701.0,
@@ -157,11 +157,11 @@
     "exact": {
       "matches": 417,
       "auto_posted": 392,
-      "ms_median": 518.79,
-      "ingest_ms_median": 449.4,
-      "engine_ms_median": 69.39,
-      "lines_per_s_median": 1397.5,
-      "lines_per_s_engine": 10448.3,
+      "ms_median": 502.12,
+      "ingest_ms_median": 433.81,
+      "engine_ms_median": 68.31,
+      "lines_per_s_median": 1443.9,
+      "lines_per_s_engine": 10613.0,
       "lines": 725,
       "matchable": 717,
       "correct": 411.0,
@@ -179,11 +179,11 @@
     "fuzzy_only": {
       "matches": 575,
       "auto_posted": 554,
-      "ms_median": 641.09,
-      "ingest_ms_median": 441.86,
-      "engine_ms_median": 199.23,
-      "lines_per_s_median": 1130.9,
-      "lines_per_s_engine": 3639.0,
+      "ms_median": 616.59,
+      "ingest_ms_median": 426.36,
+      "engine_ms_median": 190.23,
+      "lines_per_s_median": 1175.8,
+      "lines_per_s_engine": 3811.3,
       "lines": 725,
       "matchable": 717,
       "correct": 573.0,
@@ -201,11 +201,11 @@
     "full": {
       "matches": 707,
       "auto_posted": 670,
-      "ms_median": 585.67,
-      "ingest_ms_median": 443.45,
-      "engine_ms_median": 142.21,
-      "lines_per_s_median": 1237.9,
-      "lines_per_s_engine": 5098.0,
+      "ms_median": 564.35,
+      "ingest_ms_median": 427.7,
+      "engine_ms_median": 136.65,
+      "lines_per_s_median": 1284.7,
+      "lines_per_s_engine": 5305.7,
       "lines": 725,
       "matchable": 717,
       "correct": 701.0,
@@ -223,7 +223,7 @@
     "uplift": {
       "recall_full_minus_exact": 0.4045,
       "correct_full_minus_exact": 290.0,
-      "ms_ratio_vs_exact": 1.129
+      "ms_ratio_vs_exact": 1.124
     },
     "forecast": {
       "cashpilot_bias_net_30": -38743819.0,
@@ -353,7 +353,7 @@
         "due_date_net_paise": 1920545100,
         "error_paise": -93050586,
         "error_share_of_gross_pct": 0.92,
-        "band_paise": 954758098
+        "band_paise": 917200022
       },
       {
         "origin": "2026-07-25",
@@ -365,7 +365,7 @@
         "due_date_net_paise": 1919194300,
         "error_paise": 471965759,
         "error_share_of_gross_pct": 4.26,
-        "band_paise": 842223747
+        "band_paise": 899377790
       },
       {
         "origin": "2026-07-15",
@@ -377,16 +377,16 @@
         "due_date_net_paise": 3283864900,
         "error_paise": -495146630,
         "error_share_of_gross_pct": 4.12,
-        "band_paise": 1152319078
+        "band_paise": 1162448482
       }
     ],
     "band_coverage_pct": {
       "band_hit_7": 100.0,
-      "band_hit_14": 0.0,
+      "band_hit_14": 33.3,
       "band_hit_30": 0.0
     },
     "notes": [
-      "3 rolling origins, horizons [7, 14, 30], warmup 75d, 1500 MC paths per origin",
+      "3 rolling origins, horizons [7, 14, 30], warmup 75d, 600 MC paths per origin",
       "mae_net_* = mean absolute error of cumulative net cash movement over the horizon (paise)",
       "share_gross_* = |error| / total money that moved in the window, the headline accuracy number",
       "bias_net_* > 0 means the model is too optimistic about cash",
@@ -398,7 +398,7 @@
       14,
       30
     ],
-    "backtest_ms": 754.3,
+    "backtest_ms": 591.4,
     "seeded_future": {
       "7": {
         "available": true,
@@ -760,181 +760,6 @@
         ],
         "caveat": "Shares structural assumptions with the generator, so this is an upper bound on real-world accuracy. Use the rolling-origin numbers as the headline."
       }
-    }
-  },
-  "accuracy_cards": {
-    "exact": {
-      "strategy": "exact",
-      "lines_total": 725,
-      "lines_matchable": 717,
-      "lines_quarantine_expected": 8,
-      "lines_matched": 417,
-      "match_rate": 0.5752,
-      "correct": 411,
-      "partial": 6,
-      "wrong": 0,
-      "precision": 0.9856,
-      "recall": 0.5732,
-      "f1": 0.7248,
-      "unmatched_but_matchable": 300,
-      "correctly_quarantined": 8,
-      "wrongly_claimed_quarantine": 0,
-      "quarantine_accuracy": 1.0,
-      "auto_post_count": 392,
-      "auto_post_correct": 392,
-      "auto_post_precision": 1.0,
-      "rupee_accuracy": 0.4943,
-      "false_document_assignments": 0,
-      "mean_abs_amount_error_paise": 1299518.8,
-      "max_abs_amount_error_paise": 5005100,
-      "by_tier": {
-        "t1_settlement": {
-          "matches": 113,
-          "correct": 113,
-          "wrong": 0
-        },
-        "t2_advice_utr": {
-          "matches": 89,
-          "correct": 83,
-          "wrong": 6
-        },
-        "t3_doc_number": {
-          "matches": 215,
-          "correct": 215,
-          "wrong": 0
-        }
-      },
-      "timing_ms": {
-        "load": 449.4010939997679,
-        "reconcile": 69.38913000021785
-      },
-      "throughput_lines_per_s": 725000.0,
-      "unresolved_count": 306,
-      "notes": [
-        "strategy=exact tiers={'t1_settlement': 113, 't2_advice_utr': 89, 't3_doc_number': 215}"
-      ]
-    },
-    "fuzzy_only": {
-      "strategy": "fuzzy_only",
-      "lines_total": 725,
-      "lines_matchable": 717,
-      "lines_quarantine_expected": 8,
-      "lines_matched": 575,
-      "match_rate": 0.7931,
-      "correct": 573,
-      "partial": 0,
-      "wrong": 2,
-      "precision": 0.9965,
-      "recall": 0.7992,
-      "f1": 0.887,
-      "unmatched_but_matchable": 142,
-      "correctly_quarantined": 8,
-      "wrongly_claimed_quarantine": 0,
-      "quarantine_accuracy": 1.0,
-      "auto_post_count": 554,
-      "auto_post_correct": 554,
-      "auto_post_precision": 1.0,
-      "rupee_accuracy": 0.8895,
-      "false_document_assignments": 2,
-      "mean_abs_amount_error_paise": 260177.8,
-      "max_abs_amount_error_paise": 640800,
-      "by_tier": {
-        "t4_amount_exact": {
-          "matches": 558,
-          "correct": 558,
-          "wrong": 0
-        },
-        "t5_amount_name": {
-          "matches": 1,
-          "correct": 1,
-          "wrong": 0
-        },
-        "t6_lumpsum": {
-          "matches": 6,
-          "correct": 6,
-          "wrong": 0
-        },
-        "t7_fuzzy": {
-          "matches": 10,
-          "correct": 8,
-          "wrong": 2
-        }
-      },
-      "timing_ms": {
-        "load": 441.85878300004333,
-        "reconcile": 199.22921899978974
-      },
-      "throughput_lines_per_s": 725000.0,
-      "unresolved_count": 144,
-      "notes": [
-        "strategy=fuzzy_only tiers={'t4_amount_exact': 558, 't5_amount_name': 1, 't6_lumpsum': 6, 't7_fuzzy': 10}"
-      ]
-    },
-    "full": {
-      "strategy": "full",
-      "lines_total": 725,
-      "lines_matchable": 717,
-      "lines_quarantine_expected": 8,
-      "lines_matched": 707,
-      "match_rate": 0.9752,
-      "correct": 701,
-      "partial": 6,
-      "wrong": 0,
-      "precision": 0.9915,
-      "recall": 0.9777,
-      "f1": 0.9846,
-      "unmatched_but_matchable": 10,
-      "correctly_quarantined": 8,
-      "wrongly_claimed_quarantine": 0,
-      "quarantine_accuracy": 1.0,
-      "auto_post_count": 670,
-      "auto_post_correct": 670,
-      "auto_post_precision": 1.0,
-      "rupee_accuracy": 0.9655,
-      "false_document_assignments": 0,
-      "mean_abs_amount_error_paise": 1022209.1,
-      "max_abs_amount_error_paise": 5005100,
-      "by_tier": {
-        "t4_amount_exact": {
-          "matches": 282,
-          "correct": 282,
-          "wrong": 0
-        },
-        "t1_settlement": {
-          "matches": 113,
-          "correct": 113,
-          "wrong": 0
-        },
-        "t2_advice_utr": {
-          "matches": 89,
-          "correct": 83,
-          "wrong": 6
-        },
-        "t3_doc_number": {
-          "matches": 215,
-          "correct": 215,
-          "wrong": 0
-        },
-        "t7_fuzzy": {
-          "matches": 6,
-          "correct": 6,
-          "wrong": 0
-        },
-        "t6_lumpsum": {
-          "matches": 2,
-          "correct": 2,
-          "wrong": 0
-        }
-      },
-      "timing_ms": {
-        "load": 443.4549849997893,
-        "reconcile": 142.21230200018908
-      },
-      "throughput_lines_per_s": 725000.0,
-      "unresolved_count": 16,
-      "notes": [
-        "strategy=full tiers={'t1_settlement': 113, 't2_advice_utr': 89, 't3_doc_number': 215, 't4_amount_exact': 282, 't6_lumpsum': 2, 't7_fuzzy': 6}"
-      ]
     }
   }
 }

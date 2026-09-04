@@ -7,24 +7,24 @@
   "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
   "strategy": "full",
   "stages_ms": {
-    "ingest_ms": 432.07,
+    "ingest_ms": 436.09,
     "reconcile_ms": {
-      "prepare_ms": 12.09,
-      "t0_duplicates_ms": 29.11,
-      "t1_settlement_ms": 3.92,
-      "t2_advice_utr_ms": 2.85,
-      "t3_doc_number_ms": 16.88,
-      "t4_amount_exact_ms": 11.11,
+      "prepare_ms": 14.59,
+      "t0_duplicates_ms": 29.14,
+      "t1_settlement_ms": 3.94,
+      "t2_advice_utr_ms": 2.8,
+      "t3_doc_number_ms": 15.38,
+      "t4_amount_exact_ms": 10.92,
       "t5_amount_name_ms": 0.27,
-      "t6_lumpsum_ms": 78.41,
-      "t7_fuzzy_ms": 1.21,
-      "classify_unresolved_ms": 0.54
+      "t6_lumpsum_ms": 59.36,
+      "t7_fuzzy_ms": 0.87,
+      "classify_unresolved_ms": 0.39
     },
-    "reconcile_total_ms": 157.74,
-    "settlement_verify_ms": 3.67,
-    "triage_ms": 0.3,
-    "forecast_ms": 169.89,
-    "total_ms": 769.81
+    "reconcile_total_ms": 138.47,
+    "settlement_verify_ms": 3.38,
+    "triage_ms": 0.28,
+    "forecast_ms": 169.29,
+    "total_ms": 753.48
   },
   "inputs": {
     "bank": "bank_statement.csv",
@@ -122,18 +122,18 @@
       }
     },
     "timing_ms": {
-      "prepare_ms": 12.09,
-      "t0_duplicates_ms": 29.11,
-      "t1_settlement_ms": 3.92,
-      "t2_advice_utr_ms": 2.85,
-      "t3_doc_number_ms": 16.88,
-      "t4_amount_exact_ms": 11.11,
+      "prepare_ms": 14.59,
+      "t0_duplicates_ms": 29.14,
+      "t1_settlement_ms": 3.94,
+      "t2_advice_utr_ms": 2.8,
+      "t3_doc_number_ms": 15.38,
+      "t4_amount_exact_ms": 10.92,
       "t5_amount_name_ms": 0.27,
-      "t6_lumpsum_ms": 78.41,
-      "t7_fuzzy_ms": 1.21,
-      "classify_unresolved_ms": 0.54
+      "t6_lumpsum_ms": 59.36,
+      "t7_fuzzy_ms": 0.87,
+      "classify_unresolved_ms": 0.39
     },
-    "throughput_lines_per_s": 4635.8,
+    "throughput_lines_per_s": 5266.6,
     "unresolved_count": 16,
     "notes": [
       "strategy=full tiers={'t1_settlement': 113, 't2_advice_utr': 89, 't3_doc_number': 215, 't4_amount_exact': 282, 't6_lumpsum': 2, 't7_fuzzy': 6}"
@@ -170,7 +170,7 @@
     "same_window_churn_share": 0.214,
     "churn_reference_windows": 4,
     "gateway_in_paise": 266941132,
-    "mc_ms": 53.87,
+    "mc_ms": 53.59,
     "mc_daily_sd_paise": 171469413,
     "mc_runs": 1200,
     "expected_in_paise": 6382089049,

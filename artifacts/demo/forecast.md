@@ -18,7 +18,7 @@
 | expected out-window payments | ₹3,29,11,983.54 |
 | gateway collections projected | ₹26,69,411.32 at net ratio 0.9573, T+2 |
 | unbooked residual/day | +₹0.00 / -₹0.00 |
-| MC paths | 1200 in 53.87 ms |
+| MC paths | 1200 in 53.59 ms |
 | learned behaviour | 28 counterparties profiled; median AR delay 4d, AP 2d |
 | aged docs outside delay support | 0 |
 

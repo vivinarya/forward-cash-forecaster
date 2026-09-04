@@ -13,7 +13,7 @@ to the paisa, forecast cash 7-30 days ahead, and hand a human a typed exception 
 | exceptions needing a human | 266 |
 | settlement batches flagged | 26 |
 | forecast horizon | 30 days, P10/P50/P90 over 2000 paths |
-| end-to-end wall time | 1476.96 ms |
+| end-to-end wall time | 1532.25 ms |
 | LLM | off (no key) - deterministic fallback used |
 
 ## Outputs
@@ -35,13 +35,13 @@ to the paisa, forecast cash 7-30 days ahead, and hand a human a typed exception 
 
 | stage | ms |
 |---|---|
-| ingest_ms | 689.18 |
-| reconcile_ms | {'prepare_ms': 27.25, 't0_duplicates_ms': 72.55, 't1_settlement_ms': 1 |
-| reconcile_total_ms | 485.99 |
-| settlement_verify_ms | 5.06 |
-| triage_ms | 0.6 |
-| forecast_ms | 282.75 |
-| total_ms | 1476.96 |
+| ingest_ms | 751.12 |
+| reconcile_ms | {'prepare_ms': 26.35, 't0_duplicates_ms': 68.66, 't1_settlement_ms': 1 |
+| reconcile_total_ms | 484.34 |
+| settlement_verify_ms | 5.03 |
+| triage_ms | 0.64 |
+| forecast_ms | 277.87 |
+| total_ms | 1532.25 |
 
 
 Reproduce with `make demo` (or `python -m cashpilot run --data data/synthetic --out artifacts`).

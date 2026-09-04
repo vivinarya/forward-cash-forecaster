@@ -7,24 +7,24 @@
   "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
   "strategy": "full",
   "stages_ms": {
-    "ingest_ms": 689.18,
+    "ingest_ms": 751.12,
     "reconcile_ms": {
-      "prepare_ms": 27.25,
-      "t0_duplicates_ms": 72.55,
-      "t1_settlement_ms": 13.44,
-      "t2_advice_utr_ms": 7.15,
-      "t3_doc_number_ms": 39.81,
-      "t4_amount_exact_ms": 27.73,
-      "t5_amount_name_ms": 1.55,
-      "t6_lumpsum_ms": 289.2,
-      "t7_fuzzy_ms": 4.72,
-      "classify_unresolved_ms": 0.86
+      "prepare_ms": 26.35,
+      "t0_duplicates_ms": 68.66,
+      "t1_settlement_ms": 13.32,
+      "t2_advice_utr_ms": 6.88,
+      "t3_doc_number_ms": 39.09,
+      "t4_amount_exact_ms": 27.69,
+      "t5_amount_name_ms": 1.34,
+      "t6_lumpsum_ms": 293.59,
+      "t7_fuzzy_ms": 4.66,
+      "classify_unresolved_ms": 0.87
     },
-    "reconcile_total_ms": 485.99,
-    "settlement_verify_ms": 5.06,
-    "triage_ms": 0.6,
-    "forecast_ms": 282.75,
-    "total_ms": 1476.96
+    "reconcile_total_ms": 484.34,
+    "settlement_verify_ms": 5.03,
+    "triage_ms": 0.64,
+    "forecast_ms": 277.87,
+    "total_ms": 1532.25
   },
   "inputs": {
     "bank": "bank_statement.csv",
@@ -127,18 +127,18 @@
       }
     },
     "timing_ms": {
-      "prepare_ms": 27.25,
-      "t0_duplicates_ms": 72.55,
-      "t1_settlement_ms": 13.44,
-      "t2_advice_utr_ms": 7.15,
-      "t3_doc_number_ms": 39.81,
-      "t4_amount_exact_ms": 27.73,
-      "t5_amount_name_ms": 1.55,
-      "t6_lumpsum_ms": 289.2,
-      "t7_fuzzy_ms": 4.72,
-      "classify_unresolved_ms": 0.86
+      "prepare_ms": 26.35,
+      "t0_duplicates_ms": 68.66,
+      "t1_settlement_ms": 13.32,
+      "t2_advice_utr_ms": 6.88,
+      "t3_doc_number_ms": 39.09,
+      "t4_amount_exact_ms": 27.69,
+      "t5_amount_name_ms": 1.34,
+      "t6_lumpsum_ms": 293.59,
+      "t7_fuzzy_ms": 4.66,
+      "classify_unresolved_ms": 0.87
     },
-    "throughput_lines_per_s": 3529.1,
+    "throughput_lines_per_s": 3542.3,
     "unresolved_count": 43,
     "notes": [
       "strategy=full tiers={'t1_settlement': 172, 't2_advice_utr': 208, 't3_doc_number': 515, 't4_amount_exact': 719, 't5_amount_name': 2, 't6_lumpsum': 5, 't7_fuzzy': 13}"
@@ -175,7 +175,7 @@
     "same_window_churn_share": 0.166,
     "churn_reference_windows": 4,
     "gateway_in_paise": 243281973,
-    "mc_ms": 107.19,
+    "mc_ms": 103.92,
     "mc_daily_sd_paise": 221729530,
     "mc_runs": 2000,
     "expected_in_paise": 11031747833,

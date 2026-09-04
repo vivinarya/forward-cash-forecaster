@@ -1,246 +1,251 @@
 {
-  "data_dir": "data/sample",
-  "reps": 1,
-  "records": 725,
+  "data_dir": "data/synthetic",
+  "reps": 3,
+  "records": 1709,
   "strategies": {
     "exact": {
-      "matches": 417,
-      "exceptions": 500,
-      "auto_posted": 392,
-      "ms_median": 518.79,
-      "ms_min": 518.79,
-      "ms_max": 518.79,
-      "ingest_ms_median": 449.4,
-      "engine_ms_median": 69.39,
-      "lines_per_s_median": 1397.5,
-      "lines_per_s_engine": 10448.3,
-      "lines": 725,
-      "matchable": 717,
-      "correct": 411.0,
-      "partial": 6.0,
+      "matches": 895,
+      "exceptions": 1314,
+      "auto_posted": 825,
+      "ms_median": 831.36,
+      "ms_min": 824.02,
+      "ms_max": 872.89,
+      "ingest_ms_median": 670.78,
+      "engine_ms_median": 160.58,
+      "lines_per_s_median": 2055.7,
+      "lines_per_s_engine": 10642.9,
+      "lines": 1709,
+      "matchable": 1672,
+      "correct": 893.0,
+      "partial": 2.0,
       "wrong": 0.0,
-      "unmatched_but_matchable": 300.0,
-      "match_rate": 0.5752,
-      "precision": 0.9856,
-      "recall": 0.5732,
-      "f1": 0.7248,
+      "unmatched_but_matchable": 777.0,
+      "match_rate": 0.5237,
+      "precision": 0.9978,
+      "recall": 0.5341,
+      "f1": 0.6958,
       "auto_post_precision": 1.0,
       "quarantine_accuracy": 1.0,
-      "rupee_accuracy": 0.4943,
+      "rupee_accuracy": 0.4725,
       "false_doc_assignments": 0.0,
       "by_tier": {
         "t1_settlement": {
-          "matches": 113,
-          "correct": 113,
+          "matches": 172,
+          "correct": 172,
           "wrong": 0
         },
         "t2_advice_utr": {
-          "matches": 89,
-          "correct": 83,
-          "wrong": 6
+          "matches": 208,
+          "correct": 206,
+          "wrong": 2
         },
         "t3_doc_number": {
-          "matches": 215,
-          "correct": 215,
+          "matches": 515,
+          "correct": 515,
           "wrong": 0
         }
       }
     },
     "fuzzy_only": {
-      "matches": 575,
-      "exceptions": 222,
-      "auto_posted": 554,
-      "ms_median": 641.09,
-      "ms_min": 641.09,
-      "ms_max": 641.09,
-      "ingest_ms_median": 441.86,
-      "engine_ms_median": 199.23,
-      "lines_per_s_median": 1130.9,
-      "lines_per_s_engine": 3639.0,
-      "lines": 725,
-      "matchable": 717,
-      "correct": 573.0,
+      "matches": 1409,
+      "exceptions": 460,
+      "auto_posted": 1349,
+      "ms_median": 1413.79,
+      "ms_min": 1407.28,
+      "ms_max": 1413.93,
+      "ingest_ms_median": 667.07,
+      "engine_ms_median": 743.95,
+      "lines_per_s_median": 1208.8,
+      "lines_per_s_engine": 2297.2,
+      "lines": 1709,
+      "matchable": 1672,
+      "correct": 1403.0,
       "partial": 0.0,
-      "wrong": 2.0,
-      "unmatched_but_matchable": 142.0,
-      "match_rate": 0.7931,
-      "precision": 0.9965,
-      "recall": 0.7992,
-      "f1": 0.887,
+      "wrong": 6.0,
+      "unmatched_but_matchable": 263.0,
+      "match_rate": 0.8245,
+      "precision": 0.9957,
+      "recall": 0.8391,
+      "f1": 0.9107,
       "auto_post_precision": 1.0,
       "quarantine_accuracy": 1.0,
-      "rupee_accuracy": 0.8895,
-      "false_doc_assignments": 2.0,
+      "rupee_accuracy": 0.9047,
+      "false_doc_assignments": 6.0,
       "by_tier": {
         "t4_amount_exact": {
-          "matches": 558,
-          "correct": 558,
-          "wrong": 0
-        },
-        "t5_amount_name": {
-          "matches": 1,
-          "correct": 1,
+          "matches": 1367,
+          "correct": 1367,
           "wrong": 0
         },
         "t6_lumpsum": {
-          "matches": 6,
-          "correct": 6,
+          "matches": 11,
+          "correct": 11,
           "wrong": 0
         },
         "t7_fuzzy": {
-          "matches": 10,
-          "correct": 8,
+          "matches": 24,
+          "correct": 20,
+          "wrong": 4
+        },
+        "t5_amount_name": {
+          "matches": 7,
+          "correct": 5,
           "wrong": 2
         }
       }
     },
     "full": {
-      "matches": 707,
-      "exceptions": 91,
-      "auto_posted": 670,
-      "ms_median": 585.67,
-      "ms_min": 585.67,
-      "ms_max": 585.67,
-      "ingest_ms_median": 443.45,
-      "engine_ms_median": 142.21,
-      "lines_per_s_median": 1237.9,
-      "lines_per_s_engine": 5098.0,
-      "lines": 725,
-      "matchable": 717,
-      "correct": 701.0,
-      "partial": 6.0,
-      "wrong": 0.0,
-      "unmatched_but_matchable": 10.0,
-      "match_rate": 0.9752,
-      "precision": 0.9915,
-      "recall": 0.9777,
-      "f1": 0.9846,
+      "matches": 1634,
+      "exceptions": 240,
+      "auto_posted": 1535,
+      "ms_median": 1146.11,
+      "ms_min": 1139.1,
+      "ms_max": 1153.66,
+      "ingest_ms_median": 670.36,
+      "engine_ms_median": 475.75,
+      "lines_per_s_median": 1491.1,
+      "lines_per_s_engine": 3592.2,
+      "lines": 1709,
+      "matchable": 1672,
+      "correct": 1629.0,
+      "partial": 2.0,
+      "wrong": 3.0,
+      "unmatched_but_matchable": 38.0,
+      "match_rate": 0.9561,
+      "precision": 0.9969,
+      "recall": 0.9743,
+      "f1": 0.9855,
       "auto_post_precision": 1.0,
       "quarantine_accuracy": 1.0,
-      "rupee_accuracy": 0.9655,
-      "false_doc_assignments": 0.0,
+      "rupee_accuracy": 0.9657,
+      "false_doc_assignments": 3.0,
       "by_tier": {
         "t4_amount_exact": {
-          "matches": 282,
-          "correct": 282,
+          "matches": 719,
+          "correct": 719,
           "wrong": 0
         },
         "t1_settlement": {
-          "matches": 113,
-          "correct": 113,
+          "matches": 172,
+          "correct": 172,
           "wrong": 0
         },
         "t2_advice_utr": {
-          "matches": 89,
-          "correct": 83,
-          "wrong": 6
+          "matches": 208,
+          "correct": 206,
+          "wrong": 2
         },
         "t3_doc_number": {
-          "matches": 215,
-          "correct": 215,
+          "matches": 515,
+          "correct": 515,
           "wrong": 0
         },
         "t7_fuzzy": {
-          "matches": 6,
-          "correct": 6,
-          "wrong": 0
+          "matches": 13,
+          "correct": 11,
+          "wrong": 2
         },
         "t6_lumpsum": {
-          "matches": 2,
-          "correct": 2,
+          "matches": 5,
+          "correct": 5,
           "wrong": 0
+        },
+        "t5_amount_name": {
+          "matches": 2,
+          "correct": 1,
+          "wrong": 1
         }
       }
     }
   },
   "summary": {
     "exact": {
-      "matches": 417,
-      "auto_posted": 392,
-      "ms_median": 518.79,
-      "ingest_ms_median": 449.4,
-      "engine_ms_median": 69.39,
-      "lines_per_s_median": 1397.5,
-      "lines_per_s_engine": 10448.3,
-      "lines": 725,
-      "matchable": 717,
-      "correct": 411.0,
-      "partial": 6.0,
+      "matches": 895,
+      "auto_posted": 825,
+      "ms_median": 831.36,
+      "ingest_ms_median": 670.78,
+      "engine_ms_median": 160.58,
+      "lines_per_s_median": 2055.7,
+      "lines_per_s_engine": 10642.9,
+      "lines": 1709,
+      "matchable": 1672,
+      "correct": 893.0,
+      "partial": 2.0,
       "wrong": 0.0,
-      "unmatched_but_matchable": 300.0,
-      "match_rate": 0.5752,
-      "precision": 0.9856,
-      "recall": 0.5732,
-      "f1": 0.7248,
+      "unmatched_but_matchable": 777.0,
+      "match_rate": 0.5237,
+      "precision": 0.9978,
+      "recall": 0.5341,
+      "f1": 0.6958,
       "auto_post_precision": 1.0,
       "quarantine_accuracy": 1.0,
-      "rupee_accuracy": 0.4943
+      "rupee_accuracy": 0.4725
     },
     "fuzzy_only": {
-      "matches": 575,
-      "auto_posted": 554,
-      "ms_median": 641.09,
-      "ingest_ms_median": 441.86,
-      "engine_ms_median": 199.23,
-      "lines_per_s_median": 1130.9,
-      "lines_per_s_engine": 3639.0,
-      "lines": 725,
-      "matchable": 717,
-      "correct": 573.0,
+      "matches": 1409,
+      "auto_posted": 1349,
+      "ms_median": 1413.79,
+      "ingest_ms_median": 667.07,
+      "engine_ms_median": 743.95,
+      "lines_per_s_median": 1208.8,
+      "lines_per_s_engine": 2297.2,
+      "lines": 1709,
+      "matchable": 1672,
+      "correct": 1403.0,
       "partial": 0.0,
-      "wrong": 2.0,
-      "unmatched_but_matchable": 142.0,
-      "match_rate": 0.7931,
-      "precision": 0.9965,
-      "recall": 0.7992,
-      "f1": 0.887,
+      "wrong": 6.0,
+      "unmatched_but_matchable": 263.0,
+      "match_rate": 0.8245,
+      "precision": 0.9957,
+      "recall": 0.8391,
+      "f1": 0.9107,
       "auto_post_precision": 1.0,
       "quarantine_accuracy": 1.0,
-      "rupee_accuracy": 0.8895
+      "rupee_accuracy": 0.9047
     },
     "full": {
-      "matches": 707,
-      "auto_posted": 670,
-      "ms_median": 585.67,
-      "ingest_ms_median": 443.45,
-      "engine_ms_median": 142.21,
-      "lines_per_s_median": 1237.9,
-      "lines_per_s_engine": 5098.0,
-      "lines": 725,
-      "matchable": 717,
-      "correct": 701.0,
-      "partial": 6.0,
-      "wrong": 0.0,
-      "unmatched_but_matchable": 10.0,
-      "match_rate": 0.9752,
-      "precision": 0.9915,
-      "recall": 0.9777,
-      "f1": 0.9846,
+      "matches": 1634,
+      "auto_posted": 1535,
+      "ms_median": 1146.11,
+      "ingest_ms_median": 670.36,
+      "engine_ms_median": 475.75,
+      "lines_per_s_median": 1491.1,
+      "lines_per_s_engine": 3592.2,
+      "lines": 1709,
+      "matchable": 1672,
+      "correct": 1629.0,
+      "partial": 2.0,
+      "wrong": 3.0,
+      "unmatched_but_matchable": 38.0,
+      "match_rate": 0.9561,
+      "precision": 0.9969,
+      "recall": 0.9743,
+      "f1": 0.9855,
       "auto_post_precision": 1.0,
       "quarantine_accuracy": 1.0,
-      "rupee_accuracy": 0.9655
+      "rupee_accuracy": 0.9657
     },
     "uplift": {
-      "recall_full_minus_exact": 0.4045,
-      "correct_full_minus_exact": 290.0,
-      "ms_ratio_vs_exact": 1.129
+      "recall_full_minus_exact": 0.4402,
+      "correct_full_minus_exact": 736.0,
+      "ms_ratio_vs_exact": 1.379
     },
     "forecast": {
-      "cashpilot_bias_net_30": -38743819.0,
-      "cashpilot_share_gross_30": 3.1,
-      "cashpilot_skill_vs_naive_pct_30": 65.46,
+      "cashpilot_bias_net_30": -227967058.1,
+      "cashpilot_share_gross_30": 1.8,
+      "cashpilot_skill_vs_naive_pct_30": 50.02,
       "cashpilot_direction_accuracy_pct_30": 100.0,
-      "seasonal_naive_bias_net_30": -326409791.0,
-      "seasonal_naive_share_gross_30": 8.9,
+      "seasonal_naive_bias_net_30": 46083574.6,
+      "seasonal_naive_share_gross_30": 3.6,
       "seasonal_naive_skill_vs_naive_pct_30": 0.0,
       "seasonal_naive_direction_accuracy_pct_30": 100.0,
-      "moving_avg_bias_net_30": 1089728391.0,
-      "moving_avg_share_gross_30": 18.9,
-      "moving_avg_skill_vs_naive_pct_30": -100.09,
+      "moving_avg_bias_net_30": 1056005153.0,
+      "moving_avg_share_gross_30": 7.3,
+      "moving_avg_skill_vs_naive_pct_30": -97.5,
       "moving_avg_direction_accuracy_pct_30": 100.0,
-      "due_date_sum_bias_net_30": -1077246181.0,
-      "due_date_sum_share_gross_30": 9.8,
-      "due_date_sum_skill_vs_naive_pct_30": -5.28,
+      "due_date_sum_bias_net_30": -498574809.4,
+      "due_date_sum_share_gross_30": 4.6,
+      "due_date_sum_skill_vs_naive_pct_30": -25.96,
       "due_date_sum_direction_accuracy_pct_30": 100.0
     }
   },
@@ -252,141 +257,219 @@
   ],
   "forecast": {
     "origins": [
-      "2026-08-04",
-      "2026-07-25",
-      "2026-07-15"
+      "2026-08-05",
+      "2026-07-26",
+      "2026-07-16",
+      "2026-07-06",
+      "2026-06-26",
+      "2026-06-16",
+      "2026-06-06",
+      "2026-05-27",
+      "2026-05-17"
     ],
-    "n_origins": 3,
+    "n_origins": 9,
     "metrics": {
-      "n_origins": 3.0,
-      "cashpilot_top25_hit_rate_pct_7": 32.0,
-      "cashpilot_top25_hit_rate_pct_30": 84.0,
-      "by_amount_top25_hit_rate_pct_7": 6.7,
-      "by_amount_top25_hit_rate_pct_30": 16.0,
-      "cashpilot_mae_net_7": 393290898.0,
-      "cashpilot_mae_in_7": 441884532.0,
-      "cashpilot_mae_out_7": 165947470.7,
-      "cashpilot_bias_net_7": 393290898.0,
-      "cashpilot_share_gross_7": 16.0,
-      "cashpilot_mape_net_7": 57.3,
-      "cashpilot_skill_vs_naive_pct_7": -66.95,
+      "n_origins": 9.0,
+      "cashpilot_top25_hit_rate_pct_7": 21.8,
+      "cashpilot_top25_hit_rate_pct_30": 82.2,
+      "by_amount_top25_hit_rate_pct_7": 4.9,
+      "by_amount_top25_hit_rate_pct_30": 14.7,
+      "cashpilot_mae_net_7": 367693725.7,
+      "cashpilot_mae_in_7": 356434112.4,
+      "cashpilot_mae_out_7": 309164059.7,
+      "cashpilot_bias_net_7": 186662538.6,
+      "cashpilot_share_gross_7": 9.1,
+      "cashpilot_mape_net_7": 146.8,
+      "cashpilot_skill_vs_naive_pct_7": 11.74,
       "cashpilot_direction_accuracy_pct_7": 100.0,
-      "seasonal_naive_mae_net_7": 235576027.0,
-      "seasonal_naive_bias_net_7": -62664535.7,
-      "seasonal_naive_share_gross_7": 9.3,
-      "seasonal_naive_mape_net_7": 35.2,
+      "seasonal_naive_mae_net_7": 416595355.0,
+      "seasonal_naive_bias_net_7": -76502789.7,
+      "seasonal_naive_share_gross_7": 10.1,
+      "seasonal_naive_mape_net_7": 188.1,
       "seasonal_naive_skill_vs_naive_pct_7": 0.0,
       "seasonal_naive_direction_accuracy_pct_7": 100.0,
-      "moving_avg_mae_net_7": 403042957.7,
-      "moving_avg_bias_net_7": 342268415.0,
-      "moving_avg_share_gross_7": 15.0,
-      "moving_avg_mape_net_7": 67.8,
-      "moving_avg_skill_vs_naive_pct_7": -71.09,
+      "moving_avg_mae_net_7": 408666362.6,
+      "moving_avg_bias_net_7": 195113217.4,
+      "moving_avg_share_gross_7": 10.8,
+      "moving_avg_mape_net_7": 177.8,
+      "moving_avg_skill_vs_naive_pct_7": 1.9,
       "moving_avg_direction_accuracy_pct_7": 100.0,
-      "due_date_sum_mae_net_7": 460114196.0,
-      "due_date_sum_bias_net_7": 404088270.0,
-      "due_date_sum_share_gross_7": 20.6,
-      "due_date_sum_mape_net_7": 62.3,
-      "due_date_sum_skill_vs_naive_pct_7": -95.31,
+      "due_date_sum_mae_net_7": 553615054.7,
+      "due_date_sum_bias_net_7": 305870498.9,
+      "due_date_sum_share_gross_7": 14.0,
+      "due_date_sum_mape_net_7": 227.1,
+      "due_date_sum_skill_vs_naive_pct_7": -32.89,
       "due_date_sum_direction_accuracy_pct_7": 100.0,
-      "cashpilot_mae_net_14": 797756833.3,
-      "cashpilot_mae_in_14": 543885428.7,
-      "cashpilot_mae_out_14": 253871404.7,
-      "cashpilot_bias_net_14": 7105892.0,
-      "cashpilot_share_gross_14": 13.8,
-      "cashpilot_mape_net_14": 66.3,
-      "cashpilot_skill_vs_naive_pct_14": 34.04,
+      "cashpilot_mae_net_14": 381171520.1,
+      "cashpilot_mae_in_14": 473995758.8,
+      "cashpilot_mae_out_14": 286458940.9,
+      "cashpilot_bias_net_14": 245916349.4,
+      "cashpilot_share_gross_14": 5.1,
+      "cashpilot_mape_net_14": 27.5,
+      "cashpilot_skill_vs_naive_pct_14": 46.69,
       "cashpilot_direction_accuracy_pct_14": 100.0,
-      "seasonal_naive_mae_net_14": 1209526509.0,
-      "seasonal_naive_bias_net_14": -713301850.3,
-      "seasonal_naive_share_gross_14": 19.8,
-      "seasonal_naive_mape_net_14": 64.6,
+      "seasonal_naive_mae_net_14": 715056089.2,
+      "seasonal_naive_bias_net_14": -80522367.4,
+      "seasonal_naive_share_gross_14": 8.7,
+      "seasonal_naive_mape_net_14": 48.6,
       "seasonal_naive_skill_vs_naive_pct_14": 0.0,
       "seasonal_naive_direction_accuracy_pct_14": 100.0,
-      "moving_avg_mae_net_14": 1361901986.0,
-      "moving_avg_bias_net_14": 58085684.7,
-      "moving_avg_share_gross_14": 22.9,
-      "moving_avg_mape_net_14": 93.6,
-      "moving_avg_skill_vs_naive_pct_14": -12.6,
+      "moving_avg_mae_net_14": 757705023.6,
+      "moving_avg_bias_net_14": 429710168.2,
+      "moving_avg_share_gross_14": 10.0,
+      "moving_avg_mape_net_14": 63.0,
+      "moving_avg_skill_vs_naive_pct_14": -5.96,
       "moving_avg_direction_accuracy_pct_14": 100.0,
-      "due_date_sum_mae_net_14": 606641319.7,
-      "due_date_sum_bias_net_14": -122248273.0,
-      "due_date_sum_share_gross_14": 10.6,
-      "due_date_sum_mape_net_14": 45.4,
-      "due_date_sum_skill_vs_naive_pct_14": 49.84,
+      "due_date_sum_mae_net_14": 620450865.3,
+      "due_date_sum_bias_net_14": 264370086.2,
+      "due_date_sum_share_gross_14": 7.8,
+      "due_date_sum_mape_net_14": 42.2,
+      "due_date_sum_skill_vs_naive_pct_14": 13.23,
       "due_date_sum_direction_accuracy_pct_14": 100.0,
-      "cashpilot_mae_net_30": 353387658.3,
-      "cashpilot_mae_in_30": 487358246.7,
-      "cashpilot_mae_out_30": 305613807.0,
-      "cashpilot_bias_net_30": -38743819.0,
-      "cashpilot_share_gross_30": 3.1,
-      "cashpilot_mape_net_30": 10.1,
-      "cashpilot_skill_vs_naive_pct_30": 65.46,
+      "cashpilot_mae_net_30": 305640264.1,
+      "cashpilot_mae_in_30": 785537996.9,
+      "cashpilot_mae_out_30": 507022631.0,
+      "cashpilot_bias_net_30": -227967058.1,
+      "cashpilot_share_gross_30": 1.8,
+      "cashpilot_mape_net_30": 7.5,
+      "cashpilot_skill_vs_naive_pct_30": 50.02,
       "cashpilot_direction_accuracy_pct_30": 100.0,
-      "seasonal_naive_mae_net_30": 1023176885.7,
-      "seasonal_naive_bias_net_30": -326409791.0,
-      "seasonal_naive_share_gross_30": 8.9,
-      "seasonal_naive_mape_net_30": 27.3,
+      "seasonal_naive_mae_net_30": 611545115.7,
+      "seasonal_naive_bias_net_30": 46083574.6,
+      "seasonal_naive_share_gross_30": 3.6,
+      "seasonal_naive_mape_net_30": 14.9,
       "seasonal_naive_skill_vs_naive_pct_30": 0.0,
       "seasonal_naive_direction_accuracy_pct_30": 100.0,
-      "moving_avg_mae_net_30": 2047283567.0,
-      "moving_avg_bias_net_30": 1089728391.0,
-      "moving_avg_share_gross_30": 18.9,
-      "moving_avg_mape_net_30": 62.4,
-      "moving_avg_skill_vs_naive_pct_30": -100.09,
+      "moving_avg_mae_net_30": 1207788254.8,
+      "moving_avg_bias_net_30": 1056005153.0,
+      "moving_avg_share_gross_30": 7.3,
+      "moving_avg_mape_net_30": 31.6,
+      "moving_avg_skill_vs_naive_pct_30": -97.5,
       "moving_avg_direction_accuracy_pct_30": 100.0,
-      "due_date_sum_mae_net_30": 1077246181.0,
-      "due_date_sum_bias_net_30": -1077246181.0,
-      "due_date_sum_share_gross_30": 9.8,
-      "due_date_sum_mape_net_30": 32.3,
-      "due_date_sum_skill_vs_naive_pct_30": -5.28,
+      "due_date_sum_mae_net_30": 770327409.0,
+      "due_date_sum_bias_net_30": -498574809.4,
+      "due_date_sum_share_gross_30": 4.6,
+      "due_date_sum_mape_net_30": 18.0,
+      "due_date_sum_skill_vs_naive_pct_30": -25.96,
       "due_date_sum_direction_accuracy_pct_30": 100.0
     },
     "per_origin": [
       {
-        "origin": "2026-08-04",
-        "actual_in_paise": 6636070626,
-        "actual_out_paise": 3531678200,
-        "actual_net_paise": 3104392426,
-        "predicted_net_paise": 3011341840,
-        "naive_net_paise": 3787585402,
-        "due_date_net_paise": 1920545100,
-        "error_paise": -93050586,
-        "error_share_of_gross_pct": 0.92,
-        "band_paise": 954758098
+        "origin": "2026-08-05",
+        "actual_in_paise": 10212247672,
+        "actual_out_paise": 6513733700,
+        "actual_net_paise": 3698513972,
+        "predicted_net_paise": 3795616414,
+        "naive_net_paise": 4258776515,
+        "due_date_net_paise": 4094684300,
+        "error_paise": 97102442,
+        "error_share_of_gross_pct": 0.58,
+        "band_paise": 1567900001
       },
       {
-        "origin": "2026-07-25",
-        "actual_in_paise": 7048359293,
-        "actual_out_paise": 4029459600,
-        "actual_net_paise": 3018899693,
-        "predicted_net_paise": 3490865452,
-        "naive_net_paise": 3380857359,
-        "due_date_net_paise": 1919194300,
-        "error_paise": 471965759,
-        "error_share_of_gross_pct": 4.26,
-        "band_paise": 842223747
+        "origin": "2026-07-26",
+        "actual_in_paise": 11062228774,
+        "actual_out_paise": 6898413700,
+        "actual_net_paise": 4163815074,
+        "predicted_net_paise": 4188774674,
+        "naive_net_paise": 4217749045,
+        "due_date_net_paise": 3224697000,
+        "error_paise": 24959600,
+        "error_share_of_gross_pct": 0.14,
+        "band_paise": 1397355675
       },
       {
-        "origin": "2026-07-15",
-        "actual_in_paise": 8132364224,
-        "actual_out_paise": 3900313500,
-        "actual_net_paise": 4232050724,
-        "predicted_net_paise": 3736904094,
-        "naive_net_paise": 2207670709,
-        "due_date_net_paise": 3283864900,
-        "error_paise": -495146630,
-        "error_share_of_gross_pct": 4.12,
-        "band_paise": 1152319078
+        "origin": "2026-07-16",
+        "actual_in_paise": 10910274406,
+        "actual_out_paise": 6629385600,
+        "actual_net_paise": 4280888806,
+        "predicted_net_paise": 4508356191,
+        "naive_net_paise": 4163967847,
+        "due_date_net_paise": 4794789200,
+        "error_paise": 227467385,
+        "error_share_of_gross_pct": 1.3,
+        "band_paise": 1573727678
+      },
+      {
+        "origin": "2026-07-06",
+        "actual_in_paise": 11830220867,
+        "actual_out_paise": 7454518100,
+        "actual_net_paise": 4375702767,
+        "predicted_net_paise": 4210012889,
+        "naive_net_paise": 4334730572,
+        "due_date_net_paise": 3997621900,
+        "error_paise": -165689878,
+        "error_share_of_gross_pct": 0.86,
+        "band_paise": 1441935436
+      },
+      {
+        "origin": "2026-06-26",
+        "actual_in_paise": 11803068324,
+        "actual_out_paise": 7247359400,
+        "actual_net_paise": 4555708924,
+        "predicted_net_paise": 4014096839,
+        "naive_net_paise": 4611969850,
+        "due_date_net_paise": 4868524900,
+        "error_paise": -541612085,
+        "error_share_of_gross_pct": 2.84,
+        "band_paise": 1484208722
+      },
+      {
+        "origin": "2026-06-16",
+        "actual_in_paise": 10336009686,
+        "actual_out_paise": 6975059700,
+        "actual_net_paise": 3360949986,
+        "predicted_net_paise": 2862746434,
+        "naive_net_paise": 5218326333,
+        "due_date_net_paise": 2481756200,
+        "error_paise": -498203552,
+        "error_share_of_gross_pct": 2.88,
+        "band_paise": 1405112587
+      },
+      {
+        "origin": "2026-06-06",
+        "actual_in_paise": 9649863233,
+        "actual_out_paise": 5685832200,
+        "actual_net_paise": 3964031033,
+        "predicted_net_paise": 3188770418,
+        "naive_net_paise": 4395526352,
+        "due_date_net_paise": 3340082500,
+        "error_paise": -775260615,
+        "error_share_of_gross_pct": 5.06,
+        "band_paise": 1468482772
+      },
+      {
+        "origin": "2026-05-27",
+        "actual_in_paise": 9752287852,
+        "actual_out_paise": 5346942800,
+        "actual_net_paise": 4405345052,
+        "predicted_net_paise": 4227537419,
+        "naive_net_paise": 3945549436,
+        "due_date_net_paise": 3205670600,
+        "error_paise": -177807633,
+        "error_share_of_gross_pct": 1.18,
+        "band_paise": 1475244370
+      },
+      {
+        "origin": "2026-05-17",
+        "actual_in_paise": 11308717671,
+        "actual_out_paise": 6007874500,
+        "actual_net_paise": 5300843171,
+        "predicted_net_paise": 5058183984,
+        "naive_net_paise": 3373955006,
+        "due_date_net_paise": 3610798900,
+        "error_paise": -242659187,
+        "error_share_of_gross_pct": 1.4,
+        "band_paise": 1671642370
       }
     ],
     "band_coverage_pct": {
-      "band_hit_7": 100.0,
-      "band_hit_14": 0.0,
-      "band_hit_30": 0.0
+      "band_hit_7": 88.9,
+      "band_hit_14": 100.0,
+      "band_hit_30": 100.0
     },
     "notes": [
-      "3 rolling origins, horizons [7, 14, 30], warmup 75d, 1500 MC paths per origin",
+      "9 rolling origins, horizons [7, 14, 30], warmup 75d, 1500 MC paths per origin",
       "mae_net_* = mean absolute error of cumulative net cash movement over the horizon (paise)",
       "share_gross_* = |error| / total money that moved in the window, the headline accuracy number",
       "bias_net_* > 0 means the model is too optimistic about cash",
@@ -398,64 +481,64 @@
       14,
       30
     ],
-    "backtest_ms": 754.3,
+    "backtest_ms": 3893.9,
     "seeded_future": {
       "7": {
         "available": true,
         "horizon_days": 7,
-        "actual_in_paise": 857457658,
-        "actual_out_paise": 380049000,
-        "actual_net_paise": 477408658,
-        "predicted_in_paise": 1509544316,
-        "predicted_out_paise": 722274646,
-        "predicted_net_paise": 787269670,
-        "cumulative_error_paise": 309861012,
-        "cumulative_error_pct": 64.905,
-        "error_share_of_gross_pct": 25.04,
-        "mean_daily_mae_paise": 87030417,
+        "actual_in_paise": 2482950274,
+        "actual_out_paise": 825157200,
+        "actual_net_paise": 1657793074,
+        "predicted_in_paise": 2355490268,
+        "predicted_out_paise": 988885326,
+        "predicted_net_paise": 1366604942,
+        "cumulative_error_paise": -291188132,
+        "cumulative_error_pct": 17.565,
+        "error_share_of_gross_pct": 8.8,
+        "mean_daily_mae_paise": 191791294,
         "days_within_20pct": 0,
         "daily": [
           {
-            "day": "2026-09-05",
-            "actual_net_paise": 13111283,
-            "predicted_net_paise": 131828972,
-            "abs_err_pct": 905.46
-          },
-          {
             "day": "2026-09-06",
             "actual_net_paise": 0,
-            "predicted_net_paise": 145824321,
-            "abs_err_pct": 14582432100.0
+            "predicted_net_paise": 189691795,
+            "abs_err_pct": 18969179500.0
           },
           {
             "day": "2026-09-07",
-            "actual_net_paise": 243713575,
-            "predicted_net_paise": 171121093,
-            "abs_err_pct": 29.79
+            "actual_net_paise": 156306774,
+            "predicted_net_paise": 282493171,
+            "abs_err_pct": 80.73
           },
           {
             "day": "2026-09-08",
-            "actual_net_paise": 14125200,
-            "predicted_net_paise": 81510673,
-            "abs_err_pct": 477.06
+            "actual_net_paise": 76373400,
+            "predicted_net_paise": 170367591,
+            "abs_err_pct": 123.07
           },
           {
             "day": "2026-09-09",
-            "actual_net_paise": 187763500,
-            "predicted_net_paise": 110680027,
-            "abs_err_pct": 41.05
+            "actual_net_paise": 438323000,
+            "predicted_net_paise": 179155019,
+            "abs_err_pct": 59.13
           },
           {
             "day": "2026-09-10",
-            "actual_net_paise": -32150000,
-            "predicted_net_paise": 76073420,
-            "abs_err_pct": 336.62
+            "actual_net_paise": 40179400,
+            "predicted_net_paise": 155982480,
+            "abs_err_pct": 288.22
           },
           {
             "day": "2026-09-11",
-            "actual_net_paise": 50845100,
-            "predicted_net_paise": 70231164,
-            "abs_err_pct": 38.13
+            "actual_net_paise": 480316800,
+            "predicted_net_paise": 197742172,
+            "abs_err_pct": 58.83
+          },
+          {
+            "day": "2026-09-12",
+            "actual_net_paise": 466293700,
+            "predicted_net_paise": 191172714,
+            "abs_err_pct": 59.0
           }
         ],
         "caveat": "Shares structural assumptions with the generator, so this is an upper bound on real-world accuracy. Use the rolling-origin numbers as the headline."
@@ -463,101 +546,101 @@
       "14": {
         "available": true,
         "horizon_days": 14,
-        "actual_in_paise": 2697310858,
-        "actual_out_paise": 1123590300,
-        "actual_net_paise": 1573720558,
-        "predicted_in_paise": 2880594891,
-        "predicted_out_paise": 1443716678,
-        "predicted_net_paise": 1436878213,
-        "cumulative_error_paise": -136842345,
-        "cumulative_error_pct": 8.695,
-        "error_share_of_gross_pct": 3.58,
-        "mean_daily_mae_paise": 147240085,
+        "actual_in_paise": 5915759474,
+        "actual_out_paise": 2003770100,
+        "actual_net_paise": 3911989374,
+        "predicted_in_paise": 4982501572,
+        "predicted_out_paise": 2165755121,
+        "predicted_net_paise": 2816746451,
+        "cumulative_error_paise": -1095242923,
+        "cumulative_error_pct": 27.997,
+        "error_share_of_gross_pct": 13.83,
+        "mean_daily_mae_paise": 245255098,
         "days_within_20pct": 0,
         "daily": [
           {
-            "day": "2026-09-05",
-            "actual_net_paise": 13111283,
-            "predicted_net_paise": 143899196,
-            "abs_err_pct": 997.52
-          },
-          {
             "day": "2026-09-06",
             "actual_net_paise": 0,
-            "predicted_net_paise": 144266021,
-            "abs_err_pct": 14426602100.0
+            "predicted_net_paise": 187830513,
+            "abs_err_pct": 18783051300.0
           },
           {
             "day": "2026-09-07",
-            "actual_net_paise": 243713575,
-            "predicted_net_paise": 187318034,
-            "abs_err_pct": 23.14
+            "actual_net_paise": 156306774,
+            "predicted_net_paise": 299091664,
+            "abs_err_pct": 91.35
           },
           {
             "day": "2026-09-08",
-            "actual_net_paise": 14125200,
-            "predicted_net_paise": 89081602,
-            "abs_err_pct": 530.66
+            "actual_net_paise": 76373400,
+            "predicted_net_paise": 179593481,
+            "abs_err_pct": 135.15
           },
           {
             "day": "2026-09-09",
-            "actual_net_paise": 187763500,
-            "predicted_net_paise": 121347475,
-            "abs_err_pct": 35.37
+            "actual_net_paise": 438323000,
+            "predicted_net_paise": 188182669,
+            "abs_err_pct": 57.07
           },
           {
             "day": "2026-09-10",
-            "actual_net_paise": -32150000,
-            "predicted_net_paise": 84335739,
-            "abs_err_pct": 362.32
+            "actual_net_paise": 40179400,
+            "predicted_net_paise": 163854454,
+            "abs_err_pct": 307.81
           },
           {
             "day": "2026-09-11",
-            "actual_net_paise": 50845100,
-            "predicted_net_paise": 78006401,
-            "abs_err_pct": 53.42
+            "actual_net_paise": 480316800,
+            "predicted_net_paise": 207689115,
+            "abs_err_pct": 56.76
           },
           {
             "day": "2026-09-12",
-            "actual_net_paise": 236322800,
-            "predicted_net_paise": 103538404,
-            "abs_err_pct": 56.19
+            "actual_net_paise": 466293700,
+            "predicted_net_paise": 200808180,
+            "abs_err_pct": 56.94
           },
           {
             "day": "2026-09-13",
             "actual_net_paise": 0,
-            "predicted_net_paise": 104835999,
-            "abs_err_pct": 10483599900.0
+            "predicted_net_paise": 214040323,
+            "abs_err_pct": 21404032300.0
           },
           {
             "day": "2026-09-14",
-            "actual_net_paise": 654496500,
-            "predicted_net_paise": 123591089,
-            "abs_err_pct": 81.12
+            "actual_net_paise": 590335900,
+            "predicted_net_paise": 320013859,
+            "abs_err_pct": 45.79
           },
           {
             "day": "2026-09-15",
-            "actual_net_paise": 372256800,
-            "predicted_net_paise": 59656405,
-            "abs_err_pct": 83.97
+            "actual_net_paise": 84840200,
+            "predicted_net_paise": 180443045,
+            "abs_err_pct": 112.69
           },
           {
             "day": "2026-09-16",
-            "actual_net_paise": 27942700,
-            "predicted_net_paise": 82517845,
-            "abs_err_pct": 195.31
+            "actual_net_paise": 1065634900,
+            "predicted_net_paise": 179067599,
+            "abs_err_pct": 83.2
           },
           {
             "day": "2026-09-17",
-            "actual_net_paise": -120195000,
-            "predicted_net_paise": 57642080,
-            "abs_err_pct": 147.96
+            "actual_net_paise": 26071400,
+            "predicted_net_paise": 148154014,
+            "abs_err_pct": 468.26
           },
           {
             "day": "2026-09-18",
-            "actual_net_paise": -74511900,
-            "predicted_net_paise": 56841923,
-            "abs_err_pct": 176.29
+            "actual_net_paise": 499135900,
+            "predicted_net_paise": 179871624,
+            "abs_err_pct": 63.96
+          },
+          {
+            "day": "2026-09-19",
+            "actual_net_paise": -11822000,
+            "predicted_net_paise": 168105911,
+            "abs_err_pct": 1521.98
           }
         ],
         "caveat": "Shares structural assumptions with the generator, so this is an upper bound on real-world accuracy. Use the rolling-origin numbers as the headline."
@@ -565,201 +648,381 @@
       "30": {
         "available": true,
         "horizon_days": 30,
-        "actual_in_paise": 5500138758,
-        "actual_out_paise": 3181690600,
-        "actual_net_paise": 2318448158,
-        "predicted_in_paise": 6382089034,
-        "predicted_out_paise": 3291198341,
-        "predicted_net_paise": 3090890693,
-        "cumulative_error_paise": 772442535,
-        "cumulative_error_pct": 33.317,
-        "error_share_of_gross_pct": 8.9,
-        "mean_daily_mae_paise": 145760179,
-        "days_within_20pct": 2,
+        "actual_in_paise": 11297770474,
+        "actual_out_paise": 4558565400,
+        "actual_net_paise": 6739205074,
+        "predicted_in_paise": 11031747819,
+        "predicted_out_paise": 5108603121,
+        "predicted_net_paise": 5923144698,
+        "cumulative_error_paise": -816060376,
+        "cumulative_error_pct": 12.109,
+        "error_share_of_gross_pct": 5.15,
+        "mean_daily_mae_paise": 204838181,
+        "days_within_20pct": 1,
         "daily": [
-          {
-            "day": "2026-09-05",
-            "actual_net_paise": 13111283,
-            "predicted_net_paise": 182664960,
-            "abs_err_pct": 1293.19
-          },
           {
             "day": "2026-09-06",
             "actual_net_paise": 0,
-            "predicted_net_paise": 143640562,
-            "abs_err_pct": 14364056200.0
+            "predicted_net_paise": 186447607,
+            "abs_err_pct": 18644760700.0
           },
           {
             "day": "2026-09-07",
-            "actual_net_paise": 243713575,
-            "predicted_net_paise": 239541087,
-            "abs_err_pct": 1.71
+            "actual_net_paise": 156306774,
+            "predicted_net_paise": 347450715,
+            "abs_err_pct": 122.29
           },
           {
             "day": "2026-09-08",
-            "actual_net_paise": 14125200,
-            "predicted_net_paise": 113489942,
-            "abs_err_pct": 703.46
+            "actual_net_paise": 76373400,
+            "predicted_net_paise": 206680053,
+            "abs_err_pct": 170.62
           },
           {
             "day": "2026-09-09",
-            "actual_net_paise": 187763500,
-            "predicted_net_paise": 155701108,
-            "abs_err_pct": 17.08
+            "actual_net_paise": 438323000,
+            "predicted_net_paise": 214838094,
+            "abs_err_pct": 50.99
           },
           {
             "day": "2026-09-10",
-            "actual_net_paise": -32150000,
-            "predicted_net_paise": 110895202,
-            "abs_err_pct": 444.93
+            "actual_net_paise": 40179400,
+            "predicted_net_paise": 187169187,
+            "abs_err_pct": 365.83
           },
           {
             "day": "2026-09-11",
-            "actual_net_paise": 50845100,
-            "predicted_net_paise": 102949558,
-            "abs_err_pct": 102.48
+            "actual_net_paise": 480316800,
+            "predicted_net_paise": 237146958,
+            "abs_err_pct": 50.63
           },
           {
             "day": "2026-09-12",
-            "actual_net_paise": 236322800,
-            "predicted_net_paise": 141277682,
-            "abs_err_pct": 40.22
+            "actual_net_paise": 466293700,
+            "predicted_net_paise": 229242856,
+            "abs_err_pct": 50.84
           },
           {
             "day": "2026-09-13",
             "actual_net_paise": 0,
-            "predicted_net_paise": 103156523,
-            "abs_err_pct": 10315652300.0
+            "predicted_net_paise": 211416214,
+            "abs_err_pct": 21141621400.0
           },
           {
             "day": "2026-09-14",
-            "actual_net_paise": 654496500,
-            "predicted_net_paise": 173930099,
-            "abs_err_pct": 73.43
+            "actual_net_paise": 590335900,
+            "predicted_net_paise": 366371796,
+            "abs_err_pct": 37.94
           },
           {
             "day": "2026-09-15",
-            "actual_net_paise": 372256800,
-            "predicted_net_paise": 83063153,
-            "abs_err_pct": 77.69
+            "actual_net_paise": 84840200,
+            "predicted_net_paise": 206366954,
+            "abs_err_pct": 143.24
           },
           {
             "day": "2026-09-16",
-            "actual_net_paise": 27942700,
-            "predicted_net_paise": 115299793,
-            "abs_err_pct": 312.63
+            "actual_net_paise": 1065634900,
+            "predicted_net_paise": 204533192,
+            "abs_err_pct": 80.81
           },
           {
             "day": "2026-09-17",
-            "actual_net_paise": -120195000,
-            "predicted_net_paise": 82879381,
-            "abs_err_pct": 168.95
+            "actual_net_paise": 26071400,
+            "predicted_net_paise": 170380081,
+            "abs_err_pct": 553.51
           },
           {
             "day": "2026-09-18",
-            "actual_net_paise": -74511900,
-            "predicted_net_paise": 80470349,
-            "abs_err_pct": 208.0
+            "actual_net_paise": 499135900,
+            "predicted_net_paise": 207881560,
+            "abs_err_pct": 58.35
           },
           {
             "day": "2026-09-19",
-            "actual_net_paise": 64678200,
-            "predicted_net_paise": 113552618,
-            "abs_err_pct": 75.57
+            "actual_net_paise": -11822000,
+            "predicted_net_paise": 195062955,
+            "abs_err_pct": 1750.0
           },
           {
             "day": "2026-09-20",
             "actual_net_paise": 0,
-            "predicted_net_paise": 84081830,
-            "abs_err_pct": 8408183000.0
+            "predicted_net_paise": 171482115,
+            "abs_err_pct": 17148211500.0
           },
           {
             "day": "2026-09-21",
-            "actual_net_paise": -14695300,
-            "predicted_net_paise": 151044272,
-            "abs_err_pct": 1127.84
+            "actual_net_paise": 583602800,
+            "predicted_net_paise": 300666008,
+            "abs_err_pct": 48.48
           },
           {
             "day": "2026-09-22",
-            "actual_net_paise": 199832600,
-            "predicted_net_paise": 74283100,
-            "abs_err_pct": 62.83
+            "actual_net_paise": -167695100,
+            "predicted_net_paise": 169019759,
+            "abs_err_pct": 200.79
           },
           {
             "day": "2026-09-23",
-            "actual_net_paise": 287313300,
-            "predicted_net_paise": 103963138,
-            "abs_err_pct": 63.82
+            "actual_net_paise": 574806600,
+            "predicted_net_paise": 168389954,
+            "abs_err_pct": 70.7
           },
           {
             "day": "2026-09-24",
-            "actual_net_paise": 26231200,
-            "predicted_net_paise": 73553102,
-            "abs_err_pct": 180.4
+            "actual_net_paise": 327646700,
+            "predicted_net_paise": 139990596,
+            "abs_err_pct": 57.27
           },
           {
             "day": "2026-09-25",
-            "actual_net_paise": 90541100,
-            "predicted_net_paise": 70891986,
-            "abs_err_pct": 21.7
+            "actual_net_paise": 14594100,
+            "predicted_net_paise": 174402097,
+            "abs_err_pct": 1095.02
           },
           {
             "day": "2026-09-26",
-            "actual_net_paise": 211879800,
-            "predicted_net_paise": 95321117,
-            "abs_err_pct": 55.01
+            "actual_net_paise": 186758300,
+            "predicted_net_paise": 164947389,
+            "abs_err_pct": 11.68
           },
           {
             "day": "2026-09-27",
             "actual_net_paise": 0,
-            "predicted_net_paise": 63324361,
-            "abs_err_pct": 6332436100.0
+            "predicted_net_paise": 139295871,
+            "abs_err_pct": 13929587100.0
           },
           {
             "day": "2026-09-28",
-            "actual_net_paise": 570344700,
-            "predicted_net_paise": 116310777,
-            "abs_err_pct": 79.61
+            "actual_net_paise": 333708400,
+            "predicted_net_paise": 260170563,
+            "abs_err_pct": 22.04
           },
           {
             "day": "2026-09-29",
-            "actual_net_paise": -134435800,
-            "predicted_net_paise": 56178374,
-            "abs_err_pct": 141.79
+            "actual_net_paise": 196094900,
+            "predicted_net_paise": 149076578,
+            "abs_err_pct": 23.98
           },
           {
             "day": "2026-09-30",
-            "actual_net_paise": -6433900,
-            "predicted_net_paise": 75752195,
-            "abs_err_pct": 1277.39
+            "actual_net_paise": 18500900,
+            "predicted_net_paise": 151539040,
+            "abs_err_pct": 719.09
           },
           {
             "day": "2026-10-01",
-            "actual_net_paise": -365971300,
-            "predicted_net_paise": 48793921,
-            "abs_err_pct": 113.33
+            "actual_net_paise": 11034200,
+            "predicted_net_paise": 123351567,
+            "abs_err_pct": 1017.9
           },
           {
             "day": "2026-10-02",
             "actual_net_paise": 0,
-            "predicted_net_paise": 46683644,
-            "abs_err_pct": 4668364400.0
+            "predicted_net_paise": 151897031,
+            "abs_err_pct": 15189703100.0
           },
           {
             "day": "2026-10-03",
-            "actual_net_paise": -184557000,
-            "predicted_net_paise": 56657944,
-            "abs_err_pct": 130.7
+            "actual_net_paise": 368039700,
+            "predicted_net_paise": 143068770,
+            "abs_err_pct": 61.13
           },
           {
             "day": "2026-10-04",
             "actual_net_paise": 0,
-            "predicted_net_paise": 31538915,
-            "abs_err_pct": 3153891500.0
+            "predicted_net_paise": 120964569,
+            "abs_err_pct": 12096456900.0
+          },
+          {
+            "day": "2026-10-05",
+            "actual_net_paise": 380124200,
+            "predicted_net_paise": 223894569,
+            "abs_err_pct": 41.1
           }
         ],
         "caveat": "Shares structural assumptions with the generator, so this is an upper bound on real-world accuracy. Use the rolling-origin numbers as the headline."
       }
+    }
+  },
+  "accuracy_cards": {
+    "exact": {
+      "strategy": "exact",
+      "lines_total": 1709,
+      "lines_matchable": 1672,
+      "lines_quarantine_expected": 37,
+      "lines_matched": 895,
+      "match_rate": 0.5237,
+      "correct": 893,
+      "partial": 2,
+      "wrong": 0,
+      "precision": 0.9978,
+      "recall": 0.5341,
+      "f1": 0.6958,
+      "unmatched_but_matchable": 777,
+      "correctly_quarantined": 37,
+      "wrongly_claimed_quarantine": 0,
+      "quarantine_accuracy": 1.0,
+      "auto_post_count": 825,
+      "auto_post_correct": 825,
+      "auto_post_precision": 1.0,
+      "rupee_accuracy": 0.4725,
+      "false_document_assignments": 0,
+      "mean_abs_amount_error_paise": 1884372.9,
+      "max_abs_amount_error_paise": 15829800,
+      "by_tier": {
+        "t1_settlement": {
+          "matches": 172,
+          "correct": 172,
+          "wrong": 0
+        },
+        "t2_advice_utr": {
+          "matches": 208,
+          "correct": 206,
+          "wrong": 2
+        },
+        "t3_doc_number": {
+          "matches": 515,
+          "correct": 515,
+          "wrong": 0
+        }
+      },
+      "timing_ms": {
+        "load": 709.5687779992659,
+        "reconcile": 163.3258920001026
+      },
+      "throughput_lines_per_s": 1709000.0,
+      "unresolved_count": 779,
+      "notes": [
+        "strategy=exact tiers={'t1_settlement': 172, 't2_advice_utr': 208, 't3_doc_number': 515}"
+      ]
+    },
+    "fuzzy_only": {
+      "strategy": "fuzzy_only",
+      "lines_total": 1709,
+      "lines_matchable": 1672,
+      "lines_quarantine_expected": 37,
+      "lines_matched": 1409,
+      "match_rate": 0.8245,
+      "correct": 1403,
+      "partial": 0,
+      "wrong": 6,
+      "precision": 0.9957,
+      "recall": 0.8391,
+      "f1": 0.9107,
+      "unmatched_but_matchable": 263,
+      "correctly_quarantined": 37,
+      "wrongly_claimed_quarantine": 0,
+      "quarantine_accuracy": 1.0,
+      "auto_post_count": 1349,
+      "auto_post_correct": 1349,
+      "auto_post_precision": 1.0,
+      "rupee_accuracy": 0.9047,
+      "false_document_assignments": 6,
+      "mean_abs_amount_error_paise": 451023.8,
+      "max_abs_amount_error_paise": 1458600,
+      "by_tier": {
+        "t4_amount_exact": {
+          "matches": 1367,
+          "correct": 1367,
+          "wrong": 0
+        },
+        "t6_lumpsum": {
+          "matches": 11,
+          "correct": 11,
+          "wrong": 0
+        },
+        "t7_fuzzy": {
+          "matches": 24,
+          "correct": 20,
+          "wrong": 4
+        },
+        "t5_amount_name": {
+          "matches": 7,
+          "correct": 5,
+          "wrong": 2
+        }
+      },
+      "timing_ms": {
+        "load": 665.6729919995996,
+        "reconcile": 741.6103920004389
+      },
+      "throughput_lines_per_s": 1709000.0,
+      "unresolved_count": 269,
+      "notes": [
+        "strategy=fuzzy_only tiers={'t4_amount_exact': 1367, 't5_amount_name': 7, 't6_lumpsum': 11, 't7_fuzzy': 24}"
+      ]
+    },
+    "full": {
+      "strategy": "full",
+      "lines_total": 1709,
+      "lines_matchable": 1672,
+      "lines_quarantine_expected": 37,
+      "lines_matched": 1634,
+      "match_rate": 0.9561,
+      "correct": 1629,
+      "partial": 2,
+      "wrong": 3,
+      "precision": 0.9969,
+      "recall": 0.9743,
+      "f1": 0.9855,
+      "unmatched_but_matchable": 38,
+      "correctly_quarantined": 37,
+      "wrongly_claimed_quarantine": 0,
+      "quarantine_accuracy": 1.0,
+      "auto_post_count": 1535,
+      "auto_post_correct": 1535,
+      "auto_post_precision": 1.0,
+      "rupee_accuracy": 0.9657,
+      "false_document_assignments": 3,
+      "mean_abs_amount_error_paise": 1665881.4,
+      "max_abs_amount_error_paise": 15829800,
+      "by_tier": {
+        "t4_amount_exact": {
+          "matches": 719,
+          "correct": 719,
+          "wrong": 0
+        },
+        "t1_settlement": {
+          "matches": 172,
+          "correct": 172,
+          "wrong": 0
+        },
+        "t2_advice_utr": {
+          "matches": 208,
+          "correct": 206,
+          "wrong": 2
+        },
+        "t3_doc_number": {
+          "matches": 515,
+          "correct": 515,
+          "wrong": 0
+        },
+        "t7_fuzzy": {
+          "matches": 13,
+          "correct": 11,
+          "wrong": 2
+        },
+        "t6_lumpsum": {
+          "matches": 5,
+          "correct": 5,
+          "wrong": 0
+        },
+        "t5_amount_name": {
+          "matches": 2,
+          "correct": 1,
+          "wrong": 1
+        }
+      },
+      "timing_ms": {
+        "load": 671.5140739997878,
+        "reconcile": 482.14439500043227
+      },
+      "throughput_lines_per_s": 1709000.0,
+      "unresolved_count": 43,
+      "notes": [
+        "strategy=full tiers={'t1_settlement': 172, 't2_advice_utr': 208, 't3_doc_number': 515, 't4_amount_exact': 719, 't5_amount_name': 2, 't6_lumpsum': 5, 't7_fuzzy': 13}"
+      ]
     }
   }
 }
