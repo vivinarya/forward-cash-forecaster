@@ -178,6 +178,6 @@ per-day percentage errors on a series where Sundays are genuinely zero. **A metr
 | 30-day outflow over-call (`roll_forward` past Sundays not modelled for payables) | +12.1% on the seeded check; error does not shrink to zero at longer horizons |
 | daily-path shape | only 1 of 30 days within 20% of the planned net on the seeded corpus, while the 30-day total is 5.2% off gross |
 | `t2_advice_utr` over-claim | 2 of 208 wrong (a payment advice naming two invoices where the amount matches one); `t5_amount_name` 1 of 2 |
-| `fuzzy_only` slower than `full` | 752 ms vs 490 ms engine time — with the cheap tiers disabled, more lines reach the global assignment |
-| `t6_lumpsum` cost | 289 ms of 486 ms reconcile to win 5 lines on this corpus; correct for a month-end, wasteful for a 50-line day |
+| `fuzzy_only` slower than `full` | ~745 ms vs ~475 ms engine time — with the cheap tiers disabled, more lines reach the global assignment |
+| `t6_lumpsum` cost | 294 ms of 484 ms reconcile to win 5 lines on this corpus; correct for a month-end, wasteful for a 50-line day |
 | empty CSVs read `no_rows` | deliberate, but a pandas reader will choke — see `report._write_csv` |

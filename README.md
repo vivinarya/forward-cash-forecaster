@@ -139,14 +139,15 @@ truth; matching one invoice of a three-invoice lumpsum is scored as `partial`, n
 
 | strategy | what it is | precision | recall | F1 | auto-post precision | rupee accuracy | engine ms | lines/s |
 |---|---|---|---|---|---|---|---|---|
-| `exact` | regex refs + UTR + settlement id only | 0.9978 | **0.5341** | 0.6958 | 1.000 | 0.4725 | 166 | 10,315 |
-| `fuzzy_only` | + amount, name-similarity, subset-sum, inference | 0.9957 | 0.8391 | 0.9107 | 1.000 | 0.9047 | 752 | 2,272 |
-| `full` | the shipped ladder | **0.9969** | **0.9743** | **0.9855** | **1.000** | 0.9657 | 490 | 3,491 |
+| `exact` | regex refs + UTR + settlement id only | 0.9978 | **0.5341** | 0.6958 | 1.000 | 0.4725 | ~160 | ~10,600 |
+| `fuzzy_only` | + amount, name-similarity, subset-sum, inference | 0.9957 | 0.8391 | 0.9107 | 1.000 | 0.9047 | ~745 | ~2,300 |
+| `full` | the shipped ladder | **0.9969** | **0.9743** | **0.9855** | **1.000** | 0.9657 | ~475 | ~3,500 |
 
 *Exact reference/amount matching resolves 53% of the feed. The tiered ladder resolves 97.4% of it, and
 refuses the other 2.6% loudly instead of guessing.* Full run: 1,709 lines end-to-end including CSV
 ingest, ground-truth scoring, verification, triage and a 2,000-path Monte-Carlo forecast in
-**1,477 ms** — of which ingest alone is 689 ms.
+**~1,500 ms** (1,532 ms in the run that produced `artifacts/`), of which CSV ingest alone is 751 ms.
+Engine times vary ~10% run to run, so they are rounded here; accuracy does not vary at all.
 
 **Forecast** — rolling origin, every origin re-runs reconciliation on data up to that date (no
 look-ahead), scored against what the feed then shows:
@@ -183,7 +184,7 @@ three forecast failures that got us here.
   corpus): collections land slightly later than the learned distribution says.
 * **Outflow is over-called at the window edge** (+12% at 30d) — `roll_forward` past Sundays is not
   modelled for payables inside the horizon.
-* **`fuzzy_only` is slower than `full`** (773 ms vs 481 ms engine time): with the cheap tiers off,
+* **`fuzzy_only` is slower than `full`** (~745 ms vs ~475 ms engine time): with the cheap tiers off,
   far more lines reach the global name-assignment step. Real, measured, and a good argument for the
   ladder's ordering.
 * **Synthetic world, real arithmetic.** Messiness (truncated narrations, missing refs, short

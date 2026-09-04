@@ -93,7 +93,7 @@ Three properties that matter more than the tier list:
   auto-posting by name: similarity is a hypothesis.
 
 Cost profile on the 1,709-line corpus (from `run_manifest.json` → `stages_ms.reconcile_ms`):
-t6 289 ms, t0 73 ms, t3 40 ms, t4 28 ms, t1 13 ms, t2 7 ms, t7 5 ms, t5 1.6 ms (t8 runs inside the
+t6 294 ms, t0 69 ms, t3 39 ms, t4 28 ms, t1 13 ms, t2 7 ms, t7 5 ms, t5 1.6 ms (t8 runs inside the
 classification pass and is not timed separately - worth fixing if the ladder grows another rung). That is the
 argument for the ordering *and* the argument for dropping the subset-sum tier on a 50-line day.
 

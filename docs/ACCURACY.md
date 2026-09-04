@@ -55,9 +55,9 @@ all — the engine is deterministic, and if it ever stops being so, that is a bu
 
 | strategy | precision | recall | F1 | auto-post precision | rupee acc | quarantine | engine ms | lines/s engine |
 |---|---|---|---|---|---|---|---|---|
-| `exact` | 0.9978 | 0.5341 | 0.6958 | 1.000 | 0.4725 | 1.000 | 166 | 10,315 |
-| `fuzzy_only` | 0.9957 | 0.8391 | 0.9107 | 1.000 | 0.9047 | 1.000 | 752 | 2,272 |
-| `full` | 0.9969 | 0.9743 | 0.9855 | 1.000 | 0.9657 | 1.000 | 490 | 3,491 |
+| `exact` | 0.9978 | 0.5341 | 0.6958 | 1.000 | 0.4725 | 1.000 | ~160 | ~10,600 |
+| `fuzzy_only` | 0.9957 | 0.8391 | 0.9107 | 1.000 | 0.9047 | 1.000 | ~745 | ~2,300 |
+| `full` | 0.9969 | 0.9743 | 0.9855 | 1.000 | 0.9657 | 1.000 | ~475 | ~3,500 |
 
 By tier (from `accuracy.json` in the run output) — where the matches come from and how good each rung
 is on its own:
@@ -79,16 +79,33 @@ Residue, i.e. the honest exception list for the month: **266 exceptions** —
 `REVERSAL_OR_RETURN` 1. Plus 38 matchable lines refused outright, 2 partial and 3 wrong.
 
 End-to-end wall time for the whole run — ingest, reconcile, verify, triage, 2,000-path Monte Carlo,
-scoring, seven CSVs and five markdown reports — **1,477 ms** (ingest 689, reconcile 486, verify 5,
-triage 0.6, forecast 283).
+scoring, seven CSVs and five markdown reports — **1,532 ms** (ingest 751, reconcile 484, verify 5,
+triage 0.6, forecast 278) in the run that produced the committed `artifacts/`. Engine-only throughput
+~3,500 lines/s with the ladder, ~10,600 without. Times move ~10% run to run on a shared box, which is
+why they are rounded in the README; accuracy is deterministic and moves not at all.
 
 ### Small (demo) corpus — 725 bank lines
 
-Same command with `--data data/sample`: recall 0.9777 / precision 0.9915 / auto-post 1.000, engine
-170 ms on 725 lines. Two differences worth knowing: `t2_advice_utr` is 83/89 correct here (6 wrong) versus
-206/208 on the large corpus, and exact-reference-only matching reaches 0.5732 rather than 0.5341
-recall. Both are small-sample effects; the advice tier's failure mode is real and listed in
-[FAILURES.md](FAILURES.md#7-still-open-measured).
+`python -m cashpilot bench --data data/sample --reps 1 --forecast --seeded`, the corpus `make demo`
+builds (725 bank lines, 904 documents, 120 days):
+
+| | value |
+|---|---|
+| `full` | 701 correct of 717 matchable, precision 0.9915, recall 0.9777, auto-post 1.000, rupee acc 0.9655 |
+| `exact` | recall 0.5732 (vs 0.5341 on the published corpus) |
+| exceptions | 110 |
+| run wall time | 753 ms (ingest 436, engine 138) |
+| forecast @30d | 3.1% error, +65.5% skill vs naive, top-25 settle ranking 84.0% vs 16.0% by size |
+| forecast @7d | **16.0% error, −67% skill — the seasonal naive wins at a week here** |
+| band hit 7/14/30d | 100% / 33% / **0%** |
+
+Read those last two rows as the honest limit of a small corpus, not as a passing grade. 120 days of
+history means 3 usable rolling origins and thin per-party delay curves, so short-horizon *timing* is
+noisy; a 30-day band built from 14 customers is genuinely wider relative to the balance, and three
+origins is not enough to certify a tail. Two more small-sample effects: `t2_advice_utr` is 83/89
+correct here (6 wrong) against 206/208 on the published corpus — the advice tier's failure mode is real
+and is listed in [FAILURES.md](FAILURES.md#7-still-open-measured) — and `exact` recall is 0.5732 rather
+than 0.5341. The demo corpus is for the walkthrough; `data/synthetic` is the number to quote.
 
 ## Reproduce the forecast numbers
 
@@ -153,7 +170,7 @@ good and the rolling-origin check is bad, the input data is the problem.
 * The synthetic gateway is self-consistent by construction (a batch's declared fee is the truth in
   97% of cases) so the verifier's false-positive rate is measured on 26 flagged batches out of 174,
   not on a real month of rate-card churn.
-* Timings are one core of a shared sandbox; treat them as ratios (ingest 1.4× the engine, t6 is 59% of
+* Timings are one core of a shared sandbox; treat them as ratios (ingest 1.5× the engine, t6 is 61% of
   the ladder) rather than SLAs.
 * 9 origins × 3 horizons is enough to rank models and not enough to certify a tail. If a band number
   matters to you, run `--forecast-origins 30` on a longer corpus.
