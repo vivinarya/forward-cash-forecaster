@@ -17,7 +17,7 @@ import statistics
 import time
 from pathlib import Path
 
-from ..config import Settings
+from ..config import Settings, load_settings
 from ..ingest import load_dataset
 from ..recon.engine import Reconciler
 from .accuracy import load_truth, score
@@ -213,6 +213,8 @@ def bench_md(result: dict[str, object]) -> str:
                 "correct": e.get("correct", "-"),
                 "partial": e.get("partial", "-"),
                 "wrong": e.get("wrong", "-"),
+                # the honest tail: matchable lines the ladder declined to guess about
+                "refused (matchable)": e.get("unmatched_but_matchable", "-"),
                 "precision": e.get("precision", "-"),
                 "recall": e.get("recall", "-"),
                 "f1": e.get("f1", "-"),
@@ -232,7 +234,7 @@ def bench_md(result: dict[str, object]) -> str:
         "correct",
         "partial",
         "wrong",
-        "unmatched_but_matchable",
+        "refused (matchable)",
         "precision",
         "recall",
         "f1",

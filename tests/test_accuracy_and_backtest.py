@@ -10,6 +10,7 @@ from datetime import date, timedelta
 
 import pytest
 
+from cashpilot.config import REPO_ROOT
 from cashpilot.eval.accuracy import MATCHABLE, QUARANTINE, load_truth, score
 from cashpilot.forecast.backtest import _err_share, _slice_dataset, backtest, seeded_future_check
 from cashpilot.ingest import load_dataset
@@ -167,3 +168,14 @@ def test_seeded_check_reports_the_metric_it_names(tiny_corpus, settings):
     assert res["horizon_days"] == 14
     assert "error_share_of_gross_pct" in res and "cumulative_error_pct" in res
     assert "caveat" in res and "upper bound" in res["caveat"].lower()
+
+
+def test_bench_defaults_to_loading_settings_itself(tmp_path):
+    """`bench()` is also called directly (the scale sweep does), and its `settings=None` fallback was
+    dead code for a long time: the CLI always passed one. Pin the fallback to a real call."""
+    from cashpilot.eval.bench import bench
+
+    result = bench(REPO_ROOT / "data" / "sample", strategies=["full"], reps=1, with_forecast=False)
+    assert result["records"] > 0
+    assert result["strategies"]["full"]["recall"] > 0.9
+    assert result["summary"], "the uplift summary is what README quotes"

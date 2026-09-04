@@ -2,11 +2,11 @@
 
 _3 repetitions per strategy; times include CSV ingest._
 
-| strategy | records | matched | correct | partial | wrong | unmatched_but_matchable | precision | recall | f1 | auto_post | auto_precision | rupee_acc | quarantine | ingest ms | engine ms | lines/s (engine) |
+| strategy | records | matched | correct | partial | wrong | refused (matchable) | precision | recall | f1 | auto_post | auto_precision | rupee_acc | quarantine | ingest ms | engine ms | lines/s (engine) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| exact | 1709 | 895 | 893.0 | 2.0 | 0.0 |  | 0.9978 | 0.5341 | 0.6958 | 825 | 1.0 | 0.4725 | 1.0 | 670.78 | 160.58 | 10642.9 |
-| fuzzy_only | 1709 | 1409 | 1403.0 | 0.0 | 6.0 |  | 0.9957 | 0.8391 | 0.9107 | 1349 | 1.0 | 0.9047 | 1.0 | 667.07 | 743.95 | 2297.2 |
-| full | 1709 | 1634 | 1629.0 | 2.0 | 3.0 |  | 0.9969 | 0.9743 | 0.9855 | 1535 | 1.0 | 0.9657 | 1.0 | 670.36 | 475.75 | 3592.2 |
+| exact | 1709 | 895 | 893.0 | 2.0 | 0.0 | 777.0 | 0.9978 | 0.5341 | 0.6958 | 825 | 1.0 | 0.4725 | 1.0 | 682.24 | 163.51 | 10452.1 |
+| fuzzy_only | 1709 | 1409 | 1403.0 | 0.0 | 6.0 | 263.0 | 0.9957 | 0.8391 | 0.9107 | 1349 | 1.0 | 0.9047 | 1.0 | 681.14 | 747.78 | 2285.4 |
+| full | 1709 | 1634 | 1629.0 | 2.0 | 3.0 | 38.0 | 0.9969 | 0.9743 | 0.9855 | 1535 | 1.0 | 0.9657 | 1.0 | 684.21 | 484.23 | 3529.3 |
 
 ## What the extra tiers buy
 
@@ -21,7 +21,7 @@ nearly cancel, which is why it is not the headline). Lower is better; the baseli
 origins and the same truncated history.
 
 - 9 origins ending 2026-08-05, 2026-07-26, 2026-07-16, 2026-07-06, 2026-06-26, 2026-06-16, 2026-06-06, 2026-05-27, 2026-05-17
-- backtest wall time 3893.9 ms (includes re-running reconciliation at every origin)
+- backtest wall time 3973.8 ms (includes re-running reconciliation at every origin)
 
 | model | err% gross @7 | err% gross @14 | err% gross @30 | MAE net @30 (INR) | bias @30 (INR) | skill vs naive | direction right |
 |---|---|---|---|---|---|---|---|

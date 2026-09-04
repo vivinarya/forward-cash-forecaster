@@ -23,6 +23,7 @@ from .ai.narrative import build_brief
 from .ai.triage import triage
 from .config import Settings, load_settings
 from .eval.accuracy import load_truth, score
+from .eval.recovery import recovery_report
 from .forecast.engine import forecast
 from .ingest import Dataset, load_dataset
 from .recon.engine import Reconciler
@@ -40,6 +41,7 @@ class RunResult:
     cash: object = None
     brief: dict = field(default_factory=dict)
     accuracy: object = None
+    recovery: object = None
     manifest: dict = field(default_factory=dict)
 
     @property
@@ -108,6 +110,10 @@ def run_books(
     cash = forecast(ds, recon, settings, horizon=horizon, runs=runs)
     stages["forecast_ms"] = round((time.perf_counter() - t1) * 1000, 2)
 
+    t1 = time.perf_counter()
+    recovery = recovery_report(data_dir, recon, rows, vsummary, cash=cash)
+    stages["recovery_ms"] = round((time.perf_counter() - t1) * 1000, 2)
+
     accuracy = None
     truth_path = Path(data_dir) / "truth_matches.csv"
     if with_truth and truth_path.exists():
@@ -150,6 +156,7 @@ def run_books(
             "exceptions": len(recon.exceptions),
         },
         "accuracy": accuracy.to_dict() if accuracy else None,
+        "recovery": recovery.to_dict(),
         "settlements": vsummary,
         "forecast_stats": {k: v for k, v in cash.stats.items() if k != "learnt"},
         "notes": notes,
@@ -165,5 +172,6 @@ def run_books(
         cash=cash,
         brief=brief,
         accuracy=accuracy,
+        recovery=recovery,
         manifest=manifest,
     )

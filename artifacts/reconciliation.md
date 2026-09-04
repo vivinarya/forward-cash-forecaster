@@ -27,6 +27,22 @@ _as of 2026-09-05 - strategy `full` - 1709 bank lines vs 2029 documents_
 | t6_lumpsum | 5 | 5 | 0 |
 | t5_amount_name | 2 | 1 | 1 |
 
+## Behaviour by class of line
+
+Aggregate recall averages a class that works with a class that does not. This is the same run,
+split by what the line was:
+
+| class of line | lines | exact | partial | wrong | refused | left alone | what right means here | rate |
+|---|---|---|---|---|---|---|---|---|
+| matchable | 1372 | 1371 | 0 | 0 | 1 | 0 | matched to the exact document set | 99.93% |
+| gateway_settlement | 172 | 172 | 0 | 0 | 0 | 0 | matched to the exact document set | 100.0% |
+| matchable_amount_mismatch | 108 | 70 | 0 | 3 | 35 | 0 | matched to the exact document set | 64.81% |
+| expected_unmatched_duplicate | 31 | 0 | 0 | 0 | 0 | 31 | left unmatched | 100.0% |
+| matchable_lumpsum | 20 | 16 | 2 | 0 | 2 | 0 | one line, several documents | 80.0% |
+| expected_unmatched_charge | 3 | 0 | 0 | 0 | 0 | 3 | left unmatched | 100.0% |
+| expected_unmatched_unknown | 2 | 0 | 0 | 0 | 0 | 2 | left unmatched | 100.0% |
+| expected_unmatched_interest | 1 | 0 | 0 | 0 | 0 | 1 | left unmatched | 100.0% |
+
 ## Exception mix
 
 | code | count |
@@ -48,7 +64,7 @@ _as of 2026-09-05 - strategy `full` - 1709 bank lines vs 2029 documents_
 - deterministic pre-classification: 266 exceptions
 - LLM attempted / accepted / discarded: 0 / 0 / 0 _(skipped: llm_disabled_or_no_key)_
 - duplicate-root-cause groupings: 0
-- LLM wall time: 0.06 ms; usage: `{"enabled": false, "model": null, "calls": 0, "ok": 0, "failed": 0, "invalid_json": 0, "budget_remaining": 200, "prompt_chars": 0, "completion_chars": 0, "approx_tokens": 0, "wall_ms": 0.0, "errors": []}`
+- LLM wall time: 0.07 ms; usage: `{"enabled": false, "model": null, "calls": 0, "ok": 0, "failed": 0, "invalid_json": 0, "budget_remaining": 200, "prompt_chars": 0, "completion_chars": 0, "approx_tokens": 0, "wall_ms": 0.0, "errors": []}`
 
 ## Top unresolved bank lines
 

@@ -75,7 +75,30 @@ def cmd_run(args) -> int:
         )
     else:
         print(f"  {m['counts']['matches']} matches, {m['counts']['exceptions']} exceptions (no ground truth file: accuracy skipped)")
-    print(f"  settlement batches flagged: {res_data.verify_summary.get('batches_flagged')} (recoverable {_paise(res_data.verify_summary.get('recoverable_paise', 0))})")
+    rec = getattr(res_data, "recovery", None)
+    if rec is not None:
+        rt, bd, ar = rec.runtime, rec.batch_defects, rec.receivables
+        print(
+            f"  settlements: {rt['batches']} batches verified, {rt['batches_with_rupee_stake']} with money at stake; "
+            f"claim value {rt['claim_value']}, credit recovery rate {rt['recovery_rate_pct']}%"
+        )
+        if bd.get("measured"):
+            line = (
+                f"    of {bd['planted_batches']} batches the generator corrupted: {bd['flagged_batches']} flagged "
+                f"({bd['detection_rate_pct']}%), {bd['identified_value']} of {bd['planted_value']} identified "
+                f"({bd['rupee_catch_rate_pct']}%)"
+            )
+            if ar.get("planted_docs"):
+                line += (
+                    f"; of {ar['planted_docs']} invoices paid short: {ar['surfaced_docs']} surfaced "
+                    f"({ar['rupee_catch_rate_pct']}% of {ar['planted_value']})"
+                )
+            print(line)
+        else:
+            print("    defect catch rate: not measured - this corpus has no ground-truth ledger to divide by")
+    if acc and acc.by_kind:
+        parts = sorted(((float(v["correct_pct"]), k) for k, v in acc.by_kind.items()), reverse=True)
+        print("  recall by class of line: " + ", ".join(f"{k} {pct}%" for pct, k in parts))
     h30 = res_data.cash.horizons.get(args.horizon or 30) or list(res_data.cash.horizons.values())[-1]
     print(
         f"  cash { _paise(res_data.cash.opening_paise)} today -> {_paise(h30['expected_closing_paise'])} in {h30['horizon_days']}d "
@@ -115,7 +138,14 @@ def _run(args, settings):
     data = Path(args.data)
     if not data.exists() and args.autogen:
         print(f"[cashpilot] {data} not found - generating it first (seed {args.seed}, scale {args.scale})")
-        ns = argparse.Namespace(out=str(data), scale=args.scale, seed=args.seed, as_of=None, horizon=args.horizon or 30, history_days=0)
+        ns = argparse.Namespace(
+            out=str(data),
+            scale=args.scale,
+            seed=args.seed,
+            as_of=getattr(args, "as_of", None),
+            horizon=args.horizon or 30,
+            history_days=0,
+        )
         cmd_generate(ns)
     return run_books(
         data,
@@ -196,6 +226,26 @@ def cmd_forecast(args) -> int:
     return 0
 
 
+def cmd_sweep(args) -> int:
+    from .eval.sweep import main as sweep_main
+
+    return sweep_main(
+        [
+            "--scales",
+            args.scales,
+            "--seed",
+            str(args.seed),
+            "--as-of",
+            args.as_of,
+            "--json",
+            args.json,
+            "--md",
+            args.md,
+        ]
+        + (["--keep"] if args.keep else [])
+    )
+
+
 def cmd_demo(args) -> int:
     """The 10-minute panel path: sample corpus -> whole run -> benchmark, one command.
 
@@ -204,7 +254,10 @@ def cmd_demo(args) -> int:
     """
     data = Path(args.data)
     if not (data / "bank_statement.csv").exists() or args.regenerate:
-        cmd_generate(build_parser().parse_args(["generate", "--out", str(data), "--scale", "sample", "--seed", str(args.seed)]))
+        gen = ["generate", "--out", str(data), "--scale", "sample", "--seed", str(args.seed)]
+        if getattr(args, "as_of", None):
+            gen += ["--as-of", str(args.as_of)]
+        cmd_generate(build_parser().parse_args(gen))
     run_ns = build_parser().parse_args(["run", "--data", str(data), "--out", args.out, "--llm", "off", "--runs", "1200"])
     cmd_run(run_ns)
     bench_ns = build_parser().parse_args(
@@ -307,10 +360,26 @@ def build_parser() -> argparse.ArgumentParser:
     f.add_argument("--bt-step", dest="bt_step", type=int, default=10, help="days between rolling origins")
     f.set_defaults(fn=cmd_forecast)
 
+    sw = common(sub.add_parser("sweep", help="accuracy / speed / recovery across five corpus sizes"))
+    sw.add_argument("--scales", default="tiny,sample,medium,large,xl")
+    sw.add_argument("--seed", type=int, default=20260905)
+    sw.add_argument("--as-of", dest="as_of", default="2026-09-05")
+    sw.add_argument("--json", default=str(REPO_ROOT / "artifacts" / "scale_sweep.json"))
+    sw.add_argument("--md", default=str(REPO_ROOT / "artifacts" / "scale_sweep.md"))
+    sw.add_argument("--keep", action="store_true", help="leave the generated corpora in artifacts/_sweep")
+    sw.set_defaults(fn=cmd_sweep)
+
     d = sub.add_parser("demo", help="sample data + full run + bench, from a clean checkout")
     d.add_argument("--data", default=str(REPO_ROOT / "data" / "sample"))
     d.add_argument("--out", default=str(REPO_ROOT / "artifacts" / "demo"))
     d.add_argument("--seed", type=int, default=4242)
+    d.add_argument(
+        "--as-of",
+        dest="as_of",
+        default="2026-09-05",
+        help="as-of date used if the sample corpus has to be generated (default: the date the "
+        "committed data/sample was built on, so a clean checkout reproduces the documented numbers)",
+    )
     d.add_argument("--regenerate", action="store_true")
     d.set_defaults(fn=cmd_demo)
 

@@ -36,7 +36,12 @@ All three are the same ledger viewed at different times, so they share one inges
                             └────────────────┬────────────────┘
                                              ▼
                             ┌─────────────────────────────────┐
-                            │ report.py  (7 CSVs, 5 md, svg)   │
+                            │ eval.recovery (₹ at stake, and   │
+                            │ what was planted vs what we got) │
+                            └────────────────┬────────────────┘
+                                             ▼
+                            ┌─────────────────────────────────┐
+                            │ report.py (8 CSVs, 6 md, svg)   │
                             │ eval/accuracy.py (scoring)       │
                             └─────────────────────────────────┘
 ```
@@ -112,8 +117,32 @@ net = gross − fee − tmn − gst − tds − refunds   credit_gap = bank_cred
 Flags: `FEE_TIER_MISMATCH`, `FEE_COMPONENT_MISMATCH`, `BATCH_ARITHMETIC`, `NOT_CREDITED`,
 `CREDIT_AMOUNT_MISMATCH`, plus `SETTLEMENT_OVERDUE` when a captured payment is older than
 `settlement_expectation_days` (T+2) without a batch. The rate card is a placeholder: the point is the
-machine-auditable arithmetic, and that a wrong slab on 174 batches is caught and priced (₹1,187.11 of
-recoverable overbilling flagged on the large corpus, 26 of 174 batches).
+machine-auditable arithmetic, and that a wrong slab on 174 batches is caught and priced.
+
+### What each batch is worth
+
+`BatchCheck` carries declared and recomputed values side by side, so the derived numbers are audit
+lines rather than vibes:
+
+```
+overbilled      = max(0, declared_fee - expected_fee)          # fee overbilling, per batch
+rate_card_claim = overbilled + max(0, (gst+tds) declared - expected)
+unexplained     = gross - fee - tmn - gst - tds - refunds - declared_net   # money out, no row for it
+undercredited   = max(0, expected_net - bank_credit)           # credit short of what was owed
+recoverable     = abs(unexplained) + max(rate_card_claim, undercredited)
+recovery_rate   = min(credit, expected_net) / expected_net     # rupee-weighted over the corpus
+```
+
+`max()` in `recoverable` is the interesting line. A fee that is too high *causes* the credit to be too
+low, so on the batch where the gateway both overbilled and under-credited, the two numbers are the same
+rupees; adding them would inflate the claim. The unexplained bucket stays additive because it measures a
+different failure — money that left the batch with no deduction record behind it at all. `NOT_CREDITED`
+batches are deliberately excluded from `undercredited` (no credit to compare) and still raise a
+high-severity exception, so a payout the gateway promised and never sent is visible without pretending
+we know what it was short by.
+
+On the published corpus this prices 26 of 174 batches at ₹41,074.20 of claim value, of which
+₹1,187.11 is fee overbilling, ₹19,824.82 unexplained deductions and ₹21,249.38 under-credit.
 
 ## forecast.engine — a book model, not a time series
 
@@ -173,11 +202,22 @@ artifacts, deterministic judge, template brief.
 * `eval/accuracy.py` — the scoring contract (see [ACCURACY.md](ACCURACY.md)).
 * `eval/bench.py` — strategies × repetitions, ingest/engine timing split (the first benchmark lumped
   them, which made the engine look 4× slower than it is and hid where the time actually goes), and the
-  forecast backtest, writing `bench.md` + `bench.json`.
+  forecast backtest, writing `bench.md` + `bench.json`. Takes no settings argument at all when called
+  as a library (`cashpilot sweep` does) — it loads its own, and a test pins that.
+* `eval/recovery.py` — the money page, in two halves that must not be confused. *Runtime* (per-batch
+  ₹ at stake, recovery rate, share of gross) is computed from the input files alone and works on a
+  customer's own CSVs. *Detection* (how many planted defects we caught, what share of the planted ₹ we
+  identified) divides by `meta.json`, which only the generator writes; if it is absent the section
+  reports "not measured" and `run_manifest.recovery.batch_defects.measured = false` — never 0%, because
+  0% is a claim about the engine and "not measured" is a claim about the data.
+* `eval/sweep.py` (`cashpilot sweep`) — the same measurements at five corpus sizes from 90 to 5,610
+  lines, one seed each, into `artifacts/scale_sweep.{md,json}`. It exists because a number measured at
+  the size you tuned on is not a number. `sample` in that table is generated with seed 4242, the same
+  as `data/sample`, so the row can be checked against `artifacts/demo/`.
 * `pipeline.run_books()` — the one function that does the whole thing; `report.write_all` renders it.
   `dashboard.html` is inline SVG with no external references so it renders inside a sandboxed iframe
   and from `file://`.
-* `cli.py` — `generate | run | bench | forecast | demo | doctor`. Sub-command namespaces inside
+* `cli.py` — `generate | run | bench | forecast | sweep | demo | doctor`. Sub-command namespaces inside
   `demo` are built by re-parsing through the real parser, so a new flag cannot silently break the
   demo path (it did, once).
 

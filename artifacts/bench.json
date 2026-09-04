@@ -7,13 +7,13 @@
       "matches": 895,
       "exceptions": 1314,
       "auto_posted": 825,
-      "ms_median": 831.36,
-      "ms_min": 824.02,
-      "ms_max": 872.89,
-      "ingest_ms_median": 670.78,
-      "engine_ms_median": 160.58,
-      "lines_per_s_median": 2055.7,
-      "lines_per_s_engine": 10642.9,
+      "ms_median": 844.34,
+      "ms_min": 838.89,
+      "ms_max": 855.98,
+      "ingest_ms_median": 682.24,
+      "engine_ms_median": 163.51,
+      "lines_per_s_median": 2024.1,
+      "lines_per_s_engine": 10452.1,
       "lines": 1709,
       "matchable": 1672,
       "correct": 893.0,
@@ -50,13 +50,13 @@
       "matches": 1409,
       "exceptions": 460,
       "auto_posted": 1349,
-      "ms_median": 1413.79,
-      "ms_min": 1407.28,
-      "ms_max": 1413.93,
-      "ingest_ms_median": 667.07,
-      "engine_ms_median": 743.95,
-      "lines_per_s_median": 1208.8,
-      "lines_per_s_engine": 2297.2,
+      "ms_median": 1425.52,
+      "ms_min": 1424.9,
+      "ms_max": 1508.1,
+      "ingest_ms_median": 681.14,
+      "engine_ms_median": 747.78,
+      "lines_per_s_median": 1198.9,
+      "lines_per_s_engine": 2285.4,
       "lines": 1709,
       "matchable": 1672,
       "correct": 1403.0,
@@ -98,13 +98,13 @@
       "matches": 1634,
       "exceptions": 240,
       "auto_posted": 1535,
-      "ms_median": 1146.11,
-      "ms_min": 1139.1,
-      "ms_max": 1153.66,
-      "ingest_ms_median": 670.36,
-      "engine_ms_median": 475.75,
-      "lines_per_s_median": 1491.1,
-      "lines_per_s_engine": 3592.2,
+      "ms_median": 1168.43,
+      "ms_min": 1154.38,
+      "ms_max": 1175.2,
+      "ingest_ms_median": 684.21,
+      "engine_ms_median": 484.23,
+      "lines_per_s_median": 1462.6,
+      "lines_per_s_engine": 3529.3,
       "lines": 1709,
       "matchable": 1672,
       "correct": 1629.0,
@@ -162,11 +162,11 @@
     "exact": {
       "matches": 895,
       "auto_posted": 825,
-      "ms_median": 831.36,
-      "ingest_ms_median": 670.78,
-      "engine_ms_median": 160.58,
-      "lines_per_s_median": 2055.7,
-      "lines_per_s_engine": 10642.9,
+      "ms_median": 844.34,
+      "ingest_ms_median": 682.24,
+      "engine_ms_median": 163.51,
+      "lines_per_s_median": 2024.1,
+      "lines_per_s_engine": 10452.1,
       "lines": 1709,
       "matchable": 1672,
       "correct": 893.0,
@@ -184,11 +184,11 @@
     "fuzzy_only": {
       "matches": 1409,
       "auto_posted": 1349,
-      "ms_median": 1413.79,
-      "ingest_ms_median": 667.07,
-      "engine_ms_median": 743.95,
-      "lines_per_s_median": 1208.8,
-      "lines_per_s_engine": 2297.2,
+      "ms_median": 1425.52,
+      "ingest_ms_median": 681.14,
+      "engine_ms_median": 747.78,
+      "lines_per_s_median": 1198.9,
+      "lines_per_s_engine": 2285.4,
       "lines": 1709,
       "matchable": 1672,
       "correct": 1403.0,
@@ -206,11 +206,11 @@
     "full": {
       "matches": 1634,
       "auto_posted": 1535,
-      "ms_median": 1146.11,
-      "ingest_ms_median": 670.36,
-      "engine_ms_median": 475.75,
-      "lines_per_s_median": 1491.1,
-      "lines_per_s_engine": 3592.2,
+      "ms_median": 1168.43,
+      "ingest_ms_median": 684.21,
+      "engine_ms_median": 484.23,
+      "lines_per_s_median": 1462.6,
+      "lines_per_s_engine": 3529.3,
       "lines": 1709,
       "matchable": 1672,
       "correct": 1629.0,
@@ -228,7 +228,7 @@
     "uplift": {
       "recall_full_minus_exact": 0.4402,
       "correct_full_minus_exact": 736.0,
-      "ms_ratio_vs_exact": 1.379
+      "ms_ratio_vs_exact": 1.384
     },
     "forecast": {
       "cashpilot_bias_net_30": -227967058.1,
@@ -481,7 +481,7 @@
       14,
       30
     ],
-    "backtest_ms": 3893.9,
+    "backtest_ms": 3973.8,
     "seeded_future": {
       "7": {
         "available": true,
@@ -887,9 +887,91 @@
           "wrong": 0
         }
       },
+      "by_kind": {
+        "matchable": {
+          "lines": 1372,
+          "correct": 651,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 721,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 47.45
+        },
+        "gateway_settlement": {
+          "lines": 172,
+          "correct": 172,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 100.0
+        },
+        "matchable_amount_mismatch": {
+          "lines": 108,
+          "correct": 59,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 49,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 54.63
+        },
+        "matchable_lumpsum": {
+          "lines": 20,
+          "correct": 11,
+          "partial": 2,
+          "wrong": 0,
+          "unmatched": 7,
+          "refused_correctly": 0,
+          "resolution": "one line, several documents",
+          "correct_pct": 55.0
+        },
+        "expected_unmatched_duplicate": {
+          "lines": 31,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 31,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_charge": {
+          "lines": 3,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 3,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_interest": {
+          "lines": 1,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 1,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_unknown": {
+          "lines": 2,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 2,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        }
+      },
       "timing_ms": {
-        "load": 709.5687779992659,
-        "reconcile": 163.3258920001026
+        "load": 687.9598389996318,
+        "reconcile": 168.02147399994283
       },
       "throughput_lines_per_s": 1709000.0,
       "unresolved_count": 779,
@@ -943,9 +1025,91 @@
           "wrong": 2
         }
       },
+      "by_kind": {
+        "matchable": {
+          "lines": 1372,
+          "correct": 1371,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 1,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 99.93
+        },
+        "gateway_settlement": {
+          "lines": 172,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 172,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 0.0
+        },
+        "matchable_amount_mismatch": {
+          "lines": 108,
+          "correct": 21,
+          "partial": 0,
+          "wrong": 6,
+          "unmatched": 81,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 19.44
+        },
+        "matchable_lumpsum": {
+          "lines": 20,
+          "correct": 11,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 9,
+          "refused_correctly": 0,
+          "resolution": "one line, several documents",
+          "correct_pct": 55.0
+        },
+        "expected_unmatched_duplicate": {
+          "lines": 31,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 31,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_charge": {
+          "lines": 3,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 3,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_interest": {
+          "lines": 1,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 1,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_unknown": {
+          "lines": 2,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 2,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        }
+      },
       "timing_ms": {
-        "load": 665.6729919995996,
-        "reconcile": 741.6103920004389
+        "load": 677.1137719997569,
+        "reconcile": 747.7819900004761
       },
       "throughput_lines_per_s": 1709000.0,
       "unresolved_count": 269,
@@ -1014,9 +1178,91 @@
           "wrong": 1
         }
       },
+      "by_kind": {
+        "matchable": {
+          "lines": 1372,
+          "correct": 1371,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 1,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 99.93
+        },
+        "gateway_settlement": {
+          "lines": 172,
+          "correct": 172,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 100.0
+        },
+        "matchable_amount_mismatch": {
+          "lines": 108,
+          "correct": 70,
+          "partial": 0,
+          "wrong": 3,
+          "unmatched": 35,
+          "refused_correctly": 0,
+          "resolution": "matched to the exact document set",
+          "correct_pct": 64.81
+        },
+        "matchable_lumpsum": {
+          "lines": 20,
+          "correct": 16,
+          "partial": 2,
+          "wrong": 0,
+          "unmatched": 2,
+          "refused_correctly": 0,
+          "resolution": "one line, several documents",
+          "correct_pct": 80.0
+        },
+        "expected_unmatched_duplicate": {
+          "lines": 31,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 31,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_charge": {
+          "lines": 3,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 3,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_interest": {
+          "lines": 1,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 1,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        },
+        "expected_unmatched_unknown": {
+          "lines": 2,
+          "correct": 0,
+          "partial": 0,
+          "wrong": 0,
+          "unmatched": 0,
+          "refused_correctly": 2,
+          "resolution": "left unmatched",
+          "correct_pct": 100.0
+        }
+      },
       "timing_ms": {
-        "load": 671.5140739997878,
-        "reconcile": 482.14439500043227
+        "load": 687.686782000128,
+        "reconcile": 487.5115900003948
       },
       "throughput_lines_per_s": 1709000.0,
       "unresolved_count": 43,

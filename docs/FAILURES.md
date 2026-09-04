@@ -171,13 +171,48 @@ per-day percentage errors on a series where Sundays are genuinely zero. **A metr
 
 ---
 
-## 7. Still open, measured
+## 7. A recovery metric that lied *downward*, and the two denominators that fixed it
+
+The batch-recovery table in `recovery.md` first ran at **92.86%** on the published corpus (26 flagged
+of 28 "planted" batches) and **0 of 21** short-paid invoices surfaced on the tiny corpus. Both numbers
+were the *metric* being wrong, not the engine, and a metric that understates you is still a metric you
+cannot defend in a review:
+
+| what the denominator counted | why it cannot be caught | fix |
+|---|---|---|
+| two batches where the generator "dropped" a refund set that was empty (₹0) | the bank credit is unchanged by an empty drop; no arithmetic can or should flag it | record the defect per batch with its rupee value (`meta.json: planted.*_by_batch`) and skip zero-rupee plants |
+| corrupted batches settled **after** `as_of` | there is no bank line in the window to reconcile against | count only batches that appear in `settlements.csv`; report `planted_batches_out_of_scope` separately |
+| invoices with a short deduction that were never paid, or paid next month | nothing reached the feed | restrict the receivables denominator to documents with `paid=1` and `scheduled_pay <= as_of` (111 of 143 rows); print the excluded count instead of hiding it |
+
+Measured after the fix, same corpus, same seed: **26 of 26 planted batch defects caught,
+₹21,011.93 of ₹21,011.93 identified (100%)**; short payments **72 of 111 attributed (64.86%),
+34 more visible in the queue, 5 silently missed** — so the batch number went up to a *true* 100% and
+the receivables number went from an impossible 0% to a defensible 64.86%.
+
+Two things this caught that a passing test suite had not:
+
+* the previous version also double-counted money — a fee that is too high both overbills the fee line
+  *and* shorts the credit, so `fee_component + unexplained + undercredited` claimed ₹42,498.76 where the batch is only
+  owed ₹41,074.20. `recoverable_paise` now takes `max()` of the two views of the same rupee.
+* the naive "did we flag anything on this batch" numerator would have shown ~100% even if the flag had
+  nothing to do with the planted defect, so `identified_paise` is capped at the planted amount per batch
+  — which is also what makes a catch rate above 100% impossible rather than merely unlikely.
+
+Guards: `tests/test_recovery_and_classes.py` pins the `max()` semantics, the per-batch cap, the
+out-of-scope rule, the as-of window rule, and that "no ground truth" prints `not measured` instead of a
+number.
+
+---
+
+## 8. Still open, measured
 
 | item | number |
 |---|---|
 | 30-day outflow over-call (`roll_forward` past Sundays not modelled for payables) | +12.1% on the seeded check; error does not shrink to zero at longer horizons |
 | daily-path shape | only 1 of 30 days within 20% of the planned net on the seeded corpus, while the 30-day total is 5.2% off gross |
 | `t2_advice_utr` over-claim | 2 of 208 wrong (a payment advice naming two invoices where the amount matches one); `t5_amount_name` 1 of 2 |
-| `fuzzy_only` slower than `full` | ~745 ms vs ~475 ms engine time — with the cheap tiers disabled, more lines reach the global assignment |
-| `t6_lumpsum` cost | 294 ms of 484 ms reconcile to win 5 lines on this corpus; correct for a month-end, wasteful for a 50-line day |
+| `fuzzy_only` slower than `full` | ~750 ms vs ~485 ms engine time — with the cheap tiers disabled, more lines reach the global assignment |
+| `t6_lumpsum` cost | 296 ms of 491 ms reconcile to win 5 lines on this corpus; correct for a month-end, wasteful for a 50-line day |
+| `t6_lumpsum` scales badly | from `cashpilot sweep`: reconcile time 10 → 142 → 484 → 1,223 → 5,941 ms for 90 → 5,610 lines, i.e. 9,021 → 937 lines/s; `t6` is 32.5% of reconcile at 90 lines and **87.6% at 5,610**. The `max_candidates: 12` cap bounds the candidate set, not the 2¹² enumeration. Fix is a meet-in-the-middle search with a per-line budget and a `LUMPSUM_SEARCH_GAVE_UP` exception — not attempted here because it changes the ladder's semantics, and a silent behaviour change is worse than a documented quadratic |
+| recovery on the AP side | short-paid **vendor bills** surface as `UNMATCHED_DEBIT` rather than a claim (the tiny corpus: 0 of 1 in-scope, and 34 of 111 still unattributed at full size); recognising a 1%/2%/5%-of-goods TDS cut is regex + arithmetic and is not implemented |
 | empty CSVs read `no_rows` | deliberate, but a pandas reader will choke — see `report._write_csv` |

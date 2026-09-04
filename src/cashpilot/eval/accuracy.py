@@ -66,6 +66,7 @@ class ScoreCard:
     auto_post_correct: int = 0
     amount_error_paise: list[int] = field(default_factory=list)
     by_tier: dict[str, dict[str, int]] = field(default_factory=dict)
+    by_kind: dict[str, dict[str, object]] = field(default_factory=dict)
     rupees_correct_paise: int = 0
     rupees_matchable_paise: int = 0
     false_doc_assignments: int = 0
@@ -133,6 +134,7 @@ class ScoreCard:
             ),
             "max_abs_amount_error_paise": max(self.amount_error_paise, default=0),
             "by_tier": self.by_tier,
+            "by_kind": self.by_kind,
             "timing_ms": self.timing_ms,
             "throughput_lines_per_s": self.throughput_lines_per_s,
             "unresolved_count": len(self.unresolved),
@@ -156,9 +158,20 @@ def score(
     for m in matches:
         by_line.setdefault(m.line_id, []).append(m)
 
+    def bump(kind: str, key: str) -> None:
+        """Per-class bookkeeping. A single aggregate recall hides that lumpsum and settlement
+        groups are hard while invoice-number lines are trivial; this table is what we actually
+        report when asked how the ladder behaves on each kind of line."""
+        row = card.by_kind.setdefault(
+            kind,
+            {"lines": 0, "correct": 0, "partial": 0, "wrong": 0, "unmatched": 0, "refused_correctly": 0},
+        )
+        row[key] = int(row[key]) + 1
+
     for line_id, t in truth.items():
         kind = str(t["kind"])
         matchable = kind in MATCHABLE
+        bump(kind, "lines")
         card.rupees_matchable_paise += abs(int(t["amount_paise"])) if matchable else 0
         if matchable:
             card.lines_matchable += 1
@@ -180,6 +193,7 @@ def score(
                 )
             elif matchable:
                 card.unmatched_but_matchable += 1
+            bump(kind, "unmatched" if matchable else "refused_correctly")
             continue
 
         card.lines_matched += 1
@@ -188,6 +202,7 @@ def score(
         first = got[0]
         doc_truth = t["docs"]
         if claimed == doc_truth and len(got) == 1:
+            bump(kind, "correct")
             card.correct += 1
             card.rupees_correct_paise += abs(int(t["amount_paise"]))
             tier = card.by_tier.setdefault(first.tier, {"matches": 0, "correct": 0, "wrong": 0})
@@ -196,6 +211,7 @@ def score(
             if kind == "matchable_amount_mismatch":
                 card.amount_error_paise.append(abs(first.amount_diff_paise))
         elif claimed & doc_truth:
+            bump(kind, "partial")
             card.partial += 1
             tier = card.by_tier.setdefault(first.tier, {"matches": 0, "correct": 0, "wrong": 0})
             tier["matches"] += 1
@@ -213,6 +229,7 @@ def score(
                     }
                 )
         else:
+            bump(kind, "wrong")
             card.wrong += 1
             card.false_doc_assignments += len(claimed - doc_truth)
             tier = card.by_tier.setdefault(first.tier, {"matches": 0, "correct": 0, "wrong": 0})
@@ -236,6 +253,21 @@ def score(
             card.auto_post_count += 1
             if claimed == doc_truth and len(got) == 1:
                 card.auto_post_correct += 1
+
+    for k, row in card.by_kind.items():
+        n = int(row["lines"])
+        if k in QUARANTINE:
+            row["resolution"] = "left unmatched"
+            row["correct_pct"] = round(100.0 * int(row["refused_correctly"]) / n, 2) if n else 100.0
+        elif k == "matchable_lumpsum":
+            row["resolution"] = "one line, several documents"
+            row["correct_pct"] = round(100.0 * int(row["correct"]) / n, 2) if n else 0.0
+        elif k in MATCHABLE:
+            row["resolution"] = "matched to the exact document set"
+            row["correct_pct"] = round(100.0 * int(row["correct"]) / n, 2) if n else 0.0
+        else:
+            row["resolution"] = "unexplained by any document"
+            row["correct_pct"] = round(100.0 * (int(row["refused_correctly"]) + int(row["correct"])) / n, 2) if n else 0.0
 
     # quarantine score: expected-unmatched lines the engine correctly refused to post
     claimed_ids = set(by_line)

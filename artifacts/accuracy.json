@@ -59,19 +59,101 @@
       "wrong": 1
     }
   },
-  "timing_ms": {
-    "prepare_ms": 26.35,
-    "t0_duplicates_ms": 68.66,
-    "t1_settlement_ms": 13.32,
-    "t2_advice_utr_ms": 6.88,
-    "t3_doc_number_ms": 39.09,
-    "t4_amount_exact_ms": 27.69,
-    "t5_amount_name_ms": 1.34,
-    "t6_lumpsum_ms": 293.59,
-    "t7_fuzzy_ms": 4.66,
-    "classify_unresolved_ms": 0.87
+  "by_kind": {
+    "matchable": {
+      "lines": 1372,
+      "correct": 1371,
+      "partial": 0,
+      "wrong": 0,
+      "unmatched": 1,
+      "refused_correctly": 0,
+      "resolution": "matched to the exact document set",
+      "correct_pct": 99.93
+    },
+    "gateway_settlement": {
+      "lines": 172,
+      "correct": 172,
+      "partial": 0,
+      "wrong": 0,
+      "unmatched": 0,
+      "refused_correctly": 0,
+      "resolution": "matched to the exact document set",
+      "correct_pct": 100.0
+    },
+    "matchable_amount_mismatch": {
+      "lines": 108,
+      "correct": 70,
+      "partial": 0,
+      "wrong": 3,
+      "unmatched": 35,
+      "refused_correctly": 0,
+      "resolution": "matched to the exact document set",
+      "correct_pct": 64.81
+    },
+    "matchable_lumpsum": {
+      "lines": 20,
+      "correct": 16,
+      "partial": 2,
+      "wrong": 0,
+      "unmatched": 2,
+      "refused_correctly": 0,
+      "resolution": "one line, several documents",
+      "correct_pct": 80.0
+    },
+    "expected_unmatched_duplicate": {
+      "lines": 31,
+      "correct": 0,
+      "partial": 0,
+      "wrong": 0,
+      "unmatched": 0,
+      "refused_correctly": 31,
+      "resolution": "left unmatched",
+      "correct_pct": 100.0
+    },
+    "expected_unmatched_charge": {
+      "lines": 3,
+      "correct": 0,
+      "partial": 0,
+      "wrong": 0,
+      "unmatched": 0,
+      "refused_correctly": 3,
+      "resolution": "left unmatched",
+      "correct_pct": 100.0
+    },
+    "expected_unmatched_interest": {
+      "lines": 1,
+      "correct": 0,
+      "partial": 0,
+      "wrong": 0,
+      "unmatched": 0,
+      "refused_correctly": 1,
+      "resolution": "left unmatched",
+      "correct_pct": 100.0
+    },
+    "expected_unmatched_unknown": {
+      "lines": 2,
+      "correct": 0,
+      "partial": 0,
+      "wrong": 0,
+      "unmatched": 0,
+      "refused_correctly": 2,
+      "resolution": "left unmatched",
+      "correct_pct": 100.0
+    }
   },
-  "throughput_lines_per_s": 3542.3,
+  "timing_ms": {
+    "prepare_ms": 27.01,
+    "t0_duplicates_ms": 69.18,
+    "t1_settlement_ms": 13.39,
+    "t2_advice_utr_ms": 7.32,
+    "t3_doc_number_ms": 39.99,
+    "t4_amount_exact_ms": 28.44,
+    "t5_amount_name_ms": 1.59,
+    "t6_lumpsum_ms": 295.67,
+    "t7_fuzzy_ms": 5.75,
+    "classify_unresolved_ms": 0.82
+  },
+  "throughput_lines_per_s": 3493.7,
   "unresolved_count": 43,
   "notes": [
     "strategy=full tiers={'t1_settlement': 172, 't2_advice_utr': 208, 't3_doc_number': 515, 't4_amount_exact': 719, 't5_amount_name': 2, 't6_lumpsum': 5, 't7_fuzzy': 13}"

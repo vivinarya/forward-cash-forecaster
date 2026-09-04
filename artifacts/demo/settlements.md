@@ -1,35 +1,44 @@
 # Razorpay settlement verification
 
-- batches checked: **115**, flagged: **18** (15.7%)
-- gross captured: ₹1,14,44,150.00, commission billed: ₹2,12,735.02 (effective MDR 1.859%)
-- commission re-derived from the rate card: ₹2,11,996.15
-- **recoverable overbilling: ₹738.87**
+- batches checked: **113**, flagged: **27** (23.9%)
+- gross captured: ₹1,12,47,685.00, commission billed: ₹2,08,283.77 (effective MDR 1.852%)
+- commission re-derived from the rate card: ₹2,08,142.73
+- **recoverable (deduplicated claim value): ₹29,772.80** - see `recovery.md`
 - unexplained credit gaps vs bank feed: ₹0.00
-- refunds matched into batches: ₹2,32,010.78
+- refunds matched into batches: ₹2,18,140.58
 - payments older than the settlement window with no batch: 0
 
 ## Flagged batches
 
 | settlement | date | gross | fee_diff | credit_gap | flags |
 |---|---|---|---|---|---|
-| setl_00000027 | 2026-06-05 | ₹1,00,828.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000029 | 2026-06-08 | ₹1,19,794.00 | ₹105.76 | ₹0.00 | FEE_TIER_MISMATCH;FEE_COMPONENT_MISMATCH |
-| setl_00000032 | 2026-06-11 | ₹1,59,399.00 | ₹115.79 | ₹0.00 | FEE_TIER_MISMATCH;FEE_COMPONENT_MISMATCH |
-| setl_00000034 | 2026-06-13 | ₹1,58,429.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000037 | 2026-06-16 | ₹9,341.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000047 | 2026-06-27 | ₹1,43,173.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000053 | 2026-07-04 | ₹1,11,477.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000059 | 2026-07-10 | ₹61,467.00 | ₹191.74 | ₹0.00 | FEE_TIER_MISMATCH;FEE_COMPONENT_MISMATCH |
-| setl_00000066 | 2026-07-17 | ₹1,25,885.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000071 | 2026-07-22 | ₹1,43,885.00 | ₹146.72 | ₹0.00 | FEE_TIER_MISMATCH;FEE_COMPONENT_MISMATCH;BATCH_ARITHMETIC |
-| setl_00000081 | 2026-08-01 | ₹1,08,185.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000082 | 2026-08-03 | ₹1,40,787.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000089 | 2026-08-10 | ₹1,54,876.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000093 | 2026-08-14 | ₹1,27,258.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000098 | 2026-08-19 | ₹1,52,529.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000101 | 2026-08-22 | ₹1,23,969.00 | ₹178.86 | ₹0.00 | FEE_TIER_MISMATCH;FEE_COMPONENT_MISMATCH |
-| setl_00000105 | 2026-08-26 | ₹1,42,023.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
-| setl_00000107 | 2026-08-28 | ₹1,36,434.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000008 | 2026-05-18 | ₹1,08,490.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000009 | 2026-05-18 | ₹1,16,874.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000013 | 2026-05-23 | ₹95,947.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000016 | 2026-05-26 | ₹12,446.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000019 | 2026-05-29 | ₹1,08,034.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000028 | 2026-06-08 | ₹1,63,159.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000029 | 2026-06-08 | ₹32,789.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000032 | 2026-06-11 | ₹1,15,620.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000035 | 2026-06-15 | ₹1,00,228.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000038 | 2026-06-17 | ₹1,49,787.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000045 | 2026-06-24 | ₹81,501.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000049 | 2026-06-29 | ₹1,71,744.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000050 | 2026-06-29 | ₹47,026.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000056 | 2026-07-06 | ₹1,51,382.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000065 | 2026-07-16 | ₹1,21,824.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000076 | 2026-07-27 | ₹32,830.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000080 | 2026-07-31 | ₹1,14,541.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000086 | 2026-08-07 | ₹1,43,375.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000087 | 2026-08-08 | ₹1,45,195.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000090 | 2026-08-12 | ₹91,891.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000091 | 2026-08-13 | ₹1,29,044.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000095 | 2026-08-17 | ₹60,006.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000097 | 2026-08-20 | ₹78,302.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000099 | 2026-08-22 | ₹86,310.00 | ₹0.00 | ₹0.00 | BATCH_ARITHMETIC |
+| setl_00000106 | 2026-08-31 | ₹1,43,451.00 | ₹141.04 | ₹0.00 | FEE_TIER_MISMATCH;FEE_COMPONENT_MISMATCH |
+
+_2 more rows in the CSV, not shown._
 
 
 Arithmetic only: gross - MDR - TMN - GST on fees - TDS - refunds = net credited, per batch,

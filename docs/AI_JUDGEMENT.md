@@ -21,7 +21,7 @@ That is all. Two call sites, one file each.
 | document reference extraction | configurable regexes in `config/recon_rules.json` | `INV-2026-00123` has a shape; a regex has 100% recall on a shape and no hallucination |
 | date parsing | format list + explicit Indian DD/MM/YYYY fallback | a model that "fixes" `05/09/2026` into September 5 or May 9 is a liability |
 | name matching | normalise → token containment + `SequenceMatcher` edit ratio | must be reproducible when someone asks "why did you post this?" |
-| lumpsum allocation | subset-sum over an inverted token index | arithmetic on a bounded candidate set; also 5 ms and 289 ms of tuning went into making it fast |
+| lumpsum allocation | subset-sum over an inverted token index | arithmetic on a bounded candidate set; it is also the most expensive rung (296 ms of the 491 ms reconcile at 1,709 lines, and 87.6% of it at 5,610 — see `artifacts/scale_sweep.md`) and the one that refuses rather than guesses |
 | payment timing | learned empirical delay distribution + survival with cure fraction | a distribution you can plot per customer is a distribution a credit manager can argue with |
 | bands | 2,000-path Monte Carlo, `numpy` percentiles | needs a sampler, not a language |
 | scoring | ground-truth set equality | the measurement must not be model-dependent, or nothing is measured |
@@ -40,10 +40,13 @@ That is all. Two call sites, one file each.
    the transport layer; `run_manifest.json` reports `calls / ok / failed / invalid_json /
    budget_remaining / approx_tokens / wall_ms`, so "we used 41 calls and 3 answers were thrown out" is
    a fact in the artifact, not a claim in a README.
-4. **Validation, then discard.** `_validate` requires a category from a fixed taxonomy, confidence in
-   [0.4, 1.0], a non-empty explanation, a known owner, a known action, and cross-references that point
-   at ids the batch actually contained. Failures increment `invalid_json` and the row keeps the
-   deterministic classification.
+4. **Validation, then discard.** `_validate` returns a reason string and any non-`None` reason kills the
+   answer: `not_an_object`, `category_out_of_taxonomy`, `confidence_out_of_range`, `low_confidence`
+   (< 0.4), `missing_explanation`. `owner` and `action` are not reasons — an unknown one is snapped back
+   to `Banking-ops` / `hold` — and `same_root_cause_as` is filtered to ids the batch actually contained.
+   Every rejection increments `llm_discarded` and writes `llm_status = "discarded:<reason>"` into
+   `exceptions.csv`, so the row keeps a *trace* of the answer we refused to use. The deterministic
+   classification underneath it is unchanged.
 5. **Prompt discipline.** The narration is passed **verbatim** (`narration (verbatim, may be truncated
    by the bank)`) so the model reads the bank's own text, not our normalisation of it. The system
    prompt is two sentences of scope: *"You classify unresolved bank-statement lines into a fixed
@@ -68,7 +71,9 @@ That is all. Two call sites, one file each.
 ## Offline by default
 
 No key, no network, no failure: `llm.enabled=false` ⇒ deterministic judge + template brief, and
-`run_manifest.json` says so. The demo command passes `--llm off` explicitly, so the numbers a panel
+`run_manifest.json` says so. [The README table](../README.md#deterministic-fallbacks) lists every
+missing input and what runs in its place — including the two that are not about the model at all
+(missing optional CSVs, unreadable rows). The demo command passes `--llm off` explicitly, so the numbers a panel
 sees were produced with the model switched off. Enable it with
 
 ```bash

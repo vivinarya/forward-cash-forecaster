@@ -4,3 +4,8 @@
 # Deliberately NOT dependencies: pandas, scikit-learn, transformers, langchain, pydantic, requests.
 # See docs/AI_JUDGEMENT.md - "no unnecessary libraries" is the same discipline as "no unnecessary AI".
 numpy==2.3.5
+
+# Installing this file also installs the package itself, in editable mode, so both `cashpilot ...`
+# and `python -m cashpilot ...` work straight after `pip install -r requirements.txt`. It is not a
+# dependency: it is this repo. Use `pip install -e .` if you prefer to say it out loud.
+-e .

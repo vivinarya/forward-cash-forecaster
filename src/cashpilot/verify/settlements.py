@@ -90,11 +90,75 @@ class BatchCheck:
     credited_paise: int | None
     refund_paise: int
     txn_count: int
+    declared_tmn_paise: int = 0
+    declared_gst_paise: int = 0
+    declared_tds_paise: int = 0
+    expected_gst_paise: int = 0
+    expected_tds_paise: int = 0
     flags: list[str] = field(default_factory=list)
 
     @property
     def overbilled_paise(self) -> int:
         return max(0, self.declared_fee_paise - self.expected_fee_paise)
+
+    @property
+    def unexplained_deduction_paise(self) -> int:
+        """Rupees taken out of this batch that no deduction on file explains.
+
+        gross − commission − TMN − GST − TDS − refunds = net. Any residue is money the gateway kept
+        without evidence: a dropped refund row, a silent breakage adjustment, a manual correction.
+        It is the single most actionable number in this report because it is directly claimable.
+        """
+        residue = (
+            self.gross_paise
+            - self.declared_fee_paise
+            - self.declared_tmn_paise
+            - self.declared_gst_paise
+            - self.declared_tds_paise
+            - self.refund_paise
+            - self.declared_net_paise
+        )
+        return residue
+
+    @property
+    def component_overbill_paise(self) -> int:
+        """GST/TDS billed above what the batch's own settlement classes imply (TDS at source is 0/1/2 %)."""
+        return max(0, (self.declared_gst_paise + self.declared_tds_paise) - (self.expected_gst_paise + self.expected_tds_paise))
+
+    @property
+    def undercredited_paise(self) -> int:
+        if self.credited_paise is None:
+            return 0
+        return max(0, self.expected_net_paise - self.credited_paise)
+
+    @property
+    def rate_card_claim_paise(self) -> int:
+        """Rupees the gateway billed above the rate card it applies to this batch's own mix."""
+        return self.overbilled_paise + self.component_overbill_paise
+
+    @property
+    def recoverable_paise(self) -> int:
+        """What this batch is worth chasing for, in paise.
+
+        Three orthogonal buckets, added once each:
+
+        * `unexplained_deduction` - the batch's own declared numbers do not add up, so money left the
+          batch with no deduction on file behind it. Claimable as is.
+        * `rate_card_claim` vs `undercredited` - combined with **max(), not +**. A fee that is too high
+          makes the declared net too low, and if the credit followed that declaration then the cash
+          shortfall *is* the overbilling; adding both would bill the same rupees to the client twice.
+          They only separate when the credit did not follow the declaration, and max() keeps whichever
+          claim is larger. Under-counting is not possible: at least one of the two equals the gap.
+        """
+        return abs(self.unexplained_deduction_paise) + max(self.rate_card_claim_paise, self.undercredited_paise)
+
+    @property
+    def recovery_rate_pct(self) -> float:
+        """Share of the money this batch owed us that actually reached the account."""
+        if self.expected_net_paise <= 0:
+            return 100.0
+        got = self.credited_paise if self.credited_paise is not None else 0
+        return round(100.0 * min(got, self.expected_net_paise) / self.expected_net_paise, 2)
 
     @property
     def credit_gap_paise(self) -> int:
@@ -117,6 +181,12 @@ class BatchCheck:
             "expected_net_paise": self.expected_net_paise,
             "credited_paise": self.credited_paise if self.credited_paise is not None else "",
             "credit_gap_paise": self.credit_gap_paise,
+            "unexplained_deduction_paise": self.unexplained_deduction_paise,
+            "overbilled_paise": self.overbilled_paise,
+            "component_overbill_paise": self.component_overbill_paise,
+            "undercredited_paise": self.undercredited_paise,
+            "recoverable_paise": self.recoverable_paise,
+            "recovery_rate_pct": self.recovery_rate_pct,
             "flags": ";".join(self.flags),
         }
 
@@ -178,6 +248,11 @@ def verify_settlements(
             credited_paise=credited,
             refund_paise=refund_amt,
             txn_count=s.txn_count or len(comps),
+            declared_tmn_paise=s.tmn_paise,
+            declared_gst_paise=s.gst_paise,
+            declared_tds_paise=s.tds_paise,
+            expected_gst_paise=exp["gst"],
+            expected_tds_paise=exp["tds"],
             flags=flags,
         )
         rows.append(row)
@@ -300,7 +375,23 @@ def verify_settlements(
         "gross_paise": sum(r.gross_paise for r in rows),
         "declared_fee_paise": sum(r.declared_fee_paise for r in rows),
         "expected_fee_paise": sum(r.expected_fee_paise for r in rows),
-        "recoverable_paise": sum(r.overbilled_paise for r in rows),
+        "recoverable_paise": sum(r.recoverable_paise for r in rows),
+        "fee_overbill_paise": sum(r.overbilled_paise for r in rows),
+        "component_overbill_paise": sum(r.component_overbill_paise for r in rows),
+        "unexplained_deduction_paise": sum(r.unexplained_deduction_paise for r in rows),
+        "undercredited_paise": sum(r.undercredited_paise for r in rows),
+        "expected_net_paise": sum(r.expected_net_paise for r in rows),
+        "credited_paise": sum(r.credited_paise or 0 for r in rows),
+        "recovery_rate_pct": round(
+            100.0 * sum(min(r.credited_paise or 0, r.expected_net_paise) for r in rows) / max(1, sum(r.expected_net_paise for r in rows)),
+            3,
+        ),
+        "batches_with_rupee_stake": sum(1 for r in rows if r.recoverable_paise > sched.tolerance_paise),
+        "batch_stake_rate": round(sum(1 for r in rows if r.recoverable_paise > sched.tolerance_paise) / max(1, len(rows)), 4),
+        "gross_at_stake_pct": round(
+            100.0 * sum(r.gross_paise for r in rows if r.recoverable_paise > sched.tolerance_paise) / max(1, sum(r.gross_paise for r in rows)),
+            2,
+        ),
         "credit_gap_paise": sum(r.credit_gap_paise for r in rows),
         "refunds_matched_paise": sum(r.refund_paise for r in rows),
         "effective_mdr_pct": round(sum(r.declared_fee_paise for r in rows) / max(1, sum(r.gross_paise for r in rows)) * 100, 3),

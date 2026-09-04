@@ -126,6 +126,11 @@ def write_all(res, out_dir: str | Path) -> dict[str, str]:
     _write_csv(out / "aged_receivables.csv", aged)
     written["aged_receivables.csv"] = f"{len(aged)} rows"
 
+    rec = getattr(res, "recovery", None)
+    recovery_rows = list(rec.batches) if rec else []
+    _write_csv(out / "recovery_batches.csv", recovery_rows)
+    written["recovery_batches.csv"] = f"{len(recovery_rows)} rows"
+
     unresolved = list(res.accuracy.unresolved) if res.accuracy else []
     _write_csv(out / "unresolved.csv", unresolved)
     written["unresolved.csv"] = f"{len(unresolved)} rows"
@@ -139,10 +144,11 @@ def write_all(res, out_dir: str | Path) -> dict[str, str]:
     # ---------------- markdown ----------------
     (out / "reconciliation.md").write_text(recon_md(res))
     (out / "settlements.md").write_text(settlement_md(res))
+    (out / "recovery.md").write_text(recovery_md(res))
     (out / "forecast.md").write_text(forecast_md(res))
     (out / "brief.md").write_text(brief_md(res))
     (out / "INDEX.md").write_text(index_md(res, written))
-    for name in ("reconciliation.md", "settlements.md", "forecast.md", "brief.md", "INDEX.md"):
+    for name in ("reconciliation.md", "settlements.md", "recovery.md", "forecast.md", "brief.md", "INDEX.md"):
         written[name] = "report"
 
     (out / "dashboard.html").write_text(dashboard_html(res))
@@ -167,6 +173,7 @@ def recon_md(res) -> str:
     for e in res.recon.exceptions:
         exc_counts[e.code] = exc_counts.get(e.code, 0) + 1
     exc_rows = [{"code": k, "count": v} for k, v in sorted(exc_counts.items(), key=lambda kv: -kv[1])]
+    kind_rows = _kind_rows(acc)
     tri = res.triage_stats
     lines = [
         "# Reconciliation run",
@@ -200,6 +207,12 @@ def recon_md(res) -> str:
         "## Where the matches came from",
         "",
         md_table(tier_rows, ["tier", "matches", "correct", "wrong"]),
+        "## Behaviour by class of line",
+        "",
+        "Aggregate recall averages a class that works with a class that does not. This is the same run,",
+        "split by what the line was:",
+        "",
+        md_table(kind_rows, ["class of line", "lines", "exact", "partial", "wrong", "refused", "left alone", "what right means here", "rate"]),
         "## Exception mix",
         "",
         md_table(exc_rows, ["code", "count"]),
@@ -235,6 +248,28 @@ def recon_md(res) -> str:
     return "\n".join(lines)
 
 
+def _kind_rows(acc) -> list[dict[str, object]]:
+    """Per-class behaviour of the matching ladder. Same aggregate recall can hide a class that is
+    doing fine and a class that is failing, so both views get published."""
+    by_kind = getattr(acc, "by_kind", {}) or {}
+    rows = []
+    for kind, v in sorted(by_kind.items(), key=lambda kv: -int(kv[1]["lines"])):
+        rows.append(
+            {
+                "class of line": kind,
+                "lines": v["lines"],
+                "exact": v["correct"],
+                "partial": v["partial"],
+                "wrong": v["wrong"],
+                "refused": v["unmatched"],
+                "left alone": v["refused_correctly"],
+                "what right means here": v["resolution"],
+                "rate": f"{v['correct_pct']}%",
+            }
+        )
+    return rows
+
+
 def settlement_md(res) -> str:
     v = res.verify_summary
     flagged = [r.as_row() for r in res.verify_rows if r.flags]
@@ -246,7 +281,7 @@ def settlement_md(res) -> str:
             f"- gross captured: {fmt_inr(v['gross_paise'])}, commission billed: {fmt_inr(v['declared_fee_paise'])}"
             f" (effective MDR {v['effective_mdr_pct']}%)",
             f"- commission re-derived from the rate card: {fmt_inr(v['expected_fee_paise'])}",
-            f"- **recoverable overbilling: {fmt_inr(v['recoverable_paise'])}**",
+            f"- **recoverable (deduplicated claim value): {fmt_inr(v['recoverable_paise'])}** - see `recovery.md`",
             f"- unexplained credit gaps vs bank feed: {fmt_inr(v['credit_gap_paise'])}",
             f"- refunds matched into batches: {fmt_inr(v['refunds_matched_paise'])}",
             f"- payments older than the settlement window with no batch: {v['unsettled_payments']}",
@@ -273,6 +308,150 @@ def settlement_md(res) -> str:
             "",
         ]
     )
+
+
+def recovery_md(res) -> str:
+    """What the run put a price on, and - when the corpus carries ground truth - how much of what was
+    there to find it found. Kept as two blocks so a reader can tell which numbers need a generator."""
+    rec = getattr(res, "recovery", None)
+    if rec is None:
+        return "# Money at stake\n\nnot computed for this run.\n"
+    rt = rec.runtime
+    bd = rec.batch_defects
+    ar = rec.receivables
+    out = [
+        "# Money at stake",
+        "",
+        "## What this run found (no ground truth needed)",
+        "",
+        md_table(
+            [
+                {"measure": "batches verified", "value": rt["batches"]},
+                {
+                    "measure": "batches with rupees at stake",
+                    "value": f"{rt['batches_with_rupee_stake']}",
+                },
+                {"measure": "claim value (deduplicated)", "value": rt["claim_value"]},
+                {
+                    "measure": "  fee / GST / TDS billed above the rate card",
+                    "value": fmt_inr(rt["fee_overbill_paise"] + rt["gst_tds_overbill_paise"]),
+                },
+                {
+                    "measure": "  deductions with no evidence on file",
+                    "value": fmt_inr(rt["unexplained_deduction_paise"]),
+                },
+                {
+                    "measure": "  credit short of what the batches owed",
+                    "value": fmt_inr(rt["undercredited_paise"]),
+                },
+                {
+                    "measure": "credit recovery rate (money in / money owed)",
+                    "value": f"{rt['recovery_rate_pct']}%",
+                },
+                {
+                    "measure": "share of gateway gross with a rupee at stake",
+                    "value": f"{rt['gross_at_stake_pct']}%",
+                },
+            ],
+            ["measure", "value"],
+        ),
+        "",
+        "A batch inside `config/fee_schedule.json`'s tolerance contributes nothing to any column - it is",
+        "not a finding. Fee overbilling and cash shortfall are combined with `max()`, not `+`: when the",
+        "credit follows an inflated fee declaration, those are the same rupees.",
+        "",
+    ]
+    if ar.get("planted_docs"):
+        out += [
+            "## Receivables: short payments the customers owe us",
+            "",
+            md_table(
+                [
+                    {"measure": "invoices paid short, paid inside the window", "value": ar["planted_docs"]},
+                    {"measure": "more paid short later in the plan", "value": int(ar.get("planted_in_plan", 0)) - int(ar["planted_docs"])},
+                    {"measure": "money withheld from us", "value": ar.get("planted_value", "")},
+                    {
+                        "measure": "tied to the invoice (a claim can be raised)",
+                        "value": f"{ar['surfaced_docs']} of {ar['planted_docs']} ({ar['detection_rate_pct']}%)",
+                    },
+                    {
+                        "measure": "in the exception queue, not yet attributed",
+                        "value": f"{ar['queued_docs']} ({ar.get('queue_rate_pct')}% of short-paid invoices seen)",
+                    },
+                    {"measure": "silently missed", "value": ar.get("missed_docs", 0)},
+                    {"measure": "rupee value turned into a claim", "value": f"{ar.get('chased_value', '')} ({ar['rupee_catch_rate_pct']}%)"},
+                    {"measure": "rupee value sitting in the queue", "value": ar.get("queued_value", "-")},
+                ],
+                ["measure", "value"],
+            ),
+            "",
+        ]
+    elif ar.get("note"):
+        out += [f"_receivables: {ar['note']}_", ""]
+
+    if bd.get("measured"):
+        out += [
+            "## Gateway defects: did we catch what was planted?",
+            "",
+            "The corpus was generated with a ledger of every defect we introduced. Only the generator",
+            "knows that ledger; a production run has no such column and this section is omitted.",
+            "",
+            md_table(
+                [
+                    {
+                        "defect": c.get("label_short") or str(c["class"]),
+                        "found as": c["exception"],
+                        "planted": c["planted"],
+                        "caught": c["flagged"],
+                        "catch rate": f"{c['detection_rate_pct']}%" if c["detection_rate_pct"] is not None else "n/a",
+                        "rupees identified": f"{c['identified_value']} of {c['planted_value']}"
+                        + (f" ({c['rupee_catch_rate_pct']}%)" if c["rupee_catch_rate_pct"] is not None else ""),
+                    }
+                    for c in rec.classes
+                ],
+                ["defect", "found as", "planted", "caught", "catch rate", "rupees identified"],
+            ),
+            "",
+            f"**De-duplicated over batches**: {bd['flagged_batches']} of {bd['planted_batches']} corrupted",
+            f"batches flagged ({bd['detection_rate_pct']}%), {bd['identified_value']} of {bd['planted_value']} identified",
+            f"({bd['rupee_catch_rate_pct']}%). {bd['batches_flagged_with_no_planted_defect']} batches were flagged with",
+            "no defect planted on them - on real data those are the false positives to review.",
+            "",
+        ]
+    else:
+        out += [
+            "## Detection rate: not measured",
+            "",
+            "This corpus has no `meta.json` defect ledger, so there is no denominator. The rupee columns",
+            "above still stand - they are arithmetic against the files - but a catch rate cannot be claimed",
+            "without ground truth, and this report does not invent one.",
+            "",
+        ]
+    out += [
+        "## Batches worth chasing",
+        "",
+        md_table(
+            [
+                {
+                    "settlement": r["settlement_id"],
+                    "settled_on": r["settled_on"],
+                    "gross": fmt_inr(r["gross_paise"]),
+                    "recoverable": fmt_inr(r["recoverable_paise"]),
+                    "recovery_rate_%": r["recovery_rate_pct"],
+                    "flags": r["flags"],
+                }
+                for r in rec.batches[:25]
+            ],
+            ["settlement", "settled_on", "gross", "recoverable", "recovery_rate_%", "flags"],
+        ),
+        "",
+        "Full list in `recovery_batches.csv`. Every number on this page is arithmetic on the input files;",
+        "no model output appears in it.",
+        "",
+    ]
+    if rec.notes:
+        out += ["## Notes", ""] + [f"- {n}" for n in rec.notes] + [""]
+    return "\n".join(out)
 
 
 def forecast_md(res) -> str:
@@ -380,6 +559,10 @@ def index_md(res, written: dict[str, str]) -> str:
                     {"result": "auto-posted without a human", "value": f"{m['counts']['auto_posted']} at {_pct(acc.auto_post_precision)} precision" if acc else m["counts"]["auto_posted"]},
                     {"result": "exceptions needing a human", "value": m["counts"]["exceptions"]},
                     {"result": "settlement batches flagged", "value": res.verify_summary.get("batches_flagged")},
+                    {
+                        "result": "money identified as recoverable",
+                        "value": (getattr(res, "recovery", None).runtime.get("claim_value") if getattr(res, "recovery", None) else "n/a"),
+                    },
                     {"result": "forecast horizon", "value": f"{res.cash.stats['horizon_days']} days, P10/P50/P90 over {res.cash.stats['mc_runs']} paths"},
                     {"result": "end-to-end wall time", "value": f"{m['stages_ms']['total_ms']} ms"},
                     {"result": "LLM", "value": "enabled" if m["llm"]["enabled"] else f"off ({m['llm'].get('errors') or 'no key'}) - deterministic fallback used"},

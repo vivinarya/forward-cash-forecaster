@@ -3,7 +3,7 @@
 - batches checked: **174**, flagged: **26** (14.9%)
 - gross captured: ₹1,70,92,746.00, commission billed: ₹3,16,540.76 (effective MDR 1.852%)
 - commission re-derived from the rate card: ₹3,15,353.65
-- **recoverable overbilling: ₹1,187.11**
+- **recoverable (deduplicated claim value): ₹41,074.20** - see `recovery.md`
 - unexplained credit gaps vs bank feed: ₹0.00
 - refunds matched into batches: ₹3,09,710.17
 - payments older than the settlement window with no batch: 0

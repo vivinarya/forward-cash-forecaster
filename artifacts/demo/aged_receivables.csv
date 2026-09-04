@@ -1,383 +1,400 @@
 document_no,counterparty,party_code,due_date,days_overdue,bucket,outstanding_inr,expected_in_window_inr,status
-INV-2026-000437,Saptagiri Water Treatment LLP,,2026-07-21,45,31-60,6000000.0,0.0,overdue
-INV-2026-000616,Saptagiri Water Treatment LLP,,2026-08-14,21,1-30,6000000.0,0.0,overdue
-INV-2026-000680,Raman Deep Conveyances Private Limited,,2026-08-22,13,1-30,6000000.0,3971852.99,overdue
-INV-2026-000413,Raman Deep Conveyances Private Limited,,2026-07-16,50,31-60,5642663.0,0.0,overdue
-INV-2026-000175,Raman Deep Conveyances Private Limited,,2026-06-18,78,61-90,5594420.0,0.0,overdue
-INV-2026-000669,Saptagiri Water Treatment LLP,,2026-08-21,14,1-30,4669550.0,0.0,overdue
-INV-2026-000366,Raman Deep Conveyances Private Limited,,2026-07-13,53,31-60,4575368.0,0.0,overdue
-INV-2026-000157,Raman Deep Conveyances Private Limited,,2026-06-16,80,61-90,3623002.0,0.0,overdue
-INV-2026-000360,Saptagiri Water Treatment LLP,,2026-07-11,55,31-60,3498241.0,0.0,overdue
-INV-2026-000117,Raman Deep Conveyances Private Limited,,2026-06-11,85,61-90,3350391.0,0.0,overdue
-INV-2026-000086,Karman Print Solutions Private Limited,,2026-07-06,60,31-60,3009021.0,0.0,overdue
-INV-2026-000379,Vaishnavi Textiles LLP,,2026-07-14,52,31-60,2636351.0,0.0,overdue
-INV-2026-000439,Raman Deep Conveyances Private Limited,,2026-07-21,45,31-60,2598813.0,0.0,overdue
-INV-2026-000739,Saptagiri Water Treatment LLP,,2026-08-31,4,1-30,2485887.0,2197476.27,overdue
-INV-2026-000297,Saptagiri Water Treatment LLP,,2026-07-04,62,61-90,2465155.0,0.0,overdue
-INV-2026-000317,Saptagiri Water Treatment LLP,,2026-07-07,59,31-60,2167751.0,0.0,overdue
-INV-2026-000422,Anant Infra Solar EPC Ltd,,2026-08-31,4,1-30,2167689.0,1964734.03,overdue
-INV-2026-000245,Karman Print Solutions Private Limited,,2026-07-27,39,31-60,2085591.0,0.0,overdue
-INV-2026-000180,Karman Print Solutions Private Limited,,2026-07-18,48,31-60,2004125.0,0.0,overdue
-INV-2026-000038,Vaishnavi Textiles LLP,,2026-05-28,99,91-180,1978625.0,0.0,overdue
-INV-2026-000587,Saptagiri Water Treatment LLP,,2026-08-11,24,1-30,1883307.0,0.0,overdue
-INV-2026-000058,Karman Print Solutions Private Limited,,2026-07-02,64,61-90,1817491.0,0.0,overdue
-INV-2026-000311,Saptagiri Water Treatment LLP,,2026-07-06,60,31-60,1764730.0,0.0,overdue
-INV-2026-000178,Raman Deep Conveyances Private Limited,,2026-06-18,78,61-90,1690763.0,0.0,overdue
-INV-2026-000227,Everstone Logistics Ltd,,2026-07-10,56,31-60,1660080.0,0.0,overdue
-INV-2026-000045,Vaishnavi Textiles LLP,,2026-05-29,98,91-180,1504132.0,0.0,overdue
-INV-2026-000272,Saptagiri Water Treatment LLP,,2026-07-01,65,61-90,1465688.0,0.0,overdue
-INV-2026-000017,Karman Print Solutions Private Limited,,2026-06-25,71,61-90,1379590.0,2605.74,overdue
-INV-2026-000090,Vaishnavi Textiles LLP,,2026-06-06,90,61-90,1367616.0,0.0,overdue
-INV-2026-000660,Zenith One Electricals & Co,,2026-08-20,15,1-30,1366876.0,0.0,overdue
-INV-2026-000659,Vaishnavi Textiles LLP,,2026-08-20,15,1-30,1346749.0,0.0,overdue
-INV-2026-000271,Anant Infra Solar EPC Ltd,,2026-08-17,18,1-30,1326454.0,0.0,overdue
-INV-2026-000564,Raman Deep Conveyances Private Limited,,2026-08-07,28,1-30,1317862.0,0.0,overdue
-INV-2026-000567,Raman Deep Conveyances Private Limited,,2026-08-07,28,1-30,1309567.0,0.0,overdue
-INV-2026-000750,Saptagiri Water Treatment LLP,,2026-09-01,3,1-30,1277565.0,0.0,overdue
-INV-2026-000002,Raman Deep Conveyances Private Limited,,2026-05-22,105,91-180,1273834.0,0.0,overdue
-INV-2026-000338,Saptagiri Water Treatment LLP,,2026-07-09,57,31-60,1253426.0,0.0,overdue
-INV-2026-000262,Raman Deep Conveyances Private Limited,,2026-06-30,66,61-90,1242352.0,0.0,overdue
-INV-2026-000469,Vaishnavi Textiles LLP,,2026-07-25,41,31-60,1228788.0,0.0,overdue
-INV-2026-000067,Saptagiri Water Treatment LLP,,2026-06-03,93,91-180,1209986.0,3671.85,overdue
-INV-2026-000083,Indusloom Roofing Products PVT LTD,,2026-06-20,76,61-90,1205209.0,0.0,overdue
-INV-2026-000558,Saptagiri Water Treatment LLP,,2026-08-06,29,1-30,1195070.0,0.0,overdue
-INV-2026-000025,Hiranyaka Hardware PVT LTD,,2026-05-27,100,91-180,1191903.0,0.0,overdue
-INV-2026-000460,Vaishnavi Textiles LLP,,2026-07-24,42,31-60,1187076.0,0.0,overdue
-INV-2026-000487,Saptagiri Water Treatment LLP,,2026-07-28,38,31-60,1148494.0,0.0,overdue
-INV-2026-000658,Vaishnavi Textiles LLP,,2026-08-20,15,1-30,1117456.0,0.0,overdue
-INV-2026-000440,Raman Deep Conveyances Private Limited,,2026-07-21,45,31-60,1114315.0,1924.61,overdue
-INV-2026-000397,Karman Print Solutions Private Limited,,2026-08-14,21,1-30,1101002.0,0.0,overdue
-INV-2026-000368,Everstone Logistics Ltd,,2026-07-27,39,31-60,1099725.0,0.0,overdue
-INV-2026-000344,Saptagiri Water Treatment LLP,,2026-07-10,56,31-60,1096304.0,0.0,overdue
-INV-2026-000241,Raman Deep Conveyances Private Limited,,2026-06-27,69,61-90,1080182.0,0.0,overdue
-INV-2026-000075,Karman Print Solutions Private Limited,,2026-07-04,62,61-90,1076399.0,0.0,overdue
-INV-2026-000005,Raman Deep Conveyances Private Limited,,2026-05-22,105,91-180,1071292.0,0.0,overdue
-INV-2026-000530,Saptagiri Water Treatment LLP,,2026-08-04,31,31-60,1055780.0,0.0,overdue
-INV-2026-000322,Karman Print Solutions Private Limited,,2026-08-07,28,1-30,1024959.0,0.0,overdue
-INV-2026-000503,Raman Deep Conveyances Private Limited,,2026-07-31,35,31-60,1012647.0,0.0,overdue
-INV-2026-000493,Vaishnavi Textiles LLP,,2026-07-30,36,31-60,973956.0,0.0,open
-INV-2026-000504,Hiranyaka Hardware PVT LTD,,2026-07-31,35,31-60,961959.0,11051.71,open
-INV-2026-000361,Indusloom Roofing Products PVT LTD,,2026-07-27,39,31-60,945698.0,1005.47,overdue
-INV-2026-000432,Vaishnavi Textiles LLP,,2026-07-20,46,31-60,933188.0,0.0,overdue
-INV-2026-000544,Karman Print Solutions Private Limited,,2026-09-04,0,1-30,932175.0,751759.28,open
-INV-2026-000326,Trividata Warehousing Ltd,,2026-07-08,58,31-60,924437.0,2983.49,overdue
-INV-2026-000461,Raman Deep Conveyances Private Limited,,2026-07-24,42,31-60,924078.0,0.0,overdue
-INV-2026-000468,Vaishnavi Textiles LLP,,2026-07-25,41,31-60,917553.0,0.0,overdue
-INV-2026-000201,Indusloom Roofing Products PVT LTD,,2026-07-06,60,31-60,907123.0,0.0,overdue
-INV-2026-000524,Indusloom Roofing Products PVT LTD,,2026-08-18,17,1-30,898042.0,50208.12,overdue
-INV-2026-000249,Lohiya Polymers Private Limited,,2026-07-27,39,31-60,883233.0,5081.11,overdue
-INV-2026-000543,Lohiya Polymers Private Limited,,2026-09-04,0,1-30,880299.0,808917.33,open
-INV-2026-000722,Saptagiri Water Treatment LLP,,2026-08-28,7,1-30,855074.0,722799.17,overdue
-INV-2026-000490,Everstone Logistics Ltd,,2026-08-13,22,1-30,840229.0,0.0,overdue
-INV-2026-000410,Zenith One Electricals & Co,,2026-07-16,50,31-60,834006.0,0.0,overdue
-INV-2026-000522,Hiranyaka Hardware PVT LTD,,2026-08-03,32,31-60,827244.0,0.0,open
-INV-2026-000264,Vaishnavi Textiles LLP,,2026-06-30,66,61-90,821403.0,1845.98,open
-INV-2026-000154,Vaishnavi Textiles LLP,,2026-06-16,80,61-90,821236.0,1847.58,open
-INV-2026-000382,Karman Print Solutions Private Limited,,2026-08-13,22,1-30,816850.0,0.0,overdue
-INV-2026-000412,Saptagiri Water Treatment LLP,,2026-07-16,50,31-60,804694.0,0.0,open
-INV-2026-000026,Indusloom Roofing Products PVT LTD,,2026-06-11,85,61-90,803183.0,0.0,overdue
-INV-2026-000121,Hiranyaka Hardware PVT LTD,,2026-06-12,84,61-90,784500.0,0.0,overdue
-INV-2026-000470,Tansh Machine Parts Ltd,,2026-08-10,25,1-30,781580.0,0.0,overdue
-INV-2026-000775,Hiranyaka Hardware PVT LTD,,2026-09-04,0,1-30,774358.0,739473.51,open
-INV-2026-000302,Indusloom Roofing Products PVT LTD,,2026-07-20,46,31-60,760665.0,0.0,overdue
-INV-2026-000060,Saptagiri Water Treatment LLP,,2026-06-02,94,91-180,760358.0,0.0,overdue
-INV-2026-000150,Raman Deep Conveyances Private Limited,,2026-06-16,80,61-90,745456.0,0.0,overdue
-INV-2026-000104,Anant Infra Solar EPC Ltd,,2026-07-25,41,31-60,734920.0,0.0,overdue
-INV-2026-000193,Indusloom Roofing Products PVT LTD,,2026-07-06,60,31-60,729720.0,0.0,overdue
-INV-2026-000511,Zenith One Electricals & Co,,2026-08-01,34,31-60,727466.0,0.0,overdue
-INV-2026-000483,Anant Infra Catering Services Private Limited,,2026-08-27,8,1-30,721941.0,446879.22,overdue
-INV-2026-000509,Anant Infra Catering Services Private Limited,,2026-08-31,4,1-30,720186.0,524810.76,overdue
-INV-2026-000081,Everstone Logistics Ltd,,2026-06-20,76,61-90,716085.0,0.0,overdue
-INV-2026-000103,Raman Deep Conveyances Private Limited,,2026-06-10,86,61-90,705459.0,1219.91,overdue
-INV-2026-000085,Anant Infra Solar EPC Ltd,,2026-07-20,46,31-60,704566.0,0.0,overdue
-INV-2026-000133,Anant Infra Solar EPC Ltd,,2026-07-28,38,31-60,688712.0,0.0,overdue
-INV-2026-000131,Tansh Machine Parts Ltd,,2026-06-29,67,61-90,685749.0,0.0,overdue
-INV-2026-000165,Raman Deep Conveyances Private Limited,,2026-06-17,79,61-90,672547.0,0.0,overdue
-INV-2026-000542,Zenith One Electricals & Co,,2026-08-05,30,1-30,666451.0,0.0,overdue
-INV-2026-000678,Vaishnavi Textiles LLP,,2026-08-22,13,1-30,646028.0,0.0,overdue
-INV-2026-000670,Vaishnavi Textiles LLP,,2026-08-21,14,1-30,644786.0,0.0,overdue
-INV-2026-000381,Raman Deep Conveyances Private Limited,,2026-07-14,52,31-60,643103.0,0.0,overdue
-INV-2026-000176,Raman Deep Conveyances Private Limited,,2026-06-18,78,61-90,642449.0,0.0,overdue
-INV-2026-000672,Zenith One Electricals & Co,,2026-08-21,14,1-30,629225.0,0.0,overdue
-INV-2026-000457,Indusloom Roofing Products PVT LTD,,2026-08-07,28,1-30,619995.0,0.0,overdue
-INV-2026-000394,Everstone Logistics Ltd,,2026-07-30,36,31-60,612326.0,0.0,overdue
-INV-2026-000334,Vaishnavi Textiles LLP,,2026-07-09,57,31-60,607869.0,0.0,overdue
-INV-2026-000283,Vaishnavi Textiles LLP,,2026-07-02,64,61-90,602938.0,0.0,overdue
-INV-2026-000398,Tansh Machine Parts Ltd,,2026-07-30,36,31-60,600679.0,2407.22,open
-INV-2026-000024,Vaishnavi Textiles LLP,,2026-05-27,100,91-180,594906.0,0.0,overdue
-INV-2026-000169,Anant Infra Catering Services Private Limited,,2026-07-17,49,31-60,589856.0,0.0,overdue
-INV-2026-000091,Vaishnavi Textiles LLP,,2026-06-06,90,61-90,580086.0,0.0,overdue
-INV-2026-000492,Vaishnavi Textiles LLP,,2026-07-29,37,31-60,576640.0,0.0,open
-INV-2026-000423,Zenith One Electricals & Co,,2026-07-17,49,31-60,572876.0,0.0,overdue
-INV-2026-000043,Everstone Logistics Ltd,,2026-06-13,83,61-90,563199.0,0.0,overdue
-INV-2026-000577,Zenith One Electricals & Co,,2026-08-08,27,1-30,559672.0,0.0,overdue
-INV-2026-000603,Tansh Machine Parts Ltd,,2026-08-28,7,1-30,558807.0,0.0,overdue
-INV-2026-000671,Zenith One Electricals & Co,,2026-08-21,14,1-30,557736.0,0.0,overdue
-INV-2026-000697,Vaishnavi Textiles LLP,,2026-08-25,10,1-30,553105.0,0.0,overdue
-INV-2026-000637,Trividata Warehousing Ltd,,2026-08-17,18,1-30,552602.0,0.0,overdue
-INV-2026-000281,Anant Infra Solar EPC Ltd,,2026-08-17,18,1-30,546453.0,0.0,overdue
-INV-2026-000347,Raman Deep Conveyances Private Limited,,2026-07-10,56,31-60,542720.0,0.0,overdue
-INV-2026-000192,Indusloom Roofing Products PVT LTD,,2026-07-06,60,31-60,542094.0,0.0,overdue
-INV-2026-000019,Everstone Logistics Ltd,,2026-06-10,86,61-90,541008.0,0.0,overdue
-INV-2026-000009,Anant Infra Catering Services Private Limited,,2026-06-22,74,61-90,538721.0,0.0,overdue
-INV-2026-000336,Indusloom Roofing Products PVT LTD,,2026-07-24,42,31-60,538281.0,0.0,overdue
-INV-2026-000318,Indusloom Roofing Products PVT LTD,,2026-07-22,44,31-60,533729.0,0.0,overdue
-INV-2026-000576,Saptagiri Water Treatment LLP,,2026-08-08,27,1-30,513227.0,0.0,overdue
-INV-2026-000289,Lohiya Polymers Private Limited,,2026-08-03,32,31-60,505475.0,0.0,overdue
-INV-2026-000134,Karman Print Solutions Private Limited,,2026-07-13,53,31-60,502963.0,0.0,overdue
-INV-2026-000465,Hiranyaka Hardware PVT LTD,,2026-07-25,41,31-60,502000.0,4123.64,open
-INV-2026-000615,Hiranyaka Hardware PVT LTD,,2026-08-14,21,1-30,501728.0,0.0,overdue
-INV-2026-000502,Zenith One Electricals & Co,,2026-07-31,35,31-60,498061.0,0.0,overdue
-INV-2026-000122,Vaishnavi Textiles LLP,,2026-06-12,84,61-90,492536.0,0.0,overdue
-INV-2026-000195,Hiranyaka Hardware PVT LTD,,2026-06-20,76,61-90,491625.0,0.0,overdue
-INV-2026-000418,Vaishnavi Textiles LLP,,2026-07-17,49,31-60,487734.0,0.0,overdue
-INV-2026-000608,Zenith One Electricals & Co,,2026-08-13,22,1-30,485697.0,0.0,overdue
-INV-2026-000627,Tansh Machine Parts Ltd,,2026-08-31,4,1-30,480222.0,368022.76,overdue
-INV-2026-000482,Indusloom Roofing Products PVT LTD,,2026-08-12,23,1-30,468988.0,6742.4,overdue
-INV-2026-000516,Tansh Machine Parts Ltd,,2026-08-17,18,1-30,468977.0,78504.89,open
-INV-2026-000427,Anant Infra Catering Services Private Limited,,2026-08-17,18,1-30,463722.0,0.0,overdue
-INV-2026-000233,Vaishnavi Textiles LLP,,2026-06-26,70,61-90,455760.0,0.0,open
-INV-2026-000089,Raman Deep Conveyances Private Limited,,2026-06-06,90,61-90,455047.0,0.0,overdue
-INV-2026-000535,Vaishnavi Textiles LLP,,2026-08-04,31,31-60,441245.0,0.0,open
-INV-2026-000499,Indusloom Roofing Products PVT LTD,,2026-08-17,18,1-30,441188.0,0.0,overdue
-INV-2026-000491,Karman Print Solutions Private Limited,,2026-08-28,7,1-30,435403.0,0.0,overdue
-INV-2026-000421,Everstone Logistics Ltd,,2026-08-01,34,31-60,426984.0,0.0,overdue
-INV-2026-000035,Anant Infra Catering Services Private Limited,,2026-06-27,69,61-90,420549.0,680.77,open
-INV-2026-000602,Saptagiri Water Treatment LLP,,2026-08-13,22,1-30,419806.0,0.0,overdue
-INV-2026-000595,Trividata Warehousing Ltd,,2026-08-12,23,1-30,419135.0,0.0,overdue
-INV-2026-000723,Saptagiri Water Treatment LLP,,2026-08-28,7,1-30,416007.0,351653.14,overdue
-INV-2026-000152,Indusloom Roofing Products PVT LTD,,2026-07-01,65,61-90,413464.0,390.93,open
-INV-2026-000034,Raman Deep Conveyances Private Limited,,2026-05-28,99,91-180,410593.0,0.0,overdue
-INV-2026-000327,Tansh Machine Parts Ltd,,2026-07-23,43,31-60,410311.0,0.0,open
-INV-2026-000196,Trividata Warehousing Ltd,,2026-06-20,76,61-90,406973.0,0.0,overdue
-INV-2026-000393,Anant Infra Solar EPC Ltd,,2026-08-29,6,1-30,405358.0,0.0,overdue
-INV-2026-000151,Anant Infra Catering Services Private Limited,,2026-07-16,50,31-60,403760.0,0.0,overdue
-INV-2026-000395,Indusloom Roofing Products PVT LTD,,2026-07-30,36,31-60,403743.0,0.0,overdue
-INV-2026-000335,Zenith One Electricals & Co,,2026-07-09,57,31-60,401091.0,0.0,overdue
-INV-2026-000242,Anant Infra Solar EPC Ltd,,2026-08-11,24,1-30,394770.0,0.0,overdue
-INV-2026-000358,Indusloom Roofing Products PVT LTD,,2026-07-27,39,31-60,394725.0,0.0,overdue
-INV-2026-000268,Zenith One Electricals & Co,,2026-07-01,65,61-90,393541.0,0.0,overdue
-INV-2026-000333,Saptagiri Water Treatment LLP,,2026-07-09,57,31-60,391613.0,0.0,overdue
-INV-2026-000219,Lohiya Polymers Private Limited,,2026-07-24,42,31-60,390789.0,0.0,overdue
-INV-2026-000529,Indusloom Roofing Products PVT LTD,,2026-08-19,16,1-30,389390.0,0.0,overdue
-INV-2026-000244,Anant Infra Catering Services Private Limited,,2026-07-27,39,31-60,388130.0,0.0,overdue
-INV-2026-000168,Indusloom Roofing Products PVT LTD,,2026-07-02,64,61-90,385974.0,0.0,open
-INV-2026-000763,Zenith One Electricals & Co,,2026-09-03,1,1-30,385129.0,0.0,overdue
-INV-2026-000209,Shree Balaji Recyclers Company,,2026-06-15,81,61-90,384703.0,0.0,open
-INV-2026-000220,Zenith One Electricals & Co,,2026-06-24,72,61-90,384074.0,0.0,overdue
-INV-2026-000008,Anant Infra Solar EPC Ltd,,2026-07-07,59,31-60,381471.0,0.0,overdue
-INV-2026-000532,Tansh Machine Parts Ltd,,2026-08-19,16,1-30,380220.0,0.0,open
-INV-2026-000106,Shree Balaji Recyclers Company,,2026-06-02,94,91-180,379005.0,0.0,overdue
-INV-2026-000246,Hiranyaka Hardware PVT LTD,,2026-06-27,69,61-90,376435.0,0.0,overdue
-INV-2026-000556,Raman Deep Conveyances Private Limited,,2026-08-06,29,1-30,374734.0,0.0,overdue
-INV-2026-000207,Zenith One Electricals & Co,,2026-06-23,73,61-90,373053.0,0.0,overdue
-INV-2026-000191,Tansh Machine Parts Ltd,,2026-07-06,60,31-60,372403.0,1051.77,overdue
-INV-2026-000383,Raman Deep Conveyances Private Limited,,2026-07-14,52,31-60,371706.0,0.0,overdue
-INV-2026-000132,Anant Infra Solar EPC Ltd,,2026-07-28,38,31-60,365400.0,0.0,overdue
-INV-2026-000113,Zenith One Electricals & Co,,2026-06-11,85,61-90,365302.0,1915.41,overdue
-INV-2026-000414,Zenith One Electricals & Co,,2026-07-16,50,31-60,363935.0,0.0,overdue
-INV-2026-000003,Indusloom Roofing Products PVT LTD,,2026-06-06,90,61-90,362844.0,0.0,overdue
-INV-2026-000545,Everstone Logistics Ltd,,2026-08-20,15,1-30,362222.0,0.0,overdue
-INV-2026-000378,Zenith One Electricals & Co,,2026-07-14,52,31-60,360519.0,0.0,overdue
-INV-2026-000400,Zenith One Electricals & Co,,2026-07-15,51,31-60,354864.0,0.0,overdue
-INV-2026-000298,Lohiya Polymers Private Limited,,2026-08-03,32,31-60,353309.0,0.0,overdue
-INV-2026-000135,Shree Balaji Recyclers Company,,2026-06-05,91,91-180,351875.0,0.0,overdue
-INV-2026-000348,Hiranyaka Hardware PVT LTD,,2026-07-10,56,31-60,346214.0,0.0,overdue
-INV-2026-000547,Tansh Machine Parts Ltd,,2026-08-20,15,1-30,345077.0,105535.29,open
-INV-2026-000349,Zenith One Electricals & Co,,2026-07-10,56,31-60,344952.0,0.0,overdue
-INV-2026-000420,Anant Infra Solar EPC Ltd,,2026-08-31,4,1-30,342870.0,310767.87,overdue
-INV-2026-000700,Zenith One Electricals & Co,,2026-08-25,10,1-30,341851.0,0.0,overdue
-INV-2026-000742,Trividata Warehousing Ltd,,2026-08-31,4,1-30,341218.0,285080.03,overdue
-INV-2026-000636,Indusloom Roofing Products PVT LTD,,2026-08-31,4,1-30,337722.0,0.0,overdue
-INV-2026-000510,Trividata Warehousing Ltd,,2026-08-01,34,31-60,334475.0,1879.76,overdue
-INV-2026-000709,Raman Deep Conveyances Private Limited,,2026-08-26,9,1-30,331414.0,0.0,overdue
-INV-2026-000153,Shree Balaji Recyclers Company,,2026-06-08,88,61-90,329710.0,0.0,overdue
-INV-2026-000036,Zenith One Electricals & Co,,2026-05-28,99,91-180,328550.0,0.0,overdue
-INV-2026-000004,Tansh Machine Parts Ltd,,2026-06-06,90,61-90,327825.0,0.0,overdue
-INV-2026-000749,Saptagiri Water Treatment LLP,,2026-09-01,3,1-30,324195.0,289271.43,overdue
-INV-2026-000020,Anant Infra Catering Services Private Limited,,2026-06-25,71,61-90,323684.0,524.01,overdue
-INV-2026-000725,Trividata Warehousing Ltd,,2026-08-28,7,1-30,322315.0,0.0,overdue
-INV-2026-000299,Saptagiri Water Treatment LLP,,2026-07-04,62,61-90,322054.0,0.0,overdue
-INV-2026-000074,Anant Infra Solar EPC Ltd,,2026-07-20,46,31-60,314066.0,0.0,overdue
-INV-2026-000269,Raman Deep Conveyances Private Limited,,2026-07-01,65,61-90,312214.0,0.0,overdue
-INV-2026-000359,Anant Infra Solar EPC Ltd,,2026-08-25,10,1-30,311969.0,0.0,overdue
-INV-2026-000396,Vaishnavi Textiles LLP,,2026-07-15,51,31-60,311747.0,0.0,overdue
-INV-2026-000190,Trividata Warehousing Ltd,,2026-06-20,76,61-90,305194.0,0.0,open
-INV-2026-000179,Everstone Logistics Ltd,,2026-07-03,63,61-90,303995.0,0.0,overdue
-INV-2026-000010,Raman Deep Conveyances Private Limited,,2026-05-23,104,91-180,303168.0,0.0,overdue
-INV-2026-000575,Tansh Machine Parts Ltd,,2026-08-24,11,1-30,300432.0,0.0,overdue
-INV-2026-000377,Lohiya Polymers Private Limited,,2026-08-13,22,1-30,300226.0,0.0,overdue
-INV-2026-000505,Tansh Machine Parts Ltd,,2026-08-17,18,1-30,298940.0,0.0,overdue
-INV-2026-000082,Hiranyaka Hardware PVT LTD,,2026-06-05,91,91-180,298642.0,0.0,overdue
-INV-2026-000280,Everstone Logistics Ltd,,2026-07-17,49,31-60,296005.0,0.0,overdue
-INV-2026-000467,Hiranyaka Hardware PVT LTD,,2026-07-25,41,31-60,293700.0,0.0,open
-INV-2026-000586,Zenith One Electricals & Co,,2026-08-11,24,1-30,292960.0,0.0,overdue
-INV-2026-000057,Shree Balaji Recyclers Company,,2026-05-25,102,91-180,292343.0,0.0,overdue
-INV-2026-000757,Zenith One Electricals & Co,,2026-09-02,2,1-30,292134.0,0.0,overdue
-INV-2026-000448,Hiranyaka Hardware PVT LTD,,2026-07-22,44,31-60,291968.0,0.0,overdue
-INV-2026-000288,Zenith One Electricals & Co,,2026-07-03,63,61-90,291515.0,0.0,overdue
-INV-2026-000177,Zenith One Electricals & Co,,2026-06-18,78,61-90,289474.0,0.0,overdue
-INV-2026-000365,Lohiya Polymers Private Limited,,2026-08-11,24,1-30,286902.0,0.0,overdue
-INV-2026-000265,Lohiya Polymers Private Limited,,2026-07-30,36,31-60,281618.0,0.0,overdue
-INV-2026-000429,Zenith One Electricals & Co,,2026-07-18,48,31-60,278579.0,0.0,overdue
-INV-2026-000105,Lohiya Polymers Private Limited,,2026-07-10,56,31-60,276558.0,0.0,open
-INV-2026-000345,Zenith One Electricals & Co,,2026-07-10,56,31-60,276442.0,0.0,overdue
-INV-2026-000376,Karman Print Solutions Private Limited,,2026-08-13,22,1-30,275606.0,0.0,overdue
-INV-2026-000367,Karman Print Solutions Private Limited,,2026-08-11,24,1-30,271219.0,0.0,overdue
-INV-2026-000523,Indusloom Roofing Products PVT LTD,,2026-08-17,18,1-30,269942.0,0.0,overdue
-INV-2026-000098,Trividata Warehousing Ltd,,2026-06-09,87,61-90,269175.0,0.0,open
-INV-2026-000323,Zenith One Electricals & Co,,2026-07-08,58,31-60,267583.0,0.0,overdue
-INV-2026-000084,Zenith One Electricals & Co,,2026-06-05,91,91-180,266750.0,0.0,overdue
-INV-2026-000156,Hiranyaka Hardware PVT LTD,,2026-06-16,80,61-90,263835.0,0.0,overdue
-INV-2026-000315,Zenith One Electricals & Co,,2026-07-06,60,31-60,261545.0,0.0,overdue
-INV-2026-000512,Zenith One Electricals & Co,,2026-08-01,34,31-60,259946.0,0.0,overdue
-INV-2026-000096,Anant Infra Catering Services Private Limited,,2026-07-09,57,31-60,257365.0,0.0,overdue
-INV-2026-000217,Zenith One Electricals & Co,,2026-06-24,72,61-90,257203.0,0.0,overdue
-INV-2026-000210,Anant Infra Catering Services Private Limited,,2026-07-23,43,31-60,255482.0,0.0,overdue
-INV-2026-000380,Saptagiri Water Treatment LLP,,2026-07-14,52,31-60,254748.0,0.0,open
-INV-2026-000130,Indusloom Roofing Products PVT LTD,,2026-06-29,67,61-90,253606.0,239.76,overdue
-INV-2026-000531,Indusloom Roofing Products PVT LTD,,2026-08-19,16,1-30,253283.0,0.0,overdue
-INV-2026-000303,Shree Balaji Recyclers Company,,2026-06-26,70,61-90,252240.0,0.0,overdue
-INV-2026-000456,Tansh Machine Parts Ltd,,2026-08-07,28,1-30,249455.0,0.0,overdue
-INV-2026-000646,Everstone Logistics Ltd,,2026-09-02,2,1-30,248725.0,0.0,overdue
-INV-2026-000712,Trividata Warehousing Ltd,,2026-08-26,9,1-30,248434.0,0.0,overdue
-INV-2026-000588,Tansh Machine Parts Ltd,,2026-08-26,9,1-30,247963.0,0.0,overdue
-INV-2026-000166,Hiranyaka Hardware PVT LTD,,2026-06-17,79,61-90,245711.0,0.0,overdue
-INV-2026-000223,Zenith One Electricals & Co,,2026-06-24,72,61-90,243602.0,0.0,overdue
-INV-2026-000343,Indusloom Roofing Products PVT LTD,,2026-07-25,41,31-60,243416.0,0.0,overdue
-INV-2026-000325,Trividata Warehousing Ltd,,2026-07-08,58,31-60,242912.0,0.0,overdue
-INV-2026-000059,Trividata Warehousing Ltd,,2026-06-02,94,91-180,242684.0,0.0,overdue
-INV-2026-000357,Karman Print Solutions Private Limited,,2026-08-10,25,1-30,242566.0,0.0,overdue
-INV-2026-000206,Trividata Warehousing Ltd,,2026-06-23,73,61-90,241810.0,0.0,overdue
-INV-2026-000466,Shree Balaji Recyclers Company,,2026-07-17,49,31-60,241703.0,0.0,overdue
-INV-2026-000346,Everstone Logistics Ltd,,2026-07-25,41,31-60,241032.0,0.0,overdue
-INV-2026-000438,Raman Deep Conveyances Private Limited,,2026-07-21,45,31-60,236679.0,0.0,overdue
-INV-2026-000356,Everstone Logistics Ltd,,2026-07-27,39,31-60,236101.0,1294.5,overdue
-INV-2026-000565,Trividata Warehousing Ltd,,2026-08-07,28,1-30,235675.0,0.0,overdue
-INV-2026-000037,Indusloom Roofing Products PVT LTD,,2026-06-12,84,61-90,232470.0,219.9,overdue
-INV-2026-000762,Shree Balaji Recyclers Company,,2026-08-26,9,1-30,232143.0,211820.05,overdue
-INV-2026-000065,Lohiya Polymers Private Limited,,2026-07-03,63,61-90,231972.0,0.0,open
-INV-2026-000097,Hiranyaka Hardware PVT LTD,,2026-06-09,87,61-90,229772.0,0.0,overdue
-INV-2026-000301,Anant Infra Catering Services Private Limited,,2026-08-03,32,31-60,229029.0,0.0,overdue
-INV-2026-000324,Tansh Machine Parts Ltd,,2026-07-23,43,31-60,227182.0,0.0,overdue
-INV-2026-000286,Anant Infra Catering Services Private Limited,,2026-08-03,32,31-60,224392.0,0.0,overdue
-INV-2026-000107,Indusloom Roofing Products PVT LTD,,2026-06-25,71,61-90,223256.0,211.12,overdue
-INV-2026-000450,Shree Balaji Recyclers Company,,2026-07-14,52,31-60,223140.0,0.0,overdue
-INV-2026-000765,Hiranyaka Hardware PVT LTD,,2026-09-03,1,1-30,222710.0,212200.61,overdue
-INV-2026-000618,Everstone Logistics Ltd,,2026-08-29,6,1-30,222513.0,0.0,overdue
-INV-2026-000234,Anant Infra Solar EPC Ltd,,2026-08-10,25,1-30,222493.0,0.0,overdue
-INV-2026-000141,Tansh Machine Parts Ltd,,2026-06-29,67,61-90,219811.0,0.0,overdue
-INV-2026-000118,Raman Deep Conveyances Private Limited,,2026-06-11,85,61-90,218353.0,377.49,overdue
-INV-2026-000501,Saptagiri Water Treatment LLP,,2026-07-31,35,31-60,218341.0,0.0,overdue
-INV-2026-000232,Zenith One Electricals & Co,,2026-06-26,70,61-90,216750.0,0.0,overdue
-INV-2026-000589,Zenith One Electricals & Co,,2026-08-11,24,1-30,216407.0,0.0,overdue
-INV-2026-000619,Everstone Logistics Ltd,,2026-08-29,6,1-30,215261.0,0.0,overdue
-INV-2026-000042,Hiranyaka Hardware PVT LTD,,2026-05-29,98,91-180,214927.0,0.0,overdue
-INV-2026-000625,Saptagiri Water Treatment LLP,,2026-08-17,18,1-30,214268.0,0.0,overdue
-INV-2026-000431,Tansh Machine Parts Ltd,,2026-08-03,32,31-60,212772.0,1492.07,open
-INV-2026-000605,Raman Deep Conveyances Private Limited,,2026-08-13,22,1-30,211625.0,0.0,overdue
-INV-2026-000741,Hiranyaka Hardware PVT LTD,,2026-08-31,4,1-30,210662.0,0.0,overdue
-INV-2026-000049,Tansh Machine Parts Ltd,,2026-06-15,81,61-90,207314.0,0.0,overdue
-INV-2026-000528,Trividata Warehousing Ltd,,2026-08-04,31,31-60,205723.0,0.0,overdue
-INV-2026-000411,Hiranyaka Hardware PVT LTD,,2026-07-16,50,31-60,203614.0,0.0,overdue
-INV-2026-000066,Anant Infra Catering Services Private Limited,,2026-07-03,63,61-90,202919.0,328.26,open
-INV-2026-000186,Indusloom Roofing Products PVT LTD,,2026-07-04,62,61-90,201317.0,190.28,open
-INV-2026-000734,Shree Balaji Recyclers Company,,2026-08-21,14,1-30,201129.0,0.0,overdue
-INV-2026-000494,Anant Infra Catering Services Private Limited,,2026-08-29,6,1-30,200116.0,0.0,overdue
-INV-2026-000185,Shree Balaji Recyclers Company,,2026-06-11,85,61-90,198977.0,0.0,overdue
-INV-2026-000452,Hiranyaka Hardware PVT LTD,,2026-07-22,44,31-60,197194.0,0.0,overdue
-INV-2026-000696,Zenith One Electricals & Co,,2026-08-25,10,1-30,193525.0,0.0,overdue
-INV-2026-000594,Tansh Machine Parts Ltd,,2026-08-27,8,1-30,192095.0,123994.39,overdue
-INV-2026-000751,Hiranyaka Hardware PVT LTD,,2026-09-01,3,1-30,191232.0,181002.57,overdue
-INV-2026-000282,Lohiya Polymers Private Limited,,2026-08-01,34,31-60,190265.0,0.0,overdue
-INV-2026-000167,Raman Deep Conveyances Private Limited,,2026-06-17,79,61-90,189590.0,0.0,overdue
-INV-2026-000428,Lohiya Polymers Private Limited,,2026-08-17,18,1-30,189068.0,0.0,overdue
-INV-2026-000247,Tansh Machine Parts Ltd,,2026-07-13,53,31-60,188961.0,0.0,overdue
-INV-2026-000517,Everstone Logistics Ltd,,2026-08-17,18,1-30,188301.0,37872.25,overdue
-INV-2026-000205,Zenith One Electricals & Co,,2026-06-23,73,61-90,188021.0,0.0,overdue
-INV-2026-000441,Trividata Warehousing Ltd,,2026-07-21,45,31-60,187374.0,0.0,overdue
-INV-2026-000702,Shree Balaji Recyclers Company,,2026-08-17,18,1-30,186970.0,0.0,overdue
-INV-2026-000430,Lohiya Polymers Private Limited,,2026-08-17,18,1-30,185170.0,0.0,overdue
-INV-2026-000823,Shree Balaji Recyclers Company,,2026-09-03,1,1-30,181549.0,168053.12,overdue
-INV-2026-000136,Anant Infra Catering Services Private Limited,,2026-07-13,53,31-60,179282.0,0.0,overdue
-INV-2026-000471,Anant Infra Catering Services Private Limited,,2026-08-24,11,1-30,178730.0,0.0,overdue
-INV-2026-000574,Shree Balaji Recyclers Company,,2026-07-31,35,31-60,175032.0,0.0,overdue
-INV-2026-000372,Trividata Warehousing Ltd,,2026-07-13,53,31-60,173883.0,0.0,overdue
-INV-2026-000560,Zenith One Electricals & Co,,2026-08-06,29,1-30,169407.0,5544.83,overdue
-INV-2026-000300,Anant Infra Catering Services Private Limited,,2026-08-03,32,31-60,168034.0,0.0,overdue
-INV-2026-000726,Trividata Warehousing Ltd,,2026-08-28,7,1-30,167682.0,0.0,overdue
-INV-2026-000102,Tansh Machine Parts Ltd,,2026-06-25,71,61-90,166959.0,0.0,overdue
-INV-2026-000254,Anant Infra Catering Services Private Limited,,2026-07-28,38,31-60,164558.0,0.0,overdue
-INV-2026-000158,Anant Infra Solar EPC Ltd,,2026-07-31,35,31-60,164313.0,0.0,overdue
-INV-2026-000455,Trividata Warehousing Ltd,,2026-07-23,43,31-60,164110.0,0.0,overdue
-INV-2026-000221,Hiranyaka Hardware PVT LTD,,2026-06-24,72,61-90,161889.0,0.0,overdue
-INV-2026-000044,Shree Balaji Recyclers Company,,2026-05-21,106,91-180,159068.0,0.0,overdue
-INV-2026-000039,Lohiya Polymers Private Limited,,2026-06-27,69,61-90,158715.0,0.0,overdue
-INV-2026-000208,Anant Infra Catering Services Private Limited,,2026-07-23,43,31-60,158603.0,0.0,overdue
-INV-2026-000187,Anant Infra Solar EPC Ltd,,2026-08-03,32,31-60,158353.0,0.0,overdue
-INV-2026-000392,Raman Deep Conveyances Private Limited,,2026-07-15,51,31-60,157601.0,271.89,overdue
-INV-2026-000270,Shree Balaji Recyclers Company,,2026-06-23,73,61-90,155539.0,0.0,open
-INV-2026-000027,Indusloom Roofing Products PVT LTD,,2026-06-11,85,61-90,154432.0,0.0,overdue
-INV-2026-000485,Tansh Machine Parts Ltd,,2026-08-12,23,1-30,154139.0,0.0,overdue
-INV-2026-000248,Anant Infra Catering Services Private Limited,,2026-07-27,39,31-60,153800.0,0.0,overdue
-INV-2026-000515,Tansh Machine Parts Ltd,,2026-08-17,18,1-30,151465.0,0.0,overdue
-INV-2026-000546,Hiranyaka Hardware PVT LTD,,2026-08-05,30,1-30,151229.0,0.0,open
-INV-2026-000449,Lohiya Polymers Private Limited,,2026-08-21,14,1-30,150538.0,0.0,overdue
-INV-2026-000115,Hiranyaka Hardware PVT LTD,,2026-06-11,85,61-90,148586.0,0.0,overdue
-INV-2026-000212,Tansh Machine Parts Ltd,,2026-07-08,58,31-60,147292.0,0.0,overdue
-INV-2026-000731,Trividata Warehousing Ltd,,2026-08-29,6,1-30,145609.0,114667.65,overdue
-INV-2026-000068,Anant Infra Catering Services Private Limited,,2026-07-03,63,61-90,145196.0,0.0,open
-INV-2026-000018,Lohiya Polymers Private Limited,,2026-06-25,71,61-90,142160.0,0.0,overdue
-INV-2026-000541,Anant Infra Catering Services Private Limited,,2026-09-04,0,1-30,141643.0,112123.05,open
-INV-2026-000433,Zenith One Electricals & Co,,2026-07-20,46,31-60,141475.0,0.0,overdue
-INV-2026-000451,Shree Balaji Recyclers Company,,2026-07-14,52,31-60,140842.0,0.0,overdue
-INV-2026-000211,Anant Infra Solar EPC Ltd,,2026-08-07,28,1-30,139164.0,0.0,overdue
-INV-2026-000419,Trividata Warehousing Ltd,,2026-07-17,49,31-60,138169.0,0.0,overdue
-INV-2026-000243,Hiranyaka Hardware PVT LTD,,2026-06-27,69,61-90,137655.0,0.0,overdue
-INV-2026-000001,Tansh Machine Parts Ltd,,2026-06-06,90,61-90,137617.0,0.0,overdue
-INV-2026-000559,Shree Balaji Recyclers Company,,2026-07-29,37,31-60,135384.0,0.0,overdue
-INV-2026-000226,Lohiya Polymers Private Limited,,2026-07-25,41,31-60,132777.0,0.0,overdue
-INV-2026-000116,Anant Infra Catering Services Private Limited,,2026-07-11,55,31-60,128890.0,0.0,overdue
-INV-2026-000399,Hiranyaka Hardware PVT LTD,,2026-07-15,51,31-60,128583.0,0.0,overdue
-INV-2026-000337,Everstone Logistics Ltd,,2026-07-24,42,31-60,128543.0,0.0,overdue
-INV-2026-000310,Anant Infra Solar EPC Ltd,,2026-08-19,16,1-30,127882.0,0.0,overdue
-INV-2026-000287,Lohiya Polymers Private Limited,,2026-08-03,32,31-60,127786.0,0.0,overdue
-INV-2026-000447,Tansh Machine Parts Ltd,,2026-08-06,29,1-30,127665.0,0.0,overdue
-INV-2026-000263,Shree Balaji Recyclers Company,,2026-06-22,74,61-90,126632.0,0.0,open
-INV-2026-000638,Shree Balaji Recyclers Company,,2026-08-08,27,1-30,126208.0,0.0,overdue
-INV-2026-000218,Anant Infra Catering Services Private Limited,,2026-07-24,42,31-60,123980.0,0.0,overdue
-INV-2026-000230,Hiranyaka Hardware PVT LTD,,2026-06-26,70,61-90,122516.0,0.0,overdue
-INV-2026-000194,Lohiya Polymers Private Limited,,2026-07-20,46,31-60,119724.0,0.0,open
-INV-2026-000772,Shree Balaji Recyclers Company,,2026-08-27,8,1-30,119077.0,109313.47,overdue
-INV-2026-000760,Trividata Warehousing Ltd,,2026-09-03,1,1-30,118498.0,104165.13,overdue
-INV-2026-000255,Anant Infra Catering Services Private Limited,,2026-07-28,38,31-60,116378.0,0.0,overdue
-INV-2026-000184,Shree Balaji Recyclers Company,,2026-06-11,85,61-90,114556.0,0.0,overdue
-INV-2026-000533,Shree Balaji Recyclers Company,,2026-07-27,39,31-60,105641.0,0.0,overdue
-INV-2026-000129,Raman Deep Conveyances Private Limited,,2026-06-13,83,61-90,105154.0,0.0,overdue
-INV-2026-000682,Hiranyaka Hardware PVT LTD,,2026-08-22,13,1-30,101107.0,0.0,overdue
-INV-2026-000093,Trividata Warehousing Ltd,,2026-06-08,88,61-90,99158.0,0.0,overdue
-INV-2026-000695,Shree Balaji Recyclers Company,,2026-08-17,18,1-30,98579.0,77338.12,overdue
-INV-2026-000773,Hiranyaka Hardware PVT LTD,,2026-09-04,0,1-30,96485.0,92138.27,open
-INV-2026-000714,Trividata Warehousing Ltd,,2026-08-27,8,1-30,94792.0,0.0,overdue
-INV-2026-000200,Trividata Warehousing Ltd,,2026-06-22,74,61-90,93542.0,0.0,overdue
-INV-2026-000253,Anant Infra Catering Services Private Limited,,2026-07-28,38,31-60,92919.0,0.0,overdue
-INV-2026-000604,Shree Balaji Recyclers Company,,2026-08-05,30,1-30,92108.0,33669.67,overdue
-INV-2026-000099,Anant Infra Catering Services Private Limited,,2026-07-09,57,31-60,87955.0,0.0,overdue
-INV-2026-000222,Anant Infra Catering Services Private Limited,,2026-07-24,42,31-60,87825.0,0.0,overdue
-INV-2026-000235,Lohiya Polymers Private Limited,,2026-07-27,39,31-60,83845.0,0.0,overdue
-INV-2026-000199,Shree Balaji Recyclers Company,,2026-06-13,83,61-90,82595.0,0.0,overdue
-INV-2026-000662,Shree Balaji Recyclers Company,,2026-08-12,23,1-30,75333.0,0.0,overdue
-INV-2026-000204,Hiranyaka Hardware PVT LTD,,2026-06-22,74,61-90,73486.0,0.0,overdue
-INV-2026-000500,Anant Infra Catering Services Private Limited,,2026-08-31,4,1-30,64542.0,47032.61,overdue
-INV-2026-000279,Hiranyaka Hardware PVT LTD,,2026-07-02,64,61-90,64262.0,0.0,overdue
-INV-2026-000785,Shree Balaji Recyclers Company,,2026-08-28,7,1-30,63971.0,0.0,overdue
-INV-2026-000513,Hiranyaka Hardware PVT LTD,,2026-08-01,34,31-60,61542.0,0.0,overdue
-INV-2026-000534,Shree Balaji Recyclers Company,,2026-07-27,39,31-60,61278.0,0.0,overdue
-INV-2026-000536,Hiranyaka Hardware PVT LTD,,2026-08-04,31,31-60,61079.0,0.0,open
-INV-2026-000114,Hiranyaka Hardware PVT LTD,,2026-06-11,85,61-90,58348.0,0.0,overdue
-INV-2026-000548,Lohiya Polymers Private Limited,,2026-09-04,0,1-30,58295.0,53567.84,open
-INV-2026-000486,Trividata Warehousing Ltd,,2026-07-28,38,31-60,51078.0,0.0,overdue
-INV-2026-000231,Anant Infra Solar EPC Ltd,,2026-08-10,25,1-30,50853.0,0.0,overdue
-INV-2026-000557,Everstone Logistics Ltd,,2026-08-21,14,1-30,50516.0,0.0,overdue
-INV-2026-000155,Trividata Warehousing Ltd,,2026-06-16,80,61-90,33878.0,0.0,open
-INV-2026-000710,Trividata Warehousing Ltd,,2026-08-26,9,1-30,32149.0,0.0,overdue
+INV-2026-000093,Saptagiri Water Treatment LLP,,2026-06-06,91,91-180,6000000.0,0.0,overdue
+INV-2026-000443,Saptagiri Water Treatment LLP,,2026-07-21,46,31-60,6000000.0,0.0,overdue
+INV-2026-000622,Saptagiri Water Treatment LLP,,2026-08-14,22,1-30,6000000.0,0.0,overdue
+INV-2026-000686,Raman Deep Conveyances Private Limited,,2026-08-22,14,1-30,6000000.0,0.0,overdue
+INV-2026-000419,Raman Deep Conveyances Private Limited,,2026-07-16,51,31-60,5642663.0,0.0,overdue
+INV-2026-000181,Raman Deep Conveyances Private Limited,,2026-06-18,79,61-90,5594420.0,0.0,overdue
+INV-2026-000675,Saptagiri Water Treatment LLP,,2026-08-21,15,1-30,4669550.0,0.0,overdue
+INV-2026-000372,Raman Deep Conveyances Private Limited,,2026-07-13,54,31-60,4575368.0,0.0,overdue
+INV-2026-000163,Raman Deep Conveyances Private Limited,,2026-06-16,81,61-90,3623002.0,0.0,overdue
+INV-2026-000366,Saptagiri Water Treatment LLP,,2026-07-11,56,31-60,3498241.0,0.0,overdue
+INV-2026-000123,Raman Deep Conveyances Private Limited,,2026-06-11,86,61-90,3350391.0,0.0,overdue
+INV-2026-000385,Vaishnavi Textiles LLP,,2026-07-14,53,31-60,2636351.0,0.0,overdue
+INV-2026-000445,Raman Deep Conveyances Private Limited,,2026-07-21,46,31-60,2598813.0,0.0,overdue
+INV-2026-000745,Saptagiri Water Treatment LLP,,2026-08-31,5,1-30,2485887.0,2204163.57,overdue
+INV-2026-000303,Saptagiri Water Treatment LLP,,2026-07-04,63,61-90,2465155.0,0.0,overdue
+INV-2026-000323,Saptagiri Water Treatment LLP,,2026-07-07,60,31-60,2167751.0,0.0,overdue
+INV-2026-000428,Anant Infra Solar EPC Ltd,,2026-08-31,5,1-30,2167689.0,1932467.57,overdue
+INV-2026-000251,Karman Print Solutions Private Limited,,2026-07-27,40,31-60,2085591.0,0.0,overdue
+INV-2026-000186,Karman Print Solutions Private Limited,,2026-07-18,49,31-60,2004125.0,3241.12,overdue
+INV-2026-000042,Vaishnavi Textiles LLP,,2026-05-29,99,91-180,1978625.0,0.0,overdue
+INV-2026-000050,Saptagiri Water Treatment LLP,,2026-05-30,98,91-180,1933176.0,0.0,overdue
+INV-2026-000593,Saptagiri Water Treatment LLP,,2026-08-11,25,1-30,1883307.0,0.0,overdue
+INV-2026-000317,Saptagiri Water Treatment LLP,,2026-07-06,61,61-90,1764730.0,0.0,overdue
+INV-2026-000184,Raman Deep Conveyances Private Limited,,2026-06-18,79,61-90,1690763.0,0.0,overdue
+INV-2026-000233,Everstone Logistics Ltd,,2026-07-10,57,31-60,1660080.0,0.0,overdue
+INV-2026-000049,Vaishnavi Textiles LLP,,2026-05-30,98,91-180,1504132.0,0.0,overdue
+INV-2026-000011,Anant Infra Solar EPC Ltd,,2026-07-08,59,31-60,1470455.0,0.0,overdue
+INV-2026-000278,Saptagiri Water Treatment LLP,,2026-07-01,66,61-90,1465688.0,5513.54,overdue
+INV-2026-000014,Everstone Logistics Ltd,,2026-06-08,89,61-90,1395346.0,0.0,overdue
+INV-2026-000096,Vaishnavi Textiles LLP,,2026-06-06,91,91-180,1367616.0,2856.96,overdue
+INV-2026-000666,Zenith One Electricals & Co,,2026-08-20,16,1-30,1366876.0,0.0,overdue
+INV-2026-000665,Vaishnavi Textiles LLP,,2026-08-20,16,1-30,1346749.0,305761.47,overdue
+INV-2026-000277,Anant Infra Solar EPC Ltd,,2026-08-17,19,1-30,1326454.0,0.0,overdue
+INV-2026-000570,Raman Deep Conveyances Private Limited,,2026-08-07,29,1-30,1317862.0,0.0,overdue
+INV-2026-000573,Raman Deep Conveyances Private Limited,,2026-08-07,29,1-30,1309567.0,0.0,overdue
+INV-2026-000020,Karman Print Solutions Private Limited,,2026-06-25,72,61-90,1298586.0,0.0,overdue
+INV-2026-000756,Saptagiri Water Treatment LLP,,2026-09-01,4,1-30,1277565.0,1144205.31,overdue
+INV-2026-000002,Raman Deep Conveyances Private Limited,,2026-05-23,105,91-180,1273834.0,0.0,overdue
+INV-2026-000068,Raman Deep Conveyances Private Limited,,2026-06-02,95,91-180,1256234.0,0.0,overdue
+INV-2026-000344,Saptagiri Water Treatment LLP,,2026-07-09,58,31-60,1253426.0,0.0,overdue
+INV-2026-000268,Raman Deep Conveyances Private Limited,,2026-06-30,67,61-90,1242352.0,0.0,overdue
+INV-2026-000475,Vaishnavi Textiles LLP,,2026-07-25,42,31-60,1228788.0,0.0,overdue
+INV-2026-000564,Saptagiri Water Treatment LLP,,2026-08-06,30,1-30,1195070.0,0.0,overdue
+INV-2026-000466,Vaishnavi Textiles LLP,,2026-07-24,43,31-60,1187076.0,0.0,overdue
+INV-2026-000493,Saptagiri Water Treatment LLP,,2026-07-28,39,31-60,1148494.0,0.0,overdue
+INV-2026-000664,Vaishnavi Textiles LLP,,2026-08-20,16,1-30,1117456.0,0.0,overdue
+INV-2026-000446,Raman Deep Conveyances Private Limited,,2026-07-21,46,31-60,1114315.0,0.0,overdue
+INV-2026-000403,Karman Print Solutions Private Limited,,2026-08-14,22,1-30,1101002.0,0.0,overdue
+INV-2026-000374,Everstone Logistics Ltd,,2026-07-27,40,31-60,1099725.0,0.0,overdue
+INV-2026-000350,Saptagiri Water Treatment LLP,,2026-07-10,57,31-60,1096304.0,0.0,overdue
+INV-2026-000247,Raman Deep Conveyances Private Limited,,2026-06-27,70,61-90,1080182.0,0.0,overdue
+INV-2026-000005,Raman Deep Conveyances Private Limited,,2026-05-23,105,91-180,1071292.0,0.0,overdue
+INV-2026-000074,Karman Print Solutions Private Limited,,2026-07-03,64,61-90,1056871.0,0.0,overdue
+INV-2026-000536,Saptagiri Water Treatment LLP,,2026-08-04,32,31-60,1055780.0,0.0,overdue
+INV-2026-000328,Karman Print Solutions Private Limited,,2026-08-07,29,1-30,1024959.0,0.0,overdue
+INV-2026-000509,Raman Deep Conveyances Private Limited,,2026-07-31,36,31-60,1012647.0,0.0,overdue
+INV-2026-000022,Everstone Logistics Ltd,,2026-06-10,87,61-90,975579.0,0.0,overdue
+INV-2026-000499,Vaishnavi Textiles LLP,,2026-07-30,37,31-60,973956.0,0.0,overdue
+INV-2026-000510,Hiranyaka Hardware PVT LTD,,2026-07-31,36,31-60,961959.0,0.0,overdue
+INV-2026-000367,Indusloom Roofing Products PVT LTD,,2026-07-27,40,31-60,945698.0,0.0,overdue
+INV-2026-000438,Vaishnavi Textiles LLP,,2026-07-20,47,31-60,933188.0,0.0,overdue
+INV-2026-000550,Karman Print Solutions Private Limited,,2026-09-04,1,1-30,932175.0,714097.99,overdue
+INV-2026-000332,Trividata Warehousing Ltd,,2026-07-08,59,31-60,924437.0,0.0,overdue
+INV-2026-000467,Raman Deep Conveyances Private Limited,,2026-07-24,43,31-60,924078.0,0.0,overdue
+INV-2026-000474,Vaishnavi Textiles LLP,,2026-07-25,42,31-60,917553.0,0.0,overdue
+INV-2026-000207,Indusloom Roofing Products PVT LTD,,2026-07-06,61,61-90,907123.0,0.0,overdue
+INV-2026-000530,Indusloom Roofing Products PVT LTD,,2026-08-18,18,1-30,898042.0,0.0,overdue
+INV-2026-000255,Lohiya Polymers Private Limited,,2026-07-27,40,31-60,883233.0,0.0,overdue
+INV-2026-000549,Lohiya Polymers Private Limited,,2026-09-04,1,1-30,880299.0,705083.3,overdue
+INV-2026-000013,Everstone Logistics Ltd,,2026-06-08,89,61-90,876723.0,0.0,overdue
+INV-2026-000728,Saptagiri Water Treatment LLP,,2026-08-28,8,1-30,855074.0,0.0,overdue
+INV-2026-000496,Everstone Logistics Ltd,,2026-08-13,23,1-30,840229.0,0.0,overdue
+INV-2026-000416,Zenith One Electricals & Co,,2026-07-16,51,31-60,834006.0,0.0,overdue
+INV-2026-000528,Hiranyaka Hardware PVT LTD,,2026-08-03,33,31-60,827244.0,0.0,overdue
+INV-2026-000270,Vaishnavi Textiles LLP,,2026-06-30,67,61-90,821403.0,0.0,open
+INV-2026-000160,Vaishnavi Textiles LLP,,2026-06-16,81,61-90,821236.0,0.0,overdue
+INV-2026-000388,Karman Print Solutions Private Limited,,2026-08-13,23,1-30,816850.0,0.0,overdue
+INV-2026-000418,Saptagiri Water Treatment LLP,,2026-07-16,51,31-60,804694.0,0.0,overdue
+INV-2026-000127,Hiranyaka Hardware PVT LTD,,2026-06-12,85,61-90,784500.0,0.0,overdue
+INV-2026-000476,Tansh Machine Parts Ltd,,2026-08-10,26,1-30,781580.0,0.0,overdue
+INV-2026-000781,Hiranyaka Hardware PVT LTD,,2026-09-04,1,1-30,774358.0,552551.48,overdue
+INV-2026-000308,Indusloom Roofing Products PVT LTD,,2026-07-20,47,31-60,760665.0,0.0,overdue
+INV-2026-000156,Raman Deep Conveyances Private Limited,,2026-06-16,81,61-90,745456.0,0.0,overdue
+INV-2026-000110,Anant Infra Solar EPC Ltd,,2026-07-25,42,31-60,734920.0,0.0,overdue
+INV-2026-000199,Indusloom Roofing Products PVT LTD,,2026-07-06,61,61-90,729720.0,2355.79,overdue
+INV-2026-000006,Saptagiri Water Treatment LLP,,2026-05-23,105,91-180,729528.0,0.0,overdue
+INV-2026-000517,Zenith One Electricals & Co,,2026-08-01,35,31-60,727466.0,0.0,overdue
+INV-2026-000489,Anant Infra Catering Services Private Limited,,2026-08-27,9,1-30,721941.0,0.0,overdue
+INV-2026-000515,Anant Infra Catering Services Private Limited,,2026-08-31,5,1-30,720186.0,593534.24,overdue
+INV-2026-000109,Raman Deep Conveyances Private Limited,,2026-06-10,87,61-90,705459.0,0.0,overdue
+INV-2026-000139,Anant Infra Solar EPC Ltd,,2026-07-28,39,31-60,688712.0,0.0,overdue
+INV-2026-000137,Tansh Machine Parts Ltd,,2026-06-29,68,61-90,685749.0,0.0,overdue
+INV-2026-000171,Raman Deep Conveyances Private Limited,,2026-06-17,80,61-90,672547.0,0.0,overdue
+INV-2026-000548,Zenith One Electricals & Co,,2026-08-05,31,31-60,666451.0,0.0,overdue
+INV-2026-000684,Vaishnavi Textiles LLP,,2026-08-22,14,1-30,646028.0,0.0,overdue
+INV-2026-000676,Vaishnavi Textiles LLP,,2026-08-21,15,1-30,644786.0,0.0,overdue
+INV-2026-000387,Raman Deep Conveyances Private Limited,,2026-07-14,53,31-60,643103.0,0.0,open
+INV-2026-000182,Raman Deep Conveyances Private Limited,,2026-06-18,79,61-90,642449.0,0.0,overdue
+INV-2026-000025,Anant Infra Solar EPC Ltd,,2026-07-11,56,31-60,636026.0,0.0,overdue
+INV-2026-000678,Zenith One Electricals & Co,,2026-08-21,15,1-30,629225.0,0.0,overdue
+INV-2026-000463,Indusloom Roofing Products PVT LTD,,2026-08-07,29,1-30,619995.0,0.0,overdue
+INV-2026-000790,Raman Deep Conveyances Private Limited,,2026-09-05,0,1-30,613417.0,589818.17,open
+INV-2026-000400,Everstone Logistics Ltd,,2026-07-30,37,31-60,612326.0,0.0,overdue
+INV-2026-000340,Vaishnavi Textiles LLP,,2026-07-09,58,31-60,607869.0,0.0,overdue
+INV-2026-000289,Vaishnavi Textiles LLP,,2026-07-02,65,61-90,602938.0,0.0,open
+INV-2026-000404,Tansh Machine Parts Ltd,,2026-07-30,37,31-60,600679.0,3843.1,overdue
+INV-2026-000175,Anant Infra Catering Services Private Limited,,2026-07-17,50,31-60,589856.0,1744.77,overdue
+INV-2026-000088,Everstone Logistics Ltd,,2026-06-20,77,61-90,580655.0,0.0,overdue
+INV-2026-000097,Vaishnavi Textiles LLP,,2026-06-06,91,91-180,580086.0,0.0,overdue
+INV-2026-000498,Vaishnavi Textiles LLP,,2026-07-29,38,31-60,576640.0,0.0,overdue
+INV-2026-000429,Zenith One Electricals & Co,,2026-07-17,50,31-60,572876.0,0.0,overdue
+INV-2026-000561,Lohiya Polymers Private Limited,,2026-09-05,0,1-30,565202.0,462750.45,open
+INV-2026-000047,Everstone Logistics Ltd,,2026-06-15,82,61-90,563199.0,0.0,overdue
+INV-2026-000583,Zenith One Electricals & Co,,2026-08-08,28,1-30,559672.0,0.0,overdue
+INV-2026-000609,Tansh Machine Parts Ltd,,2026-08-28,8,1-30,558807.0,442604.43,overdue
+INV-2026-000677,Zenith One Electricals & Co,,2026-08-21,15,1-30,557736.0,0.0,overdue
+INV-2026-000703,Vaishnavi Textiles LLP,,2026-08-25,11,1-30,553105.0,0.0,overdue
+INV-2026-000643,Trividata Warehousing Ltd,,2026-08-17,19,1-30,552602.0,0.0,overdue
+INV-2026-000287,Anant Infra Solar EPC Ltd,,2026-08-17,19,1-30,546453.0,0.0,overdue
+INV-2026-000353,Raman Deep Conveyances Private Limited,,2026-07-10,57,31-60,542720.0,0.0,overdue
+INV-2026-000198,Indusloom Roofing Products PVT LTD,,2026-07-06,61,61-90,542094.0,0.0,open
+INV-2026-000342,Indusloom Roofing Products PVT LTD,,2026-07-24,43,31-60,538281.0,1734.42,overdue
+INV-2026-000324,Indusloom Roofing Products PVT LTD,,2026-07-22,45,31-60,533729.0,0.0,overdue
+INV-2026-000081,Indusloom Roofing Products PVT LTD,,2026-06-19,78,61-90,520063.0,0.0,overdue
+INV-2026-000582,Saptagiri Water Treatment LLP,,2026-08-08,28,1-30,513227.0,0.0,overdue
+INV-2026-000295,Lohiya Polymers Private Limited,,2026-08-03,33,31-60,505475.0,0.0,overdue
+INV-2026-000033,Zenith One Electricals & Co,,2026-05-28,100,91-180,505128.0,0.0,overdue
+INV-2026-000140,Karman Print Solutions Private Limited,,2026-07-13,54,31-60,502963.0,0.0,overdue
+INV-2026-000471,Hiranyaka Hardware PVT LTD,,2026-07-25,42,31-60,502000.0,0.0,overdue
+INV-2026-000621,Hiranyaka Hardware PVT LTD,,2026-08-14,22,1-30,501728.0,0.0,overdue
+INV-2026-000508,Zenith One Electricals & Co,,2026-07-31,36,31-60,498061.0,0.0,overdue
+INV-2026-000029,Raman Deep Conveyances Private Limited,,2026-05-28,100,91-180,496114.0,0.0,overdue
+INV-2026-000128,Vaishnavi Textiles LLP,,2026-06-12,85,61-90,492536.0,1063.87,overdue
+INV-2026-000201,Hiranyaka Hardware PVT LTD,,2026-06-20,77,61-90,491625.0,0.0,overdue
+INV-2026-000424,Vaishnavi Textiles LLP,,2026-07-17,50,31-60,487734.0,0.0,overdue
+INV-2026-000614,Zenith One Electricals & Co,,2026-08-13,23,1-30,485697.0,0.0,overdue
+INV-2026-000633,Tansh Machine Parts Ltd,,2026-08-31,5,1-30,480222.0,416849.22,overdue
+INV-2026-000488,Indusloom Roofing Products PVT LTD,,2026-08-12,24,1-30,468988.0,12957.28,overdue
+INV-2026-000522,Tansh Machine Parts Ltd,,2026-08-17,19,1-30,468977.0,0.0,overdue
+INV-2026-000789,Vaishnavi Textiles LLP,,2026-09-05,0,1-30,468878.0,402600.84,open
+INV-2026-000433,Anant Infra Catering Services Private Limited,,2026-08-17,19,1-30,463722.0,0.0,overdue
+INV-2026-000239,Vaishnavi Textiles LLP,,2026-06-26,71,61-90,455760.0,0.0,open
+INV-2026-000095,Raman Deep Conveyances Private Limited,,2026-06-06,91,91-180,455047.0,0.0,overdue
+INV-2026-000084,Anant Infra Solar EPC Ltd,,2026-07-20,47,31-60,446459.0,0.0,overdue
+INV-2026-000541,Vaishnavi Textiles LLP,,2026-08-04,32,31-60,441245.0,0.0,overdue
+INV-2026-000505,Indusloom Roofing Products PVT LTD,,2026-08-17,19,1-30,441188.0,0.0,overdue
+INV-2026-000497,Karman Print Solutions Private Limited,,2026-08-28,8,1-30,435403.0,0.0,overdue
+INV-2026-000012,Zenith One Electricals & Co,,2026-05-25,103,91-180,428575.0,0.0,overdue
+INV-2026-000427,Everstone Logistics Ltd,,2026-08-01,35,31-60,426984.0,0.0,overdue
+INV-2026-000039,Anant Infra Catering Services Private Limited,,2026-06-29,68,61-90,420549.0,0.0,overdue
+INV-2026-000608,Saptagiri Water Treatment LLP,,2026-08-13,23,1-30,419806.0,0.0,overdue
+INV-2026-000601,Trividata Warehousing Ltd,,2026-08-12,24,1-30,419135.0,0.0,overdue
+INV-2026-000729,Saptagiri Water Treatment LLP,,2026-08-28,8,1-30,416007.0,0.0,overdue
+INV-2026-000158,Indusloom Roofing Products PVT LTD,,2026-07-01,66,61-90,413464.0,0.0,overdue
+INV-2026-000038,Raman Deep Conveyances Private Limited,,2026-05-29,99,91-180,410593.0,0.0,overdue
+INV-2026-000333,Tansh Machine Parts Ltd,,2026-07-23,44,31-60,410311.0,0.0,overdue
+INV-2026-000019,Saptagiri Water Treatment LLP,,2026-05-26,102,91-180,408570.0,0.0,overdue
+INV-2026-000202,Trividata Warehousing Ltd,,2026-06-20,77,61-90,406973.0,0.0,overdue
+INV-2026-000399,Anant Infra Solar EPC Ltd,,2026-08-29,7,1-30,405358.0,0.0,overdue
+INV-2026-000157,Anant Infra Catering Services Private Limited,,2026-07-16,51,31-60,403760.0,0.0,overdue
+INV-2026-000401,Indusloom Roofing Products PVT LTD,,2026-07-30,37,31-60,403743.0,0.0,overdue
+INV-2026-000341,Zenith One Electricals & Co,,2026-07-09,58,31-60,401091.0,0.0,open
+INV-2026-000034,Karman Print Solutions Private Limited,,2026-06-27,70,61-90,399059.0,0.0,overdue
+INV-2026-000248,Anant Infra Solar EPC Ltd,,2026-08-11,25,1-30,394770.0,0.0,overdue
+INV-2026-000364,Indusloom Roofing Products PVT LTD,,2026-07-27,40,31-60,394725.0,0.0,overdue
+INV-2026-000274,Zenith One Electricals & Co,,2026-07-01,66,61-90,393541.0,0.0,overdue
+INV-2026-000339,Saptagiri Water Treatment LLP,,2026-07-09,58,31-60,391613.0,0.0,overdue
+INV-2026-000225,Lohiya Polymers Private Limited,,2026-07-24,43,31-60,390789.0,0.0,overdue
+INV-2026-000535,Indusloom Roofing Products PVT LTD,,2026-08-19,17,1-30,389390.0,0.0,overdue
+INV-2026-000250,Anant Infra Catering Services Private Limited,,2026-07-27,40,31-60,388130.0,0.0,overdue
+INV-2026-000174,Indusloom Roofing Products PVT LTD,,2026-07-02,65,61-90,385974.0,0.0,open
+INV-2026-000769,Zenith One Electricals & Co,,2026-09-03,2,1-30,385129.0,352280.2,overdue
+INV-2026-000215,Shree Balaji Recyclers Company,,2026-06-15,82,61-90,384703.0,623.08,overdue
+INV-2026-000226,Zenith One Electricals & Co,,2026-06-24,73,61-90,384074.0,0.0,overdue
+INV-2026-000024,Anant Infra Catering Services Private Limited,,2026-06-26,71,61-90,383718.0,0.0,overdue
+INV-2026-000538,Tansh Machine Parts Ltd,,2026-08-19,17,1-30,380220.0,0.0,overdue
+INV-2026-000112,Shree Balaji Recyclers Company,,2026-06-02,95,91-180,379005.0,0.0,overdue
+INV-2026-000252,Hiranyaka Hardware PVT LTD,,2026-06-27,70,61-90,376435.0,435.68,open
+INV-2026-000562,Raman Deep Conveyances Private Limited,,2026-08-06,30,1-30,374734.0,0.0,overdue
+INV-2026-000213,Zenith One Electricals & Co,,2026-06-23,74,61-90,373053.0,0.0,overdue
+INV-2026-000197,Tansh Machine Parts Ltd,,2026-07-06,61,61-90,372403.0,0.0,overdue
+INV-2026-000389,Raman Deep Conveyances Private Limited,,2026-07-14,53,31-60,371706.0,0.0,open
+INV-2026-000138,Anant Infra Solar EPC Ltd,,2026-07-28,39,31-60,365400.0,0.0,overdue
+INV-2026-000119,Zenith One Electricals & Co,,2026-06-11,86,61-90,365302.0,0.0,overdue
+INV-2026-000420,Zenith One Electricals & Co,,2026-07-16,51,31-60,363935.0,0.0,overdue
+INV-2026-000026,Anant Infra Catering Services Private Limited,,2026-06-26,71,61-90,363545.0,0.0,overdue
+INV-2026-000003,Indusloom Roofing Products PVT LTD,,2026-06-08,89,61-90,362844.0,0.0,overdue
+INV-2026-000094,Vaishnavi Textiles LLP,,2026-06-06,91,91-180,362633.0,0.0,overdue
+INV-2026-000551,Everstone Logistics Ltd,,2026-08-20,16,1-30,362222.0,0.0,overdue
+INV-2026-000384,Zenith One Electricals & Co,,2026-07-14,53,31-60,360519.0,0.0,overdue
+INV-2026-000406,Zenith One Electricals & Co,,2026-07-15,52,31-60,354864.0,0.0,overdue
+INV-2026-000304,Lohiya Polymers Private Limited,,2026-08-03,33,31-60,353309.0,1258.71,overdue
+INV-2026-000141,Shree Balaji Recyclers Company,,2026-06-05,92,91-180,351875.0,0.0,overdue
+INV-2026-000354,Hiranyaka Hardware PVT LTD,,2026-07-10,57,31-60,346214.0,0.0,open
+INV-2026-000553,Tansh Machine Parts Ltd,,2026-08-20,16,1-30,345077.0,0.0,overdue
+INV-2026-000355,Zenith One Electricals & Co,,2026-07-10,57,31-60,344952.0,0.0,overdue
+INV-2026-000426,Anant Infra Solar EPC Ltd,,2026-08-31,5,1-30,342870.0,305664.15,overdue
+INV-2026-000706,Zenith One Electricals & Co,,2026-08-25,11,1-30,341851.0,0.0,overdue
+INV-2026-000748,Trividata Warehousing Ltd,,2026-08-31,5,1-30,341218.0,0.0,open
+INV-2026-000642,Indusloom Roofing Products PVT LTD,,2026-08-31,5,1-30,337722.0,0.0,overdue
+INV-2026-000516,Trividata Warehousing Ltd,,2026-08-01,35,31-60,334475.0,0.0,overdue
+INV-2026-000715,Raman Deep Conveyances Private Limited,,2026-08-26,10,1-30,331414.0,0.0,overdue
+INV-2026-000159,Shree Balaji Recyclers Company,,2026-06-08,89,61-90,329710.0,0.0,overdue
+INV-2026-000040,Zenith One Electricals & Co,,2026-05-29,99,91-180,328550.0,0.0,overdue
+INV-2026-000004,Tansh Machine Parts Ltd,,2026-06-08,89,61-90,327825.0,0.0,overdue
+INV-2026-000755,Saptagiri Water Treatment LLP,,2026-09-01,4,1-30,324195.0,290353.5,overdue
+INV-2026-000731,Trividata Warehousing Ltd,,2026-08-28,8,1-30,322315.0,0.0,overdue
+INV-2026-000305,Saptagiri Water Treatment LLP,,2026-07-04,63,61-90,322054.0,0.0,overdue
+INV-2026-000275,Raman Deep Conveyances Private Limited,,2026-07-01,66,61-90,312214.0,0.0,overdue
+INV-2026-000365,Anant Infra Solar EPC Ltd,,2026-08-25,11,1-30,311969.0,0.0,overdue
+INV-2026-000402,Vaishnavi Textiles LLP,,2026-07-15,52,31-60,311747.0,0.0,overdue
+INV-2026-000196,Trividata Warehousing Ltd,,2026-06-20,77,61-90,305194.0,0.0,open
+INV-2026-000185,Everstone Logistics Ltd,,2026-07-03,64,61-90,303995.0,0.0,overdue
+INV-2026-000581,Tansh Machine Parts Ltd,,2026-08-24,12,1-30,300432.0,0.0,overdue
+INV-2026-000383,Lohiya Polymers Private Limited,,2026-08-13,23,1-30,300226.0,0.0,overdue
+INV-2026-000511,Tansh Machine Parts Ltd,,2026-08-17,19,1-30,298940.0,0.0,overdue
+INV-2026-000286,Everstone Logistics Ltd,,2026-07-17,50,31-60,296005.0,0.0,overdue
+INV-2026-000473,Hiranyaka Hardware PVT LTD,,2026-07-25,42,31-60,293700.0,0.0,overdue
+INV-2026-000592,Zenith One Electricals & Co,,2026-08-11,25,1-30,292960.0,0.0,overdue
+INV-2026-000763,Zenith One Electricals & Co,,2026-09-02,3,1-30,292134.0,0.0,overdue
+INV-2026-000454,Hiranyaka Hardware PVT LTD,,2026-07-22,45,31-60,291968.0,0.0,overdue
+INV-2026-000294,Zenith One Electricals & Co,,2026-07-03,64,61-90,291515.0,0.0,overdue
+INV-2026-000058,Anant Infra Solar EPC Ltd,,2026-07-15,52,31-60,290811.0,0.0,overdue
+INV-2026-000183,Zenith One Electricals & Co,,2026-06-18,79,61-90,289474.0,0.0,overdue
+INV-2026-000371,Lohiya Polymers Private Limited,,2026-08-11,25,1-30,286902.0,0.0,overdue
+INV-2026-000271,Lohiya Polymers Private Limited,,2026-07-30,37,31-60,281618.0,0.0,overdue
+INV-2026-000435,Zenith One Electricals & Co,,2026-07-18,49,31-60,278579.0,0.0,overdue
+INV-2026-000111,Lohiya Polymers Private Limited,,2026-07-10,57,31-60,276558.0,0.0,overdue
+INV-2026-000351,Zenith One Electricals & Co,,2026-07-10,57,31-60,276442.0,0.0,overdue
+INV-2026-000382,Karman Print Solutions Private Limited,,2026-08-13,23,1-30,275606.0,0.0,overdue
+INV-2026-000066,Hiranyaka Hardware PVT LTD,,2026-06-02,95,91-180,274366.0,0.0,overdue
+INV-2026-000373,Karman Print Solutions Private Limited,,2026-08-11,25,1-30,271219.0,0.0,overdue
+INV-2026-000529,Indusloom Roofing Products PVT LTD,,2026-08-17,19,1-30,269942.0,0.0,overdue
+INV-2026-000104,Trividata Warehousing Ltd,,2026-06-09,88,61-90,269175.0,0.0,open
+INV-2026-000082,Trividata Warehousing Ltd,,2026-06-04,93,91-180,269010.0,0.0,overdue
+INV-2026-000329,Zenith One Electricals & Co,,2026-07-08,59,31-60,267583.0,0.0,open
+INV-2026-000056,Zenith One Electricals & Co,,2026-06-01,96,91-180,264576.0,1196.32,overdue
+INV-2026-000162,Hiranyaka Hardware PVT LTD,,2026-06-16,81,61-90,263835.0,0.0,overdue
+INV-2026-000030,Trividata Warehousing Ltd,,2026-05-28,100,91-180,262615.0,0.0,overdue
+INV-2026-000321,Zenith One Electricals & Co,,2026-07-06,61,61-90,261545.0,0.0,open
+INV-2026-000518,Zenith One Electricals & Co,,2026-08-01,35,31-60,259946.0,0.0,overdue
+INV-2026-000102,Anant Infra Catering Services Private Limited,,2026-07-09,58,31-60,257365.0,0.0,overdue
+INV-2026-000223,Zenith One Electricals & Co,,2026-06-24,73,61-90,257203.0,0.0,overdue
+INV-2026-000216,Anant Infra Catering Services Private Limited,,2026-07-23,44,31-60,255482.0,755.15,overdue
+INV-2026-000386,Saptagiri Water Treatment LLP,,2026-07-14,53,31-60,254748.0,0.0,overdue
+INV-2026-000136,Indusloom Roofing Products PVT LTD,,2026-06-29,68,61-90,253606.0,0.0,overdue
+INV-2026-000537,Indusloom Roofing Products PVT LTD,,2026-08-19,17,1-30,253283.0,0.0,overdue
+INV-2026-000309,Shree Balaji Recyclers Company,,2026-06-26,71,61-90,252240.0,0.0,overdue
+INV-2026-000073,Anant Infra Solar EPC Ltd,,2026-07-18,49,31-60,251202.0,0.0,overdue
+INV-2026-000462,Tansh Machine Parts Ltd,,2026-08-07,29,1-30,249455.0,0.0,overdue
+INV-2026-000652,Everstone Logistics Ltd,,2026-09-02,3,1-30,248725.0,0.0,overdue
+INV-2026-000718,Trividata Warehousing Ltd,,2026-08-26,10,1-30,248434.0,0.0,overdue
+INV-2026-000594,Tansh Machine Parts Ltd,,2026-08-26,10,1-30,247963.0,0.0,overdue
+INV-2026-000844,Shree Balaji Recyclers Company,,2026-09-05,0,1-30,245914.0,199851.91,open
+INV-2026-000021,Anant Infra Catering Services Private Limited,,2026-06-25,72,61-90,245762.0,0.0,overdue
+INV-2026-000172,Hiranyaka Hardware PVT LTD,,2026-06-17,80,61-90,245711.0,0.0,overdue
+INV-2026-000229,Zenith One Electricals & Co,,2026-06-24,73,61-90,243602.0,0.0,overdue
+INV-2026-000349,Indusloom Roofing Products PVT LTD,,2026-07-25,42,31-60,243416.0,0.0,overdue
+INV-2026-000331,Trividata Warehousing Ltd,,2026-07-08,59,31-60,242912.0,0.0,overdue
+INV-2026-000363,Karman Print Solutions Private Limited,,2026-08-10,26,1-30,242566.0,3201.78,overdue
+INV-2026-000212,Trividata Warehousing Ltd,,2026-06-23,74,61-90,241810.0,0.0,overdue
+INV-2026-000472,Shree Balaji Recyclers Company,,2026-07-17,50,31-60,241703.0,0.0,overdue
+INV-2026-000352,Everstone Logistics Ltd,,2026-07-25,42,31-60,241032.0,0.0,overdue
+INV-2026-000083,Raman Deep Conveyances Private Limited,,2026-06-04,93,91-180,237843.0,0.0,overdue
+INV-2026-000444,Raman Deep Conveyances Private Limited,,2026-07-21,46,31-60,236679.0,0.0,overdue
+INV-2026-000362,Everstone Logistics Ltd,,2026-07-27,40,31-60,236101.0,1344.0,overdue
+INV-2026-000571,Trividata Warehousing Ltd,,2026-08-07,29,1-30,235675.0,0.0,overdue
+INV-2026-000041,Indusloom Roofing Products PVT LTD,,2026-06-13,84,61-90,232470.0,0.0,overdue
+INV-2026-000768,Shree Balaji Recyclers Company,,2026-08-26,10,1-30,232143.0,0.0,overdue
+INV-2026-000103,Hiranyaka Hardware PVT LTD,,2026-06-09,88,61-90,229772.0,266.01,open
+INV-2026-000307,Anant Infra Catering Services Private Limited,,2026-08-03,33,31-60,229029.0,12051.86,overdue
+INV-2026-000330,Tansh Machine Parts Ltd,,2026-07-23,44,31-60,227182.0,1331.93,overdue
+INV-2026-000075,Zenith One Electricals & Co,,2026-06-03,94,91-180,225782.0,0.0,overdue
+INV-2026-000292,Anant Infra Catering Services Private Limited,,2026-08-03,33,31-60,224392.0,0.0,overdue
+INV-2026-000113,Indusloom Roofing Products PVT LTD,,2026-06-25,72,61-90,223256.0,0.0,overdue
+INV-2026-000456,Shree Balaji Recyclers Company,,2026-07-14,53,31-60,223140.0,0.0,overdue
+INV-2026-000771,Hiranyaka Hardware PVT LTD,,2026-09-03,2,1-30,222710.0,155084.56,overdue
+INV-2026-000624,Everstone Logistics Ltd,,2026-08-29,7,1-30,222513.0,0.0,overdue
+INV-2026-000240,Anant Infra Solar EPC Ltd,,2026-08-10,26,1-30,222493.0,0.0,overdue
+INV-2026-000017,Hiranyaka Hardware PVT LTD,,2026-05-26,102,91-180,221169.0,0.0,overdue
+INV-2026-000147,Tansh Machine Parts Ltd,,2026-06-29,68,61-90,219811.0,0.0,overdue
+INV-2026-000124,Raman Deep Conveyances Private Limited,,2026-06-11,86,61-90,218353.0,0.0,overdue
+INV-2026-000507,Saptagiri Water Treatment LLP,,2026-07-31,36,31-60,218341.0,0.0,overdue
+INV-2026-000238,Zenith One Electricals & Co,,2026-06-26,71,61-90,216750.0,0.0,overdue
+INV-2026-000595,Zenith One Electricals & Co,,2026-08-11,25,1-30,216407.0,0.0,overdue
+INV-2026-000625,Everstone Logistics Ltd,,2026-08-29,7,1-30,215261.0,0.0,overdue
+INV-2026-000046,Hiranyaka Hardware PVT LTD,,2026-05-30,98,91-180,214927.0,0.0,overdue
+INV-2026-000067,Hiranyaka Hardware PVT LTD,,2026-06-02,95,91-180,214687.0,0.0,open
+INV-2026-000631,Saptagiri Water Treatment LLP,,2026-08-17,19,1-30,214268.0,0.0,overdue
+INV-2026-000437,Tansh Machine Parts Ltd,,2026-08-03,33,31-60,212772.0,0.0,overdue
+INV-2026-000611,Raman Deep Conveyances Private Limited,,2026-08-13,23,1-30,211625.0,0.0,overdue
+INV-2026-000747,Hiranyaka Hardware PVT LTD,,2026-08-31,5,1-30,210662.0,0.0,overdue
+INV-2026-000534,Trividata Warehousing Ltd,,2026-08-04,32,31-60,205723.0,0.0,overdue
+INV-2026-000417,Hiranyaka Hardware PVT LTD,,2026-07-16,51,31-60,203614.0,235.44,open
+INV-2026-000192,Indusloom Roofing Products PVT LTD,,2026-07-04,63,61-90,201317.0,0.0,open
+INV-2026-000843,Shree Balaji Recyclers Company,,2026-09-05,0,1-30,201157.0,163478.31,open
+INV-2026-000740,Shree Balaji Recyclers Company,,2026-08-21,15,1-30,201129.0,112209.07,open
+INV-2026-000500,Anant Infra Catering Services Private Limited,,2026-08-29,7,1-30,200116.0,159535.32,overdue
+INV-2026-000191,Shree Balaji Recyclers Company,,2026-06-11,86,61-90,198977.0,0.0,overdue
+INV-2026-000458,Hiranyaka Hardware PVT LTD,,2026-07-22,45,31-60,197194.0,0.0,overdue
+INV-2026-000702,Zenith One Electricals & Co,,2026-08-25,11,1-30,193525.0,0.0,overdue
+INV-2026-000600,Tansh Machine Parts Ltd,,2026-08-27,9,1-30,192095.0,145161.08,overdue
+INV-2026-000757,Hiranyaka Hardware PVT LTD,,2026-09-01,4,1-30,191232.0,0.0,overdue
+INV-2026-000288,Lohiya Polymers Private Limited,,2026-08-01,35,31-60,190265.0,0.0,overdue
+INV-2026-000173,Raman Deep Conveyances Private Limited,,2026-06-17,80,61-90,189590.0,0.0,overdue
+INV-2026-000434,Lohiya Polymers Private Limited,,2026-08-17,19,1-30,189068.0,0.0,overdue
+INV-2026-000253,Tansh Machine Parts Ltd,,2026-07-13,54,31-60,188961.0,0.0,overdue
+INV-2026-000523,Everstone Logistics Ltd,,2026-08-17,19,1-30,188301.0,0.0,overdue
+INV-2026-000211,Zenith One Electricals & Co,,2026-06-23,74,61-90,188021.0,0.0,overdue
+INV-2026-000447,Trividata Warehousing Ltd,,2026-07-21,46,31-60,187374.0,728.42,overdue
+INV-2026-000708,Shree Balaji Recyclers Company,,2026-08-17,19,1-30,186970.0,71802.41,open
+INV-2026-000436,Lohiya Polymers Private Limited,,2026-08-17,19,1-30,185170.0,14947.38,overdue
+INV-2026-000829,Shree Balaji Recyclers Company,,2026-09-03,2,1-30,181549.0,145924.46,overdue
+INV-2026-000142,Anant Infra Catering Services Private Limited,,2026-07-13,54,31-60,179282.0,0.0,overdue
+INV-2026-000477,Anant Infra Catering Services Private Limited,,2026-08-24,12,1-30,178730.0,0.0,overdue
+INV-2026-000580,Shree Balaji Recyclers Company,,2026-07-31,36,31-60,175032.0,0.0,overdue
+INV-2026-000378,Trividata Warehousing Ltd,,2026-07-13,54,31-60,173883.0,0.0,overdue
+INV-2026-000566,Zenith One Electricals & Co,,2026-08-06,30,1-30,169407.0,0.0,overdue
+INV-2026-000306,Anant Infra Catering Services Private Limited,,2026-08-03,33,31-60,168034.0,0.0,overdue
+INV-2026-000732,Trividata Warehousing Ltd,,2026-08-28,8,1-30,167682.0,0.0,overdue
+INV-2026-000108,Tansh Machine Parts Ltd,,2026-06-25,72,61-90,166959.0,0.0,overdue
+INV-2026-000260,Anant Infra Catering Services Private Limited,,2026-07-28,39,31-60,164558.0,0.0,overdue
+INV-2026-000164,Anant Infra Solar EPC Ltd,,2026-07-31,36,31-60,164313.0,0.0,overdue
+INV-2026-000461,Trividata Warehousing Ltd,,2026-07-23,44,31-60,164110.0,0.0,overdue
+INV-2026-000227,Hiranyaka Hardware PVT LTD,,2026-06-24,73,61-90,161889.0,0.0,overdue
+INV-2026-000048,Shree Balaji Recyclers Company,,2026-05-22,106,91-180,159068.0,0.0,overdue
+INV-2026-000043,Lohiya Polymers Private Limited,,2026-06-29,68,61-90,158715.0,0.0,overdue
+INV-2026-000214,Anant Infra Catering Services Private Limited,,2026-07-23,44,31-60,158603.0,468.79,overdue
+INV-2026-000193,Anant Infra Solar EPC Ltd,,2026-08-03,33,31-60,158353.0,0.0,overdue
+INV-2026-000398,Raman Deep Conveyances Private Limited,,2026-07-15,52,31-60,157601.0,0.0,open
+INV-2026-000276,Shree Balaji Recyclers Company,,2026-06-23,74,61-90,155539.0,251.73,overdue
+INV-2026-000032,Tansh Machine Parts Ltd,,2026-06-12,85,61-90,154634.0,0.0,overdue
+INV-2026-000491,Tansh Machine Parts Ltd,,2026-08-12,24,1-30,154139.0,0.0,overdue
+INV-2026-000254,Anant Infra Catering Services Private Limited,,2026-07-27,40,31-60,153800.0,761.12,overdue
+INV-2026-000521,Tansh Machine Parts Ltd,,2026-08-17,19,1-30,151465.0,0.0,overdue
+INV-2026-000552,Hiranyaka Hardware PVT LTD,,2026-08-05,31,31-60,151229.0,0.0,overdue
+INV-2026-000455,Lohiya Polymers Private Limited,,2026-08-21,15,1-30,150538.0,28503.19,overdue
+INV-2026-000121,Hiranyaka Hardware PVT LTD,,2026-06-11,86,61-90,148586.0,0.0,overdue
+INV-2026-000018,Lohiya Polymers Private Limited,,2026-06-25,72,61-90,147953.0,319.21,overdue
+INV-2026-000218,Tansh Machine Parts Ltd,,2026-07-08,59,31-60,147292.0,0.0,overdue
+INV-2026-000737,Trividata Warehousing Ltd,,2026-08-29,7,1-30,145609.0,0.0,open
+INV-2026-000547,Anant Infra Catering Services Private Limited,,2026-09-04,1,1-30,141643.0,0.0,overdue
+INV-2026-000439,Zenith One Electricals & Co,,2026-07-20,47,31-60,141475.0,0.0,overdue
+INV-2026-000457,Shree Balaji Recyclers Company,,2026-07-14,53,31-60,140842.0,0.0,overdue
+INV-2026-000217,Anant Infra Solar EPC Ltd,,2026-08-07,29,1-30,139164.0,0.0,overdue
+INV-2026-000425,Trividata Warehousing Ltd,,2026-07-17,50,31-60,138169.0,0.0,overdue
+INV-2026-000249,Hiranyaka Hardware PVT LTD,,2026-06-27,70,61-90,137655.0,159.24,open
+INV-2026-000001,Tansh Machine Parts Ltd,,2026-06-08,89,61-90,137617.0,0.0,overdue
+INV-2026-000565,Shree Balaji Recyclers Company,,2026-07-29,38,31-60,135384.0,0.0,overdue
+INV-2026-000232,Lohiya Polymers Private Limited,,2026-07-25,42,31-60,132777.0,0.0,overdue
+INV-2026-000122,Anant Infra Catering Services Private Limited,,2026-07-11,56,31-60,128890.0,0.0,overdue
+INV-2026-000405,Hiranyaka Hardware PVT LTD,,2026-07-15,52,31-60,128583.0,148.54,open
+INV-2026-000343,Everstone Logistics Ltd,,2026-07-24,43,31-60,128543.0,0.0,overdue
+INV-2026-000035,Shree Balaji Recyclers Company,,2026-05-20,108,91-180,127984.0,0.0,overdue
+INV-2026-000316,Anant Infra Solar EPC Ltd,,2026-08-19,17,1-30,127882.0,0.0,overdue
+INV-2026-000293,Lohiya Polymers Private Limited,,2026-08-03,33,31-60,127786.0,0.0,overdue
+INV-2026-000453,Tansh Machine Parts Ltd,,2026-08-06,30,1-30,127665.0,1816.75,overdue
+INV-2026-000269,Shree Balaji Recyclers Company,,2026-06-22,75,61-90,126632.0,205.0,overdue
+INV-2026-000644,Shree Balaji Recyclers Company,,2026-08-08,28,1-30,126208.0,0.0,overdue
+INV-2026-000061,Hiranyaka Hardware PVT LTD,,2026-06-01,96,91-180,124448.0,0.0,overdue
+INV-2026-000224,Anant Infra Catering Services Private Limited,,2026-07-24,43,31-60,123980.0,0.0,overdue
+INV-2026-000069,Shree Balaji Recyclers Company,,2026-05-25,103,91-180,123893.0,0.0,overdue
+INV-2026-000236,Hiranyaka Hardware PVT LTD,,2026-06-26,71,61-90,122516.0,0.0,open
+INV-2026-000200,Lohiya Polymers Private Limited,,2026-07-20,47,31-60,119724.0,0.0,overdue
+INV-2026-000778,Shree Balaji Recyclers Company,,2026-08-27,9,1-30,119077.0,86592.35,overdue
+INV-2026-000766,Trividata Warehousing Ltd,,2026-09-03,2,1-30,118498.0,0.0,open
+INV-2026-000261,Anant Infra Catering Services Private Limited,,2026-07-28,39,31-60,116378.0,0.0,overdue
+INV-2026-000190,Shree Balaji Recyclers Company,,2026-06-11,86,61-90,114556.0,0.0,overdue
+INV-2026-000539,Shree Balaji Recyclers Company,,2026-07-27,40,31-60,105641.0,0.0,overdue
+INV-2026-000031,Hiranyaka Hardware PVT LTD,,2026-05-28,100,91-180,105628.0,0.0,overdue
+INV-2026-000135,Raman Deep Conveyances Private Limited,,2026-06-13,84,61-90,105154.0,0.0,overdue
+INV-2026-000688,Hiranyaka Hardware PVT LTD,,2026-08-22,14,1-30,101107.0,31129.45,overdue
+INV-2026-000099,Trividata Warehousing Ltd,,2026-06-08,89,61-90,99158.0,0.0,overdue
+INV-2026-000701,Shree Balaji Recyclers Company,,2026-08-17,19,1-30,98579.0,0.0,open
+INV-2026-000779,Hiranyaka Hardware PVT LTD,,2026-09-04,1,1-30,96485.0,68847.79,overdue
+INV-2026-000720,Trividata Warehousing Ltd,,2026-08-27,9,1-30,94792.0,0.0,overdue
+INV-2026-000057,Hiranyaka Hardware PVT LTD,,2026-06-01,96,91-180,94583.0,0.0,overdue
+INV-2026-000206,Trividata Warehousing Ltd,,2026-06-22,75,61-90,93542.0,0.0,overdue
+INV-2026-000259,Anant Infra Catering Services Private Limited,,2026-07-28,39,31-60,92919.0,0.0,overdue
+INV-2026-000610,Shree Balaji Recyclers Company,,2026-08-05,31,31-60,92108.0,0.0,overdue
+INV-2026-000105,Anant Infra Catering Services Private Limited,,2026-07-09,58,31-60,87955.0,0.0,overdue
+INV-2026-000228,Anant Infra Catering Services Private Limited,,2026-07-24,43,31-60,87825.0,0.0,overdue
+INV-2026-000241,Lohiya Polymers Private Limited,,2026-07-27,40,31-60,83845.0,0.0,overdue
+INV-2026-000205,Shree Balaji Recyclers Company,,2026-06-13,84,61-90,82595.0,0.0,overdue
+INV-2026-000668,Shree Balaji Recyclers Company,,2026-08-12,24,1-30,75333.0,0.0,overdue
+INV-2026-000210,Hiranyaka Hardware PVT LTD,,2026-06-22,75,61-90,73486.0,0.0,overdue
+INV-2026-000506,Anant Infra Catering Services Private Limited,,2026-08-31,5,1-30,64542.0,53191.52,overdue
+INV-2026-000285,Hiranyaka Hardware PVT LTD,,2026-07-02,65,61-90,64262.0,0.0,overdue
+INV-2026-000791,Shree Balaji Recyclers Company,,2026-08-28,8,1-30,63971.0,0.0,overdue
+INV-2026-000519,Hiranyaka Hardware PVT LTD,,2026-08-01,35,31-60,61542.0,0.0,overdue
+INV-2026-000540,Shree Balaji Recyclers Company,,2026-07-27,40,31-60,61278.0,0.0,overdue
+INV-2026-000542,Hiranyaka Hardware PVT LTD,,2026-08-04,32,31-60,61079.0,0.0,overdue
+INV-2026-000120,Hiranyaka Hardware PVT LTD,,2026-06-11,86,61-90,58348.0,67.43,open
+INV-2026-000554,Lohiya Polymers Private Limited,,2026-09-04,1,1-30,58295.0,0.0,overdue
+INV-2026-000492,Trividata Warehousing Ltd,,2026-07-28,39,31-60,51078.0,0.0,overdue
+INV-2026-000237,Anant Infra Solar EPC Ltd,,2026-08-10,26,1-30,50853.0,1581.71,overdue
+INV-2026-000563,Everstone Logistics Ltd,,2026-08-21,15,1-30,50516.0,0.0,overdue
+INV-2026-000161,Trividata Warehousing Ltd,,2026-06-16,81,61-90,33878.0,0.0,open
+INV-2026-000716,Trividata Warehousing Ltd,,2026-08-26,10,1-30,32149.0,0.0,overdue

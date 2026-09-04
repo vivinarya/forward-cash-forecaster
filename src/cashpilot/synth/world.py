@@ -120,6 +120,25 @@ class World:
         self._utr_seq = 900000000000
         self._settle_seq = 0
         self.future_cash: dict[date, dict[str, int]] = {}
+        # Every deliberate defect is recorded here with its identifier and its rupee value, so the
+        # evaluator can report a *denominator* ("21 batches had a deduction planted; 21 flagged,
+        # ₹X of ₹Y identified") instead of counting whatever the engine happened to mention.
+        # Read only by cashpilot.eval.* - the engine never opens meta.json.
+        self.planted: dict[str, object] = {
+            "mis_tiered_batches": [],
+            "drifted_batches": [],
+            "dropped_refund_batches": [],
+            "drift_paise": 0,
+            "dropped_refund_paise": 0,
+            "mis_tier_paise": 0,
+            "short_deduction_docs": [],
+            "short_deduction_paise": 0,
+            # the same three batch defects keyed per batch, so an evaluator can ask "of the money
+            # planted on THESE batches, how much did you identify" without rounding through a total
+            "drift_by_batch": {},
+            "dropped_refund_by_batch": {},
+            "mis_tier_by_batch": {},
+        }
         self.holidays = {self._year_date(m, d) for (m, d) in REPUBLIC_DAYS}
         self.festival_window = {  # Diwali-ish surge, day -> (receipt_mult, pay_mult)
             self._year_date(10, 25) + timedelta(days=k): (1.25 if k < 0 else 0.75, 1.3) for k in range(-9, 4)
@@ -413,6 +432,8 @@ class World:
                     if self.rng.random() < self.noise["short_deduction"] * 0.5:
                         ded = int(self.rng.uniform(0.004, 0.03) * amt // INR) * INR
                         d.short_deduction_paise = ded
+                        self.planted["short_deduction_docs"].append(d.doc_id)  # type: ignore[union-attr]
+                        self.planted["short_deduction_paise"] = int(self.planted["short_deduction_paise"]) + ded  # type: ignore[arg-type]
                         amt -= ded
                         d.notes = (d.notes + " short deduction").strip()
                     d.paid_on = pay_on if pay_on <= self.as_of else pay_on
@@ -446,6 +467,8 @@ class World:
         if rng.random() < self.noise["short_deduction"]:
             d.short_deduction_paise = int(rng.uniform(0.004, 0.06) * amount // INR) * INR
             amount -= d.short_deduction_paise
+            self.planted["short_deduction_docs"].append(d.doc_id)  # type: ignore[union-attr]
+            self.planted["short_deduction_paise"] = int(self.planted["short_deduction_paise"]) + d.short_deduction_paise  # type: ignore[arg-type]
             d.notes = (d.notes + " short deduction").strip()
         d.paid_on = when
         d.paid_amount_paise = amount
@@ -545,7 +568,8 @@ class World:
             # 3% of batches are mis-tiered by the gateway: commission charged at the flat card
             # rate instead of the per-method blend. Exactly the kind of overbilling a business
             # never finds by hand, and pure arithmetic to find by machine.
-            fee = int(gross * 0.02) if rng.random() < 0.03 else declared_fee
+            mis_tiered = rng.random() < 0.03
+            fee = int(gross * 0.02) if mis_tiered else declared_fee
             tmn = int(gross * tmn_rate)
             gst = int((fee + tmn) * gst_rate)
             tds = int(fee * tds_rate)
@@ -555,6 +579,14 @@ class World:
                 net -= drift
             settle_seq += 1
             sid = f"setl_{settle_seq:08d}"
+            if mis_tiered:
+                self.planted["mis_tiered_batches"].append(sid)  # type: ignore[union-attr]
+                self.planted["mis_tier_paise"] = int(self.planted["mis_tier_paise"]) + abs(fee - declared_fee)  # type: ignore[arg-type]
+                self.planted["mis_tier_by_batch"][sid] = int(abs(fee - declared_fee))  # type: ignore[index]
+            if drift:
+                self.planted["drifted_batches"].append(sid)  # type: ignore[union-attr]
+                self.planted["drift_paise"] = int(self.planted["drift_paise"]) + drift  # type: ignore[arg-type]
+                self.planted["drift_by_batch"][sid] = int(drift)  # type: ignore[index]
             self.settlements.append(
                 {
                     "settlement_id": sid,
@@ -576,8 +608,16 @@ class World:
             for r in pending_refund_rows:
                 r["settlement_id"] = sid
             # 8% of batches: the refund evidence is missing from the export -> an unexplained gap
-            if rng.random() < 0.08:
+            drops_refunds = rng.random() < 0.08  # one draw, always: the stream must not shift
+            if drops_refunds:
                 pending_refund_rows = []
+                if refund_total:
+                    # only a batch that actually carried refunds is a defect worth counting: dropping
+                    # an empty set changes no bank credit, and no engine could or should catch it
+                    self.planted["dropped_refund_batches"].append(sid)  # type: ignore[union-attr]
+                    self.planted["dropped_refund_paise"] = int(self.planted["dropped_refund_paise"]) + refund_total  # type: ignore[arg-type]
+                    d = self.planted["dropped_refund_by_batch"]  # type: ignore[assignment]
+                    d[sid] = int(d.get(sid, 0)) + int(refund_total)
             self.refunds.extend(pending_refund_rows)
             pending_refund_rows = []
             if settle_day <= self.as_of:
@@ -752,12 +792,17 @@ class World:
                     "due": d.due.isoformat(),
                     "scheduled_pay": (d.paid_on or date(1970, 1, 1)).isoformat(),
                     "amount_paise": d.paid_amount_paise or d.net_paise,
+                    "net_paise": d.net_paise,
+                    "short_deduction_paise": d.short_deduction_paise,
                     "paid": "1" if d.paid_on else "0",
                 }
                 for d in self.docs
             ],
         )
+        planted = {k: (sorted(v) if isinstance(v, list) else v) for k, v in self.planted.items()}
         meta = {
+            "planted_counts": {k: (len(v) if isinstance(v, list) else v) for k, v in self.planted.items()},
+            "planted": planted,
             "seed": self.seed,
             "as_of": self.as_of.isoformat(),
             "history_start": self.start.isoformat(),
