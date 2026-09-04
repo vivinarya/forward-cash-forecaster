@@ -1,0 +1,5 @@
+-r requirements.txt
+# Only needed for the test suite; the app itself imports none of this.
+pytest==9.0.3
+# Coverage is optional (make cov). Not imported by anything in src/, deliberately unpinned:
+#   pip install pytest-cov

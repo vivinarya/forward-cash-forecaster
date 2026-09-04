@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+/tmp/
+artifacts/_scratch/
+
+# evaluation scratch and generated corpora beyond the two published ones
+data/*/truth_*.csv.tmp
+*.log
+.pytest-tmp/

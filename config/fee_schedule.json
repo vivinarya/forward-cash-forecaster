@@ -1,0 +1,19 @@
+{
+  "_comment": "Placeholder gateway economics modelled on published retail rates. Replace with the contracted slab before using this in production - the verifier reads this file, it has no rates hard-coded.",
+  "currency": "INR",
+  "gst_rate_on_fees": 0.18,
+  "tds_rate_on_commission": 0.02,
+  "tmn_rate": 0.00001,
+  "modes": {
+    "card": { "rate": 0.02 },
+    "upi_qr": { "rate": 0.0 },
+    "upi_apps": { "rate": 0.02 },
+    "netbanking": { "rate": 0.009 },
+    "wallet": { "rate": 0.02 },
+    "emi": { "rate": 0.02 }
+  },
+  "default_mode": "card",
+  "tolerance_paise_per_batch": 200,
+  "settlement_expectation_days": 2,
+  "settlement_gap_alert_days": 4
+}

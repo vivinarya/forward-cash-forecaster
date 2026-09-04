@@ -1,0 +1,79 @@
+{
+  "strategy": "full",
+  "lines_total": 1709,
+  "lines_matchable": 1672,
+  "lines_quarantine_expected": 37,
+  "lines_matched": 1634,
+  "match_rate": 0.9561,
+  "correct": 1629,
+  "partial": 2,
+  "wrong": 3,
+  "precision": 0.9969,
+  "recall": 0.9743,
+  "f1": 0.9855,
+  "unmatched_but_matchable": 38,
+  "correctly_quarantined": 37,
+  "wrongly_claimed_quarantine": 0,
+  "quarantine_accuracy": 1.0,
+  "auto_post_count": 1535,
+  "auto_post_correct": 1535,
+  "auto_post_precision": 1.0,
+  "rupee_accuracy": 0.9657,
+  "false_document_assignments": 3,
+  "mean_abs_amount_error_paise": 1665881.4,
+  "max_abs_amount_error_paise": 15829800,
+  "by_tier": {
+    "t4_amount_exact": {
+      "matches": 719,
+      "correct": 719,
+      "wrong": 0
+    },
+    "t1_settlement": {
+      "matches": 172,
+      "correct": 172,
+      "wrong": 0
+    },
+    "t2_advice_utr": {
+      "matches": 208,
+      "correct": 206,
+      "wrong": 2
+    },
+    "t3_doc_number": {
+      "matches": 515,
+      "correct": 515,
+      "wrong": 0
+    },
+    "t7_fuzzy": {
+      "matches": 13,
+      "correct": 11,
+      "wrong": 2
+    },
+    "t6_lumpsum": {
+      "matches": 5,
+      "correct": 5,
+      "wrong": 0
+    },
+    "t5_amount_name": {
+      "matches": 2,
+      "correct": 1,
+      "wrong": 1
+    }
+  },
+  "timing_ms": {
+    "prepare_ms": 27.25,
+    "t0_duplicates_ms": 72.55,
+    "t1_settlement_ms": 13.44,
+    "t2_advice_utr_ms": 7.15,
+    "t3_doc_number_ms": 39.81,
+    "t4_amount_exact_ms": 27.73,
+    "t5_amount_name_ms": 1.55,
+    "t6_lumpsum_ms": 289.2,
+    "t7_fuzzy_ms": 4.72,
+    "classify_unresolved_ms": 0.86
+  },
+  "throughput_lines_per_s": 3529.1,
+  "unresolved_count": 43,
+  "notes": [
+    "strategy=full tiers={'t1_settlement': 172, 't2_advice_utr': 208, 't3_doc_number': 515, 't4_amount_exact': 719, 't5_amount_name': 2, 't6_lumpsum': 5, 't7_fuzzy': 13}"
+  ]
+}

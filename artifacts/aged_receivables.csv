@@ -1,0 +1,910 @@
+document_no,counterparty,party_code,due_date,days_overdue,bucket,outstanding_inr,expected_in_window_inr,status
+INV-2026-000495,Suryavansh Petro Chemicals & Co,,2026-05-18,110,91-180,6000000.0,0.0,overdue
+INV-2026-001190,Shree Balaji Hardware Private Limited,,2026-08-08,28,1-30,6000000.0,47240.79,overdue
+INV-2026-001481,Ashwini Solar EPC PVT LTD,,2026-09-03,2,1-30,6000000.0,5018913.61,overdue
+INV-2026-000085,Shree Balaji Hardware Private Limited,,2026-04-30,128,91-180,5472308.0,125459.0,overdue
+INV-2026-000571,Sahyadri Polymers PVT LTD,,2026-06-09,88,61-90,4091866.0,0.0,overdue
+INV-2026-000178,Goldcrest Security Systems & Co,,2026-05-22,106,91-180,3888364.0,0.0,overdue
+INV-2026-000379,Zenith One Logistics & Co,,2026-05-07,121,91-180,3620347.0,0.0,overdue
+INV-2026-001755,Orbitex Paper Mills PVT LTD,,2026-08-21,15,1-30,3578805.0,0.0,overdue
+INV-2026-000024,Goldcrest Steel Traders Company,,2026-03-25,164,91-180,3384171.0,0.0,overdue
+INV-2026-000986,Sahyadri Polymers PVT LTD,,2026-07-20,47,31-60,3361899.0,0.0,overdue
+INV-2026-001087,Orbitex Packaging Private Limited,,2026-07-28,39,31-60,3344274.0,18387.61,overdue
+INV-2026-000761,Shree Balaji Hardware Private Limited,,2026-06-27,70,61-90,3291035.0,0.0,overdue
+INV-2026-000983,Ashwini Cold Chain Ltd,,2026-07-04,63,61-90,3088932.0,0.0,overdue
+INV-2026-000325,Anant Infra Staffing Private Limited,,2026-05-16,112,91-180,3045523.0,0.0,overdue
+INV-2026-001402,Orbitex Packaging Private Limited,,2026-08-27,9,1-30,3024795.0,0.0,overdue
+INV-2026-001282,Orbitex Paper Mills PVT LTD,,2026-07-08,59,31-60,2796676.0,0.0,overdue
+INV-2026-001237,Goldcrest Security Systems & Co,,2026-08-28,8,1-30,2680301.0,0.0,overdue
+INV-2026-000243,Zenith One Logistics & Co,,2026-04-27,131,91-180,2589772.0,55203.84,overdue
+INV-2026-001003,Orbitex Paper Mills PVT LTD,,2026-06-12,85,61-90,2566277.0,0.0,overdue
+INV-2026-001564,Orbitex Paper Mills PVT LTD,,2026-08-03,33,31-60,2520096.0,7216.63,overdue
+INV-2026-000825,Orbitex Packaging Private Limited,,2026-07-04,63,61-90,2382858.0,0.0,overdue
+INV-2026-001022,Shree Balaji Hardware Private Limited,,2026-07-23,44,31-60,2331570.0,0.0,overdue
+INV-2026-000143,Orbitex Packaging Private Limited,,2026-05-04,124,91-180,2325469.0,0.0,overdue
+INV-2026-000083,Orbitex Paper Mills PVT LTD,,2026-03-23,166,91-180,2311505.0,0.0,overdue
+INV-2026-000407,Meridian Lab Supplies LLP,,2026-04-16,142,91-180,2286415.0,0.0,overdue
+INV-2026-001366,Orbitex Paper Mills PVT LTD,,2026-07-16,51,31-60,2245300.0,0.0,overdue
+INV-2026-000481,Ashwini Cold Chain Ltd,,2026-05-16,112,91-180,2234888.0,927.48,overdue
+INV-2026-000259,Ashwini Cold Chain Ltd,,2026-04-27,131,91-180,2194977.0,0.0,overdue
+INV-2026-000782,Ashwini Solar EPC PVT LTD,,2026-06-29,68,61-90,2126303.0,4206.04,overdue
+INV-2026-000212,Orbitex Packaging Private Limited,,2026-05-09,119,91-180,2083834.0,0.0,overdue
+INV-2026-000459,Orbitex Packaging Private Limited,,2026-05-30,98,91-180,2045471.0,0.0,overdue
+INV-2026-000480,Orbitex Packaging Private Limited,,2026-06-01,96,91-180,2016452.0,0.0,overdue
+INV-2026-000658,Suryavansh Petro Chemicals & Co,,2026-06-01,96,91-180,1985013.0,0.0,overdue
+INV-2026-000073,Anant Infra Staffing Private Limited,,2026-04-28,130,91-180,1884284.0,0.0,overdue
+INV-2026-000104,Goldcrest Security Systems & Co,,2026-05-16,112,91-180,1874315.0,0.0,overdue
+INV-2026-001803,Goldcrest Steel Traders Company,,2026-09-03,2,1-30,1874030.0,1693422.56,overdue
+INV-2026-001382,Trividata Roofing Products PVT LTD,,2026-08-10,26,1-30,1858703.0,0.0,overdue
+INV-2026-001051,Nalanda Recyclers LLP,,2026-06-25,72,61-90,1829682.0,0.0,overdue
+INV-2026-000460,Suryavansh Petro Chemicals & Co,,2026-05-15,113,91-180,1775312.0,0.0,overdue
+INV-2026-000643,Anant Infra Staffing Private Limited,,2026-06-15,82,61-90,1749554.0,0.0,overdue
+INV-2026-000463,Anant Infra Staffing Private Limited,,2026-05-30,98,91-180,1744766.0,0.0,overdue
+INV-2026-000579,Goldcrest Steel Traders Company,,2026-05-12,116,91-180,1722778.0,0.0,overdue
+INV-2026-000165,Shree Balaji Hardware Private Limited,,2026-05-05,123,91-180,1708406.0,0.0,overdue
+INV-2026-000175,Copperleaf Electricals PVT LTD,,2026-05-07,121,91-180,1685544.0,0.0,overdue
+INV-2026-001053,Suryavansh Catering Services Company,,2026-07-10,57,31-60,1666570.0,0.0,open
+INV-2026-000774,Orbitex Packaging Private Limited,,2026-06-29,68,61-90,1641575.0,0.0,overdue
+INV-2026-000856,Shree Balaji Hardware Private Limited,,2026-07-07,60,31-60,1633019.0,0.0,overdue
+INV-2026-000988,Orbitex Packaging Private Limited,,2026-07-20,47,31-60,1608416.0,0.0,overdue
+INV-2026-000577,Ashwini Cold Chain Ltd,,2026-05-27,101,91-180,1593419.0,0.0,overdue
+INV-2026-000409,Ashwini Solar EPC PVT LTD,,2026-05-25,103,91-180,1584672.0,0.0,overdue
+INV-2026-001021,Goldcrest Steel Traders Company,,2026-06-23,74,61-90,1574420.0,6352.71,overdue
+INV-2026-000835,Suryavansh Petro Chemicals & Co,,2026-06-20,77,61-90,1571754.0,0.0,overdue
+INV-2026-000674,Trividata Roofing Products PVT LTD,,2026-06-04,93,91-180,1564180.0,0.0,overdue
+INV-2026-000126,Orbitex Paper Mills PVT LTD,,2026-03-25,164,91-180,1549325.0,0.0,overdue
+INV-2026-000672,Orbitex Dairy Foods PVT LTD,,2026-05-12,116,91-180,1548669.0,335.14,overdue
+INV-2026-000804,Suryavansh Petro Chemicals & Co,,2026-06-17,80,61-90,1547955.0,0.0,overdue
+INV-2026-000691,Meridian Lab Supplies LLP,,2026-05-13,115,91-180,1547506.0,0.0,overdue
+INV-2026-001179,Trividata Roofing Products PVT LTD,,2026-07-23,44,31-60,1530257.0,0.0,overdue
+INV-2026-001148,Suryavansh Petro Chemicals & Co,,2026-07-20,47,31-60,1525035.0,0.0,overdue
+INV-2026-000883,Sahyadri Polymers PVT LTD,,2026-07-10,57,31-60,1518679.0,0.0,overdue
+INV-2026-001345,Zenith One Logistics & Co,,2026-08-06,30,1-30,1504320.0,0.0,overdue
+INV-2026-000060,Zenith One Logistics & Co,,2026-04-13,145,91-180,1498295.0,0.0,overdue
+INV-2026-000754,Goldcrest Security Systems & Co,,2026-07-11,56,31-60,1492157.0,0.0,overdue
+INV-2026-000528,Nalanda Recyclers LLP,,2026-05-06,122,91-180,1485329.0,0.0,overdue
+INV-2026-001245,Meridian Lab Supplies LLP,,2026-07-06,61,61-90,1484634.0,6178.34,overdue
+INV-2026-000338,Ashwini Interiors & Co,,2026-05-02,126,91-180,1484464.0,0.0,overdue
+INV-2026-000688,Sahyadri Polymers PVT LTD,,2026-06-20,77,61-90,1481801.0,0.0,overdue
+INV-2026-000292,Orbitex Packaging Private Limited,,2026-05-14,114,91-180,1463037.0,0.0,overdue
+INV-2026-001646,Meridian Lab Supplies LLP,,2026-08-12,24,1-30,1454278.0,0.0,overdue
+INV-2026-001184,Sahyadri Polymers PVT LTD,,2026-08-07,29,1-30,1452061.0,0.0,overdue
+INV-2026-000936,Ashwini Cold Chain Ltd,,2026-06-29,68,61-90,1444547.0,0.0,overdue
+INV-2026-000303,Nalanda Recyclers LLP,,2026-04-15,143,91-180,1441705.0,0.0,open
+INV-2026-001189,Meridian Lab Supplies LLP,,2026-07-01,66,61-90,1437962.0,0.0,overdue
+INV-2026-001468,Ashwini Solar EPC PVT LTD,,2026-09-01,4,1-30,1432891.0,1194982.46,overdue
+INV-2026-000625,Ashwini Cold Chain Ltd,,2026-05-30,98,91-180,1430162.0,1631.02,overdue
+INV-2026-001205,Suryavansh Petro Chemicals & Co,,2026-07-25,42,31-60,1418172.0,0.0,overdue
+INV-2026-000919,Vedika Facility Management & Co,,2026-07-13,54,31-60,1405609.0,0.0,overdue
+INV-2026-000925,Trividata Roofing Products PVT LTD,,2026-06-29,68,61-90,1404378.0,0.0,overdue
+INV-2026-001013,Vedika Facility Management & Co,,2026-07-21,46,31-60,1395689.0,0.0,overdue
+INV-2026-001145,Goldcrest Security Systems & Co,,2026-08-18,18,1-30,1388104.0,0.0,overdue
+INV-2026-000184,Copperleaf Electricals PVT LTD,,2026-05-07,121,91-180,1384328.0,0.0,overdue
+INV-2026-000378,Nalanda Recyclers LLP,,2026-04-22,136,91-180,1379087.0,0.0,open
+INV-2026-000982,Orbitex Dairy Foods PVT LTD,,2026-06-11,86,61-90,1358463.0,0.0,open
+INV-2026-001141,Goldcrest Steel Traders Company,,2026-07-04,63,61-90,1352077.0,0.0,overdue
+INV-2026-000896,Goldcrest Security Systems & Co,,2026-07-27,40,31-60,1330355.0,0.0,overdue
+INV-2026-000380,Suryavansh Petro Chemicals & Co,,2026-05-07,121,91-180,1321291.0,0.0,overdue
+INV-2026-000879,Ashwini Cold Chain Ltd,,2026-06-25,72,61-90,1318459.0,0.0,overdue
+INV-2026-000228,Nalanda Fab Services Private Limited,,2026-05-25,103,91-180,1308051.0,0.0,overdue
+INV-2026-001207,Ashwini Cold Chain Ltd,,2026-07-25,42,31-60,1304751.0,0.0,overdue
+INV-2026-001457,Goldcrest Steel Traders Company,,2026-08-01,35,31-60,1302689.0,0.0,overdue
+INV-2026-000989,Shree Balaji Hardware Private Limited,,2026-07-20,47,31-60,1290022.0,0.0,overdue
+INV-2026-001048,Orbitex Packaging Private Limited,,2026-07-25,42,31-60,1289831.0,0.0,overdue
+INV-2026-000005,Goldcrest Security Systems & Co,,2026-05-08,120,91-180,1288560.0,0.0,overdue
+INV-2026-001125,Ashwini Interiors & Co,,2026-07-18,49,31-60,1287280.0,0.0,overdue
+INV-2026-001256,Everstone Water Treatment Company,,2026-08-29,7,1-30,1283718.0,0.0,overdue
+INV-2026-000785,Pushpa Metals Agri Inputs PVT LTD,,2026-05-22,106,91-180,1278621.0,0.0,overdue
+INV-2026-001178,Ashwini Interiors & Co,,2026-07-23,44,31-60,1270894.0,0.0,overdue
+INV-2026-001318,Shree Balaji Hardware Private Limited,,2026-08-17,19,1-30,1263197.0,0.0,overdue
+INV-2026-001427,Trividata Roofing Products PVT LTD,,2026-08-14,22,1-30,1249899.0,0.0,overdue
+INV-2026-000450,Vedika Facility Management & Co,,2026-05-29,99,91-180,1244536.0,0.0,overdue
+INV-2026-001492,Vedika Facility Management & Co,,2026-09-04,1,1-30,1244312.0,0.0,overdue
+INV-2026-000735,Ashwini Cold Chain Ltd,,2026-06-08,89,61-90,1242496.0,0.0,overdue
+INV-2026-000466,Suryavansh Petro Chemicals & Co,,2026-05-15,113,91-180,1234957.0,0.0,overdue
+INV-2026-000816,Ashwini Cold Chain Ltd,,2026-06-18,79,61-90,1219996.0,0.0,overdue
+INV-2026-000174,Orbitex Paper Mills PVT LTD,,2026-03-30,159,91-180,1218737.0,0.0,overdue
+INV-2026-000311,Nalanda Recyclers LLP,,2026-04-15,143,91-180,1198403.0,29800.66,overdue
+INV-2026-001255,Nalanda Recyclers LLP,,2026-07-15,52,31-60,1170483.0,0.0,overdue
+INV-2026-000287,Saptagiri Analytics Ltd,,2026-04-06,152,91-180,1168944.0,0.0,overdue
+INV-2026-001677,Nalanda Recyclers LLP,,2026-08-22,14,1-30,1167942.0,0.0,overdue
+INV-2026-001509,Orbitex Packaging Private Limited,,2026-09-05,0,1-30,1161269.0,1085777.48,open
+INV-2026-001167,Trividata Roofing Products PVT LTD,,2026-07-22,45,31-60,1160737.0,3851.7,overdue
+INV-2026-000309,Vedika Facility Management & Co,,2026-05-15,113,91-180,1146371.0,0.0,overdue
+INV-2026-000182,Sahyadri Polymers PVT LTD,,2026-05-07,121,91-180,1145592.0,0.0,overdue
+INV-2026-000597,Shree Balaji Hardware Private Limited,,2026-06-12,85,61-90,1145131.0,0.0,overdue
+INV-2026-000648,Vedika Facility Management & Co,,2026-06-15,82,61-90,1129321.0,0.0,overdue
+INV-2026-000793,Ashwini Interiors & Co,,2026-06-15,82,61-90,1129197.0,0.0,overdue
+INV-2026-000836,Ashwini Interiors & Co,,2026-06-20,77,61-90,1125491.0,1672.37,overdue
+INV-2026-001219,Ashwini Solar EPC PVT LTD,,2026-08-10,26,1-30,1124433.0,0.0,open
+INV-2026-001217,Nalanda Recyclers LLP,,2026-07-11,56,31-60,1121502.0,0.0,overdue
+INV-2026-001542,Orbitex Paper Mills PVT LTD,,2026-07-31,36,31-60,1120334.0,0.0,open
+INV-2026-000329,Trividata Roofing Products PVT LTD,,2026-05-01,127,91-180,1119076.0,0.0,overdue
+INV-2026-000850,Nalanda Fab Services Private Limited,,2026-07-21,46,31-60,1118244.0,0.0,overdue
+INV-2026-001403,Saptagiri Analytics Ltd,,2026-07-20,47,31-60,1114756.0,0.0,overdue
+INV-2026-001347,Ashwini Interiors & Co,,2026-08-06,30,1-30,1110927.0,0.0,overdue
+INV-2026-000217,Orbitex Packaging Private Limited,,2026-05-09,119,91-180,1091304.0,0.0,overdue
+INV-2026-000869,Orbitex Packaging Private Limited,,2026-07-09,58,31-60,1085341.0,0.0,overdue
+INV-2026-001805,Pushpa Metals Agri Inputs PVT LTD,,2026-08-26,10,1-30,1080271.0,0.0,overdue
+INV-2026-001536,Meridian Lab Supplies LLP,,2026-07-31,36,31-60,1074512.0,0.0,overdue
+INV-2026-000815,Vedika Facility Management & Co,,2026-07-03,64,61-90,1064676.0,0.0,overdue
+INV-2026-000881,Ashwini Solar EPC PVT LTD,,2026-07-10,57,31-60,1063405.0,0.0,overdue
+INV-2026-001377,Saptagiri Analytics Ltd,,2026-07-17,50,31-60,1058022.0,0.0,overdue
+INV-2026-001767,Orbitex Dairy Foods PVT LTD,,2026-08-22,14,1-30,1054876.0,0.0,overdue
+INV-2026-001180,Nalanda Recyclers LLP,,2026-07-08,59,31-60,1047754.0,0.0,overdue
+INV-2026-001526,Orbitex Paper Mills PVT LTD,,2026-07-30,37,31-60,1046804.0,0.0,open
+INV-2026-001258,Orbitex Packaging Private Limited,,2026-08-14,22,1-30,1039355.0,0.0,open
+INV-2026-000377,Goldcrest Security Systems & Co,,2026-06-06,91,91-180,1035455.0,0.0,overdue
+INV-2026-000291,Orbitex Paper Mills PVT LTD,,2026-04-06,152,91-180,1034426.0,23232.91,overdue
+INV-2026-000226,Sahyadri Polymers PVT LTD,,2026-05-11,117,91-180,1034038.0,0.0,overdue
+INV-2026-000556,Shree Balaji Hardware Private Limited,,2026-06-08,89,61-90,1029228.0,0.0,overdue
+INV-2026-000094,Trividata Roofing Products PVT LTD,,2026-04-15,143,91-180,1025564.0,24714.46,overdue
+INV-2026-000496,Meridian Lab Supplies LLP,,2026-04-24,134,91-180,1021608.0,0.0,overdue
+INV-2026-000102,Pushpa Metals Agri Inputs PVT LTD,,2026-03-24,165,91-180,1018707.0,0.0,overdue
+INV-2026-001661,Suryavansh Catering Services Company,,2026-09-05,0,1-30,1014640.0,0.0,open
+INV-2026-001275,Trividata Roofing Products PVT LTD,,2026-07-31,36,31-60,1010084.0,3982.64,overdue
+INV-2026-001539,Ashwini Interiors & Co,,2026-08-24,12,1-30,1008580.0,0.0,overdue
+INV-2026-001274,Orbitex Dairy Foods PVT LTD,,2026-07-08,59,31-60,1003890.0,0.0,overdue
+INV-2026-000166,Meridian Lab Supplies LLP,,2026-03-28,161,91-180,1002598.0,0.0,overdue
+INV-2026-001220,Nalanda Recyclers LLP,,2026-07-11,56,31-60,1001151.0,0.0,overdue
+INV-2026-001004,Nalanda Fab Services Private Limited,,2026-08-04,32,31-60,999576.0,0.0,overdue
+INV-2026-000690,Goldcrest Security Systems & Co,,2026-07-06,61,61-90,992374.0,0.0,overdue
+INV-2026-000540,Ashwini Cold Chain Ltd,,2026-05-22,106,91-180,991909.0,0.0,overdue
+INV-2026-001456,Anant Infra Staffing Private Limited,,2026-08-31,5,1-30,991187.0,654917.97,overdue
+INV-2026-000201,Sahyadri Polymers PVT LTD,,2026-05-08,120,91-180,983633.0,0.0,overdue
+INV-2026-001497,Meridian Lab Supplies LLP,,2026-07-28,39,31-60,969809.0,0.0,overdue
+INV-2026-000148,Sahyadri Polymers PVT LTD,,2026-05-04,124,91-180,966332.0,0.0,overdue
+INV-2026-000185,Goldcrest Warehousing Private Limited,,2026-03-30,159,91-180,961448.0,21253.19,overdue
+INV-2026-000451,Suryavansh Print Solutions & Co,,2026-05-14,114,91-180,954762.0,464.94,overdue
+INV-2026-001395,Meridian Lab Supplies LLP,,2026-07-20,47,31-60,954485.0,0.0,overdue
+INV-2026-001475,Goldcrest Steel Traders Company,,2026-08-04,32,31-60,952720.0,0.0,overdue
+INV-2026-000504,Orbitex Paper Mills PVT LTD,,2026-04-25,133,91-180,951674.0,0.0,overdue
+INV-2026-001326,Nalanda Recyclers LLP,,2026-07-20,47,31-60,950120.0,0.0,overdue
+INV-2026-001699,Saptagiri Analytics Ltd,,2026-08-17,19,1-30,949901.0,0.0,overdue
+INV-2026-001350,Suryavansh Petro Chemicals & Co,,2026-08-06,30,1-30,947888.0,0.0,overdue
+INV-2026-000322,Saptagiri Analytics Ltd,,2026-04-08,150,91-180,946607.0,22274.11,overdue
+INV-2026-001637,Suryavansh Catering Services Company,,2026-09-03,2,1-30,943114.0,722927.94,overdue
+INV-2026-001585,Nalanda Recyclers LLP,,2026-08-13,23,1-30,941946.0,0.0,overdue
+INV-2026-000928,Ashwini Cold Chain Ltd,,2026-06-29,68,61-90,941344.0,0.0,overdue
+INV-2026-001081,Copperleaf Electricals PVT LTD,,2026-07-27,40,31-60,940043.0,0.0,overdue
+INV-2026-000921,Ashwini Solar EPC PVT LTD,,2026-07-13,54,31-60,936156.0,0.0,overdue
+INV-2026-000369,Copperleaf Electricals PVT LTD,,2026-05-21,107,91-180,934624.0,0.0,overdue
+INV-2026-000288,Nalanda Recyclers LLP,,2026-04-14,144,91-180,932058.0,0.0,open
+INV-2026-001521,Saptagiri Analytics Ltd,,2026-07-30,37,31-60,929035.0,0.0,overdue
+INV-2026-001455,Orbitex Packaging Private Limited,,2026-08-31,5,1-30,923888.0,0.0,overdue
+INV-2026-000718,Orbitex Packaging Private Limited,,2026-06-22,75,61-90,923504.0,0.0,overdue
+INV-2026-001489,Shree Balaji Hardware Private Limited,,2026-09-04,1,1-30,918576.0,690375.11,overdue
+INV-2026-000911,Trividata Roofing Products PVT LTD,,2026-06-27,70,61-90,914727.0,0.0,overdue
+INV-2026-000984,Ashwini Solar EPC PVT LTD,,2026-07-20,47,31-60,908708.0,0.0,overdue
+INV-2026-000539,Ashwini Cold Chain Ltd,,2026-05-22,106,91-180,908320.0,0.0,overdue
+INV-2026-000611,Meridian Lab Supplies LLP,,2026-05-06,122,91-180,907734.0,0.0,overdue
+INV-2026-001116,Trividata Roofing Products PVT LTD,,2026-07-17,50,31-60,907554.0,0.0,overdue
+INV-2026-001648,Pushpa Metals Agri Inputs PVT LTD,,2026-08-12,24,1-30,904149.0,0.0,overdue
+INV-2026-001001,Anant Infra Staffing Private Limited,,2026-07-20,47,31-60,903173.0,0.0,overdue
+INV-2026-000310,Goldcrest Steel Traders Company,,2026-04-15,143,91-180,900789.0,0.0,overdue
+INV-2026-000072,Vedika Facility Management & Co,,2026-04-28,130,91-180,897718.0,0.0,overdue
+INV-2026-000608,Meridian Lab Supplies LLP,,2026-05-06,122,91-180,892943.0,0.0,overdue
+INV-2026-000908,Suryavansh Petro Chemicals & Co,,2026-06-27,70,61-90,892424.0,0.0,overdue
+INV-2026-001479,Ashwini Cold Chain Ltd,,2026-08-19,17,1-30,890659.0,0.0,overdue
+INV-2026-000580,Trividata Roofing Products PVT LTD,,2026-05-27,101,91-180,885368.0,0.0,overdue
+INV-2026-000312,Goldcrest Security Systems & Co,,2026-05-30,98,91-180,881339.0,0.0,overdue
+INV-2026-000427,Pushpa Metals Agri Inputs PVT LTD,,2026-04-17,141,91-180,880513.0,17541.75,overdue
+INV-2026-001756,Nalanda Recyclers LLP,,2026-08-29,7,1-30,874148.0,744315.49,overdue
+INV-2026-001208,Pushpa Metals Agri Inputs PVT LTD,,2026-07-02,65,61-90,872963.0,0.0,overdue
+INV-2026-000689,Nalanda Fab Services Private Limited,,2026-07-06,61,61-90,864253.0,0.0,overdue
+INV-2026-001094,Meridian Lab Supplies LLP,,2026-06-22,75,61-90,863928.0,0.0,overdue
+INV-2026-000998,Suryavansh Petro Chemicals & Co,,2026-07-06,61,61-90,863125.0,0.0,overdue
+INV-2026-000324,Orbitex Paper Mills PVT LTD,,2026-04-08,150,91-180,858645.0,19284.88,overdue
+INV-2026-001678,Meridian Lab Supplies LLP,,2026-08-14,22,1-30,856649.0,0.0,overdue
+INV-2026-000629,Orbitex Dairy Foods PVT LTD,,2026-05-07,121,91-180,854364.0,0.0,overdue
+INV-2026-001315,Orbitex Packaging Private Limited,,2026-08-17,19,1-30,851672.0,0.0,overdue
+INV-2026-000423,Pushpa Metals Agri Inputs PVT LTD,,2026-04-17,141,91-180,850099.0,0.0,overdue
+INV-2026-000953,Vedika Facility Management & Co,,2026-07-17,50,31-60,847119.0,0.0,overdue
+INV-2026-000857,Shree Balaji Hardware Private Limited,,2026-07-07,60,31-60,845408.0,0.0,overdue
+INV-2026-001263,Goldcrest Steel Traders Company,,2026-07-15,52,31-60,841472.0,0.0,overdue
+INV-2026-000336,Goldcrest Security Systems & Co,,2026-06-01,96,91-180,839856.0,0.0,overdue
+INV-2026-000912,Pushpa Metals Agri Inputs PVT LTD,,2026-06-04,93,91-180,838218.0,0.0,overdue
+INV-2026-000546,Ashwini Cold Chain Ltd,,2026-05-23,105,91-180,837138.0,0.0,overdue
+INV-2026-001080,Copperleaf Electricals PVT LTD,,2026-07-27,40,31-60,836814.0,0.0,overdue
+INV-2026-001283,Ashwini Solar EPC PVT LTD,,2026-08-17,19,1-30,836066.0,0.0,overdue
+INV-2026-001650,Saptagiri Analytics Ltd,,2026-08-12,24,1-30,835538.0,16012.82,overdue
+INV-2026-001572,Saptagiri Analytics Ltd,,2026-08-04,32,31-60,831684.0,0.0,overdue
+INV-2026-000506,Meridian Lab Supplies LLP,,2026-04-25,133,91-180,820223.0,0.0,overdue
+INV-2026-001367,Nalanda Recyclers LLP,,2026-07-24,43,31-60,819347.0,0.0,overdue
+INV-2026-000843,Orbitex Dairy Foods PVT LTD,,2026-05-29,99,91-180,819283.0,0.0,overdue
+INV-2026-000547,Vedika Textiles Company,,2026-05-08,120,91-180,818192.0,0.0,overdue
+INV-2026-000898,Goldcrest Steel Traders Company,,2026-06-11,86,61-90,816812.0,0.0,overdue
+INV-2026-001368,Saptagiri Analytics Ltd,,2026-07-16,51,31-60,816731.0,0.0,overdue
+INV-2026-000004,Ashwini Cable Systems LLP,,2026-04-08,150,91-180,816227.0,0.0,overdue
+INV-2026-000290,Meridian Lab Supplies LLP,,2026-04-06,152,91-180,815948.0,0.0,overdue
+INV-2026-000562,Pushpa Metals Agri Inputs PVT LTD,,2026-05-01,127,91-180,814507.0,0.0,open
+INV-2026-001336,Ashwini Interiors & Co,,2026-08-05,31,31-60,812298.0,0.0,overdue
+INV-2026-001298,Orbitex Dairy Foods PVT LTD,,2026-07-09,58,31-60,812013.0,0.0,overdue
+INV-2026-000614,Orbitex Paper Mills PVT LTD,,2026-05-06,122,91-180,809800.0,18187.87,overdue
+INV-2026-001036,Goldcrest Security Systems & Co,,2026-08-08,28,1-30,807131.0,0.0,overdue
+INV-2026-000868,Everstone Water Treatment Company,,2026-07-24,43,31-60,806012.0,0.0,overdue
+INV-2026-000937,Ashwini Solar EPC PVT LTD,,2026-07-14,53,31-60,805959.0,0.0,overdue
+INV-2026-000454,Anant Infra Staffing Private Limited,,2026-05-29,99,91-180,805047.0,0.0,overdue
+INV-2026-000605,Suryavansh Print Solutions & Co,,2026-05-29,99,91-180,803812.0,0.0,overdue
+INV-2026-000780,Vedika Facility Management & Co,,2026-06-29,68,61-90,802341.0,3128.44,overdue
+INV-2026-000687,Orbitex Paper Mills PVT LTD,,2026-05-13,115,91-180,796550.0,0.0,overdue
+INV-2026-001129,Ashwini Interiors & Co,,2026-07-18,49,31-60,796416.0,0.0,overdue
+INV-2026-001079,Ashwini Cold Chain Ltd,,2026-07-13,54,31-60,793134.0,0.0,overdue
+INV-2026-000411,Ashwini Solar EPC PVT LTD,,2026-05-25,103,91-180,791955.0,0.0,overdue
+INV-2026-000644,Pushpa Metals Agri Inputs PVT LTD,,2026-05-08,120,91-180,790719.0,0.0,open
+INV-2026-001494,Saptagiri Analytics Ltd,,2026-07-28,39,31-60,790508.0,0.0,overdue
+INV-2026-000286,Orbitex Dairy Foods PVT LTD,,2026-04-06,152,91-180,788313.0,0.0,overdue
+INV-2026-000302,Ashwini Cold Chain Ltd,,2026-04-30,128,91-180,787184.0,17470.7,overdue
+INV-2026-000525,Trividata Roofing Products PVT LTD,,2026-05-21,107,91-180,785058.0,0.0,overdue
+INV-2026-000150,Saptagiri Analytics Ltd,,2026-03-26,163,91-180,784113.0,0.0,overdue
+INV-2026-001066,Vedika Facility Management & Co,,2026-07-27,40,31-60,782986.0,3184.05,open
+INV-2026-001061,Nalanda Fab Services Private Limited,,2026-08-10,26,1-30,782770.0,0.0,overdue
+INV-2026-000251,Orbitex Paper Mills PVT LTD,,2026-04-03,155,91-180,779286.0,0.0,overdue
+INV-2026-000733,Trividata Roofing Products PVT LTD,,2026-06-08,89,61-90,775130.0,0.0,overdue
+INV-2026-000538,Pushpa Metals Agri Inputs PVT LTD,,2026-04-29,129,91-180,774155.0,0.0,overdue
+INV-2026-000632,Goldcrest Steel Traders Company,,2026-05-15,113,91-180,757911.0,0.0,overdue
+INV-2026-000492,Nalanda Recyclers LLP,,2026-05-02,126,91-180,756092.0,0.0,overdue
+INV-2026-000763,Orbitex Packaging Private Limited,,2026-06-27,70,61-90,753025.0,0.0,overdue
+INV-2026-000609,Ashwini Interiors & Co,,2026-05-29,99,91-180,752366.0,0.0,overdue
+INV-2026-000032,Goldcrest Steel Traders Company,,2026-03-26,163,91-180,741924.0,0.0,overdue
+INV-2026-001108,Trividata Roofing Products PVT LTD,,2026-07-16,51,31-60,738222.0,0.0,overdue
+INV-2026-001444,Vedika Textiles Company,,2026-07-31,36,31-60,738222.0,0.0,overdue
+INV-2026-000445,Suryavansh Print Solutions & Co,,2026-05-13,115,91-180,731991.0,0.0,overdue
+INV-2026-000253,Orbitex Dairy Foods PVT LTD,,2026-04-03,155,91-180,730399.0,0.0,overdue
+INV-2026-000967,Goldcrest Security Systems & Co,,2026-08-03,33,31-60,728238.0,0.0,overdue
+INV-2026-001317,Suryavansh Petro Chemicals & Co,,2026-08-03,33,31-60,728087.0,0.0,overdue
+INV-2026-001378,Pushpa Metals Agri Inputs PVT LTD,,2026-07-17,50,31-60,724937.0,0.0,overdue
+INV-2026-001390,Trividata Roofing Products PVT LTD,,2026-08-10,26,1-30,724721.0,0.0,overdue
+INV-2026-001441,Orbitex Paper Mills PVT LTD,,2026-07-23,44,31-60,724444.0,0.0,open
+INV-2026-000086,Suryavansh Catering Services Company,,2026-04-15,143,91-180,720643.0,0.0,overdue
+INV-2026-001033,Suryavansh Catering Services Company,,2026-07-09,58,31-60,716062.0,0.0,open
+INV-2026-000347,Zenith One Logistics & Co,,2026-05-04,124,91-180,715953.0,0.0,overdue
+INV-2026-001120,Goldcrest Security Systems & Co,,2026-08-17,19,1-30,712570.0,0.0,overdue
+INV-2026-001629,Meridian Lab Supplies LLP,,2026-08-10,26,1-30,712388.0,0.0,overdue
+INV-2026-001582,Ashwini Interiors & Co,,2026-08-28,8,1-30,705830.0,0.0,overdue
+INV-2026-001024,Suryavansh Petro Chemicals & Co,,2026-07-08,59,31-60,703640.0,0.0,overdue
+INV-2026-001261,Everstone Water Treatment Company,,2026-08-29,7,1-30,701721.0,0.0,overdue
+INV-2026-000364,Vedika Facility Management & Co,,2026-05-21,107,91-180,701293.0,0.0,overdue
+INV-2026-000254,Meridian Lab Supplies LLP,,2026-04-03,155,91-180,700433.0,0.0,overdue
+INV-2026-000123,Orbitex Packaging Private Limited,,2026-05-02,126,91-180,699758.0,0.0,overdue
+INV-2026-000345,Trividata Roofing Products PVT LTD,,2026-05-04,124,91-180,698769.0,0.0,overdue
+INV-2026-000900,Trividata Roofing Products PVT LTD,,2026-06-26,71,61-90,698432.0,0.0,overdue
+INV-2026-000443,Sahyadri Polymers PVT LTD,,2026-05-28,100,91-180,697592.0,0.0,overdue
+INV-2026-000642,Vedika Facility Management & Co,,2026-06-15,82,61-90,694394.0,0.0,overdue
+INV-2026-000346,Shree Balaji Hardware Private Limited,,2026-05-18,110,91-180,693223.0,0.0,overdue
+INV-2026-000090,Nalanda Recyclers LLP,,2026-03-31,158,91-180,692980.0,0.0,overdue
+INV-2026-001260,Goldcrest Security Systems & Co,,2026-08-29,7,1-30,691621.0,0.0,overdue
+INV-2026-000845,Orbitex Paper Mills PVT LTD,,2026-05-29,99,91-180,691083.0,0.0,overdue
+INV-2026-000837,Shree Balaji Machine Parts & Co,,2026-07-20,47,31-60,690939.0,0.0,overdue
+INV-2026-001289,Suryavansh Print Solutions & Co,,2026-08-01,35,31-60,688219.0,0.0,overdue
+INV-2026-001335,Copperleaf Electricals PVT LTD,,2026-08-20,16,1-30,687142.0,0.0,overdue
+INV-2026-000823,Ashwini Cold Chain Ltd,,2026-06-19,78,61-90,683400.0,0.0,overdue
+INV-2026-001365,Orbitex Packaging Private Limited,,2026-08-24,12,1-30,681584.0,0.0,overdue
+INV-2026-000021,Vedika Facility Management & Co,,2026-04-24,134,91-180,680246.0,0.0,overdue
+INV-2026-000128,Orbitex Packaging Private Limited,,2026-05-02,126,91-180,677771.0,0.0,overdue
+INV-2026-000008,Ashwini Cold Chain Ltd,,2026-04-08,150,91-180,674824.0,0.0,overdue
+INV-2026-000202,Saptagiri Analytics Ltd,,2026-03-31,158,91-180,674577.0,0.0,overdue
+INV-2026-001628,Orbitex Dairy Foods PVT LTD,,2026-08-10,26,1-30,672885.0,0.0,overdue
+INV-2026-000677,Ashwini Solar EPC PVT LTD,,2026-06-19,78,61-90,672093.0,0.0,overdue
+INV-2026-001851,Saptagiri Analytics Ltd,,2026-08-31,5,1-30,671434.0,0.0,overdue
+INV-2026-000748,Nalanda Recyclers LLP,,2026-05-26,102,91-180,670320.0,0.0,overdue
+INV-2026-000186,Orbitex Dairy Foods PVT LTD,,2026-03-30,159,91-180,669758.0,0.0,overdue
+INV-2026-001126,Everstone Water Treatment Company,,2026-08-17,19,1-30,666158.0,0.0,overdue
+INV-2026-001202,Goldcrest Steel Traders Company,,2026-07-10,57,31-60,662890.0,0.0,overdue
+INV-2026-000922,Nalanda Recyclers LLP,,2026-06-13,84,61-90,662635.0,0.0,overdue
+INV-2026-001157,Saptagiri Analytics Ltd,,2026-06-27,70,61-90,659961.0,0.0,overdue
+INV-2026-001039,Goldcrest Security Systems & Co,,2026-08-08,28,1-30,658596.0,0.0,overdue
+INV-2026-000917,Ashwini Interiors & Co,,2026-06-29,68,61-90,657872.0,977.06,overdue
+INV-2026-001124,Pushpa Metals Agri Inputs PVT LTD,,2026-06-25,72,61-90,656932.0,576.96,open
+INV-2026-000517,Goldcrest Steel Traders Company,,2026-05-05,123,91-180,655816.0,0.0,overdue
+INV-2026-001253,Nalanda Recyclers LLP,,2026-07-15,52,31-60,650671.0,0.0,overdue
+INV-2026-000713,Goldcrest Steel Traders Company,,2026-05-23,105,91-180,648601.0,0.0,open
+INV-2026-000808,Trinetra Piping Solutions LLP,,2026-07-17,50,31-60,647330.0,0.0,overdue
+INV-2026-001316,Suryavansh Petro Chemicals & Co,,2026-08-03,33,31-60,646259.0,1997.57,overdue
+INV-2026-001244,Ashwini Interiors & Co,,2026-07-29,38,31-60,645606.0,0.0,overdue
+INV-2026-000880,Suryavansh Print Solutions & Co,,2026-06-25,72,61-90,644139.0,1562.91,overdue
+INV-2026-001398,Ashwini Interiors & Co,,2026-08-12,24,1-30,643575.0,0.0,overdue
+INV-2026-001432,Ashwini Cold Chain Ltd,,2026-08-14,22,1-30,640097.0,15626.3,overdue
+INV-2026-000615,Vedika Textiles Company,,2026-05-14,114,91-180,639904.0,0.0,overdue
+INV-2026-001913,Pushpa Metals Agri Inputs PVT LTD,,2026-09-04,1,1-30,638255.0,462770.54,overdue
+INV-2026-000337,Pushpa Metals Agri Inputs PVT LTD,,2026-04-09,149,91-180,635949.0,0.0,overdue
+INV-2026-000188,Goldcrest Steel Traders Company,,2026-04-07,151,91-180,635662.0,0.0,overdue
+INV-2026-001477,Anant Infra Staffing Private Limited,,2026-09-03,2,1-30,634979.0,457492.08,overdue
+INV-2026-000205,Trinetra Piping Solutions LLP,,2026-05-23,105,91-180,633056.0,0.0,overdue
+INV-2026-000272,Vedika Facility Management & Co,,2026-05-12,116,91-180,630481.0,0.0,overdue
+INV-2026-001433,Pushpa Metals Agri Inputs PVT LTD,,2026-07-22,45,31-60,628499.0,553.22,overdue
+INV-2026-001238,Orbitex Paper Mills PVT LTD,,2026-07-06,61,61-90,627549.0,0.0,overdue
+INV-2026-000559,Saptagiri Analytics Ltd,,2026-05-01,127,91-180,625920.0,0.0,overdue
+INV-2026-000897,Ashwini Interiors & Co,,2026-06-26,71,61-90,622901.0,925.27,overdue
+INV-2026-001824,Goldcrest Warehousing Private Limited,,2026-08-28,8,1-30,622543.0,0.0,overdue
+INV-2026-000676,Orbitex Dairy Foods PVT LTD,,2026-05-12,116,91-180,622151.0,0.0,overdue
+INV-2026-001743,Nalanda Recyclers LLP,,2026-08-28,8,1-30,620422.0,0.0,overdue
+INV-2026-001313,Sahyadri Polymers PVT LTD,,2026-08-17,19,1-30,618930.0,0.0,overdue
+INV-2026-000479,Anant Infra Staffing Private Limited,,2026-06-01,96,91-180,617559.0,0.0,overdue
+INV-2026-000252,Zenith One Logistics & Co,,2026-04-27,131,91-180,613476.0,0.0,overdue
+INV-2026-000716,Trividata Roofing Products PVT LTD,,2026-06-08,89,61-90,612192.0,0.0,overdue
+INV-2026-000446,Orbitex Dairy Foods PVT LTD,,2026-04-20,138,91-180,609584.0,0.0,overdue
+INV-2026-001618,Meridian Lab Supplies LLP,,2026-08-08,28,1-30,609001.0,0.0,overdue
+INV-2026-000582,Saptagiri Analytics Ltd,,2026-05-04,124,91-180,604490.0,0.0,overdue
+INV-2026-000283,Nalanda Fab Services Private Limited,,2026-05-29,99,91-180,603218.0,0.0,overdue
+INV-2026-000595,Vedika Facility Management & Co,,2026-06-12,85,61-90,603177.0,0.0,overdue
+INV-2026-000935,Sahyadri Polymers PVT LTD,,2026-07-14,53,31-60,600328.0,0.0,overdue
+INV-2026-001229,Ashwini Cold Chain Ltd,,2026-07-27,40,31-60,598519.0,0.0,overdue
+INV-2026-001128,Copperleaf Electricals PVT LTD,,2026-08-03,33,31-60,597544.0,0.0,overdue
+INV-2026-000747,Anant Infra Staffing Private Limited,,2026-06-25,72,61-90,596674.0,644.72,overdue
+INV-2026-001636,Suryavansh Catering Services Company,,2026-09-03,2,1-30,596598.0,457311.96,overdue
+INV-2026-000666,Copperleaf Electricals PVT LTD,,2026-06-18,79,61-90,591852.0,0.0,overdue
+INV-2026-000335,Orbitex Dairy Foods PVT LTD,,2026-04-09,149,91-180,591766.0,0.0,overdue
+INV-2026-000449,Orbitex Packaging Private Limited,,2026-05-29,99,91-180,591630.0,0.0,overdue
+INV-2026-000281,Nalanda Fab Services Private Limited,,2026-05-29,99,91-180,587170.0,0.0,overdue
+INV-2026-000814,Goldcrest Security Systems & Co,,2026-07-18,49,31-60,582673.0,681.39,overdue
+INV-2026-000157,Copperleaf Electricals PVT LTD,,2026-05-04,124,91-180,579746.0,0.0,overdue
+INV-2026-001380,Pushpa Metals Agri Inputs PVT LTD,,2026-07-17,50,31-60,579498.0,0.0,overdue
+INV-2026-000692,Anant Infra Staffing Private Limited,,2026-06-20,77,61-90,575166.0,621.67,overdue
+INV-2026-001760,Nalanda Recyclers LLP,,2026-08-29,7,1-30,573273.0,0.0,overdue
+INV-2026-000819,Ashwini Cold Chain Ltd,,2026-06-18,79,61-90,573222.0,0.0,overdue
+INV-2026-000204,Meridian Lab Supplies LLP,,2026-03-31,158,91-180,569943.0,0.0,overdue
+INV-2026-000146,Trividata Roofing Products PVT LTD,,2026-04-18,140,91-180,567503.0,0.0,overdue
+INV-2026-001354,Orbitex Dairy Foods PVT LTD,,2026-07-15,52,31-60,563959.0,0.0,overdue
+INV-2026-000630,Shree Balaji Hardware Private Limited,,2026-06-15,82,61-90,562141.0,0.0,overdue
+INV-2026-000958,Copperleaf Electricals PVT LTD,,2026-07-17,50,31-60,560953.0,0.0,overdue
+INV-2026-000424,Nalanda Recyclers LLP,,2026-04-25,133,91-180,559601.0,0.0,overdue
+INV-2026-000007,Meridian Lab Supplies LLP,,2026-03-16,173,91-180,559106.0,0.0,overdue
+INV-2026-000370,Vedika Textiles Company,,2026-04-21,137,91-180,558955.0,13413.08,overdue
+INV-2026-000943,Nalanda Fab Services Private Limited,,2026-07-31,36,31-60,558884.0,0.0,overdue
+INV-2026-001278,Vedika Facility Management & Co,,2026-08-17,19,1-30,558883.0,0.0,overdue
+INV-2026-000127,Copperleaf Electricals PVT LTD,,2026-05-02,126,91-180,558756.0,0.0,overdue
+INV-2026-001478,Suryavansh Petro Chemicals & Co,,2026-08-19,17,1-30,555702.0,0.0,overdue
+INV-2026-001338,Ashwini Cable Systems LLP,,2026-08-05,31,31-60,553714.0,0.0,overdue
+INV-2026-001062,Trividata Roofing Products PVT LTD,,2026-07-11,56,31-60,553412.0,0.0,overdue
+INV-2026-000628,Ashwini Cable Systems LLP,,2026-05-30,98,91-180,551238.0,0.0,open
+INV-2026-000702,Ashwini Interiors & Co,,2026-06-06,91,91-180,551033.0,791.95,overdue
+INV-2026-000955,Goldcrest Security Systems & Co,,2026-08-01,35,31-60,549316.0,0.0,overdue
+INV-2026-001379,Copperleaf Electricals PVT LTD,,2026-08-24,12,1-30,548334.0,0.0,overdue
+INV-2026-000063,Suryavansh Catering Services Company,,2026-04-13,145,91-180,548061.0,0.0,overdue
+INV-2026-000308,Ashwini Solar EPC PVT LTD,,2026-05-15,113,91-180,547540.0,0.0,overdue
+INV-2026-001482,Suryavansh Print Solutions & Co,,2026-08-19,17,1-30,547067.0,0.0,open
+INV-2026-000232,Shree Balaji Hardware Private Limited,,2026-05-11,117,91-180,547056.0,108.55,overdue
+INV-2026-000247,Shree Balaji Machine Parts & Co,,2026-05-26,102,91-180,546127.0,0.0,overdue
+INV-2026-000089,Sahyadri Polymers PVT LTD,,2026-04-30,128,91-180,545430.0,0.0,overdue
+INV-2026-000934,Vedika Textiles Company,,2026-06-15,82,61-90,543822.0,0.0,overdue
+INV-2026-001651,Ashwini Interiors & Co,,2026-09-04,1,1-30,541842.0,0.0,overdue
+INV-2026-000870,Vedika Textiles Company,,2026-06-09,88,61-90,540975.0,0.0,overdue
+INV-2026-000764,Ashwini Cable Systems LLP,,2026-06-12,85,61-90,540619.0,0.0,overdue
+INV-2026-001910,Pushpa Metals Agri Inputs PVT LTD,,2026-09-04,1,1-30,539985.0,391519.31,overdue
+INV-2026-001015,Sahyadri Polymers PVT LTD,,2026-07-21,46,31-60,537518.0,0.0,overdue
+INV-2026-000181,Ashwini Cold Chain Ltd,,2026-04-22,136,91-180,533253.0,0.0,overdue
+INV-2026-001525,Goldcrest Steel Traders Company,,2026-08-07,29,1-30,532420.0,0.0,overdue
+INV-2026-000289,Suryavansh Catering Services Company,,2026-04-29,129,91-180,528905.0,0.0,open
+INV-2026-000664,Goldcrest Steel Traders Company,,2026-05-19,109,91-180,528039.0,0.0,overdue
+INV-2026-000849,Pushpa Metals Agri Inputs PVT LTD,,2026-05-29,99,91-180,527208.0,0.0,overdue
+INV-2026-001488,Trividata Roofing Products PVT LTD,,2026-08-20,16,1-30,525462.0,0.0,overdue
+INV-2026-000216,Vedika Textiles Company,,2026-04-09,149,91-180,523889.0,0.0,overdue
+INV-2026-001020,Saptagiri Analytics Ltd,,2026-06-15,82,61-90,523685.0,0.0,overdue
+INV-2026-000612,Orbitex Packaging Private Limited,,2026-06-13,84,61-90,519276.0,0.0,overdue
+INV-2026-001400,Trividata Roofing Products PVT LTD,,2026-08-12,24,1-30,518899.0,0.0,overdue
+INV-2026-000866,Orbitex Packaging Private Limited,,2026-07-09,58,31-60,518457.0,0.0,overdue
+INV-2026-000719,Pushpa Metals Agri Inputs PVT LTD,,2026-05-15,113,91-180,517140.0,0.0,open
+INV-2026-000034,Vedika Textiles Company,,2026-03-26,163,91-180,516239.0,12388.01,overdue
+INV-2026-000818,Suryavansh Print Solutions & Co,,2026-06-18,79,61-90,515841.0,0.0,overdue
+INV-2026-000714,Meridian Lab Supplies LLP,,2026-05-15,113,91-180,513825.0,0.0,overdue
+INV-2026-001311,Saptagiri Analytics Ltd,,2026-07-10,57,31-60,513031.0,0.0,overdue
+INV-2026-000970,Orbitex Dairy Foods PVT LTD,,2026-06-10,87,61-90,513010.0,831.23,open
+INV-2026-001098,Saptagiri Analytics Ltd,,2026-06-22,75,61-90,512834.0,0.0,overdue
+INV-2026-001254,Nalanda Recyclers LLP,,2026-07-15,52,31-60,512749.0,0.0,overdue
+INV-2026-000278,Ashwini Solar EPC PVT LTD,,2026-05-14,114,91-180,512380.0,0.0,overdue
+INV-2026-001577,Ashwini Interiors & Co,,2026-08-28,8,1-30,512368.0,0.0,overdue
+INV-2026-000362,Sahyadri Polymers PVT LTD,,2026-05-21,107,91-180,509037.0,0.0,overdue
+INV-2026-000981,Vedika Facility Management & Co,,2026-07-20,47,31-60,508080.0,0.0,overdue
+INV-2026-001273,Ashwini Solar EPC PVT LTD,,2026-08-17,19,1-30,508003.0,0.0,overdue
+INV-2026-001164,Orbitex Dairy Foods PVT LTD,,2026-06-29,68,61-90,507080.0,0.0,overdue
+INV-2026-000035,Shree Balaji Machine Parts & Co,,2026-05-11,117,91-180,506856.0,63.99,overdue
+INV-2026-000110,Shree Balaji Hardware Private Limited,,2026-05-01,127,91-180,505807.0,0.0,overdue
+INV-2026-001384,Shree Balaji Hardware Private Limited,,2026-08-24,12,1-30,505544.0,0.0,overdue
+INV-2026-000490,Anant Infra Staffing Private Limited,,2026-06-01,96,91-180,505219.0,0.0,overdue
+INV-2026-000706,Suryavansh Petro Chemicals & Co,,2026-06-06,91,91-180,504606.0,0.0,overdue
+INV-2026-000848,Ashwini Interiors & Co,,2026-06-22,75,61-90,501292.0,0.0,overdue
+INV-2026-000092,Vedika Facility Management & Co,,2026-04-30,128,91-180,499100.0,0.0,overdue
+INV-2026-000537,Goldcrest Steel Traders Company,,2026-05-07,121,91-180,493837.0,0.0,overdue
+INV-2026-001183,Goldcrest Steel Traders Company,,2026-07-08,59,31-60,493713.0,0.0,overdue
+INV-2026-000806,Orbitex Packaging Private Limited,,2026-07-02,65,61-90,491215.0,0.0,overdue
+INV-2026-000583,Trividata Roofing Products PVT LTD,,2026-05-27,101,91-180,489673.0,0.0,overdue
+INV-2026-001166,Shree Balaji Hardware Private Limited,,2026-08-06,30,1-30,488997.0,0.0,overdue
+INV-2026-000367,Ashwini Interiors & Co,,2026-05-06,122,91-180,488204.0,0.0,overdue
+INV-2026-001644,Ashwini Interiors & Co,,2026-09-04,1,1-30,487576.0,0.0,overdue
+INV-2026-000343,Copperleaf Electricals PVT LTD,,2026-05-18,110,91-180,486802.0,0.0,overdue
+INV-2026-001507,Anant Infra Staffing Private Limited,,2026-09-05,0,1-30,486356.0,362725.32,open
+INV-2026-001130,Sahyadri Polymers PVT LTD,,2026-08-03,33,31-60,486241.0,0.0,overdue
+INV-2026-000884,Goldcrest Security Systems & Co,,2026-07-25,42,31-60,484989.0,577.54,overdue
+INV-2026-000895,Anant Infra Conveyances PVT LTD,,2026-06-26,71,61-90,484910.0,0.0,overdue
+INV-2026-001292,Orbitex Packaging Private Limited,,2026-08-17,19,1-30,484821.0,0.0,overdue
+INV-2026-000534,Trividata Roofing Products PVT LTD,,2026-05-22,106,91-180,481620.0,0.0,overdue
+INV-2026-000969,Everstone Water Treatment Company,,2026-08-03,33,31-60,481247.0,0.0,overdue
+INV-2026-000722,Goldcrest Warehousing Private Limited,,2026-05-15,113,91-180,480345.0,0.0,overdue
+INV-2026-001093,Vedika Facility Management & Co,,2026-07-30,37,31-60,478530.0,2161.57,open
+INV-2026-000180,Ashwini Solar EPC PVT LTD,,2026-05-07,121,91-180,477550.0,0.0,overdue
+INV-2026-001294,Vedika Textiles Company,,2026-07-17,50,31-60,475795.0,0.0,overdue
+INV-2026-001147,Everstone Water Treatment Company,,2026-08-18,18,1-30,474176.0,0.0,overdue
+INV-2026-001332,Pushpa Metals Agri Inputs PVT LTD,,2026-07-13,54,31-60,471430.0,0.0,overdue
+INV-2026-000091,Ashwini Cable Systems LLP,,2026-04-15,143,91-180,471128.0,0.0,overdue
+INV-2026-001453,Vedika Textiles Company,,2026-08-01,35,31-60,470978.0,0.0,overdue
+INV-2026-000149,Nalanda Recyclers LLP,,2026-04-03,155,91-180,469380.0,0.0,open
+INV-2026-001789,Orbitex Paper Mills PVT LTD,,2026-08-25,11,1-30,468086.0,0.0,overdue
+INV-2026-000215,Vedika Facility Management & Co,,2026-05-09,119,91-180,467443.0,0.0,overdue
+INV-2026-000242,Ashwini Interiors & Co,,2026-04-27,131,91-180,466916.0,0.0,overdue
+INV-2026-000817,Nalanda Fab Services Private Limited,,2026-07-18,49,31-60,462894.0,0.0,overdue
+INV-2026-000009,Copperleaf Electricals PVT LTD,,2026-04-23,135,91-180,461895.0,11141.71,overdue
+INV-2026-001169,Nalanda Fab Services Private Limited,,2026-08-21,15,1-30,461659.0,0.0,overdue
+INV-2026-000452,Vedika Textiles Company,,2026-04-29,129,91-180,458753.0,0.0,overdue
+INV-2026-000108,Orbitex Packaging Private Limited,,2026-05-01,127,91-180,458321.0,0.0,overdue
+INV-2026-000453,Trividata Roofing Products PVT LTD,,2026-05-14,114,91-180,456780.0,0.0,overdue
+INV-2026-001241,Vedika Textiles Company,,2026-07-14,53,31-60,455989.0,0.0,overdue
+INV-2026-001496,Sahyadri Polymers PVT LTD,,2026-09-04,1,1-30,455593.0,374813.9,overdue
+INV-2026-001038,Trividata Roofing Products PVT LTD,,2026-07-09,58,31-60,455245.0,0.0,overdue
+INV-2026-000491,Everstone Water Treatment Company,,2026-06-16,81,61-90,454951.0,0.0,overdue
+INV-2026-001299,Nalanda Recyclers LLP,,2026-07-17,50,31-60,454747.0,0.0,overdue
+INV-2026-001559,Meridian Lab Supplies LLP,,2026-08-03,33,31-60,454602.0,2992.14,overdue
+INV-2026-001896,Meridian Lab Supplies LLP,,2026-09-03,2,1-30,453704.0,0.0,overdue
+INV-2026-000425,Vedika Facility Management & Co,,2026-05-25,103,91-180,452564.0,0.0,overdue
+INV-2026-000256,Meridian Lab Supplies LLP,,2026-04-03,155,91-180,452482.0,0.0,overdue
+INV-2026-000323,Nalanda Recyclers LLP,,2026-04-16,142,91-180,451101.0,0.0,open
+INV-2026-000705,Orbitex Dairy Foods PVT LTD,,2026-05-14,114,91-180,447588.0,0.0,overdue
+INV-2026-000368,Orbitex Paper Mills PVT LTD,,2026-04-13,145,91-180,445791.0,0.0,overdue
+INV-2026-000784,Copperleaf Electricals PVT LTD,,2026-06-29,68,61-90,445668.0,0.0,overdue
+INV-2026-000610,Vedika Textiles Company,,2026-05-14,114,91-180,445613.0,0.0,overdue
+INV-2026-000560,Vedika Textiles Company,,2026-05-09,119,91-180,445209.0,0.0,overdue
+INV-2026-000744,Copperleaf Electricals PVT LTD,,2026-06-25,72,61-90,442087.0,0.0,overdue
+INV-2026-001142,Trinetra Piping Solutions LLP,,2026-08-18,18,1-30,440934.0,0.0,overdue
+INV-2026-001442,Vedika Textiles Company,,2026-07-31,36,31-60,440772.0,0.0,overdue
+INV-2026-001351,Shree Balaji Hardware Private Limited,,2026-08-21,15,1-30,440169.0,86578.13,overdue
+INV-2026-001177,Anant Infra Staffing Private Limited,,2026-08-07,29,1-30,439521.0,0.0,overdue
+INV-2026-000248,Saptagiri Analytics Ltd,,2026-04-03,155,91-180,439369.0,0.0,overdue
+INV-2026-001052,Nalanda Recyclers LLP,,2026-06-25,72,61-90,438529.0,0.0,overdue
+INV-2026-001118,Orbitex Dairy Foods PVT LTD,,2026-06-24,73,61-90,438206.0,0.0,overdue
+INV-2026-000527,Anant Infra Conveyances PVT LTD,,2026-05-21,107,91-180,437360.0,371.6,overdue
+INV-2026-001328,Everstone Water Treatment Company,,2026-09-02,3,1-30,435118.0,404941.04,overdue
+INV-2026-000548,Ashwini Solar EPC PVT LTD,,2026-06-08,89,61-90,433388.0,0.0,overdue
+INV-2026-001113,Zenith One Logistics & Co,,2026-07-17,50,31-60,433000.0,0.0,overdue
+INV-2026-000924,Suryavansh Print Solutions & Co,,2026-06-29,68,61-90,432177.0,0.0,overdue
+INV-2026-000941,Anant Infra Staffing Private Limited,,2026-07-16,51,31-60,432106.0,466.54,overdue
+INV-2026-000786,Copperleaf Electricals PVT LTD,,2026-06-29,68,61-90,430160.0,0.0,overdue
+INV-2026-000129,Suryavansh Petro Chemicals & Co,,2026-04-17,141,91-180,428894.0,0.0,overdue
+INV-2026-000855,Everstone Water Treatment Company,,2026-07-22,45,31-60,428877.0,0.0,overdue
+INV-2026-000280,Trividata Roofing Products PVT LTD,,2026-04-29,129,91-180,428761.0,0.0,overdue
+INV-2026-001314,Shree Balaji Hardware Private Limited,,2026-08-17,19,1-30,427610.0,0.0,overdue
+INV-2026-001696,Vedika Textiles Company,,2026-08-25,11,1-30,425000.0,0.0,overdue
+INV-2026-000105,Goldcrest Security Systems & Co,,2026-05-16,112,91-180,424889.0,0.0,overdue
+INV-2026-000313,Goldcrest Warehousing Private Limited,,2026-04-07,151,91-180,423990.0,0.0,overdue
+INV-2026-000349,Orbitex Packaging Private Limited,,2026-05-18,110,91-180,423692.0,0.0,overdue
+INV-2026-001297,Suryavansh Petro Chemicals & Co,,2026-08-01,35,31-60,423484.0,0.0,overdue
+INV-2026-001096,Vedika Textiles Company,,2026-06-30,67,61-90,423059.0,0.0,overdue
+INV-2026-001662,Trividata Roofing Products PVT LTD,,2026-09-05,0,1-30,420439.0,367440.11,open
+INV-2026-000631,Saptagiri Analytics Ltd,,2026-05-07,121,91-180,418567.0,0.0,overdue
+INV-2026-001860,Meridian Lab Supplies LLP,,2026-09-01,4,1-30,418102.0,377218.68,overdue
+INV-2026-000762,Suryavansh Print Solutions & Co,,2026-06-12,85,61-90,418049.0,0.0,overdue
+INV-2026-000858,Orbitex Paper Mills PVT LTD,,2026-05-30,98,91-180,414676.0,0.0,overdue
+INV-2026-000594,Goldcrest Steel Traders Company,,2026-05-13,115,91-180,414564.0,0.0,overdue
+INV-2026-001064,Ashwini Cable Systems LLP,,2026-07-11,56,31-60,412672.0,1771.48,overdue
+INV-2026-000939,Orbitex Dairy Foods PVT LTD,,2026-06-08,89,61-90,411842.0,0.0,overdue
+INV-2026-000214,Goldcrest Security Systems & Co,,2026-05-25,103,91-180,411461.0,0.0,overdue
+INV-2026-000103,Ashwini Cable Systems LLP,,2026-04-16,142,91-180,410872.0,0.0,overdue
+INV-2026-000910,Orbitex Dairy Foods PVT LTD,,2026-06-04,93,91-180,409467.0,0.0,overdue
+INV-2026-001074,Anant Infra Staffing Private Limited,,2026-07-27,40,31-60,408350.0,0.0,overdue
+INV-2026-000382,Anant Infra Staffing Private Limited,,2026-05-22,106,91-180,407910.0,0.0,overdue
+INV-2026-001484,Orbitex Dairy Foods PVT LTD,,2026-07-27,40,31-60,407315.0,0.0,overdue
+INV-2026-001430,Vedika Facility Management & Co,,2026-08-29,7,1-30,406176.0,0.0,overdue
+INV-2026-000604,Copperleaf Electricals PVT LTD,,2026-06-13,84,61-90,405538.0,0.0,overdue
+INV-2026-000465,Vedika Textiles Company,,2026-04-30,128,91-180,405304.0,0.0,overdue
+INV-2026-001295,Ashwini Interiors & Co,,2026-08-01,35,31-60,405092.0,0.0,overdue
+INV-2026-001143,Shree Balaji Machine Parts & Co,,2026-08-18,18,1-30,403930.0,0.0,overdue
+INV-2026-000061,Suryavansh Catering Services Company,,2026-04-13,145,91-180,403648.0,0.0,overdue
+INV-2026-000395,Saptagiri Analytics Ltd,,2026-04-15,143,91-180,403492.0,0.0,overdue
+INV-2026-001218,Suryavansh Catering Services Company,,2026-07-27,40,31-60,401673.0,0.0,overdue
+INV-2026-000046,Vedika Facility Management & Co,,2026-04-27,131,91-180,400725.0,0.0,overdue
+INV-2026-001909,Orbitex Paper Mills PVT LTD,,2026-09-04,1,1-30,398397.0,0.0,overdue
+INV-2026-001063,Trinetra Piping Solutions LLP,,2026-08-10,26,1-30,396505.0,0.0,overdue
+INV-2026-000391,Suryavansh Catering Services Company,,2026-05-08,120,91-180,396192.0,0.0,open
+INV-2026-000671,Ashwini Interiors & Co,,2026-06-04,93,91-180,395445.0,0.0,overdue
+INV-2026-001088,Orbitex Paper Mills PVT LTD,,2026-06-20,77,61-90,395389.0,0.0,overdue
+INV-2026-001333,Sahyadri Polymers PVT LTD,,2026-08-20,16,1-30,395112.0,0.0,overdue
+INV-2026-000211,Orbitex Packaging Private Limited,,2026-05-09,119,91-180,394783.0,0.0,overdue
+INV-2026-000693,Goldcrest Security Systems & Co,,2026-07-06,61,61-90,394509.0,461.53,overdue
+INV-2026-000675,Zenith One Logistics & Co,,2026-06-04,93,91-180,393821.0,431.12,overdue
+INV-2026-000529,Meridian Lab Supplies LLP,,2026-04-28,130,91-180,393129.0,0.0,overdue
+INV-2026-000249,Orbitex Packaging Private Limited,,2026-05-11,117,91-180,392514.0,0.0,overdue
+INV-2026-001005,Ashwini Cable Systems LLP,,2026-07-06,61,61-90,392505.0,0.0,overdue
+INV-2026-001429,Nalanda Recyclers LLP,,2026-07-30,37,31-60,392348.0,0.0,overdue
+INV-2026-000894,Ashwini Cable Systems LLP,,2026-06-26,71,61-90,389602.0,0.0,overdue
+INV-2026-001014,Everstone Water Treatment Company,,2026-08-05,31,31-60,389391.0,0.0,overdue
+INV-2026-000304,Orbitex Dairy Foods PVT LTD,,2026-04-07,151,91-180,388286.0,0.0,overdue
+INV-2026-001638,Nalanda Recyclers LLP,,2026-08-19,17,1-30,388152.0,0.0,overdue
+INV-2026-000807,Suryavansh Petro Chemicals & Co,,2026-06-17,80,61-90,387906.0,0.0,overdue
+INV-2026-001210,Nalanda Recyclers LLP,,2026-07-10,57,31-60,387383.0,0.0,overdue
+INV-2026-001583,Suryavansh Print Solutions & Co,,2026-08-28,8,1-30,386644.0,257594.35,overdue
+INV-2026-000045,Copperleaf Electricals PVT LTD,,2026-04-27,131,91-180,386622.0,0.0,overdue
+INV-2026-001035,Pushpa Metals Agri Inputs PVT LTD,,2026-06-16,81,61-90,383150.0,336.48,open
+INV-2026-000720,Goldcrest Steel Traders Company,,2026-05-23,105,91-180,382812.0,0.0,open
+INV-2026-001736,Pushpa Metals Agri Inputs PVT LTD,,2026-08-20,16,1-30,381994.0,0.0,overdue
+INV-2026-000607,Orbitex Packaging Private Limited,,2026-06-13,84,61-90,381564.0,2000.33,overdue
+INV-2026-001519,Vedika Textiles Company,,2026-08-07,29,1-30,381025.0,0.0,overdue
+INV-2026-000344,Ashwini Solar EPC PVT LTD,,2026-05-18,110,91-180,380944.0,0.0,overdue
+INV-2026-001149,Goldcrest Steel Traders Company,,2026-07-04,63,61-90,379731.0,0.0,overdue
+INV-2026-001612,Trividata Roofing Products PVT LTD,,2026-08-31,5,1-30,378388.0,0.0,overdue
+INV-2026-001221,Pushpa Metals Agri Inputs PVT LTD,,2026-07-03,64,61-90,378014.0,331.81,overdue
+INV-2026-000827,Suryavansh Petro Chemicals & Co,,2026-06-19,78,61-90,377800.0,713.83,overdue
+INV-2026-000366,Trinetra Piping Solutions LLP,,2026-06-05,92,91-180,375803.0,0.0,overdue
+INV-2026-000545,Goldcrest Security Systems & Co,,2026-06-22,75,61-90,374741.0,0.0,overdue
+INV-2026-000142,Orbitex Paper Mills PVT LTD,,2026-03-26,163,91-180,374720.0,0.0,overdue
+INV-2026-001206,Trividata Roofing Products PVT LTD,,2026-07-25,42,31-60,373721.0,0.0,overdue
+INV-2026-001112,Goldcrest Security Systems & Co,,2026-08-17,19,1-30,373380.0,0.0,overdue
+INV-2026-000578,Copperleaf Electricals PVT LTD,,2026-06-11,86,61-90,372835.0,0.0,overdue
+INV-2026-000087,Copperleaf Electricals PVT LTD,,2026-04-30,128,91-180,372322.0,0.0,overdue
+INV-2026-000390,Ashwini Cable Systems LLP,,2026-05-08,120,91-180,371801.0,0.0,overdue
+INV-2026-000945,Goldcrest Security Systems & Co,,2026-07-31,36,31-60,370497.0,0.0,overdue
+INV-2026-001561,Nalanda Recyclers LLP,,2026-08-11,25,1-30,369105.0,0.0,overdue
+INV-2026-000497,Goldcrest Steel Traders Company,,2026-05-02,126,91-180,365198.0,0.0,overdue
+INV-2026-000100,Orbitex Packaging Private Limited,,2026-05-01,127,91-180,364825.0,0.0,overdue
+INV-2026-000144,Meridian Lab Supplies LLP,,2026-03-26,163,91-180,362931.0,0.0,overdue
+INV-2026-000219,Ashwini Interiors & Co,,2026-04-24,134,91-180,357338.0,0.0,overdue
+INV-2026-000328,Trinetra Piping Solutions LLP,,2026-06-01,96,91-180,356829.0,0.0,overdue
+INV-2026-001188,Zenith One Logistics & Co,,2026-07-24,43,31-60,356383.0,0.0,overdue
+INV-2026-001259,Ashwini Solar EPC PVT LTD,,2026-08-14,22,1-30,356079.0,0.0,open
+INV-2026-000755,Sahyadri Polymers PVT LTD,,2026-06-26,71,61-90,356059.0,0.0,overdue
+INV-2026-000467,Ashwini Interiors & Co,,2026-05-15,113,91-180,355575.0,0.0,overdue
+INV-2026-000176,Pushpa Metals Agri Inputs PVT LTD,,2026-03-30,159,91-180,354680.0,0.0,overdue
+INV-2026-000177,Copperleaf Electricals PVT LTD,,2026-05-07,121,91-180,353732.0,0.0,overdue
+INV-2026-001002,Ashwini Cold Chain Ltd,,2026-07-06,61,61-90,350236.0,0.0,overdue
+INV-2026-001251,Vedika Facility Management & Co,,2026-08-14,22,1-30,349314.0,0.0,overdue
+INV-2026-001075,Anant Infra Conveyances PVT LTD,,2026-07-13,54,31-60,349206.0,0.0,overdue
+INV-2026-000753,Shree Balaji Machine Parts & Co,,2026-07-11,56,31-60,348304.0,0.0,overdue
+INV-2026-001632,Zenith One Logistics & Co,,2026-09-02,3,1-30,347614.0,264178.07,overdue
+INV-2026-001580,Goldcrest Warehousing Private Limited,,2026-08-05,31,31-60,347345.0,0.0,overdue
+INV-2026-001405,Suryavansh Print Solutions & Co,,2026-08-12,24,1-30,346832.0,0.0,open
+INV-2026-000145,Orbitex Packaging Private Limited,,2026-05-04,124,91-180,346306.0,0.0,overdue
+INV-2026-001050,Orbitex Dairy Foods PVT LTD,,2026-06-17,80,61-90,346085.0,560.54,open
+INV-2026-001185,Shree Balaji Machine Parts & Co,,2026-08-22,14,1-30,342408.0,0.0,overdue
+INV-2026-000846,Suryavansh Catering Services Company,,2026-06-22,75,61-90,342374.0,508.59,overdue
+INV-2026-000482,Orbitex Dairy Foods PVT LTD,,2026-04-23,135,91-180,342028.0,0.0,overdue
+INV-2026-000536,Anant Infra Conveyances PVT LTD,,2026-05-22,106,91-180,339551.0,0.0,overdue
+INV-2026-001349,Goldcrest Steel Traders Company,,2026-07-22,45,31-60,338081.0,0.0,overdue
+INV-2026-000285,Suryavansh Print Solutions & Co,,2026-04-29,129,91-180,336402.0,0.0,overdue
+INV-2026-000339,Suryavansh Print Solutions & Co,,2026-05-02,126,91-180,335864.0,0.0,overdue
+INV-2026-000125,Suryavansh Print Solutions & Co,,2026-04-17,141,91-180,332945.0,0.0,overdue
+INV-2026-000926,Goldcrest Security Systems & Co,,2026-07-28,39,31-60,331663.0,0.0,overdue
+INV-2026-000350,Ashwini Solar EPC PVT LTD,,2026-05-18,110,91-180,330557.0,0.0,overdue
+INV-2026-000392,Nalanda Recyclers LLP,,2026-04-23,135,91-180,329812.0,0.0,open
+INV-2026-000106,Nalanda Recyclers LLP,,2026-04-01,157,91-180,328598.0,0.0,overdue
+INV-2026-001693,Vedika Textiles Company,,2026-08-25,11,1-30,327188.0,235969.88,overdue
+INV-2026-000084,Saptagiri Analytics Ltd,,2026-03-23,166,91-180,326859.0,7691.05,overdue
+INV-2026-001109,Orbitex Packaging Private Limited,,2026-07-31,36,31-60,326073.0,0.0,overdue
+INV-2026-000717,Shree Balaji Hardware Private Limited,,2026-06-22,75,61-90,324642.0,0.0,overdue
+INV-2026-000773,Vedika Facility Management & Co,,2026-06-29,68,61-90,324338.0,0.0,overdue
+INV-2026-001491,Pushpa Metals Agri Inputs PVT LTD,,2026-07-28,39,31-60,322755.0,0.0,overdue
+INV-2026-000229,Goldcrest Security Systems & Co,,2026-05-25,103,91-180,321081.0,213.21,overdue
+INV-2026-000274,Pushpa Metals Agri Inputs PVT LTD,,2026-04-04,154,91-180,320506.0,0.0,overdue
+INV-2026-000305,Saptagiri Analytics Ltd,,2026-04-07,151,91-180,319737.0,0.0,overdue
+INV-2026-000715,Saptagiri Analytics Ltd,,2026-05-15,113,91-180,319622.0,0.0,overdue
+INV-2026-000899,Everstone Water Treatment Company,,2026-07-27,40,31-60,319151.0,0.0,overdue
+INV-2026-001243,Vedika Facility Management & Co,,2026-08-13,23,1-30,318508.0,0.0,overdue
+INV-2026-000044,Ashwini Interiors & Co,,2026-04-11,147,91-180,318339.0,0.0,overdue
+INV-2026-001751,Meridian Lab Supplies LLP,,2026-08-21,15,1-30,318310.0,223475.2,overdue
+INV-2026-001428,Anant Infra Conveyances PVT LTD,,2026-08-14,22,1-30,317324.0,0.0,overdue
+INV-2026-000834,Ashwini Cable Systems LLP,,2026-06-20,77,61-90,317240.0,0.0,overdue
+INV-2026-001262,Suryavansh Petro Chemicals & Co,,2026-07-30,37,31-60,317002.0,697.89,overdue
+INV-2026-000942,Trividata Roofing Products PVT LTD,,2026-07-01,66,61-90,315539.0,0.0,overdue
+INV-2026-001065,Anant Infra Staffing Private Limited,,2026-07-27,40,31-60,315392.0,0.0,overdue
+INV-2026-001726,Nalanda Recyclers LLP,,2026-08-27,9,1-30,315046.0,0.0,overdue
+INV-2026-001404,Shree Balaji Hardware Private Limited,,2026-08-27,9,1-30,314115.0,0.0,overdue
+INV-2026-000626,Ashwini Cable Systems LLP,,2026-05-30,98,91-180,313633.0,0.0,overdue
+INV-2026-000885,Vedika Textiles Company,,2026-06-10,87,61-90,313051.0,0.0,overdue
+INV-2026-000572,Meridian Lab Supplies LLP,,2026-05-02,126,91-180,310300.0,0.0,overdue
+INV-2026-000518,Ashwini Interiors & Co,,2026-05-20,108,91-180,309989.0,0.0,overdue
+INV-2026-000396,Meridian Lab Supplies LLP,,2026-04-15,143,91-180,309379.0,0.0,overdue
+INV-2026-001291,Trinetra Piping Solutions LLP,,2026-08-31,5,1-30,306851.0,0.0,overdue
+INV-2026-000314,Ashwini Solar EPC PVT LTD,,2026-05-15,113,91-180,306404.0,0.0,overdue
+INV-2026-001599,Trividata Roofing Products PVT LTD,,2026-08-29,7,1-30,306051.0,0.0,overdue
+INV-2026-000703,Trinetra Piping Solutions LLP,,2026-07-06,61,61-90,305938.0,0.0,overdue
+INV-2026-001495,Vedika Textiles Company,,2026-08-05,31,31-60,304388.0,0.0,overdue
+INV-2026-000107,Vedika Facility Management & Co,,2026-05-01,127,91-180,303234.0,0.0,overdue
+INV-2026-000179,Everstone Water Treatment Company,,2026-05-22,106,91-180,300813.0,0.0,overdue
+INV-2026-000968,Orbitex Dairy Foods PVT LTD,,2026-06-10,87,61-90,299317.0,0.0,overdue
+INV-2026-000444,Ashwini Interiors & Co,,2026-05-13,115,91-180,298528.0,0.0,overdue
+INV-2026-000745,Suryavansh Print Solutions & Co,,2026-06-10,87,61-90,297704.0,0.0,overdue
+INV-2026-001191,Ashwini Cable Systems LLP,,2026-07-24,43,31-60,297433.0,0.0,overdue
+INV-2026-000394,Trividata Roofing Products PVT LTD,,2026-05-08,120,91-180,295491.0,0.0,overdue
+INV-2026-001611,Ashwini Cable Systems LLP,,2026-08-31,5,1-30,295461.0,258454.78,overdue
+INV-2026-001127,Anant Infra Staffing Private Limited,,2026-08-03,33,31-60,294124.0,0.0,overdue
+INV-2026-001452,Anant Infra Conveyances PVT LTD,,2026-08-17,19,1-30,294003.0,0.0,overdue
+INV-2026-000230,Goldcrest Steel Traders Company,,2026-04-10,148,91-180,293276.0,0.0,overdue
+INV-2026-001200,Orbitex Packaging Private Limited,,2026-08-10,26,1-30,292511.0,0.0,open
+INV-2026-000665,Trinetra Piping Solutions LLP,,2026-07-03,64,61-90,292484.0,0.0,overdue
+INV-2026-001540,Pushpa Metals Agri Inputs PVT LTD,,2026-07-31,36,31-60,292223.0,0.0,overdue
+INV-2026-000493,Meridian Lab Supplies LLP,,2026-04-24,134,91-180,290742.0,0.0,overdue
+INV-2026-000999,Ashwini Cable Systems LLP,,2026-07-06,61,61-90,290709.0,0.0,overdue
+INV-2026-000101,Everstone Water Treatment Company,,2026-05-16,112,91-180,290350.0,0.0,overdue
+INV-2026-000649,Everstone Water Treatment Company,,2026-06-30,67,61-90,289177.0,0.0,open
+INV-2026-000494,Nalanda Fab Services Private Limited,,2026-06-16,81,61-90,286400.0,0.0,overdue
+INV-2026-001640,Ashwini Interiors & Co,,2026-09-03,2,1-30,286360.0,0.0,overdue
+INV-2026-001034,Trinetra Piping Solutions LLP,,2026-08-08,28,1-30,283494.0,0.0,overdue
+INV-2026-000765,Ashwini Cable Systems LLP,,2026-06-12,85,61-90,282518.0,0.0,overdue
+INV-2026-001000,Everstone Water Treatment Company,,2026-08-04,32,31-60,281023.0,0.0,overdue
+INV-2026-000441,Goldcrest Warehousing Private Limited,,2026-04-20,138,91-180,280784.0,6206.73,overdue
+INV-2026-000462,Goldcrest Security Systems & Co,,2026-06-15,82,61-90,280009.0,0.0,overdue
+INV-2026-000383,Nalanda Fab Services Private Limited,,2026-06-06,91,91-180,278417.0,0.0,overdue
+INV-2026-001049,Ashwini Solar EPC PVT LTD,,2026-07-25,42,31-60,276314.0,0.0,open
+INV-2026-001012,Vedika Facility Management & Co,,2026-07-21,46,31-60,276247.0,0.0,overdue
+INV-2026-001520,Ashwini Cable Systems LLP,,2026-08-22,14,1-30,276057.0,0.0,overdue
+INV-2026-001103,Goldcrest Security Systems & Co,,2026-08-17,19,1-30,275781.0,0.0,overdue
+INV-2026-000927,Goldcrest Steel Traders Company,,2026-06-13,84,61-90,273711.0,0.0,overdue
+INV-2026-000059,Ashwini Interiors & Co,,2026-04-13,145,91-180,273211.0,0.0,overdue
+INV-2026-001606,Ashwini Cable Systems LLP,,2026-08-31,5,1-30,272938.0,238752.73,overdue
+INV-2026-000909,Suryavansh Petro Chemicals & Co,,2026-06-27,70,61-90,272448.0,0.0,overdue
+INV-2026-001252,Suryavansh Petro Chemicals & Co,,2026-07-30,37,31-60,272404.0,0.0,overdue
+INV-2026-000598,Ashwini Interiors & Co,,2026-05-28,100,91-180,272035.0,0.0,overdue
+INV-2026-001176,Trinetra Piping Solutions LLP,,2026-08-22,14,1-30,272026.0,0.0,overdue
+INV-2026-001610,Ashwini Cable Systems LLP,,2026-08-31,5,1-30,271711.0,0.0,overdue
+INV-2026-000775,Shree Balaji Machine Parts & Co,,2026-07-13,54,31-60,271307.0,0.0,overdue
+INV-2026-001376,Vedika Textiles Company,,2026-07-25,42,31-60,270739.0,0.0,overdue
+INV-2026-000062,Sahyadri Polymers PVT LTD,,2026-04-27,131,91-180,270705.0,0.0,overdue
+INV-2026-000638,Saptagiri Analytics Ltd,,2026-05-08,120,91-180,267143.0,0.0,overdue
+INV-2026-000026,Nalanda Recyclers LLP,,2026-03-25,164,91-180,265388.0,0.0,overdue
+INV-2026-000624,Nalanda Recyclers LLP,,2026-05-15,113,91-180,265070.0,0.0,overdue
+INV-2026-000985,Anant Infra Conveyances PVT LTD,,2026-07-04,63,61-90,263437.0,0.0,overdue
+INV-2026-000203,Ashwini Cable Systems LLP,,2026-04-23,135,91-180,263143.0,0.0,overdue
+INV-2026-001107,Anant Infra Conveyances PVT LTD,,2026-07-16,51,31-60,262851.0,0.0,open
+INV-2026-000220,Zenith One Logistics & Co,,2026-04-24,134,91-180,261579.0,0.0,overdue
+INV-2026-001480,Sahyadri Polymers PVT LTD,,2026-09-03,2,1-30,260812.0,0.0,overdue
+INV-2026-001281,Zenith One Logistics & Co,,2026-07-31,36,31-60,258368.0,0.0,overdue
+INV-2026-001277,Meridian Lab Supplies LLP,,2026-07-08,59,31-60,257967.0,0.0,overdue
+INV-2026-000412,Ashwini Cold Chain Ltd,,2026-05-09,119,91-180,257662.0,0.0,overdue
+INV-2026-000461,Goldcrest Warehousing Private Limited,,2026-04-22,136,91-180,257321.0,0.0,overdue
+INV-2026-000405,Trividata Roofing Products PVT LTD,,2026-05-09,119,91-180,257308.0,0.0,overdue
+INV-2026-000428,Anant Infra Conveyances PVT LTD,,2026-05-11,117,91-180,256377.0,0.0,overdue
+INV-2026-001674,Saptagiri Analytics Ltd,,2026-08-14,22,1-30,255735.0,0.0,overdue
+INV-2026-000484,Vedika Textiles Company,,2026-05-01,127,91-180,254778.0,0.0,overdue
+INV-2026-000561,Shree Balaji Hardware Private Limited,,2026-06-08,89,61-90,254150.0,0.0,overdue
+INV-2026-001280,Orbitex Packaging Private Limited,,2026-08-17,19,1-30,253413.0,0.0,overdue
+INV-2026-000426,Everstone Water Treatment Company,,2026-06-09,88,61-90,252561.0,0.0,overdue
+INV-2026-000393,Everstone Water Treatment Company,,2026-06-08,89,61-90,251750.0,0.0,overdue
+INV-2026-000109,Ashwini Solar EPC PVT LTD,,2026-05-01,127,91-180,251372.0,0.0,overdue
+INV-2026-000956,Shree Balaji Machine Parts & Co,,2026-08-01,35,31-60,251085.0,0.0,overdue
+INV-2026-001319,Trinetra Piping Solutions LLP,,2026-09-01,4,1-30,250959.0,0.0,overdue
+INV-2026-000954,Shree Balaji Machine Parts & Co,,2026-08-01,35,31-60,248627.0,0.0,overdue
+INV-2026-001182,Vedika Textiles Company,,2026-07-08,59,31-60,248550.0,0.0,overdue
+INV-2026-001104,Everstone Water Treatment Company,,2026-08-17,19,1-30,247059.0,154674.51,overdue
+INV-2026-000865,Orbitex Packaging Private Limited,,2026-07-09,58,31-60,246817.0,0.0,overdue
+INV-2026-000732,Nalanda Fab Services Private Limited,,2026-07-08,59,31-60,245493.0,1054.24,overdue
+INV-2026-000410,Shree Balaji Machine Parts & Co,,2026-06-08,89,61-90,243536.0,0.0,overdue
+INV-2026-000573,Ashwini Interiors & Co,,2026-05-25,103,91-180,243522.0,0.0,overdue
+INV-2026-001201,Nalanda Fab Services Private Limited,,2026-08-24,12,1-30,243023.0,102524.65,overdue
+INV-2026-000966,Trinetra Piping Solutions LLP,,2026-08-03,33,31-60,243022.0,0.0,overdue
+INV-2026-001312,Suryavansh Petro Chemicals & Co,,2026-08-03,33,31-60,241989.0,0.0,overdue
+INV-2026-000990,Ashwini Cold Chain Ltd,,2026-07-04,63,61-90,240604.0,0.0,overdue
+INV-2026-000033,Vedika Textiles Company,,2026-03-26,163,91-180,240464.0,0.0,overdue
+INV-2026-000003,Orbitex Paper Mills PVT LTD,,2026-03-16,173,91-180,240349.0,0.0,overdue
+INV-2026-000526,Goldcrest Security Systems & Co,,2026-06-20,77,61-90,238994.0,279.73,overdue
+INV-2026-000662,Anant Infra Conveyances PVT LTD,,2026-06-03,94,91-180,237438.0,0.0,overdue
+INV-2026-000679,Vedika Textiles Company,,2026-05-20,108,91-180,237184.0,0.0,overdue
+INV-2026-001397,Trividata Roofing Products PVT LTD,,2026-08-12,24,1-30,235665.0,0.0,overdue
+INV-2026-001337,Nalanda Fab Services Private Limited,,2026-09-04,1,1-30,235585.0,197789.48,overdue
+INV-2026-000227,Nalanda Fab Services Private Limited,,2026-05-25,103,91-180,235430.0,0.0,overdue
+INV-2026-000422,Anant Infra Conveyances PVT LTD,,2026-05-11,117,91-180,234481.0,0.0,overdue
+INV-2026-000206,Vedika Textiles Company,,2026-04-08,150,91-180,234236.0,0.0,overdue
+INV-2026-000805,Nalanda Fab Services Private Limited,,2026-07-17,50,31-60,234070.0,0.0,overdue
+INV-2026-000581,Shree Balaji Hardware Private Limited,,2026-06-11,86,61-90,232627.0,0.0,overdue
+INV-2026-000327,Suryavansh Petro Chemicals & Co,,2026-05-01,127,91-180,232063.0,0.0,overdue
+INV-2026-001593,Zenith One Logistics & Co,,2026-08-29,7,1-30,230865.0,160635.99,overdue
+INV-2026-000442,Nalanda Fab Services Private Limited,,2026-06-12,85,61-90,230482.0,0.0,overdue
+INV-2026-000231,Ashwini Cable Systems LLP,,2026-04-25,133,91-180,229656.0,0.0,open
+INV-2026-001203,Anant Infra Conveyances PVT LTD,,2026-07-25,42,31-60,229551.0,0.0,overdue
+INV-2026-001571,Vedika Textiles Company,,2026-08-12,24,1-30,229522.0,0.0,overdue
+INV-2026-000704,Anant Infra Conveyances PVT LTD,,2026-06-06,91,91-180,226327.0,0.0,overdue
+INV-2026-001077,Trinetra Piping Solutions LLP,,2026-08-11,25,1-30,225758.0,0.0,overdue
+INV-2026-000348,Ashwini Cable Systems LLP,,2026-05-04,124,91-180,224644.0,0.0,open
+INV-2026-000678,Everstone Water Treatment Company,,2026-07-04,63,61-90,224512.0,0.0,open
+INV-2026-000255,Goldcrest Warehousing Private Limited,,2026-04-03,155,91-180,224486.0,0.0,open
+INV-2026-001290,Saptagiri Analytics Ltd,,2026-07-09,58,31-60,224049.0,0.0,overdue
+INV-2026-001146,Goldcrest Warehousing Private Limited,,2026-06-26,71,61-90,223542.0,0.0,overdue
+INV-2026-000918,Ashwini Cable Systems LLP,,2026-06-29,68,61-90,222425.0,0.0,overdue
+INV-2026-000025,Zenith One Logistics & Co,,2026-04-09,149,91-180,222258.0,0.0,overdue
+INV-2026-000972,Ashwini Cable Systems LLP,,2026-07-03,64,61-90,221666.0,0.0,overdue
+INV-2026-000047,Copperleaf Electricals PVT LTD,,2026-04-27,131,91-180,219050.0,0.0,overdue
+INV-2026-001276,Ashwini Cable Systems LLP,,2026-07-31,36,31-60,218826.0,0.0,overdue
+INV-2026-001078,Anant Infra Conveyances PVT LTD,,2026-07-13,54,31-60,218698.0,427.25,open
+INV-2026-000187,Suryavansh Print Solutions & Co,,2026-04-22,136,91-180,218504.0,0.0,overdue
+INV-2026-001401,Zenith One Logistics & Co,,2026-08-12,24,1-30,216648.0,0.0,overdue
+INV-2026-000584,Trinetra Piping Solutions LLP,,2026-06-26,71,61-90,215436.0,0.0,overdue
+INV-2026-000421,Nalanda Fab Services Private Limited,,2026-06-09,88,61-90,214960.0,0.0,overdue
+INV-2026-000641,Nalanda Recyclers LLP,,2026-05-16,112,91-180,213503.0,0.0,overdue
+INV-2026-001073,Goldcrest Steel Traders Company,,2026-06-27,70,61-90,213140.0,0.0,overdue
+INV-2026-000282,Nalanda Fab Services Private Limited,,2026-05-29,99,91-180,212837.0,0.0,overdue
+INV-2026-001209,Pushpa Metals Agri Inputs PVT LTD,,2026-07-02,65,61-90,212598.0,0.0,overdue
+INV-2026-000997,Suryavansh Petro Chemicals & Co,,2026-07-06,61,61-90,212550.0,401.1,overdue
+INV-2026-000794,Nalanda Recyclers LLP,,2026-06-01,96,91-180,212094.0,0.0,overdue
+INV-2026-000468,Anant Infra Conveyances PVT LTD,,2026-05-15,113,91-180,212082.0,0.0,overdue
+INV-2026-000051,Zenith One Logistics & Co,,2026-04-11,147,91-180,211536.0,0.0,overdue
+INV-2026-001458,Goldcrest Steel Traders Company,,2026-08-01,35,31-60,211153.0,0.0,overdue
+INV-2026-000640,Nalanda Recyclers LLP,,2026-05-16,112,91-180,208719.0,0.0,overdue
+INV-2026-000757,Sahyadri Polymers PVT LTD,,2026-06-26,71,61-90,206347.0,583.29,overdue
+INV-2026-001193,Vedika Facility Management & Co,,2026-08-08,28,1-30,204793.0,0.0,overdue
+INV-2026-001194,Vedika Textiles Company,,2026-07-09,58,31-60,204553.0,0.0,overdue
+INV-2026-000307,Shree Balaji Hardware Private Limited,,2026-05-15,113,91-180,203677.0,0.0,overdue
+INV-2026-000022,Suryavansh Catering Services Company,,2026-04-09,149,91-180,203327.0,0.0,overdue
+INV-2026-001204,Pushpa Metals Agri Inputs PVT LTD,,2026-07-02,65,61-90,201906.0,177.17,open
+INV-2026-000167,Everstone Water Treatment Company,,2026-05-20,108,91-180,201362.0,0.0,overdue
+INV-2026-001416,Goldcrest Warehousing Private Limited,,2026-07-21,46,31-60,201234.0,304.24,overdue
+INV-2026-000882,Anant Infra Conveyances PVT LTD,,2026-06-25,72,61-90,195847.0,0.0,overdue
+INV-2026-001855,Goldcrest Warehousing Private Limited,,2026-08-31,5,1-30,195507.0,0.0,overdue
+INV-2026-000558,Suryavansh Catering Services Company,,2026-05-25,103,91-180,194257.0,0.0,overdue
+INV-2026-000483,Vedika Textiles Company,,2026-05-01,127,91-180,193717.0,0.0,overdue
+INV-2026-001415,Pushpa Metals Agri Inputs PVT LTD,,2026-07-21,46,31-60,192554.0,169.09,overdue
+INV-2026-001383,Suryavansh Print Solutions & Co,,2026-08-10,26,1-30,191446.0,0.0,open
+INV-2026-001023,Vedika Facility Management & Co,,2026-07-23,44,31-60,190461.0,744.15,open
+INV-2026-000002,Everstone Water Treatment Company,,2026-05-08,120,91-180,190337.0,0.0,overdue
+INV-2026-000048,Nalanda Recyclers LLP,,2026-03-27,162,91-180,189651.0,0.0,overdue
+INV-2026-001686,Vedika Textiles Company,,2026-08-24,12,1-30,186634.0,0.0,overdue
+INV-2026-000408,Nalanda Fab Services Private Limited,,2026-06-08,89,61-90,186327.0,0.0,overdue
+INV-2026-000524,Vedika Textiles Company,,2026-05-06,122,91-180,186094.0,0.0,overdue
+INV-2026-001114,Meridian Lab Supplies LLP,,2026-06-24,73,61-90,185586.0,0.0,overdue
+INV-2026-000260,Shree Balaji Machine Parts & Co,,2026-05-26,102,91-180,184643.0,139.76,overdue
+INV-2026-001117,Copperleaf Electricals PVT LTD,,2026-08-01,35,31-60,183899.0,0.0,overdue
+INV-2026-000606,Trividata Roofing Products PVT LTD,,2026-05-29,99,91-180,183781.0,0.0,overdue
+INV-2026-001657,Suryavansh Print Solutions & Co,,2026-09-05,0,1-30,182639.0,156590.71,open
+INV-2026-000663,Goldcrest Steel Traders Company,,2026-05-19,109,91-180,182014.0,0.0,overdue
+INV-2026-000841,Trinetra Piping Solutions LLP,,2026-07-21,46,31-60,181804.0,0.0,overdue
+INV-2026-000023,Vedika Textiles Company,,2026-03-25,164,91-180,181803.0,0.0,overdue
+INV-2026-000516,Everstone Water Treatment Company,,2026-06-19,78,61-90,180181.0,0.0,overdue
+INV-2026-001240,Nalanda Recyclers LLP,,2026-07-14,53,31-60,179780.0,0.0,overdue
+INV-2026-001092,Suryavansh Catering Services Company,,2026-07-15,52,31-60,178468.0,0.0,overdue
+INV-2026-000822,Anant Infra Conveyances PVT LTD,,2026-06-19,78,61-90,176900.0,0.0,overdue
+INV-2026-001054,Suryavansh Petro Chemicals & Co,,2026-07-10,57,31-60,176731.0,0.0,overdue
+INV-2026-001097,Ashwini Cable Systems LLP,,2026-07-15,52,31-60,173285.0,0.0,overdue
+INV-2026-000549,Suryavansh Catering Services Company,,2026-05-23,105,91-180,172721.0,0.0,open
+INV-2026-000734,Anant Infra Conveyances PVT LTD,,2026-06-08,89,61-90,171398.0,0.0,overdue
+INV-2026-000384,Goldcrest Warehousing Private Limited,,2026-04-14,144,91-180,170827.0,3776.08,overdue
+INV-2026-000505,Saptagiri Analytics Ltd,,2026-04-25,133,91-180,168062.0,0.0,overdue
+INV-2026-000050,Zenith One Logistics & Co,,2026-04-11,147,91-180,167465.0,0.0,overdue
+INV-2026-001242,Vedika Facility Management & Co,,2026-08-13,23,1-30,166294.0,0.0,overdue
+INV-2026-001483,Anant Infra Staffing Private Limited,,2026-09-03,2,1-30,165522.0,0.0,overdue
+INV-2026-000001,Nalanda Fab Services Private Limited,,2026-05-08,120,91-180,165088.0,0.0,overdue
+INV-2026-000844,Everstone Water Treatment Company,,2026-07-21,46,31-60,163908.0,0.0,open
+INV-2026-000877,Ashwini Solar EPC PVT LTD,,2026-07-10,57,31-60,163441.0,0.0,overdue
+INV-2026-000599,Ashwini Cable Systems LLP,,2026-05-28,100,91-180,163167.0,0.0,overdue
+INV-2026-001257,Ashwini Cable Systems LLP,,2026-07-30,37,31-60,163011.0,0.0,overdue
+INV-2026-001431,Suryavansh Catering Services Company,,2026-08-14,22,1-30,162796.0,47380.08,overdue
+INV-2026-000746,Zenith One Logistics & Co,,2026-06-10,87,61-90,162041.0,0.0,overdue
+INV-2026-000867,Nalanda Fab Services Private Limited,,2026-07-24,43,31-60,161692.0,0.0,overdue
+INV-2026-001581,Zenith One Logistics & Co,,2026-08-28,8,1-30,160995.0,108166.56,overdue
+INV-2026-000987,Ashwini Solar EPC PVT LTD,,2026-07-20,47,31-60,160994.0,353.91,overdue
+INV-2026-000613,Trinetra Piping Solutions LLP,,2026-06-29,68,61-90,160679.0,0.0,overdue
+INV-2026-001389,Trividata Roofing Products PVT LTD,,2026-08-10,26,1-30,159431.0,0.0,overdue
+INV-2026-001811,Nalanda Recyclers LLP,,2026-09-04,1,1-30,158094.0,146362.66,overdue
+INV-2026-000783,Goldcrest Warehousing Private Limited,,2026-05-22,106,91-180,158017.0,0.0,overdue
+INV-2026-000923,Anant Infra Conveyances PVT LTD,,2026-06-29,68,61-90,157384.0,0.0,overdue
+INV-2026-001630,Vedika Textiles Company,,2026-08-18,18,1-30,156596.0,0.0,overdue
+INV-2026-000673,Suryavansh Petro Chemicals & Co,,2026-06-04,93,91-180,155539.0,264.66,overdue
+INV-2026-001106,Goldcrest Warehousing Private Limited,,2026-06-23,74,61-90,153846.0,0.0,overdue
+INV-2026-001346,Trinetra Piping Solutions LLP,,2026-09-05,0,1-30,152493.0,0.0,open
+INV-2026-000944,Ashwini Interiors & Co,,2026-07-01,66,61-90,151461.0,0.0,overdue
+INV-2026-000826,Anant Infra Staffing Private Limited,,2026-07-04,63,61-90,151055.0,163.11,overdue
+INV-2026-000342,Trinetra Piping Solutions LLP,,2026-06-02,95,91-180,150958.0,0.0,overdue
+INV-2026-000464,Anant Infra Conveyances PVT LTD,,2026-05-15,113,91-180,150555.0,0.0,overdue
+INV-2026-001493,Trividata Roofing Products PVT LTD,,2026-08-20,16,1-30,148810.0,0.0,overdue
+INV-2026-000088,Goldcrest Warehousing Private Limited,,2026-03-23,166,91-180,148366.0,0.0,overdue
+INV-2026-000645,Suryavansh Petro Chemicals & Co,,2026-06-01,96,91-180,148358.0,0.0,overdue
+INV-2026-001230,Anant Infra Conveyances PVT LTD,,2026-07-27,40,31-60,148200.0,302.76,overdue
+INV-2026-000042,Suryavansh Catering Services Company,,2026-04-11,147,91-180,147400.0,3249.42,overdue
+INV-2026-001353,Anant Infra Staffing Private Limited,,2026-08-22,14,1-30,146498.0,0.0,overdue
+INV-2026-000824,Trividata Roofing Products PVT LTD,,2026-06-19,78,61-90,145754.0,0.0,overdue
+INV-2026-000872,Suryavansh Print Solutions & Co,,2026-06-24,73,61-90,145316.0,0.0,overdue
+INV-2026-000385,Nalanda Fab Services Private Limited,,2026-06-06,91,91-180,145307.0,0.0,overdue
+INV-2026-000406,Anant Infra Staffing Private Limited,,2026-05-25,103,91-180,144830.0,0.0,overdue
+INV-2026-000647,Goldcrest Security Systems & Co,,2026-06-30,67,61-90,144793.0,169.35,overdue
+INV-2026-000365,Ashwini Cable Systems LLP,,2026-05-06,122,91-180,144541.0,0.0,overdue
+INV-2026-001708,Orbitex Paper Mills PVT LTD,,2026-08-18,18,1-30,144406.0,0.0,overdue
+INV-2026-001597,Anant Infra Conveyances PVT LTD,,2026-08-29,7,1-30,143995.0,0.0,overdue
+INV-2026-001523,Goldcrest Warehousing Private Limited,,2026-07-30,37,31-60,143577.0,0.0,overdue
+INV-2026-000596,Saptagiri Analytics Ltd,,2026-05-05,123,91-180,142413.0,0.0,overdue
+INV-2026-000078,Everstone Water Treatment Company,,2026-05-14,114,91-180,141860.0,0.0,overdue
+INV-2026-001119,Shree Balaji Machine Parts & Co,,2026-08-17,19,1-30,141349.0,0.0,overdue
+INV-2026-001327,Anant Infra Conveyances PVT LTD,,2026-08-03,33,31-60,140383.0,444.34,overdue
+INV-2026-001474,Anant Infra Conveyances PVT LTD,,2026-08-18,18,1-30,139625.0,0.0,overdue
+INV-2026-000381,Ashwini Interiors & Co,,2026-05-07,121,91-180,137875.0,3039.44,overdue
+INV-2026-000721,Pushpa Metals Agri Inputs PVT LTD,,2026-05-15,113,91-180,136454.0,0.0,overdue
+INV-2026-000049,Trinetra Piping Solutions LLP,,2026-05-11,117,91-180,135700.0,56.89,overdue
+INV-2026-001181,Everstone Water Treatment Company,,2026-08-22,14,1-30,134886.0,0.0,overdue
+INV-2026-000557,Suryavansh Print Solutions & Co,,2026-05-25,103,91-180,134830.0,0.0,overdue
+INV-2026-000646,Ashwini Cable Systems LLP,,2026-06-01,96,91-180,132427.0,0.0,open
+INV-2026-000627,Goldcrest Warehousing Private Limited,,2026-05-07,121,91-180,132426.0,0.0,open
+INV-2026-001040,Everstone Water Treatment Company,,2026-08-08,28,1-30,132189.0,0.0,overdue
+INV-2026-000957,Nalanda Fab Services Private Limited,,2026-08-01,35,31-60,131654.0,0.0,overdue
+INV-2026-000183,Vedika Textiles Company,,2026-04-07,151,91-180,131281.0,0.0,overdue
+INV-2026-000842,Shree Balaji Machine Parts & Co,,2026-07-21,46,31-60,131077.0,0.0,overdue
+INV-2026-000130,Trinetra Piping Solutions LLP,,2026-05-18,110,91-180,130565.0,0.0,overdue
+INV-2026-001584,Zenith One Logistics & Co,,2026-08-28,8,1-30,130514.0,87687.48,overdue
+INV-2026-000563,Suryavansh Print Solutions & Co,,2026-05-25,103,91-180,130506.0,0.0,overdue
+INV-2026-000043,Goldcrest Warehousing Private Limited,,2026-03-19,170,91-180,129629.0,0.0,overdue
+INV-2026-001562,Ashwini Cable Systems LLP,,2026-08-26,10,1-30,126731.0,0.0,overdue
+INV-2026-001076,Trinetra Piping Solutions LLP,,2026-08-11,25,1-30,126603.0,0.0,overdue
+INV-2026-000650,Suryavansh Print Solutions & Co,,2026-06-01,96,91-180,125049.0,0.0,overdue
+INV-2026-000250,Ashwini Cable Systems LLP,,2026-04-27,131,91-180,124877.0,0.0,open
+INV-2026-000781,Trinetra Piping Solutions LLP,,2026-07-14,53,31-60,124705.0,0.0,overdue
+INV-2026-000246,Vedika Textiles Company,,2026-04-11,147,91-180,123816.0,0.0,overdue
+INV-2026-000436,Nalanda Fab Services Private Limited,,2026-06-10,87,61-90,121736.0,0.0,overdue
+INV-2026-000535,Nalanda Fab Services Private Limited,,2026-06-22,75,61-90,121398.0,0.0,overdue
+INV-2026-001231,Orbitex Packaging Private Limited,,2026-08-11,25,1-30,120997.0,0.0,open
+INV-2026-001524,Suryavansh Catering Services Company,,2026-08-22,14,1-30,120801.0,0.0,overdue
+INV-2026-001552,Suryavansh Print Solutions & Co,,2026-08-24,12,1-30,119945.0,0.0,open
+INV-2026-001617,Anant Infra Conveyances PVT LTD,,2026-08-31,5,1-30,119052.0,89923.6,overdue
+INV-2026-000550,Nalanda Recyclers LLP,,2026-05-08,120,91-180,117949.0,0.0,overdue
+INV-2026-001168,Suryavansh Catering Services Company,,2026-07-22,45,31-60,117732.0,0.0,overdue
+INV-2026-000756,Ashwini Cable Systems LLP,,2026-06-11,86,61-90,117563.0,0.0,open
+INV-2026-000508,Anant Infra Staffing Private Limited,,2026-06-03,94,91-180,117100.0,0.0,overdue
+INV-2026-001165,Trinetra Piping Solutions LLP,,2026-08-21,15,1-30,116858.0,0.0,overdue
+INV-2026-000920,Goldcrest Warehousing Private Limited,,2026-06-05,92,91-180,115936.0,0.0,overdue
+INV-2026-001296,Goldcrest Warehousing Private Limited,,2026-07-09,58,31-60,115405.0,0.0,overdue
+INV-2026-000959,Nalanda Fab Services Private Limited,,2026-08-01,35,31-60,115379.0,0.0,overdue
+INV-2026-000273,Orbitex Packaging Private Limited,,2026-05-12,116,91-180,113703.0,0.0,overdue
+INV-2026-001490,Suryavansh Print Solutions & Co,,2026-08-20,16,1-30,113210.0,0.0,open
+INV-2026-001598,Zenith One Logistics & Co,,2026-08-29,7,1-30,112028.0,0.0,overdue
+INV-2026-000838,Goldcrest Steel Traders Company,,2026-06-05,92,91-180,111379.0,0.0,open
+INV-2026-001293,Ashwini Interiors & Co,,2026-08-01,35,31-60,110629.0,0.0,overdue
+INV-2026-001170,Orbitex Packaging Private Limited,,2026-08-06,30,1-30,110149.0,0.0,overdue
+INV-2026-001538,Pushpa Metals Agri Inputs PVT LTD,,2026-07-31,36,31-60,110013.0,0.0,overdue
+INV-2026-000639,Trinetra Piping Solutions LLP,,2026-06-30,67,61-90,105968.0,0.0,overdue
+INV-2026-000213,Goldcrest Warehousing Private Limited,,2026-04-01,157,91-180,104906.0,0.0,open
+INV-2026-000218,Anant Infra Conveyances PVT LTD,,2026-04-24,134,91-180,103298.0,0.0,overdue
+INV-2026-000284,Nalanda Fab Services Private Limited,,2026-05-29,99,91-180,102387.0,0.0,overdue
+INV-2026-001595,Vedika Textiles Company,,2026-08-14,22,1-30,102123.0,8402.45,overdue
+INV-2026-001192,Anant Infra Conveyances PVT LTD,,2026-07-24,43,31-60,101500.0,0.0,overdue
+INV-2026-001144,Trinetra Piping Solutions LLP,,2026-08-18,18,1-30,101264.0,0.0,overdue
+INV-2026-000701,Goldcrest Warehousing Private Limited,,2026-05-14,114,91-180,99332.0,0.0,open
+INV-2026-001131,Suryavansh Petro Chemicals & Co,,2026-07-18,49,31-60,99174.0,0.0,overdue
+INV-2026-000847,Suryavansh Catering Services Company,,2026-06-22,75,61-90,96882.0,0.0,overdue
+INV-2026-000766,Trinetra Piping Solutions LLP,,2026-07-13,54,31-60,96089.0,0.0,overdue
+INV-2026-000233,Goldcrest Warehousing Private Limited,,2026-04-02,156,91-180,95201.0,0.0,open
+INV-2026-000258,Suryavansh Print Solutions & Co,,2026-04-27,131,91-180,95183.0,0.0,overdue
+INV-2026-000124,Nalanda Fab Services Private Limited,,2026-05-18,110,91-180,94813.0,0.0,overdue
+INV-2026-001660,Anant Infra Conveyances PVT LTD,,2026-09-05,0,1-30,94512.0,77383.68,open
+INV-2026-000257,Everstone Water Treatment Company,,2026-05-26,102,91-180,94193.0,0.0,overdue
+INV-2026-000515,Trinetra Piping Solutions LLP,,2026-06-19,78,61-90,92868.0,0.0,overdue
+INV-2026-000093,Shree Balaji Machine Parts & Co,,2026-05-15,113,91-180,92617.0,0.0,overdue
+INV-2026-000397,Zenith One Logistics & Co,,2026-05-08,120,91-180,91899.0,0.0,overdue
+INV-2026-001819,Orbitex Paper Mills PVT LTD,,2026-08-28,8,1-30,90516.0,0.0,overdue
+INV-2026-000006,Suryavansh Catering Services Company,,2026-04-08,150,91-180,89978.0,0.0,overdue
+INV-2026-001095,Shree Balaji Machine Parts & Co,,2026-08-14,22,1-30,89820.0,0.0,overdue
+INV-2026-000455,Suryavansh Print Solutions & Co,,2026-05-14,114,91-180,89731.0,0.0,overdue
+INV-2026-001348,Anant Infra Staffing Private Limited,,2026-08-21,15,1-30,84881.0,0.0,overdue
+INV-2026-000279,Trinetra Piping Solutions LLP,,2026-05-29,99,91-180,84034.0,0.0,overdue
+INV-2026-001279,Anant Infra Conveyances PVT LTD,,2026-07-31,36,31-60,79524.0,0.0,overdue
+INV-2026-000245,Suryavansh Catering Services Company,,2026-04-27,131,91-180,77960.0,0.0,overdue
+INV-2026-000027,Zenith One Logistics & Co,,2026-04-09,149,91-180,77959.0,1661.66,overdue
+INV-2026-001537,Suryavansh Print Solutions & Co,,2026-08-24,12,1-30,75581.0,0.0,open
+INV-2026-000151,Suryavansh Catering Services Company,,2026-04-18,140,91-180,74140.0,1634.35,overdue
+INV-2026-000871,Nalanda Fab Services Private Limited,,2026-07-24,43,31-60,73821.0,0.0,overdue
+INV-2026-000244,Zenith One Logistics & Co,,2026-04-27,131,91-180,73479.0,0.0,overdue
+INV-2026-000321,Anant Infra Conveyances PVT LTD,,2026-05-01,127,91-180,71041.0,0.0,overdue
+INV-2026-001115,Anant Infra Conveyances PVT LTD,,2026-07-17,50,31-60,69846.0,136.3,open
+INV-2026-001037,Everstone Water Treatment Company,,2026-08-08,28,1-30,68936.0,0.0,overdue
+INV-2026-000940,Anant Infra Conveyances PVT LTD,,2026-07-01,66,61-90,66891.0,0.0,overdue
+INV-2026-001476,Sahyadri Polymers PVT LTD,,2026-09-03,2,1-30,66552.0,53769.01,overdue
+INV-2026-000523,Ashwini Cable Systems LLP,,2026-05-21,107,91-180,65605.0,0.0,overdue
+INV-2026-001459,Pushpa Metals Agri Inputs PVT LTD,,2026-07-24,43,31-60,64770.0,0.0,overdue
+INV-2026-000275,Nalanda Fab Services Private Limited,,2026-05-27,101,91-180,60784.0,0.0,overdue
+INV-2026-000659,Anant Infra Staffing Private Limited,,2026-06-16,81,61-90,60376.0,0.0,overdue
+INV-2026-000363,Anant Infra Conveyances PVT LTD,,2026-05-06,122,91-180,57815.0,0.0,overdue
+INV-2026-000147,Anant Infra Conveyances PVT LTD,,2026-04-18,140,91-180,56793.0,0.0,overdue
+INV-2026-000478,Goldcrest Warehousing Private Limited,,2026-04-23,135,91-180,56325.0,0.0,overdue
+INV-2026-000122,Suryavansh Print Solutions & Co,,2026-04-17,141,91-180,53966.0,0.0,overdue
+INV-2026-000971,Suryavansh Catering Services Company,,2026-07-03,64,61-90,53891.0,0.0,open
+INV-2026-000593,Suryavansh Print Solutions & Co,,2026-05-28,100,91-180,53704.0,0.0,overdue
+INV-2026-000306,Suryavansh Petro Chemicals & Co,,2026-04-30,128,91-180,53493.0,0.0,overdue
+INV-2026-001161,Suryavansh Catering Services Company,,2026-07-21,46,31-60,53372.0,0.0,overdue
+INV-2026-001140,Goldcrest Warehousing Private Limited,,2026-06-26,71,61-90,45943.0,0.0,overdue
+INV-2026-000326,Anant Infra Conveyances PVT LTD,,2026-05-01,127,91-180,45680.0,0.0,overdue
+INV-2026-001750,Goldcrest Warehousing Private Limited,,2026-08-21,15,1-30,41100.0,12604.95,overdue
+INV-2026-000514,Goldcrest Warehousing Private Limited,,2026-04-27,131,91-180,40003.0,0.0,open
+INV-2026-001105,Suryavansh Catering Services Company,,2026-07-16,51,31-60,36171.0,0.0,overdue
+INV-2026-001239,Suryavansh Print Solutions & Co,,2026-07-29,38,31-60,30954.0,0.0,overdue
+INV-2026-000878,Goldcrest Warehousing Private Limited,,2026-06-02,95,91-180,29237.0,0.0,overdue
+INV-2026-001334,Goldcrest Warehousing Private Limited,,2026-07-13,54,31-60,25206.0,0.0,overdue

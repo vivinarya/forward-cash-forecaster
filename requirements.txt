@@ -1,0 +1,6 @@
+# Cashpilot has exactly one runtime dependency.
+# The reconciliation engine, settlement verifier, forecaster and report writer are stdlib-only;
+# numpy is used for the Monte-Carlo sampling and percentiles (a real speed win at 2,000 x 30).
+# Deliberately NOT dependencies: pandas, scikit-learn, transformers, langchain, pydantic, requests.
+# See docs/AI_JUDGEMENT.md - "no unnecessary libraries" is the same discipline as "no unnecessary AI".
+numpy==2.3.5

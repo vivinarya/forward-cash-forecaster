@@ -1,0 +1,22 @@
+{
+  "seed": 20260905,
+  "as_of": "2026-09-05",
+  "history_start": "2026-03-09",
+  "horizon_days": 30,
+  "customers": 30,
+  "vendors": 22,
+  "documents": 2365,
+  "bank_lines_history": 1709,
+  "bank_lines_future_plan": 83,
+  "noise": {
+    "narration_has_doc": 0.62,
+    "short_deduction": 0.06,
+    "lumpsum": 0.05,
+    "duplicate_line": 0.02,
+    "truncated_name": 0.3,
+    "typo": 0.12,
+    "advice_rate": 0.45,
+    "regime_shift_extra_default": 0.06
+  },
+  "note": "truth_matches.csv / truth_schedule.csv / truth_future_cash.csv are EVALUATION ONLY. Never pass the data dir containing them to the reconciler as a source of truth."
+}

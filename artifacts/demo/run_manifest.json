@@ -1,0 +1,193 @@
+{
+  "tool": "cashpilot",
+  "version": "0.1.0",
+  "ran_at": "2026-09-04",
+  "as_of": "2026-09-04",
+  "python": "3.13.14",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.41",
+  "strategy": "full",
+  "stages_ms": {
+    "ingest_ms": 432.07,
+    "reconcile_ms": {
+      "prepare_ms": 12.09,
+      "t0_duplicates_ms": 29.11,
+      "t1_settlement_ms": 3.92,
+      "t2_advice_utr_ms": 2.85,
+      "t3_doc_number_ms": 16.88,
+      "t4_amount_exact_ms": 11.11,
+      "t5_amount_name_ms": 0.27,
+      "t6_lumpsum_ms": 78.41,
+      "t7_fuzzy_ms": 1.21,
+      "classify_unresolved_ms": 0.54
+    },
+    "reconcile_total_ms": 157.74,
+    "settlement_verify_ms": 3.67,
+    "triage_ms": 0.3,
+    "forecast_ms": 169.89,
+    "total_ms": 769.81
+  },
+  "inputs": {
+    "bank": "bank_statement.csv",
+    "AR": "invoices.csv",
+    "AP": "bills.csv",
+    "advice": "payment_advices.csv",
+    "settlements": "razorpay_settlements.csv",
+    "payments": "razorpay_payments.csv",
+    "refunds": "razorpay_refunds.csv",
+    "opening": "opening_balance.csv"
+  },
+  "warnings": [],
+  "config_warnings": [],
+  "rules_path": "/home/user/cashpilot/config/recon_rules.json",
+  "llm": {
+    "enabled": false,
+    "model": null,
+    "calls": 0,
+    "ok": 0,
+    "failed": 0,
+    "invalid_json": 0,
+    "budget_remaining": 200,
+    "prompt_chars": 0,
+    "completion_chars": 0,
+    "approx_tokens": 0,
+    "wall_ms": 0.0,
+    "errors": []
+  },
+  "counts": {
+    "bank_lines": 725,
+    "documents": 904,
+    "advice_rows": 153,
+    "settlements": 115,
+    "payments": 3934,
+    "refunds": 119,
+    "parse_failures": 0,
+    "matches": 707,
+    "auto_posted": 670,
+    "exceptions": 110
+  },
+  "accuracy": {
+    "strategy": "full",
+    "lines_total": 725,
+    "lines_matchable": 717,
+    "lines_quarantine_expected": 8,
+    "lines_matched": 707,
+    "match_rate": 0.9752,
+    "correct": 701,
+    "partial": 6,
+    "wrong": 0,
+    "precision": 0.9915,
+    "recall": 0.9777,
+    "f1": 0.9846,
+    "unmatched_but_matchable": 10,
+    "correctly_quarantined": 8,
+    "wrongly_claimed_quarantine": 0,
+    "quarantine_accuracy": 1.0,
+    "auto_post_count": 670,
+    "auto_post_correct": 670,
+    "auto_post_precision": 1.0,
+    "rupee_accuracy": 0.9655,
+    "false_document_assignments": 0,
+    "mean_abs_amount_error_paise": 1022209.1,
+    "max_abs_amount_error_paise": 5005100,
+    "by_tier": {
+      "t4_amount_exact": {
+        "matches": 282,
+        "correct": 282,
+        "wrong": 0
+      },
+      "t1_settlement": {
+        "matches": 113,
+        "correct": 113,
+        "wrong": 0
+      },
+      "t2_advice_utr": {
+        "matches": 89,
+        "correct": 83,
+        "wrong": 6
+      },
+      "t3_doc_number": {
+        "matches": 215,
+        "correct": 215,
+        "wrong": 0
+      },
+      "t7_fuzzy": {
+        "matches": 6,
+        "correct": 6,
+        "wrong": 0
+      },
+      "t6_lumpsum": {
+        "matches": 2,
+        "correct": 2,
+        "wrong": 0
+      }
+    },
+    "timing_ms": {
+      "prepare_ms": 12.09,
+      "t0_duplicates_ms": 29.11,
+      "t1_settlement_ms": 3.92,
+      "t2_advice_utr_ms": 2.85,
+      "t3_doc_number_ms": 16.88,
+      "t4_amount_exact_ms": 11.11,
+      "t5_amount_name_ms": 0.27,
+      "t6_lumpsum_ms": 78.41,
+      "t7_fuzzy_ms": 1.21,
+      "classify_unresolved_ms": 0.54
+    },
+    "throughput_lines_per_s": 4635.8,
+    "unresolved_count": 16,
+    "notes": [
+      "strategy=full tiers={'t1_settlement': 113, 't2_advice_utr': 89, 't3_doc_number': 215, 't4_amount_exact': 282, 't6_lumpsum': 2, 't7_fuzzy': 6}"
+    ]
+  },
+  "settlements": {
+    "batches": 115,
+    "batches_flagged": 18,
+    "flag_rate": 0.1565,
+    "gross_paise": 1144415000,
+    "declared_fee_paise": 21273502,
+    "expected_fee_paise": 21199615,
+    "recoverable_paise": 73887,
+    "credit_gap_paise": 0,
+    "refunds_matched_paise": 23201078,
+    "effective_mdr_pct": 1.859,
+    "unsettled_payments": 0
+  },
+  "forecast_stats": {
+    "as_of": "2026-09-04",
+    "horizon_days": 30,
+    "opening_paise": 2200000000,
+    "open_ar_docs": 167,
+    "open_ar_paise": 9255461700,
+    "open_ap_docs": 132,
+    "open_ap_paise": 3745592400,
+    "aged_docs_out_of_support": 0,
+    "recovery_discounted_paise": 0,
+    "book_in_paise": 5071734733,
+    "book_out_paise": 2436353826,
+    "prospective_in_paise": 1043413185,
+    "prospective_out_paise": 854844529,
+    "ledger_coverage_in": 0.87,
+    "same_window_churn_share": 0.214,
+    "churn_reference_windows": 4,
+    "gateway_in_paise": 266941132,
+    "mc_ms": 53.87,
+    "mc_daily_sd_paise": 171469413,
+    "mc_runs": 1200,
+    "expected_in_paise": 6382089049,
+    "expected_out_paise": 3291198354,
+    "gateway_projected_in_paise": 266941132,
+    "gateway_net_ratio": 0.9573,
+    "gateway_lag_days": 2,
+    "gateway_daily_gross_paise": 10521857,
+    "misc_daily_mean_in_paise": 0,
+    "misc_daily_mean_out_paise": 0,
+    "operating_minimum_paise": 300000000,
+    "ar_aging_applied": true,
+    "profile_branch_counts": {
+      "pmf": 299
+    },
+    "min_expected_closing_paise": 2382664960,
+    "min_p10_closing_paise": 2173646395.2
+  },
+  "notes": []
+}

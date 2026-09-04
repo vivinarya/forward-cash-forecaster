@@ -1,0 +1,88 @@
+{
+  "_comment": "Auditable reconciliation rules. Every matching tier is a deterministic rule; change thresholds here, not in code. Validated by tests/test_rules_config.py",
+  "invoice_number_patterns": [
+    "\\b(?:INV|SINV|SALES|RT|PO|BILL|VB|SUP)[-/]?\\d{4}(?:[-/]?\\d{1,6})?\\b"
+  ],
+  "doc_number_key_patterns": {
+    "AR": "\\bINV[-/?]?\\d{4}[-/?]?\\d{3,6}\\b",
+    "AP": "\\b(?:RT|PO|BILL|VB|SUP)[-/?]?\\d{4}[-/?]?\\d{3,6}\\b"
+  },
+  "name_similarity": {
+    "auto_post_min": 0.86,
+    "review_min": 0.7,
+    "max_candidates_per_line": 6
+  },
+  "amount_tolerance": {
+    "exact": 0,
+    "rounding_paise": 100,
+    "pct_of_invoice": 0.005,
+    "absolute_max_paise": 500000
+  },
+  "date_windows_days": {
+    "_comment": "days relative to the document DUE date: early = paid before due, late = paid after due. _doc_date_floor also allows matching a line soon after the invoice was raised.",
+    "tier_utr": {
+      "early": 60,
+      "late": 90
+    },
+    "tier_doc_number": {
+      "early": 45,
+      "late": 150
+    },
+    "tier_amount_exact": {
+      "early": 20,
+      "late": 25
+    },
+    "tier_amount_plus_name": {
+      "early": 25,
+      "late": 40
+    },
+    "tier_fuzzy": {
+      "early": 30,
+      "late": 60
+    },
+    "tier_lumpsum": {
+      "early": 30,
+      "late": 60
+    },
+    "_doc_date_floor": 20
+  },
+  "lumpsum": {
+    "enabled": true,
+    "max_candidates": 12,
+    "min_parts": 2
+  },
+  "duplicate_detection": {
+    "same_utr": true,
+    "same_amount_name_within_days": 3
+  },
+  "auto_post": {
+    "min_confidence": 0.9,
+    "max_amount_paise_for_auto": 2000000000
+  },
+  "cash_policy": {
+    "minimum_cash_paise": 300000000,
+    "warning_days": 5,
+    "forecast_horizons": [
+      7,
+      14,
+      30
+    ],
+    "monte_carlo_runs": 2000,
+    "percentiles": [
+      10,
+      50,
+      90
+    ],
+    "weekday_redistribute": true,
+    "aged_daily_hazard": 0.012
+  },
+  "aged_daily_hazard": 0.012,
+  "ar_aging_recovery": {
+    "_comment": "Share of an invoice still expected to be collected, by days past due. Treasury rule of thumb; replace with your own collection experience. Applied to AR only - an overdue payable is not a discount.",
+    "0": 1.0,
+    "31": 0.55,
+    "61": 0.28,
+    "91": 0.1,
+    "181": 0.02
+  }
+}
