@@ -1,6 +1,6 @@
 # Daily cash brief
 
-_generated <built-in method isoformat of datetime.date object at 0x7fc08337beb0>; source: template (deterministic numbers, language model used only to phrase them)_
+_generated <built-in method isoformat of datetime.date object at 0x000002357F159E90>; source: template (deterministic numbers, language model used only to phrase them)_
 
 > Cash is ₹2,20,00,000.00 today and the expected path ends at ₹5,00,47,205.77 in 30 days; the P10 path of ₹4,16,89,548.39 stays above your ₹30,00,000.00 minimum. 711 of 742 bank lines cleared themselves (662 auto-posted) and 111 need a human, dominated by unknown (87), partial_or_short_payment (16), duplicate_bank_posting (15). No funding action needed inside the window - use the slack to clear the exception queue. Gateway verification flagged ₹29,772.80 overbilling risk, 27 batches flagged. Run `cashpilot bench --forecast` for measured forecast accuracy.
 

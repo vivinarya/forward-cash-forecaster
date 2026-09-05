@@ -194,8 +194,8 @@ def bench(
     if out_dir:
         out_dir = Path(out_dir)
         out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / "bench.md").write_text(bench_md(result))
-        (out_dir / "bench.json").write_text(__import__("json").dumps(result, indent=2, default=str))
+        (out_dir / "bench.md").write_text(bench_md(result), encoding="utf-8")
+        (out_dir / "bench.json").write_text(__import__("json").dumps(result, indent=2, default=str), encoding="utf-8")
     result["accuracy_cards"] = cards
     return result
 

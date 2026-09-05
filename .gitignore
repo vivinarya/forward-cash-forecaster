@@ -18,3 +18,8 @@ artifacts/_scratch/
 data/*/truth_*.csv.tmp
 *.log
 .pytest-tmp/
+
+# presentation slides
+slides.html
+slides/
+presentation/

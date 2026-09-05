@@ -135,23 +135,23 @@ def write_all(res, out_dir: str | Path) -> dict[str, str]:
     _write_csv(out / "unresolved.csv", unresolved)
     written["unresolved.csv"] = f"{len(unresolved)} rows"
 
-    (out / "run_manifest.json").write_text(json.dumps(res.manifest, indent=2, default=str))
+    (out / "run_manifest.json").write_text(json.dumps(res.manifest, indent=2, default=str), encoding="utf-8")
     written["run_manifest.json"] = "stage timings, versions, llm usage"
     if res.accuracy:
-        (out / "accuracy.json").write_text(json.dumps(res.accuracy.to_dict(), indent=2, default=str))
+        (out / "accuracy.json").write_text(json.dumps(res.accuracy.to_dict(), indent=2, default=str), encoding="utf-8")
         written["accuracy.json"] = "measured score card"
 
     # ---------------- markdown ----------------
-    (out / "reconciliation.md").write_text(recon_md(res))
-    (out / "settlements.md").write_text(settlement_md(res))
-    (out / "recovery.md").write_text(recovery_md(res))
-    (out / "forecast.md").write_text(forecast_md(res))
-    (out / "brief.md").write_text(brief_md(res))
-    (out / "INDEX.md").write_text(index_md(res, written))
+    (out / "reconciliation.md").write_text(recon_md(res), encoding="utf-8")
+    (out / "settlements.md").write_text(settlement_md(res), encoding="utf-8")
+    (out / "recovery.md").write_text(recovery_md(res), encoding="utf-8")
+    (out / "forecast.md").write_text(forecast_md(res), encoding="utf-8")
+    (out / "brief.md").write_text(brief_md(res), encoding="utf-8")
+    (out / "INDEX.md").write_text(index_md(res, written), encoding="utf-8")
     for name in ("reconciliation.md", "settlements.md", "recovery.md", "forecast.md", "brief.md", "INDEX.md"):
         written[name] = "report"
 
-    (out / "dashboard.html").write_text(dashboard_html(res))
+    (out / "dashboard.html").write_text(dashboard_html(res), encoding="utf-8")
     written["dashboard.html"] = "self-contained view (no network, no CDN)"
     return written
 

@@ -1,17 +1,17 @@
-# Benchmark - data/sample
+# Benchmark - data\sample
 
 _1 repetitions per strategy; times include CSV ingest._
 
 | strategy | records | matched | correct | partial | wrong | refused (matchable) | precision | recall | f1 | auto_post | auto_precision | rupee_acc | quarantine | ingest ms | engine ms | lines/s (engine) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| exact | 742 | 417 | 413.0 | 4.0 | 0.0 | 304.0 | 0.9904 | 0.5728 | 0.7258 | 387 | 1.0 | 0.5362 | 1.0 | 428.57 | 70.22 | 10566.8 |
-| fuzzy_only | 742 | 574 | 570.0 | 0.0 | 4.0 | 147.0 | 0.993 | 0.7906 | 0.8803 | 542 | 1.0 | 0.861 | 1.0 | 430.25 | 203.69 | 3642.8 |
-| full | 742 | 711 | 706.0 | 4.0 | 1.0 | 10.0 | 0.993 | 0.9792 | 0.9861 | 662 | 1.0 | 0.9808 | 1.0 | 428.21 | 148.65 | 4991.5 |
+| exact | 742 | 417 | 413.0 | 4.0 | 0.0 | 304.0 | 0.9904 | 0.5728 | 0.7258 | 387 | 1.0 | 0.5362 | 1.0 | 400.35 | 71.58 | 10366.7 |
+| fuzzy_only | 742 | 574 | 570.0 | 0.0 | 4.0 | 147.0 | 0.993 | 0.7906 | 0.8803 | 542 | 1.0 | 0.861 | 1.0 | 438.73 | 196.19 | 3782.1 |
+| full | 742 | 711 | 706.0 | 4.0 | 1.0 | 10.0 | 0.993 | 0.9792 | 0.9861 | 662 | 1.0 | 0.9808 | 1.0 | 547.3 | 136.2 | 5447.7 |
 
 ## What the extra tiers buy
 
 - recall +0.4064 and +293.0 more correct lines vs the regex-only baseline
-- cost: 1.16x the wall time of the naive pass
+- cost: 1.45x the wall time of the naive pass
 
 ## Forecast accuracy (rolling-origin backtest)
 
@@ -21,7 +21,7 @@ nearly cancel, which is why it is not the headline). Lower is better; the baseli
 origins and the same truncated history.
 
 - 3 origins ending 2026-08-05, 2026-07-26, 2026-07-16
-- backtest wall time 624.7 ms (includes re-running reconciliation at every origin)
+- backtest wall time 560.2 ms (includes re-running reconciliation at every origin)
 
 | model | err% gross @7 | err% gross @14 | err% gross @30 | MAE net @30 (INR) | bias @30 (INR) | skill vs naive | direction right |
 |---|---|---|---|---|---|---|---|

@@ -116,7 +116,7 @@ def cmd_run(args) -> int:
         out_dir = Path(args.out)
         out_dir.mkdir(parents=True, exist_ok=True)
         bt = rolling_backtest(res_data.dataset, settings, n_origins=10, runs=600)
-        (out_dir / "backtest.json").write_text(json.dumps(bt.to_dict(), indent=2, default=str))
+        (out_dir / "backtest.json").write_text(json.dumps(bt.to_dict(), indent=2, default=str), encoding="utf-8")
         print("  rolling-origin forecast backtest (cumulative net cash error as a share of gross movement):")
         for name in ("cashpilot", "seasonal_naive", "moving_avg", "due_date_sum"):
             hs = bt.horizons or [7, 14, 30]
@@ -182,7 +182,7 @@ def cmd_bench(args) -> int:
     )
     print(json.dumps(out["summary"], indent=2))
     if args.json:
-        Path(args.json).write_text(json.dumps(out, indent=2, default=str))
+        Path(args.json).write_text(json.dumps(out, indent=2, default=str), encoding="utf-8")
         print(f"full benchmark written to {args.json}")
     return 0
 

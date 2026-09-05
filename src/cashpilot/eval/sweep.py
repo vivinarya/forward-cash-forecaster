@@ -265,8 +265,8 @@ def main(argv: list[str] | None = None) -> int:
         "note": "accuracy denominators come from the generator's own truth files; recovery rates need the planted defect ledger in meta.json",
     }
     Path(args.json).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.json).write_text(json.dumps(out, indent=2, default=str))
-    Path(args.md).write_text(to_markdown(rows))
+    Path(args.json).write_text(json.dumps(out, indent=2, default=str), encoding="utf-8")
+    Path(args.md).write_text(to_markdown(rows), encoding="utf-8")
     print(f"wrote {args.json} and {args.md}")
     return 0
 

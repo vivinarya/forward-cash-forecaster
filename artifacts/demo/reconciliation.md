@@ -64,7 +64,7 @@ split by what the line was:
 - deterministic pre-classification: 137 exceptions
 - LLM attempted / accepted / discarded: 0 / 0 / 0 _(skipped: llm_disabled_or_no_key)_
 - duplicate-root-cause groupings: 0
-- LLM wall time: 0.06 ms; usage: `{"enabled": false, "model": null, "calls": 0, "ok": 0, "failed": 0, "invalid_json": 0, "budget_remaining": 200, "prompt_chars": 0, "completion_chars": 0, "approx_tokens": 0, "wall_ms": 0.0, "errors": []}`
+- LLM wall time: 0.04 ms; usage: `{"enabled": false, "model": null, "calls": 0, "ok": 0, "failed": 0, "invalid_json": 0, "budget_remaining": 200, "prompt_chars": 0, "completion_chars": 0, "approx_tokens": 0, "wall_ms": 0.0, "errors": []}`
 
 ## Top unresolved bank lines
 
